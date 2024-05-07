@@ -1,3 +1,44 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: brushKing;
+    src: url(./components/assets/fonts/brushKing.otf);
+}
+@font-face {
+    font-family: albula;
+    src: url(./components/assets/fonts/albula/Albula-Regular.ttf);
+}
+@font-face {
+    font-family: albulaMedium;
+    src: url(./components/assets/fonts//albula/Albula-Medium.ttf);
+}
+@font-face {
+    font-family: albulaBold;
+    src: url(./components/assets/fonts/albula/Albula-Bold.ttf);
+}
+@font-face {
+    font-family: albulaXB;
+    src: url(./components/assets/fonts/albula/Albula-ExtraBold.ttf);
+}
+@font-face {
+    font-family: albulaHeavy;
+    src: url(./components/assets/fonts/albula/Albula-Heavy.ttf);
+}
+@font-face {
+    font-family: noirPro;
+    src: url(./components/assets/fonts/noirPro/NoirPro-Regular.otf);
+}
+@font-face {
+    font-family: noirPro;
+    src: url(./components/assets/fonts/noirPro/NoirPro-Medium.otf);
+}
+@font-face {
+    font-family: noirPro;
+    src: url(./components/assets/fonts/noirPro/NoirPro-Bold.otf);
+}
+@font-face {
+    font-family: noirPro;
+    src: url(./components/assets/fonts/noirPro/NoirPro-Heavy.otf);
+}

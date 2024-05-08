@@ -17,6 +17,7 @@ export default {
         		'albulaHeavy': ['"albulaHeavy"', 'heavy'],
         		'albula': ['"albula"', 'regular'],
         		'noirPro': ['"noirPro"', 'regular'],
+        		'bebasNeue': ['"bebasNeue"', 'regular'],
       		},
 
       		width: {
@@ -46,6 +47,7 @@ export default {
 
 			height: {
 				'150': '150px',
+				'200px': '200px',
 				'400': '400px',
 				'500': '500px',
 				'1000': '1000px',

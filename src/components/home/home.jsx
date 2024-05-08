@@ -1,13 +1,13 @@
+import '../globalStyles.css'
 import React from 'react';
 import carImgOne from '../assets/images/finalizedCarImg/homeCarOne.png'
 import CountUp from 'react-countup';
-import gsap from 'gsap';
-import '../globalStyles.css'
+import SpeedBanner from './speedBanner/speedBanner';
 
 function Home() {
     return (
         <>
-            <main className='flex flex-col justify-between items-center bg-modestBrown'>
+            <main className='flex flex-col justify-between items-center bg-modestBrown-brown'>
                 <div id='introDiv' className="w-85vw flex flex-col justify-between items-center lg:flex-row lg:justify-evenly lg:items-center box-border lg:top-32">
                     <div id='introTextDiv' className='flex flex-col justify-evenly items-center px-6 xsm:px-10 sm:py-2 w-375px xsm:w-450px sm:w-550px md:w-675px lg:w-400px 1.5lg:px-6 1.5lg:py-6 1.5lg:w-475px xl:w-625px 2xl:w-700px h-500'>
                         <div id='introHeading' className='text-4xl sm:text-5xl xl:text-6xl font-albulaHeavy text-blackbean'>Official <br />
@@ -42,6 +42,14 @@ function Home() {
                     </div>
 
                     <img src={carImgOne} alt="Motosport Car Image One" className='px-2 py-2 w-500px lg:w-475px xl:w-550px 2xl:w-675px 1.6xl:w-700px xl:px-5 xl:py-5' />
+                </div>
+
+                <div id='speedBannerHolder' className='mt-0 md:-mt-20'>
+                    <SpeedBanner />
+                </div>
+
+                <div className='w-85vw'>
+
                 </div>
             </main>
         </>

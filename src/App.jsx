@@ -10,22 +10,22 @@ import Contact from './components/contact/contact';
 import Footer from './components/footer/footer';
 
 function App() {
-  return (
-    <>
-      <Header />
-      <Router>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/eBaja" element={<EBaja />} />
-          <Route path="/formulaBharat" element={<FormulaBharat />} />
-          <Route path="/merchandise" element={<Merchandise />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </Router>
-      <Footer />
-    </>
-  );
+	return (
+		<>
+			<Header />
+			<Router>
+				<Routes>
+					<Route path="/" element={<Home />} />
+					<Route path="/eBaja" element={<EBaja />} />
+					<Route path="/formulaBharat" element={<FormulaBharat />} />
+					<Route path="/merchandise" element={<Merchandise />} />
+					<Route path="/about" element={<About />} />
+					<Route path="/contact" element={<Contact />} />
+				</Routes>
+			</Router>
+			<Footer />
+		</>
+	);
 }
 
 export default App;

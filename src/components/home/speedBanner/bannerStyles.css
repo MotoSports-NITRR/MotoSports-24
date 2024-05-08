@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.marquee {
+	--marquee--colour: #945600ff;
+	--marquee--repeat-count: 6;
+	--marquee--base-duration: 1s;
+	--marquee--repeat-size: calc(100% / var(--marquee--repeat-count));
+	--marquee--double-size: calc(var(--marquee--repeat-size) * 2);
+	--marquee--duration: calc(var(--marquee--base-duration) * var(--char-count, 20));
+	overflow: hidden;
+	width: 110%;
+	margin-left: -5%;
+	transform: rotate(-4deg);
+	background: var(--marquee--colour);
+	color: #ffffff;
+	transition: transform 0.3s ease;
+}
+
+.marquee p {
+	transform: translateY(0.07em);
+	font-weight: bold;
+	margin: 0;
+	display: flex;
+	gap: 0.5em;
+	line-height: 1.1;
+	font-size: clamp(2.5rem, 12vw, 6.2rem);
+	font-family: "Bebas Neue", sans-serif;
+}
+	
+.marquee p::after {
+	content: "*";
+	transform: translateY(0.175em);
+}
+	
+.marquee p::before {
+	content: "";
+}
+
+.marquee--inner {
+	width: max-content;
+	display: flex;
+	text-transform: uppercase;
+}
+
+
+body, html {
+	height: 275px;
+	margin: 0;
+}
+
+.marquees {
+	align-content: center;
+	height: 100%;
+	display: grid;
+	gap: 5vw;
+	overflow: hidden;
+}
+
+[aria-pressed=true] + * .marquee--inner {
+	animation-play-state: paused !important;
+}
+
+/* AUTO MOVEMENT OF THE TEXT */
+
+/* @media (prefers-reduced-motion: no-preference) {
+	.marquee--inner {
+		animation: marquee var(--marquee--duration) infinite linear, reduce-marquee var(--marquee--duration) infinite linear paused;
+		animation-composition: add;
+	}
+	.marquee--inner:hover {
+		animation-play-state: running;
+	}
+} */
+
+@keyframes marquee {
+	from {
+		transform: translateX(calc((-1 * var(--marquee--double-size)) - (var(--marquee--double-size) * var(--marquee--direction, 1))));
+	} to {
+		transform: translateX(calc(var(--marquee--double-size) * -1));
+	}
+}
+
+@keyframes reduce-marquee {
+	from {
+		transform: translateX(calc(var(--marquee--repeat-size) * var(--marquee--direction, 1)));
+	} to {
+		transfrom: translateX(calc(var(--marquee--double-size) * -1));
+	}
+}

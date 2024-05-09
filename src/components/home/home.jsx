@@ -1,8 +1,8 @@
+import '../globalStyles.css'
 import React from 'react';
 import carImgOne from '../assets/images/finalizedCarImg/homeCarOne.png'
 import CountUp from 'react-countup';
-import gsap from 'gsap';
-import '../globalStyles.css'
+import SpeedBanner from './speedBanner/speedBanner';
 
 function Home() {
     return (
@@ -33,15 +33,19 @@ function Home() {
                             </div>
                             <div id='statBlockThree' className='flex flex-col justify-between items-center w-150'>
                                 <p className='font-poppins font-bold text-2xl sm:text-4xl lg:text-3xl xl:text-4xl text-brown'>
-                                    <CountUp start={0} end={130} duration={3.5} delay={0}></CountUp>
+                                    <CountUp start={0} end={10} duration={3.5} delay={0}></CountUp>
                                     <span>+</span>
                                 </p>
-                                <p className='font-poppins text-base sm:text-xl text-blackbean text-center'>possibilities</p>
+                                <p className='font-poppins text-base sm:text-xl text-blackbean text-center'>years of experience</p>
                             </div>
                         </div>
                     </div>
 
                     <img src={carImgOne} alt="Motosport Car Image One" className='px-2 py-2 w-500px lg:w-475px xl:w-550px 2xl:w-675px 1.6xl:w-700px xl:px-5 xl:py-5' />
+                </div>
+
+                <div id='speedBannerHolder' className='mt-0 md:-mt-20'>
+                    <SpeedBanner />
                 </div>
             </main>
         </>

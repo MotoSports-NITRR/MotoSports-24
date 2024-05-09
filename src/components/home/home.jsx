@@ -7,7 +7,7 @@ import SpeedBanner from './speedBanner/speedBanner';
 function Home() {
     return (
         <>
-            <main className='flex flex-col justify-between items-center bg-modestBrown-brown'>
+            <main className='flex flex-col justify-between items-center bg-modestBrown'>
                 <div id='introDiv' className="w-85vw flex flex-col justify-between items-center lg:flex-row lg:justify-evenly lg:items-center box-border lg:top-32">
                     <div id='introTextDiv' className='flex flex-col justify-evenly items-center px-6 xsm:px-10 sm:py-2 w-375px xsm:w-450px sm:w-550px md:w-675px lg:w-400px 1.5lg:px-6 1.5lg:py-6 1.5lg:w-475px xl:w-625px 2xl:w-700px h-500'>
                         <div id='introHeading' className='text-4xl sm:text-5xl xl:text-6xl font-albulaHeavy text-blackbean'>Official <br />
@@ -33,10 +33,10 @@ function Home() {
                             </div>
                             <div id='statBlockThree' className='flex flex-col justify-between items-center w-150'>
                                 <p className='font-poppins font-bold text-2xl sm:text-4xl lg:text-3xl xl:text-4xl text-brown'>
-                                    <CountUp start={0} end={130} duration={3.5} delay={0}></CountUp>
+                                    <CountUp start={0} end={10} duration={3.5} delay={0}></CountUp>
                                     <span>+</span>
                                 </p>
-                                <p className='font-poppins text-base sm:text-xl text-blackbean text-center'>possibilities</p>
+                                <p className='font-poppins text-base sm:text-xl text-blackbean text-center'>years of experience</p>
                             </div>
                         </div>
                     </div>
@@ -46,10 +46,6 @@ function Home() {
 
                 <div id='speedBannerHolder' className='mt-0 md:-mt-20'>
                     <SpeedBanner />
-                </div>
-
-                <div className='w-85vw'>
-
                 </div>
             </main>
         </>

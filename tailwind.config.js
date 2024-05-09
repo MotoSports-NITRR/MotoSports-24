@@ -72,6 +72,7 @@ export default {
 				barelyBrown: 'rgb(170, 163, 155)',
 				modestBrown: 'rgb(255, 251, 245)',
 				mutedBlack: '#3b3b3b',
+				deepTawny: 'rgb(106, 42, 0)',
       		},
 
 			  screens: {

@@ -1,10 +1,11 @@
 import '../globalStyles.css'
+import aboutDesign from './about.jpg'
 
 function About() {
 
     return (
         <>
-            <h1>about</h1>
+            <img src={aboutDesign} alt="" />
         </>
     )
 }

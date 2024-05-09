@@ -15,12 +15,9 @@ function Home() {
                 requestAnimationFrame(() => {
                     const inner = innerRef.current;
                     if (isScrolling && inner) {
-                        const scrollAmount = window.scrollY * 0.5; // Adjust the scroll speed as needed
-                        const initialOffset = -(
-                            (inner.children.length - 4) * // 3rd last p tag
-                            inner.children[0].offsetWidth
-                        );
-                        inner.style.transform = `translateX(calc(${initialOffset}px + ${scrollAmount}px))`; // Changed to positive value for opposite direction
+                        const scrollAmount = window.scrollY * 0.5;
+                        const initialOffset = -((inner.children.length - 4) * inner.children[0].offsetWidth);
+                        inner.style.transform = `translateX(calc(${initialOffset}px + ${scrollAmount}px))`;
                     }
                     ticking = false;
                 });

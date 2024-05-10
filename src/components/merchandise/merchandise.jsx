@@ -54,7 +54,7 @@ const totalAmount = selectedQuantity * 399; // Assuming the price is 399 per ite
 return (
   <ChakraProvider theme={theme}>
     <Flex justifyContent="center" alignItems="center" minHeight="100vh" style={{
-    background: "linear-gradient(to bottom, #180e04, #f2dfcc)",
+    background: "linear-gradient(to top, #180e04, #f2dfcc)",
     borderRadius: "10px",
     display: "flex",
     flexDirection: "column",

@@ -1,3 +1,5 @@
+import '../globalStyles.css'
+
 function Contact() {
 
     return (

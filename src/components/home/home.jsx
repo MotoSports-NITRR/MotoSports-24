@@ -38,8 +38,8 @@ function Home() {
         <>
             <main className='flex flex-col justify-between items-center bg-modestBrown'>
                 <div id='introDiv' className="w-85vw flex flex-col justify-between items-center lg:flex-row lg:justify-evenly lg:items-center box-border lg:top-32">
-                    <div id='introTextDiv' className='flex flex-col justify-evenly items-center px-6 xsm:px-10 sm:py-2 w-375px xsm:w-450px sm:w-550px md:w-675px lg:w-400px 1.5lg:px-6 1.5lg:py-6 1.5lg:w-475px xl:w-625px 2xl:w-700px h-500'>
-                        <div id='introHeading' className='text-4xl sm:text-5xl xl:text-6xl font-albulaHeavy text-blackbean'>Official <br />
+                    <div id='introTextDiv' className='flex flex-col justify-evenly items-center sm:px-6 sm:py-2 w-full sm:w-550px md:w-full lg:w-400px 1.5lg:px-6 1.5lg:py-6 1.5lg:w-475px xl:w-625px 2xl:w-700px h-500'>
+                        <div id='introHeading' className='w-full text-4xl sm:text-5xl xl:text-6xl font-albulaHeavy text-blackbean'>Official <br />
                             <span className="text-tawny">Motosports Club</span> of <br />
                             <span className="text-tawny">NIT, Raipur</span>
                             <p className='text-base sm:text-xl font-poppins font-medium mt-4 text-mutedBlack'>Unleashing Adrenaline: The Heart-Pounding World of Motorsport!</p>

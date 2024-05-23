@@ -10,12 +10,18 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "framer-motion": "^11.1.9",
+    "@chakra-ui/react": "^2.8.2",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@fancyapps/ui": "^5.0.36",
+    "framer-motion": "^11.2.6",
     "gsap": "^3.12.5",
     "react": "^18.2.0",
     "react-countup": "^6.5.3",
     "react-dom": "^18.2.0",
-    "react-scroll-trigger": "^0.6.14"
+    "react-responsive-carousel": "^3.2.23",
+    "react-scroll-trigger": "^0.6.14",
+    "swiper": "^11.1.3"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",

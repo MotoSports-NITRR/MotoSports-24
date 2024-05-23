@@ -5,7 +5,7 @@ function About() {
 
     return (
         <>
-            <img src={aboutDesign} alt="" />
+            <h1>about</h1>
         </>
     )
 }

@@ -4,6 +4,8 @@ import navbarMenu from '../assets/icons/navbarMenu.png';
 
 function Header() {
     const [showPopup, setShowPopup] = useState(false);
+    const [isScrollingUp, setIsScrollingUp] = useState(true);
+    const [lastScrollPosition, setLastScrollPosition] = useState(0);
     const [hasScrolled, setHasScrolled] = useState(false);
 
     const togglePopup = () => {
@@ -12,12 +14,21 @@ function Header() {
 
     useEffect(() => {
         const handleScroll = () => {
-            const scrollPosition = window.scrollY;
-            if (scrollPosition > 0) {
+            const currentScrollPosition = window.scrollY;
+
+            if (currentScrollPosition > 0) {
                 setHasScrolled(true);
             } else {
                 setHasScrolled(false);
             }
+
+            if (currentScrollPosition > 125 && currentScrollPosition > lastScrollPosition) {
+                setIsScrollingUp(false);
+            } else if (currentScrollPosition < lastScrollPosition || currentScrollPosition <= 175) {
+                setIsScrollingUp(true);
+            }
+
+            setLastScrollPosition(currentScrollPosition);
         };
 
         window.addEventListener('scroll', handleScroll);
@@ -25,18 +36,18 @@ function Header() {
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
-    }, []);
+    }, [lastScrollPosition]);
 
     return (
         <>
-            <header className={`bg-dustyWhite flex justify-center items-center sticky top-0 min-h-32 z-50 transition-all duration-300 ${hasScrolled ? 'shadow-lg' : ''}`}>
+            <header className={`bg-dustyWhite flex justify-center items-center sticky top-0 h-28 sm:min-h-32 z-50 transition-transform duration-300 ${isScrollingUp ? 'transform-none' : '-translate-y-full'} ${hasScrolled ? 'shadow-lg' : ''}`}>
                 <div className="w-85vw box-border">
                     <nav className='flex justify-between items-center min-h-32'>
                         <div className='px-2 py-6 xl:px-10 xl:py-10 flex justify-center items-center'>
                             <a href="/">
-                                <h1 className='hidden md:block font-brushKing text-2xl font-black text-blackbean'>MOTOSPORTS</h1>
-                                <h1 className='md:hidden font-brushKing text-3xl font-black text-blackbean'>MOTO</h1>
-                                <h1 className='mt-3 md:hidden md:mt-0 font-brushKing text-3xl font-black text-blackbean'>SPORTS</h1>
+                                <h1 className='hidden md:block font-brushKing text-xl md:text-2xl font-black text-blackbean'>MOTOSPORTS</h1>
+                                <h1 className='md:hidden font-brushKing text-xl lg:text-3xl font-black text-blackbean'>MOTO</h1>
+                                <h1 className='mt-3 md:hidden md:mt-0 font-brushKing text-xl md:text-3xl font-black text-blackbean'>SPORTS</h1>
                             </a>
                         </div>
 
@@ -98,7 +109,6 @@ function Header() {
                                         
                                         <button className="popup-close mt-4 px-4 py-2 bg-gray-800 text-white rounded-md" onClick={togglePopup}>Close</button>
                                     </ul>
-                                    
                                 </div>
                             </div>
                         )}

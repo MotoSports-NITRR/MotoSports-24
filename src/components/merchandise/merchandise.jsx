@@ -32,7 +32,7 @@ const theme = extendTheme({
     },
 });
   
-const Merch = () => {
+const Merchandise = () => {
     const [selectedSize, setSelectedSize] = useState(null);
     const [selectedQuantity, setSelectedQuantity] = useState(1);
     const [showSizeOptions, setShowSizeOptions] = useState(false);
@@ -138,4 +138,4 @@ const Merch = () => {
     );
 };
   
-export default Merch;
+export default Merchandise;

@@ -1,0 +1,36 @@
+
+.content {
+    /* border: 1px solid #000; */
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+}
+
+.phases .phaseOne {
+    /* border: 1px solid #000; */
+    /* margin: 0; */
+    padding: 0;
+    position: relative;
+}
+
+.phases {
+    background: #05060f;
+    /* border: 1px solid #000; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    margin: 0;
+    position: relative;
+    /* margin: 40px 0; */
+}
+
+.headerPhase {
+    /* background: transparent; */
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    padding-bottom: 0;
+    width: 100%;
+}

@@ -1,0 +1,26 @@
+.bgContain {
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-left: 2px solid #ff4e4e;
+    border-radius: 30px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 450px;
+    margin: 120px 0 !important;
+    padding: 30px;
+    width: 70%;
+}
+
+.phase1 {
+    margin-top: 200px !important;
+}
+
+.roundCover  {
+    align-items: center;
+    /* z-index: -1 !important; */
+}
+
+.roundCover img {
+}

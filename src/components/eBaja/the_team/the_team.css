@@ -1,8 +1,10 @@
 .theTeamPage {
     display: flex;
     padding: 20px 0;
+    margin-top: 100px;
 }
 
 .teamMembers {
     padding: 0 20px;
+    /* height: 100vh; */
 }

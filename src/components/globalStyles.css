@@ -4,9 +4,22 @@
     --black-bean: #2f1000ff;
     --seal-brown: #621b00ff;
     --brown: #945600ff;
-    --dustyWhite: rgb(255, 241, 222);
+    --dustyWhite: #fff1de;
     --barelyBrown: rgb(170, 163, 155);
     --tawny: #c75000ff;
     --deepTawny: rgb(106, 42, 0);
     --modestbrown: rgb(255, 251, 245);
+}
+
+.fade_rule {
+	height: 1px;
+	background-color: #E6E6E6;
+	width: 80%;
+	margin: 0 auto;
+	background-image: linear-gradient(to left , white 2%, #E6E6E6 50%, white 98%);
+	background-image: -o-linear-gradient(to left , white 2%, #E6E6E6 50%, white 98%);
+	background-image: -moz-linear-gradient(to left , white 2%, #E6E6E6 50%, white 98%);
+	background-image: -webkit-linear-gradient(to left , white 2%, #E6E6E6 50%, white 98%);
+	background-image: -ms-linear-gradient(to left , white 2%, #E6E6E6 50%, white 98%);
+	background-image: -webkit-gradient( linear, left bottom, right bottom, color-stop(0.02, white), color-stop(0.5, gray), color-stop(0.98, white) );
 }

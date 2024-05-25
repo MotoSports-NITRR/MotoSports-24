@@ -5,8 +5,7 @@ import { React, useRef, useState, useEffect } from 'react'
 
 function EBaja() {
     const eleRef = useRef(null);
-    const [isInView, setIsInView] = useState(false);
-
+    const [eBajaNavisInView, eBajaNavsetIsInView] = useState(false);
 
     const usePrevious = (value) => {
         const ref = useRef();
@@ -16,10 +15,9 @@ function EBaja() {
         return ref.current;
     };
 
-
     const checkInView = () => {
         const rect = eleRef.current.getBoundingClientRect();
-        setIsInView(
+        eBajaNavsetIsInView(
             rect.top < window.innerHeight && rect.bottom >= 0
         );
     };
@@ -33,25 +31,25 @@ function EBaja() {
             document.removeEventListener("scroll", checkInView);
         };
     }, []);
-    const wasInView = usePrevious(isInView);
+
+    const eBajawasInView = usePrevious(eBajaNavisInView);
 
     useEffect(() => {
-        const phaseHead = document.querySelector(".headerPhase");
-        if (phaseHead) {
-            if (!wasInView && isInView) {
-                // Element has come into view
-                // Do something with the element ...
-                // console.log("Element is in view");
-                phaseHead.style.position = 'absolute';
-                phaseHead.style.top= '0';
-            } else {
-                // console.log("out of view");
-                phaseHead.style.position = 'fixed';
-                phaseHead.style.top = '100px';
-                // console.log(phaseHead);
+        const ebajaNav = document.querySelector('.header')
+        if (ebajaNav) {
+            if (eBajawasInView && !eBajaNavisInView) {
+                ebajaNav.style.position = 'fixed';
+                ebajaNav.style.top = '0';
+                ebajaNav.style.width = '100%';
+            }
+            else {
+                ebajaNav.style.width = '100%';
+                ebajaNav.style.position = 'absolute';
+
             }
         }
-    }, [isInView]);
+
+    }, [eBajaNavisInView]);
 
     return (
         <>

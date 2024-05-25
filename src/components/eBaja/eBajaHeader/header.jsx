@@ -4,7 +4,7 @@ import './header.css'
 
 function Header() {
 
-    const active = document.querySelector(".active")
+    // const active = document.querySelector(".active")
     const eBajaNavItems = document.querySelectorAll(".eBajaNavItems")
 
     const location = useLocation().pathname;

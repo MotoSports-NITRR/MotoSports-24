@@ -9,7 +9,7 @@ function InitializeHeader(...data) {
     
     return (
         <>
-            <div className="initialHeader">
+            <div className={"initialHeader " + data[0].className}>
                 <div className="headerText" style={{"color" : data[0].color}}>
                     {data[0].header}
                 </div>

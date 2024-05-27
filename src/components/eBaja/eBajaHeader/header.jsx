@@ -7,11 +7,19 @@ function Header() {
     // const active = document.querySelector(".active")
     const eBajaNavItems = document.querySelectorAll(".eBajaNavItems")
 
+    function activeRemover() {
+        const active = document.querySelector(".active");
+        if(active){
+            active.classList.remove("active");
+        }
+    }
+
     const location = useLocation().pathname;
     useEffect(() => {
+        activeRemover();
         if (location == "/eBaja") {
             const eBajaNav = document.querySelector(".eBajaNav");
-            eBajaNav.classList.toggle("active")
+            eBajaNav.classList.add("active")
         }
         else if (location == "/eBaja/phases") {
             const phasesNav = document.querySelector(".phasesNav");
@@ -44,9 +52,13 @@ function Header() {
                     <ul>
                         <li><a href="/eBaja/phases" className='font-poppins font-medium phasesNav eBajaNavItems'>Phases</a></li>
                         <li><a href="/eBaja/team" className='font-poppins font-medium teamNav eBajaNavItems'>The_Team</a></li>
-                        <li><a href="/eBaja/partners" className='font-poppins font-medium partnersNav eBajaNavItems'>Partners</a></li>
                         <li><a href="/eBaja/gallery" className='font-poppins font-medium galleryNav eBajaNavItems'>Gallery</a></li>
                     </ul>
+                </div>
+                <div className="indicator">
+                    <span>&#62;</span>
+                    <span>&#62;</span>
+                    <span>&#62;</span>
                 </div>
             </div>
             {/* <span className='hoverBorder'></span> */}

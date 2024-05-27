@@ -1,34 +1,122 @@
-.teamMemberList {}
+.teamMemberList {
+    display: flex;
+    /* align-items: center; */
+    margin-left: 20px;
+    /* overflow: hidden; */
+    overflow-x: scroll;
+    /* border: 1px solid #f52323; */
+    scrollbar-width: none;
+    scrollbar-color: #ac4f4f4f !important;
+}
 
 .teamMemberList ul {
     /* border: 1px solid #000; */
     display: flex;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
+    overflow: hidden;
+    /* gap: 20px; */
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.teamMemberList ul li {
+    padding: 0 20px;
 }
 
 .members {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    justify-content: center;
+    /* gap: 10px; */
+    /* justify-content: center; */
     align-items: center;
+}
+
+.members p {
+    text-align: center;
+    width: 100px;
 }
 
 .member {
     border: 2px solid #6565658e;
     border-radius: 50%;
+    margin: 0 auto;
     padding: 8px;
+    /* width: 100px;
+    height: 100px; */
+    /* z-index: 10; */
 }
 
 .member img {
-    width: 100px;
-    height: 100px;
+    min-width: 100px;
+    max-width: 100px;
+    min-height: 100px;
+    max-height: 100px;
     border: 1px solid #565656;
     border-radius: 50%;
+    transition: all 1s;
+    cursor: pointer;
 }
 
 .memberActive .member {
     border: 2px solid red;
+}
+
+.member img:hover {
+    scale: 1.2;
+    border: 1px solid #ffffff46;
+}
+
+.membersIcon {
+    /* border: 1px solid #000; */
+    /* overflow: hidden; */
+    /* overflow-x: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: none; */
+    /* width: 100px; */
+}
+
+
+
+@media (max-width: 800px) {
+    .theTeamPage {
+        flex-direction: column;
+    }
+
+    .teamMembers {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+}
+
+@media (max-width: 580px) {
+    .teamMemberList {
+        padding: 0;
+        margin: 0;
+
+    }
+}
+
+@media (max-width: 500px) {
+    .member img {
+        min-width: 80px;
+        min-height: 80px;
+    }
+
+    .teamMemberList ul li  {
+        padding: 0 10px !important;
+    }
+    
+    .members p {
+        font-size: 0.9rem;
+        width: 70px;
+    }
+}
+
+@media (max-width: 400px) {
+    .member img {
+        min-width: 65px;
+        min-height: 65px;
+    }
+
 }

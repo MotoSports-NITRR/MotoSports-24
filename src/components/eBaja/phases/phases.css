@@ -1,4 +1,3 @@
-
 .content {
     /* border: 1px solid #000; */
     margin: 0;
@@ -33,4 +32,48 @@
     padding: 50px;
     padding-bottom: 0;
     width: 100%;
+}
+
+@media (max-width: 1200px) {
+    .phases .content {
+        padding-left: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    .phases {
+        margin-top: 40px;
+    }
+
+    .phases .headerText {
+        min-width: auto;
+        font-size: 1.3rem;
+    }
+
+    .phases .initialHeader span {
+        margin-left: 20px;
+    }
+
+    .phases .initialHeader {
+        top: 4.7rem;
+    }
+
+    .content h1 {
+        font-size: 1.12rem;
+    }
+    
+}
+
+@media (max-width: 400px) {
+    .phases .headerPhase {
+        padding: 30px;
+    }
+
+    .phases .headerText {
+        font-size: 1.2rem;
+    }
+
+    .phases .initialHeader span {
+        min-width: 80px;
+    }
 }

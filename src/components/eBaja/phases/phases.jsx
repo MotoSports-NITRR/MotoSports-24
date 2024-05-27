@@ -11,7 +11,7 @@ function Phases() {
         <>
             <div className="phases">
                 <div className="baja headerPhase" >
-                    <InitializeHeader header='PHASES' color='#fff' bdColor="#ff4e4e" className='fixed top-36' />
+                    <InitializeHeader header='PHASES' color='#fff' bdColor="#ff4e4e" className='fixed top-32' />
                 </div>
                 <div className="content">
                     {phaseList.map((phase, index) => (<Phase {...phase} />))}

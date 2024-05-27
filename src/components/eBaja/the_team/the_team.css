@@ -4,7 +4,53 @@
     margin-top: 100px;
 }
 
-.teamMembers {
-    padding: 0 20px;
-    /* height: 100vh; */
+.theTeamPage .headerText {
+    margin-left: 20px;
+}
+
+@media (max-width: 800px) {
+    .theTeamPage {
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 580px) {
+    .theTeamPage {
+        margin-left: 0;
+    }
+
+    .teamInitialHeader {
+        /* margin-left: 10px !important; */
+        padding: 0 10px;
+    }
+
+    .theTeamPage .initialHeader .headerText {
+        font-size: 1.2rem;
+    }
+    .theTeamPage .initialHeader span {
+        margin: 0 10px;
+        min-width: 80px;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .theTeamPage{
+        margin-top: 70px;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .theTeamPage .headerText {
+        font-size: 1rem !important;
+    }
+    
+    .theTeamPage .initialHeader span {
+        min-width: 70px;
+    }
+
+    .teamInitialHeader .headerText {
+        min-width: auto;
+    }
 }

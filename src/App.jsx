@@ -23,7 +23,6 @@ function App() {
 						<Route index element={<EBajaFront/>}/>
 						<Route path="phases" element={<Phases/>} />
 						<Route path="team" element={<The_Team/>} />
-						<Route path="partners" element={<Merchandise/>} />
 						<Route path="gallery" element={<Merchandise/>} />
 					</Route>
 					<Route path="/formulaBharat" element={<FormulaBharat />} />

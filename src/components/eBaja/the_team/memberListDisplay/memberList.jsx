@@ -45,7 +45,7 @@ function MemberList(...data) {
                                 <div className='member'>
                                     <img src={data[0][key].img} />
                                 </div>
-                                {data[0][key].name}
+                                <p>{data[0][key].name}</p>
                             </li>
                         ))}
                     </ul>

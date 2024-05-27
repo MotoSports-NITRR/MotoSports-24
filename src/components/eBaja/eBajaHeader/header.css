@@ -19,7 +19,8 @@
     transition: all 0.1s;
 }
 
-.header>div ul li a:hover , .active {
+.header>div ul li a:hover,
+.active {
     border-bottom: 3px solid red !important;
 }
 
@@ -61,12 +62,82 @@
     width: 1px;
 }
 
-/* .hoverBorder {
-    border-top: 3px solid #ff0000;
-    display: flex;
-    position: absolute;
-    transform: translate(34px);
-    top: 85px;
-    width: 100px;
-    z-index: 5;
-} */
+.indicator {
+    background: transparent;
+}
+
+.indicator span {
+    /* position: absolute; */
+    background: transparent;
+    font-size: 1.2rem;
+    font-weight: 100;
+    opacity: 0;
+    user-select: none;
+}
+
+.indicator span:nth-child(2) {
+    animation-delay: 0.25s;
+}
+
+.indicator span:last-child {
+    animation-delay: 0.5s;
+}
+
+
+@keyframes indicatorAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .indicator span {
+        animation: indicatorAnimation 2s infinite;
+        -webkit-animation: indicatorAnimation 2s infinite;
+    }
+}
+
+@media (max-width: 800px) {
+    .right ul {
+        gap: 0;
+    }
+
+    .right ul li {
+        padding: 0 15px;
+        font-size: 1rem;
+    }
+
+    .left {
+        padding: 0 15px;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .member img {
+        width: 50px !important;
+        height: 50px !important;
+    }
+
+    .header li {
+        /* padding: 0 !important; */
+    }
+
+    .header a {
+        padding: 20px 0 !important;
+        font-size: 0.8rem;
+        font-weight: normal;
+    }
+
+    .header>div ul li a:hover, .active {
+        border-bottom: 2px solid red !important;
+    }
+}

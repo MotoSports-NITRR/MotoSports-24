@@ -1,7 +1,6 @@
-
 .memberDetailExpansion {
     /* border: 1px solid #000; */
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     /* align-items: flex-end; */
     /* margin-left: 300px; */
@@ -16,6 +15,10 @@
     z-index: 1;
 }
 
+.expandedName {
+    letter-spacing: 5px;
+}
+
 .socialDetial {
     letter-spacing: 2px;
 }
@@ -28,6 +31,11 @@
     padding: 20px;
 }
 
+.socialDetial ul {
+    display: flex;
+    flex-direction: column;
+}
+
 .socialDetial ul li {
     /* border: 1px solid #000; */
     /* display: flex; */
@@ -35,6 +43,7 @@
     /* justify-content: center; */
     padding: 10px;
     /* gap: 20px; */
+    width: 250px;
 }
 
 .socialDetial ul a {
@@ -65,6 +74,92 @@
 
 .expansionRight img {
     /* height: auto; */
-    /* width: 50%; */
     max-height: 650px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px 1px #515050;
+}
+
+#AvishDetailed img {
+    box-shadow: none;
+}
+
+/* .expansionRight img */
+
+
+@media (max-width: 800px) {
+    .headMemberExpansion {
+        margin: none;
+        width: 100%;
+    }
+
+    .expandedName {
+        font-size: 2.5rem !important;
+    }
+
+    .expansionRight img {
+        max-height: 300px !important;
+    }
+}
+
+@media (max-width: 580px) {
+    .memberDetailExpansion {
+        height: 120vh;
+    }
+
+    .headMemberExpansion {
+        flex-direction: column;
+        margin: 0 !important;
+        /* align-items: center; */
+    }
+
+    .domainName {
+        font-size: 1.3rem !important;
+    }
+
+    .expandedName {
+        /* font-size: 1.8rem !important; */
+        display: block !important;
+        text-align: center;
+        margin: 1.5rem 0 !important;
+    }
+
+    .expansionLeft {
+        width: 100%;
+    }
+
+    .expansionLeft h1 {
+        width: 100%;
+        /* text-align: center; */
+    }
+
+    .socialDetial ul {
+        flex-direction: row;
+        /* width: 150px; */
+        justify-content: space-between;
+    }
+
+    .socialDetial a {
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        max-width: 150px !important;
+    }
+
+    .socialDetial img {
+        width: 35px !important;
+        height: 35px !important;
+    }
+
+    .expansionRight {
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    .expansionRight img {
+        /* width: 100%; */
+        /* height: auto !important; */
+        max-height: 500px !important;
+    }
 }

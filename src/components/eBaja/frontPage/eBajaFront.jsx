@@ -37,11 +37,15 @@ function EBajaFront() {
                         <div className="objective">
                             <h1 className='font-medium text-xl'>Objective</h1>
                             <p>
-                                The primary objective of BAJA SAEINDIA has always been to develop an understanding in the fresh and curious minds about entering the industrial reign. The purpose is to help the undergraduates enlarge their spectrum in technical and practical approaches, to trigger the prefrontal cortex and increase problem-solving and planning skills, enhance the managing capability, along with core technical knowledge.
+                                <span>
+                                    The primary objective of BAJA SAEINDIA has always been to develop an understanding in the fresh and curious minds about entering the industrial reign. The purpose is to help the undergraduates enlarge their spectrum in technical and practical approaches, to trigger the prefrontal cortex and increase problem-solving and planning skills, enhance the managing capability, along with core technical knowledge.
+                                </span>
                                 <p>
                                     The philosophy hasn’t changed since the event’s birth back in 2007 – the teams still need to build a simple all-terrain vehicle for recreation purposes that are aesthetically and ergonomically sound while still being a fun and durable machine in real-world conditions. This year, the evaluation process of BAJA SAEINDIA is threefold, students have to clear the Virtual Baja preliminary round showcasing their model design, followed by a virtual dynamic event which includes their virtual finalized model, and the physical event, with on-track buggy performance evaluation.
                                 </p>
-                                The buggies are evaluated on various factors such as cost, aesthetics, and the quality of the fabrication, as part of the static evaluation. The business event is further conducted, which exhibits the creativity level and business approach of the teams. There are also many dynamic tests such as acceleration, Braking, maneuverability over all-terrain, to evaluate the manufactured ATV. But none of these tests are more grueling than the endurance race where the drivers and buggies are pushed to their limits till a winner emerges.
+                                <span>
+                                    The buggies are evaluated on various factors such as cost, aesthetics, and the quality of the fabrication, as part of the static evaluation. The business event is further conducted, which exhibits the creativity level and business approach of the teams. There are also many dynamic tests such as acceleration, Braking, maneuverability over all-terrain, to evaluate the manufactured ATV. But none of these tests are more grueling than the endurance race where the drivers and buggies are pushed to their limits till a winner emerges.
+                                </span>
                             </p>
                         </div>
                     </div>

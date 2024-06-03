@@ -20,12 +20,12 @@ function App() {
 			<Header />
 			<Router>
 				<Routes>
-					<Route path="/MotoSports-24/" element={<Home />} />
-					<Route path="/MotoSports-24/eBaja" element={<EBaja />} />
-					<Route path="/MotoSports-24/formulaBharat" element={<FormulaBharat />} />
-					<Route path="/MotoSports-24/merchandise" element={<Merchandise />} />
-					<Route path="/MotoSports-24/about" element={<About />} />
-					<Route path="/MotoSports-24/contact" element={<Contact />} />
+					<Route path="/" element={<Home />} />
+					<Route path="/eBaja" element={<EBaja />} />
+					<Route path="/formulaBharat" element={<FormulaBharat />} />
+					<Route path="/merchandise" element={<Merchandise />} />
+					<Route path="/about" element={<About />} />
+					<Route path="/contact" element={<Contact />} />
 				</Routes>
 			</Router>
 			<Footer />

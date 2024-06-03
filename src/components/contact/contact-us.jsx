@@ -24,9 +24,10 @@ function ContactUs() {
     }
 
     return <>
-        <div className="contact-us w-full flex flex-col justify-evenly lg:px-40 px-0">
-            <p className="text-center font-albulaHeavy sm:text-5xl text-3xl">Contact us</p>
-            <form style={{color:"var(--dustyWhite)"}} onSubmit={handleSubmit} className="flex justify-evenly lg:flex-row flex-col items-center pb-52">
+        <div className="contact-us w-100vw flex flex-col justify-evenly lg:px-40 px-0">
+            <p className="text-center font-albulaHeavy sm:text-5xl text-3xl text-white mb-15">Contact us</p>
+
+            <form style = {{color:"var(--dustyWhite)"}} onSubmit={handleSubmit} className="flex justify-evenly lg:flex-row flex-col items-center pb-52">
                 <div className="flex flex-col justify-start">
                     <div className=" flex items-start flex-col  my-4">
                         <label htmlFor="Name" className="pb-2">Name</label>
@@ -43,6 +44,7 @@ function ContactUs() {
                             name="name"
                             value={details.name} />
                     </div>
+
                     <div className=" flex items-start flex-col my-4">
                         <label htmlFor="Phone" className="pb-2">Phone</label>
                         <input required id="Phone"

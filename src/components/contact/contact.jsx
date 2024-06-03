@@ -10,7 +10,7 @@ import ContactUs from './contact-us';
 function Contact() {
   return (
     <>
-    <div style={{width: "100vw",
+    <div style={{width: "100%",
   backgroundImage:"linear-gradient(var(--dustyWhite),var(--black-bean))"}} className=''>
       <div className=" flex flex-col items-center md:py-28 md:px-40  py-28">
         <div className=" ">

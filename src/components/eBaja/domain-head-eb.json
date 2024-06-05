@@ -1,0 +1,61 @@
+{
+    "Karthik":{
+        "index":"Karthik",
+        "name":"K.S.S. Karthik",
+        "DomainName":"Brakes",
+        "Role":"Domain Head",
+        "img":"/team/Karthik Sai.JPG",
+        "linkedin":"",
+        "insta":"https://www.instagram.com/karthik_sai712"
+    },
+    
+    "Harsh":{
+        "index":"Harsh",
+        "name":"Harsh",
+        "DomainName":"Electrical Powertrain",
+        "Role":"Domain Head",
+        "img":"/team/Harsh Sahu.jpg",
+        "linkedin":"",
+        "insta":""
+    },
+    
+    "Nimesh":{
+        "index":"Nimesh",
+        "name":"Nimesh Kumar Kashyap",
+        "DomainName":"Steering",
+        "Role":"Domain Head",
+        "img":"/team/Nimesh Kashyap.jpg",
+        "linkedin":"",
+        "insta":""
+    },
+
+    "Pratyush":{
+        "index":"Pratyush",
+        "name":"Pratyush Shastri",
+        "DomainName":"Frames",
+        "Role":"Domain Head",
+        "img":"/team/Pratyush Shastri.JPG",
+        "linkedin":"https://www.linkedin.com/in/pratyush-shastri",
+        "insta":"https://www.instagram.com/prat_1220?igsh=MTJ5OXNlc21vMWsxMA=="
+    },
+    
+    "Sarvagya":{
+        "index":"Sarvagya",
+        "name":"Sarvagya Jain",
+        "DomainName":"Electrical Powertrain",
+        "Role":"Domain Head",
+        "img":"/team/Sarvagya Jain.jpg",
+        "linkedin":"https://www.linkedin.com/in/sarvagya-jain-7159b2254/",
+        "insta":"https://www.instagram.com/sarvagyajain2105?igsh=MWE1NmM0bnhoYTVqbw=="
+    },
+
+    "Ritik":{
+        "index":"Ritik",
+        "name":"Ritik Pathak",
+        "DomainName":"Suspension",
+        "Role":"Domain Head",
+        "img":"/team/Ritik Pathak.jpg",
+        "linkedin":"https://www.linkedin.com/in/ritik-pathak-31b865247?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        "insta":"https://www.instagram.com/ritik_gear?igsh=bDYzbW5zaGpuaWds"
+    }
+}

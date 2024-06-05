@@ -37,18 +37,24 @@ function MemberList(...data) {
     }, []);
     return (
         <>
-            <div className="teamMemberList">
+            <div className="teamMemberList flex">
                 <div className="membersIcon">
                     <ul>
                         {Object.keys(data[0]).map((key) => (
                             <li id={data[0][key].index} ref={memIcon} className='members'>
                                 <div className='member'>
-                                    <img src={data[0][key].img} />
+                                    <div className="memberImageContainer" style={{ 'backgroundImage': "url('" + data[0][key].img + "')" }}>
+                                    </div>
                                 </div>
                                 <p>{data[0][key].name}</p>
                             </li>
                         ))}
                     </ul>
+                </div>
+                <div className="iconScrollIndicator indicator">
+                    <span>&#62;</span>
+                    <span>&#62;</span>
+                    <span>&#62;</span>
                 </div>
             </div>
         </>

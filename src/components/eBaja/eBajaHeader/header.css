@@ -1,12 +1,9 @@
 .header {
     background: #f1f1f1;
-    /* border: 1px solid #000; */
     border-top: 1px solid #848484;
     border-bottom: 1px solid #848484;
-    /* color: white; */
     display: flex;
     align-items: center;
-    /* height: 100px; */
     user-select: none;
     z-index: 10;
 }
@@ -23,25 +20,14 @@
 .active {
     border-bottom: 3px solid red !important;
 }
-
-.left {
-    /* border: 1px solid #fc2f2f; */
-    /* border-right: 1px solid #848484; */
-}
-
 .left,
 .right ul {
-    /* border: 1px solid #000; */
-    /* cursor: pointer; */
     display: flex;
     gap: 30px;
-    /* margin: 20px 0; */
 }
 
 .left,
 .right ul li {
-    /* border: 1px solid #000000; */
-    /* display: flex; */
     font-size: 1.1rem;
     font-family: "Exo 2", sans-serif;
     font-weight: 500;
@@ -60,42 +46,6 @@
     border: 1px solid #848484;
     height: 50px;
     width: 1px;
-}
-
-.indicator {
-    background: transparent;
-}
-
-.indicator span {
-    /* position: absolute; */
-    background: transparent;
-    font-size: 1.2rem;
-    font-weight: 100;
-    opacity: 0;
-    user-select: none;
-}
-
-.indicator span:nth-child(2) {
-    animation-delay: 0.25s;
-}
-
-.indicator span:last-child {
-    animation-delay: 0.5s;
-}
-
-
-@keyframes indicatorAnimation {
-    0% {
-        opacity: 0;
-    }
-
-    50% {
-        opacity: 0.7;
-    }
-
-    100% {
-        opacity: 0;
-    }
 }
 
 @media (max-width: 400px) {

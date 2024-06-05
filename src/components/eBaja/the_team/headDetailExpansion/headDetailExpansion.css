@@ -25,6 +25,7 @@
 
 .expansionLeft {
     width: 40%;
+    padding-top: 50px;
 }
 
 .socialDetial h1 {
@@ -98,6 +99,10 @@
 
     .expansionRight img {
         max-height: 300px !important;
+    }
+
+    .memberDetailExpansion {
+        min-height: 60vh;
     }
 }
 

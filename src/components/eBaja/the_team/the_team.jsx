@@ -4,17 +4,11 @@ import './the_team.css'
 import InitializeHeader from '../initialContentHeader/initialHeader'
 import MemberList from './memberListDisplay/memberList';
 import HeadDetailExpansion from './headDetailExpansion/headDetailExpansion';
-import teamMembersList from '../teamMembers.json';
-
+import OtherMembers from './otherMembers/otherMembers';
+import domainHeads from '../domain-head-eb.json'
 
 function The_Team() {
     let temp;
-    // let memberActive = document.querySelector('.memberActive');
-    // console.log(memberActive);
-    // if (memberActive) {
-    //     temp = document.querySelector('#' + memberActive.id + 'Detailed');
-    //     console.log(temp);
-    // }
     useEffect(() => {
         document.querySelectorAll('.members').forEach(member => {
             member.addEventListener('click', async (e) => {
@@ -48,14 +42,20 @@ function The_Team() {
     return (
         <>
             <div className="theTeamPage">
-                <div className="teamInitialHeader">
+                <div className="teamInitialHeader titleHeader">
                     <InitializeHeader header='Domain Heads' />
                 </div>
                 <div className="teamMembers">
-                    <MemberList {...teamMembersList} />
+                    <MemberList {...domainHeads} />
                 </div>
             </div>
-            <HeadDetailExpansion {...teamMembersList} />
+            <HeadDetailExpansion {...domainHeads} />
+            <div className="otherMembers">
+                <div className="othersInitialHeader titleHeader">
+                    <InitializeHeader header = 'Extra Ordinary Members' />
+                </div>
+                <OtherMembers />
+            </div>
         </>
     )
 }

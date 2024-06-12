@@ -4,9 +4,9 @@
 
 .eBajaPage {
     border: 1px solid #00000000;
-    background: linear-gradient(135deg, transparent, #fff1de);
+    /* background: linear-gradient(135deg, #f1f1f1, #fff1de); */
     position: relative;
-    /* height: 100vh; */
+    margin-top: 80px;
     z-index: 2;
 }
 
@@ -28,24 +28,21 @@
 }
 
 .eBajaPage>div {
-    /* border: 1px solid #000; */
-    border-bottom: 1px solid #0000003f;
+    border-bottom: 1px solid #8989893f;
     color: #363636;
-    display: flex;
     font-size: 1.15rem;
-    gap: 80px;
     min-height: 90vh;
-    padding: 100px 60px;
     overflow: hidden;
 }
 
 .bajasae {
     position: relative;
-    overflow: hidden;
-    /* color: ; */
+    padding: 100px 60px;
+    /* overflow: hidden; */
 }
 
 .saeIndia {
+    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px !important;
@@ -53,7 +50,9 @@
 
 .saeCover {
     display: flex;
-    margin-top: 30px;
+    /* margin-top: 50px; */
+    margin: 50px 0;
+    width: 75%;
 }
 
 .frontContent,
@@ -75,16 +74,9 @@
 .contentExpansion {
     display: flex;
     gap: 50px;
-    width: 90%;
+    width: 100%;
     align-items: center;
-}
-
-.contentExpansion .saeContent {
-    width: 50%;
-}
-
-.contentExpansion .imageSpace {
-    width: 50%;
+    position: relative;
 }
 
 .content {
@@ -96,20 +88,55 @@
     padding: 0 50px;
 }
 
-.objective h1{
+.objective h1 {
     margin-top: 35px;
     padding: 10px 0;
 }
 
+@media (min-width: 1000px) {
 
-@media (max-width: 1280px) {
-    .saeIndia {
-        padding: 80px 0 !important;
+    .contentExpansion {
+        /* border: 1px solid #ff0000; */
+        /* padding: 10px; */
+        margin-top: 70px;
     }
 
     .saeContent {
-        /* width: 90%; */
-        padding-left: 30px !important;
+        border-radius: 30px;
+        font-size: 1.3rem;
+        right: 100px;
+        transform: translateY(-50%);
+        top: 50%;
+        padding: 100px;
+        position: absolute;
+        width: 40vw;
+        z-index: 1;
+    }
+
+    .eBajaPage .saeIndia {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px !important;
+        padding: 100px 0;
+    }
+
+    .contentExpansion .imageSpace {
+        width: 100vw;
+        /* position: absolute; */
+        left: 0;
+        top: 0px;
+    }
+
+    .contentExpansion .imageSpace img {
+        width: 100vw;
+    }
+
+
+}
+
+@media (max-width: 1280px) {
+    .saeIndia {
+        /* padding: 80px 0 !important; */
     }
 
     .frontContent span {
@@ -126,8 +153,24 @@
     }
 }
 
+@media (max-width: 1200px) {
+
+    .saeContent {
+        font-size: 1rem;
+        padding: 80px;
+        width: 50vw;
+        /* bottom: 0; */
+        right: 60px;
+    }
+
+    .saeCover {
+        width: 90%;
+        /* border: 1px solid #000; */
+    }
+}
+
 @media (max-width : 1000px) {
-    .saeCover{
+    .saeCover {
         gap: 40px;
         flex-direction: column;
 
@@ -142,9 +185,19 @@
         margin: 0;
     }
 
-    .content,.saeContent p {
+    .content,
+    .saeContent p {
         font-size: 1rem;
     }
+
+    .contentExpansion .saeContent {
+        width: 50%;
+    }
+
+    .contentExpansion .imageSpace {
+        width: 50%;
+    }
+
 
     .contentExpansion {
         width: auto;
@@ -154,6 +207,11 @@
 
     .eBajaPage .initialHeader span {
         margin-left: 0;
+    }
+
+    .saeContent {
+        font-size: 1rem;
+        padding: 20px;
     }
 }
 
@@ -182,6 +240,12 @@
 }
 
 @media (max-width : 580px) {
+    .eBajaPage {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width : 580px) {
     .eBajaPage .headerText {
         font-size: 1.1rem;
     }
@@ -189,8 +253,9 @@
     .frontContent span {
         font-size: 1.25rem;
     }
+
     .eBajaPage .initialHeader span {
-        min-width: 70px  !important;
+        min-width: 70px !important;
     }
 
     .eBajaPage .headerText {
@@ -199,14 +264,16 @@
 }
 
 @media (max-width : 400px) {
+    .eBajaPage {
+        padding: 40px 0;
+    }
+    
     .frontContent span {
         margin: 0 15px;
-        /* font-size: 1rem; */
     }
 
     .saeCover {
         gap: 20px;
-        margin-top: 0;
     }
 
     .sae .headerText {
@@ -224,15 +291,15 @@
     .bajasae {
         padding-left: 5px !important;
         padding-right: 5px !important;
-        /* padding-top: 20px !important; */
     }
 
-    .eBajaPage .content p,.saeContent p {
+    .eBajaPage .content p,
+    .saeContent p {
         padding: 10px;
         font-size: 0.75rem !important;
         line-height: 20px !important;
     }
-    
+
 }
 
 @media (max-width : 300px) {
@@ -243,5 +310,5 @@
     .saeContent p {
         font-size: 0.8rem;
     }
-    
+
 }

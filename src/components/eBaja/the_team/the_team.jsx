@@ -12,8 +12,6 @@ function The_Team() {
     useEffect(() => {
         document.querySelectorAll('.members').forEach(member => {
             member.addEventListener('click', async (e) => {
-
-
                 let memberActive = document.querySelector('.memberActive');
                 if (memberActive) {
                     memberActive.classList.remove('memberActive');
@@ -30,7 +28,6 @@ function The_Team() {
                 }
                 let memberName = "#" + member.id + "Detailed";
                 const opaque = document.querySelector(memberName);
-                // opaque.style.display = "flex";
                 opaque.style.zIndex = "5";
                 opaque.style.opacity = "1";
 
@@ -52,7 +49,7 @@ function The_Team() {
             <HeadDetailExpansion {...domainHeads} />
             <div className="otherMembers">
                 <div className="othersInitialHeader titleHeader">
-                    <InitializeHeader header = 'Extra Ordinary Members' />
+                    <InitializeHeader header='Extra Ordinary Members' />
                 </div>
                 <OtherMembers />
             </div>

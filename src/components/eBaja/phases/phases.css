@@ -25,6 +25,21 @@
     margin-top: 90px;
 }
 
+.phases::before {
+    background-image: url('/abstract.jpg');
+    background-repeat: no-repeat;
+    /* background-repeat: repeat-y; */
+    background-size: cover;
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* transform: rotate(180deg); */
+    opacity: 0.4;
+}
+
 .headerPhase {
     /* background: transparent; */
     display: flex;
@@ -32,6 +47,11 @@
     padding: 50px;
     padding-bottom: 0;
     width: 100%;
+}
+
+footer {
+    position: relative;
+    z-index: 10;
 }
 
 @media (max-width: 1200px) {

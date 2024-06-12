@@ -57,5 +57,14 @@
         "img":"/team/Ritik Pathak.jpg",
         "linkedin":"https://www.linkedin.com/in/ritik-pathak-31b865247?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
         "insta":"https://www.instagram.com/ritik_gear?igsh=bDYzbW5zaGpuaWds"
+    },
+    "Yatharth": {
+        "index": "Yatharth",
+        "name": "Yatharth Verma",
+        "DomainName": "Suspension",
+        "Role": "Captain",
+        "img": "/team/Yatharth Verma.png",
+        "linkedin": "https://www.linkedin.com/in/yatharth-verma-b75a58201/",
+        "insta": "https://www.instagram.com/yatharth__verma?igsh=dnJ6emRzbzNjNng3"
     }
 }

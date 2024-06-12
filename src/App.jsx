@@ -11,6 +11,7 @@ import Contact from './components/contact/contact';
 import Footer from './components/footer/footer';
 import Merchandise from './components/merchandise/merchandise';
 import The_Team from './components/eBaja/the_team/the_team';
+import Gallery from './components/eBaja/gallery/gallery';
 
 function App() {
 	return (
@@ -23,7 +24,7 @@ function App() {
 						<Route index element={<EBajaFront/>}/>
 						<Route path="phases" element={<Phases/>} />
 						<Route path="team" element={<The_Team/>} />
-						<Route path="gallery" element={<Merchandise/>} />
+						<Route path="gallery" element={<Gallery/>} />
 					</Route>
 					<Route path="/formulaBharat" element={<FormulaBharat />} />
 					<Route path="/merchandise" element={<Merchandise />} />

@@ -1,0 +1,5 @@
+.eBajaCover {
+    border: 1px solid #ff0000;
+    position: relative;
+    z-index: 100;
+}

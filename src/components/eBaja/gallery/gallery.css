@@ -1,0 +1,14 @@
+.eBajaGallery {
+    background: #000;
+    margin-top: 65px;
+}
+
+.eBajaGallery ul li {
+    display: flex;
+    justify-content: center;
+}
+
+.eBajaGallery ul img {
+    width: 90vw;
+    margin: 10px 0;
+}

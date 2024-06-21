@@ -1,0 +1,170 @@
+.memberDetailExpansion {
+    /* border: 1px solid #000; */
+    min-height: 100vh;
+    display: flex;
+    /* align-items: flex-end; */
+    /* margin-left: 300px; */
+}
+
+.headMemberExpansion {
+    display: none;
+    opacity: 0;
+    right: 0;
+    padding: 15px;
+    width: 80%;
+    z-index: 1;
+}
+
+.expandedName {
+    letter-spacing: 5px;
+}
+
+.socialDetial {
+    letter-spacing: 2px;
+}
+
+.expansionLeft {
+    width: 40%;
+    padding-top: 50px;
+}
+
+.socialDetial h1 {
+    padding: 20px;
+}
+
+.socialDetial ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.socialDetial ul li {
+    /* border: 1px solid #000; */
+    /* display: flex; */
+    margin-top: 0px;
+    /* justify-content: center; */
+    padding: 10px;
+    /* gap: 20px; */
+    width: 250px;
+}
+
+.socialDetial ul a {
+    align-items: center;
+    /* border: 1px solid #000; */
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 10px; */
+    justify-content: space-between;
+    max-width: 200px;
+}
+
+.socialDetial a:hover {
+    scale: 1.1;
+}
+
+.socialDetial img {
+    width: 50px;
+}
+
+.expansionRight {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    /* border: 1px solid #000; */
+}
+
+.expansionRight img {
+    /* height: auto; */
+    max-height: 650px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px 1px #515050;
+}
+
+#AvishDetailed img {
+    box-shadow: none;
+}
+
+/* .expansionRight img */
+
+
+@media (max-width: 800px) {
+    .headMemberExpansion {
+        margin: none;
+        width: 100%;
+    }
+
+    .expandedName {
+        font-size: 2.5rem !important;
+    }
+
+    .expansionRight img {
+        max-height: 300px !important;
+    }
+
+    .memberDetailExpansion {
+        min-height: 60vh;
+    }
+}
+
+@media (max-width: 580px) {
+    .memberDetailExpansion {
+        height: 120vh;
+    }
+
+    .headMemberExpansion {
+        flex-direction: column;
+        margin: 0 !important;
+        /* align-items: center; */
+    }
+
+    .domainName {
+        font-size: 1.3rem !important;
+    }
+
+    .expandedName {
+        /* font-size: 1.8rem !important; */
+        display: block !important;
+        text-align: center;
+        margin: 1.5rem 0 !important;
+    }
+
+    .expansionLeft {
+        width: 100%;
+    }
+
+    .expansionLeft h1 {
+        width: 100%;
+        /* text-align: center; */
+    }
+
+    .socialDetial ul {
+        flex-direction: row;
+        /* width: 150px; */
+        justify-content: space-between;
+    }
+
+    .socialDetial a {
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        max-width: 150px !important;
+    }
+
+    .socialDetial img {
+        width: 35px !important;
+        height: 35px !important;
+    }
+
+    .expansionRight {
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    .expansionRight img {
+        /* width: 100%; */
+        /* height: auto !important; */
+        max-height: 500px !important;
+    }
+}

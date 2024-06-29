@@ -1,60 +1,45 @@
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect, createElement } from 'react';
 import './memberList.css'
+import HeadDetailExpansion from '../headDetailExpansion/headDetailExpansion';
 
 function MemberList(...data) {
     const memIcon = useRef(null)
     const [count, setCount] = useState(0);
 
+    // console.log(data);
+    const [showExpansion, setShowExpansion] = useState(false); 
     useEffect(() => {
-        const eBajaCover = document.querySelector('.eBajaCover');
+        document.querySelectorAll('.member').forEach((mem) => {
+            mem.addEventListener('mouseover', (e) => {
+                setShowExpansion(true)
+            })
+            mem.addEventListener('mouseout', () => {
+                setShowExpansion(false);
+            })
+        })
 
-        function handleClick() {
-            const membersIcons = document.querySelectorAll('.members');
-            if (count == 0) {
-                membersIcons[0].classList.add('memberActive')
-                setCount(count + 1);
-
-                const memberActive = document.querySelector('.memberActive');
-                const activeMemberId = memberActive.id;
-                const showMembeerDetailed = document.querySelector('#' + activeMemberId + 'Detailed');
-                showMembeerDetailed.style.display = "flex";
-                showMembeerDetailed.style.zIndex = "5";
-                showMembeerDetailed.style.opacity = "1";
-            }
-            eBajaCover.removeEventListener('mouseover', handleClick);
-        }
-
-
-        if (eBajaCover) {
-            eBajaCover.addEventListener('mouseover', handleClick);
-        }
-
-        return () => {
-            if (eBajaCover) {
-                eBajaCover.removeEventListener('mouseover', handleClick);
-            }
-        };
-    }, []);
+    })
+    let headsObj = data[0].domainHead;
     return (
         <>
             <div className="teamMemberList flex">
                 <div className="membersIcon">
                     <ul>
-                        {Object.keys(data[0]).map((key) => (
-                            <li id={data[0][key].index} ref={memIcon} className='members'>
+                        {Object.keys(headsObj).map((key) => (
+                            <li id={headsObj[key].index} ref={memIcon} className='members'>
                                 <div className='member'>
-                                    <div className="memberImageContainer" style={{ 'backgroundImage': "url('" + data[0][key].img + "')" }}>
+                                    <div className="memberImageContainer" style={{ 'backgroundImage': "url('" + headsObj[key].img + "')" }}>
                                     </div>
                                 </div>
-                                <p>{data[0][key].name}</p>
+                                <div className="hoverExpand">
+                                    { showExpansion &&
+                                        <HeadDetailExpansion  {...headsObj[key]} />
+                                    }
+                                </div>
+                                <p>{headsObj[key].name}</p>
                             </li>
                         ))}
                     </ul>
-                </div>
-                <div className="iconScrollIndicator indicator">
-                    <span>&#62;</span>
-                    <span>&#62;</span>
-                    <span>&#62;</span>
                 </div>
             </div>
         </>

@@ -31,7 +31,7 @@
         "name": "Bhupendra Singh Patel",
         "DomainName": "Suspension",
         "Role": "Mentor",
-        "img": "/team/Bhupendra Singh Patel.JPG",
+        "img": "/team/Bhupendra Singh Patel.jpg",
         "linkedin": "https://www.linkedin.com/in/bhupendra-singh-patel-666212233",
         "insta": "https://www.instagram.com/bhupendra.s.p?igsh=MTA1ZnV1b2ZvYmpmdg=="
     },
@@ -62,15 +62,6 @@
         "linkedin": "https://www.linkedin.com/in/shantanu-gouraha-a2828a1b8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
         "insta": "https://www.instagram.com/shantanu02_11?igsh=MW90am9pZm45azg2aA=="
     },
-    "Aman": {
-        "index": "Aman",
-        "name": "Aman Kumar Sharma",
-        "DomainName": "Electrical Powertrain",
-        "Role": "Member",
-        "img": "/team/Aman Sharma.jpg",
-        "linkedin": "https://in.linkedin.com/in/aman-sharma-874a7b252",
-        "insta": "https://drive.google.com/open?id=1XgWqplPDqKx9H-aCnsrbbx6fK39ghoV9"
-    },
     "Amurtya": {
         "index": "Amurtya",
         "name": "Amurtya Rai",
@@ -88,15 +79,6 @@
         "img": "/team/Astha Soni.jpg",
         "linkedin": "https://www.linkedin.com/in/astha-soni-47a5682a6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
         "insta": "https://drive.google.com/open?id=1WkRtqIJbnmfc2exJWk3Wt1FwRhbiFJCu"
-    },
-    "Balpreet": {
-        "index": "Balpreet",
-        "name": "Balpreet Singh Gill",
-        "DomainName": "Electrical Powertrain",
-        "Role": "Member",
-        "img": "/team/Balpreet Singh Gill.jpg",
-        "linkedin": "http://www.linkedin.com/in/balpreet-singh-gill-72374925b",
-        "insta": "https://www.instagram.com/balpreet_singh_10?igsh=MTkyNTN3c3NtZmZpNA=="
     },
     "Chirantan": {
         "index": "Chirantan",
@@ -116,24 +98,6 @@
         "linkedin": "https://www.linkedin.com/in/dhruv-kumar-dutta-914019293?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
         "insta": "https://www.instagram.com/dhruv_d64?igsh=bmVzNjEwNGJkYzFy"
     },
-    "Manish": {
-        "index": "Manish",
-        "name": "Manish Agrawal",
-        "DomainName": "Steering",
-        "Role": "Member",
-        "img": "/team/Manish Agrawal.jpg",
-        "linkedin": "https://www.linkedin.com/in/manish-agrawal-8866372b2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-        "insta": "https://www.instagram.com/_manish_agrawal__?igsh=MXhoaTQwZG1od2dweQ=="
-    },
-    "Luv": {
-        "index": "Luv",
-        "name": "Luv Singh Saluja",
-        "DomainName": "Brakes",
-        "Role": "Member",
-        "img": "/team/LUCKY SALUJA.jpg",
-        "linkedin": "",
-        "insta": "https://www.instagram.com/saluja2904?igsh=cWw3N3dkc2U5aGFo"
-    },
     "Neeraj": {
         "index": "Neeraj",
         "name": "Neeraj Kumar Verma",
@@ -142,15 +106,6 @@
         "img": "/team/Neeraj Verma.jpg",
         "linkedin": "http://www.linkedin.com/in/neeraj-verma-6a35142a0",
         "insta": "https://www.instagram.com/neerv_2023?igsh=NHpnNjlwaXJ2cmEx"
-    },
-    "Abhishek": {
-        "index": "Abhishek",
-        "name": "Abhishek Yadav",
-        "DomainName": "Suspension",
-        "Role": "Member",
-        "img": "/team/Abhishek Yadav.jpg",
-        "linkedin": "",
-        "insta": "https://www.instagram.com/abhishekyadav_nitrr"
     },
     "Sanchit": {
         "index": "Sanchit",
@@ -170,15 +125,6 @@
         "linkedin": "https://www.linkedin.com/in/sathvik-ananthagiri-65a2102b5",
         "insta": "https://www.instagram.com/sathvik_155?igsh=em8yY2psa2Q4dGdw"
     },
-    "Satwik": {
-        "index": "Satwik",
-        "name": "Satwik Gupta",
-        "DomainName": "Frames",
-        "Role": "Member",
-        "img": "/team/Satwik Gupta.jpg",
-        "linkedin": "",
-        "insta": ""
-    },
     "Siddharth": {
         "index": "Siddharth",
         "name": "Siddharth Sharma",
@@ -197,6 +143,87 @@
         "linkedin": "https://www.linkedin.com/in/srihitha-hasini-932229293?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
         "insta": "https://www.instagram.com/_srihitha._.hasini_?igsh=MWk3Z2Z5bzR3NzBteg=="
     },
+    "Aarya": {
+        "index": "Aarya",
+        "name": "Aarya Shastri",
+        "DomainName": "Electrical Powertrain",
+        "Role": "Member",
+        "img": "/team/",
+        "linkedin": "",
+        "insta": "https://www.instagram.com/aarryyaa_._?igsh=MW1rZ20xN2NkYXE4ZQ=="
+    },
+    "Aman": {
+        "index": "Aman",
+        "name": "Aman Kumar Sharma",
+        "DomainName": "Electrical Powertrain",
+        "Role": "Member",
+        "img": "/team/Aman Sharma.jpg",
+        "linkedin": "https://in.linkedin.com/in/aman-sharma-874a7b252",
+        "insta": "https://drive.google.com/open?id=1XgWqplPDqKx9H-aCnsrbbx6fK39ghoV9"
+    },
+    "Argha": {
+        "index": "Argha",
+        "name": "Argha Choudhary",
+        "DomainName": "Suspension",
+        "Role": "Member",
+        "img": "https://drive.google.com/open?id=1KhFh7FIE1xbBQd8dQ6cQFMvwIZzTopRe",
+        "linkedin": "https://www.linkedin.com/in/argha-choudhary-b36191258?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        "insta": "https://www.instagram.com/argha_choudhary?igsh=MWU0N3N6NmExazFpbw=="
+    },
+    "Balpreet": {
+        "index": "Balpreet",
+        "name": "Balpreet Singh Gill",
+        "DomainName": "Electrical Powertrain",
+        "Role": "Member",
+        "img": "/team/Balpreet Singh Gill.jpg",
+        "linkedin": "http://www.linkedin.com/in/balpreet-singh-gill-72374925b",
+        "insta": "https://www.instagram.com/balpreet_singh_10?igsh=MTkyNTN3c3NtZmZpNA=="
+    },
+    "Luv": {
+        "index": "Luv",
+        "name": "Luv Singh Saluja",
+        "DomainName": "Brakes",
+        "Role": "Member",
+        "img": "/team/LUCKY SALUJA.jpg",
+        "linkedin": "",
+        "insta": "https://www.instagram.com/saluja2904?igsh=cWw3N3dkc2U5aGFo"
+    },
+    "Manish": {
+        "index": "Manish",
+        "name": "Manish Agrawal",
+        "DomainName": "Steering",
+        "Role": "Member",
+        "img": "/team/Manish Agrawal.jpg",
+        "linkedin": "https://www.linkedin.com/in/manish-agrawal-8866372b2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        "insta": "https://www.instagram.com/_manish_agrawal__?igsh=MXhoaTQwZG1od2dweQ=="
+    },
+    "Abhishek": {
+        "index": "Abhishek",
+        "name": "Abhishek Yadav",
+        "DomainName": "Suspension",
+        "Role": "Member",
+        "img": "/team/Abhishek Yadav.jpg",
+        "linkedin": "",
+        "insta": "https://www.instagram.com/abhishekyadav_nitrr"
+    },
+    "Satwik": {
+        "index": "Satwik",
+        "name": "Satwik Gupta",
+        "DomainName": "Frames",
+        "Role": "Member",
+        "img": "/team/Satwik Gupta.jpg",
+        "linkedin": "",
+        "insta": ""
+    },
+    "Shivansh": {
+        "index": "Shivansh",
+        "name": "Shivansh Chowhan",
+        "DomainName": "Electrical Powertrain",
+        "Role": "Member",
+        "img": "/team/shivansh chowhan.jpg",
+        "linkedin": "https://www.linkedin.com/in/shivansh-chowhan-b0b372239?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        "insta": "https://www.instagram.com/shivansh_chowhan?igsh=MWxteTRhaTdkNmlicA=="
+    },
     "Prince": {
         "index": "Prince",
         "name": "Prince Kumar Singh",
@@ -214,32 +241,5 @@
         "img": "/team/Ritika Jain.jpg",
         "linkedin": "",
         "insta": ""
-    },
-    "Aarya": {
-        "index": "Aarya",
-        "name": "Aarya Shastri",
-        "DomainName": "Electrical Powertrain",
-        "Role": "Member",
-        "img": "/team/",
-        "linkedin": "",
-        "insta": "https://www.instagram.com/aarryyaa_._?igsh=MW1rZ20xN2NkYXE4ZQ=="
-    },
-    "Argha": {
-        "index": "Argha",
-        "name": "Argha Choudhary",
-        "DomainName": "Suspension",
-        "Role": "Member",
-        "img": "https://drive.google.com/open?id=1KhFh7FIE1xbBQd8dQ6cQFMvwIZzTopRe",
-        "linkedin": "https://www.linkedin.com/in/argha-choudhary-b36191258?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-        "insta": "https://www.instagram.com/argha_choudhary?igsh=MWU0N3N6NmExazFpbw=="
-    },
-    "Shivansh": {
-        "index": "Shivansh",
-        "name": "Shivansh Chowhan",
-        "DomainName": "Electrical Powertrain",
-        "Role": "Member",
-        "img": "/team/shivansh chowhan.jpg",
-        "linkedin": "https://www.linkedin.com/in/shivansh-chowhan-b0b372239?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-        "insta": "https://www.instagram.com/shivansh_chowhan?igsh=MWxteTRhaTdkNmlicA=="
     }
 }

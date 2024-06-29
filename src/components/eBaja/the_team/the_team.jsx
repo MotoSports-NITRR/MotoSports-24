@@ -5,54 +5,55 @@ import InitializeHeader from '../initialContentHeader/initialHeader'
 import MemberList from './memberListDisplay/memberList';
 import HeadDetailExpansion from './headDetailExpansion/headDetailExpansion';
 import OtherMembers from './otherMembers/otherMembers';
-import domainHeads from '../domain-head-eb.json'
 
-function The_Team() {
+
+function The_Team(...data) {
     let temp;
     useEffect(() => {
         document.querySelectorAll('.members').forEach(member => {
-            member.addEventListener('click', async (e) => {
-                let memberActive = document.querySelector('.memberActive');
-                if (memberActive) {
-                    memberActive.classList.remove('memberActive');
-                    temp = document.querySelector('#' + memberActive.id + 'Detailed');
-                    // temp.style.display = "none";
-                    temp.style.opacity = "0";
-                    temp.style.zIndex = "1";
-                    for (let i = 0; i < memberActive.length; i++) {
-                    }
-                }
+            member.addEventListener('mouseenter', async (e) => {
+                // console.log(e.target);
+                
+            })
 
-                if (!member.classList.contains('memberActive')) {
-                    member.classList.add('memberActive')
-                }
-                let memberName = "#" + member.id + "Detailed";
-                const opaque = document.querySelector(memberName);
-                opaque.style.zIndex = "5";
-                opaque.style.opacity = "1";
-
-                temp = opaque
+            member.addEventListener('mouseleave', async (e) => {
+                // let memberActive = document.querySelector('.memberActive');
+                // if (memberActive) {
+                //     memberActive.classList.remove('memberActive');
+                //     temp = document.querySelector('#' + memberActive.id + 'Detailed');
+                //     temp.style.opacity = "0";
+                //     temp.style.zIndex = "1";
+                // }
             })
         })
+        // console.log(document.querySelectorAll('.memberIcon'));
     })
+    // console.log(data);
 
+    const domainHeads = data[0].domainHead;
+    const Members = data[0].otherMembers
+    const elementClass = data[0].element
     return (
         <>
             <div className="theTeamPage">
                 <div className="teamInitialHeader titleHeader">
                     <InitializeHeader header='Domain Heads' />
                 </div>
-                <div className="teamMembers">
-                    <MemberList {...domainHeads} />
-                </div>
+                {domainHeads &&
+                    <div className="teamMembers">
+                        <MemberList domainHead={domainHeads} element={elementClass} />
+                    </div>
+                }
             </div>
-            <HeadDetailExpansion {...domainHeads} />
-            <div className="otherMembers">
+            {/* {domainHeads &&
+                <HeadDetailExpansion {...domainHeads} />
+            } */}
+            {/* <div className="otherMembers">
                 <div className="othersInitialHeader titleHeader">
                     <InitializeHeader header='Extra Ordinary Members' />
                 </div>
-                <OtherMembers />
-            </div>
+                <OtherMembers {...Members}/>
+            </div> */}
         </>
     )
 }

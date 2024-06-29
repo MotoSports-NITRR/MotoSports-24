@@ -1,8 +1,11 @@
 import './otherMembers.css'
-import members from '../../member-eb.json'
 import { useEffect } from 'react';
 
-function OtherMembers() {
+function OtherMembers(...data) {
+
+    const members = data[0]
+    // console.log(data);
+    
     useEffect(() => {
 
         document.querySelectorAll('.individuals').forEach((ele, index) => {

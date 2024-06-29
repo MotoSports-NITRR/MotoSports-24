@@ -1,4 +1,3 @@
-import { color } from '@chakra-ui/react'
 import '../globalStyles.css'
 import './formulaBharat.css'
 

@@ -1,4 +1,3 @@
-import scrollSpeed from 'react-scroll'
 import '../globalStyles.css'
 import './formulaBharat.css'
 

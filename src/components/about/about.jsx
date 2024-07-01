@@ -32,20 +32,20 @@ const teamMembers = {
     { name: "Kundan Rathi", image: "KundanRathi.jpg" }
   ],
   documentation: [
-    { name: "Rahul Kumar Singh (Head)", image: "RahulKumarSingh.jpg" },
+    { name: "Rahul Kumar Singh (Head)", image: "RahulKumarSingh.jpeg" },
     { name: "Gaurab Kumar (Head)", image: "GaurabKumar.jpg" },
     { name: "Prakarsh Gupta", image: "PrakarshGupta.jpg" },
     { name: "Vignesh Gupta", image: "VigneshGupta.jpg" }
   ],
   webDevelopment: [
-    { name: "Sparsh Jaggi (Head)", image: "SparshJaggi.jpg" },
+    { name: "Sparsh Jaggi (Head)", image: "SparshJaggi.jpeg" },
     { name: "Aman Kumar", image: "AmanKumar.jpg" },
     { name: "Ayush Mishra", image: "AyushMishra.jpg" },
     { name: "Leora Saharia", image: "LeoraSaharia.jpg" },
-    { name: "Vivek Verma", image: "VivekVerma.jpg" }
+    { name: "Vivek Verma", image: "VivekVerma.jpeg" }
   ],
   design: [
-    { name: "Mridul Bansal (Head)", image: "MridulBansal.jpg" },
+    { name: "Mridul Bansal (Head)", image: "MridulBansal.jpeg" },
     { name: "Pratibha Sikheriya", image: "PratibhaSikheriya.jpg" },
     { name: "Megha Rathi", image: "MeghaRathi.jpg" },
     { name: "Anshul Wasnik", image: "AnshulWasnik.jpg" },

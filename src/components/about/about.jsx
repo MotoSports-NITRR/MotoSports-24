@@ -49,7 +49,7 @@ const teamMembers = {
     { name: "Pratibha Sikheriya", image: "PratibhaSikheriya.jpg" },
     { name: "Megha Rathi", image: "MeghaRathi.jpg" },
     { name: "Anshul Wasnik", image: "AnshulWasnik.jpg" },
-    { name: "Aman Kumar Sharma", image: "AmanKumarSharma.jpg" }
+    { name: "Aman Kumar Sharma", image: "AmanSharma.jpg" }
   ]
 };
 

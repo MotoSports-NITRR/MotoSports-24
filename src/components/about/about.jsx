@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './about.css';
 
 const backgroundStyle = {
   background: 'linear-gradient(to bottom, #fff1de, #2f1000)',
@@ -16,14 +17,25 @@ const overlayStyle = {
   width: '100%',
   height: '100%',
   zIndex: -1,
-  backgroundImage: 'url("data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'100%25\' height=\'100%25\' viewBox=\'0 0 100 100\'%3E%3Ctext x=\'50%25\' y=\'50%25\' font-size=\'5\' fill=\'%23cccccc\' fill-opacity=\'0.1\' text-anchor=\'middle\' dominant-baseline=\'central\' font-family=\'Arial\'%3EMotorsports%3C/text%3E%3C/svg%3E")',
+  backgroundImage: 'url("Motosports.png")',
   backgroundRepeat: 'repeat',
   opacity: 0.2
 };
 
 const teamMembers = {
   sponsorship: [
-    { name: "Rishi Singh Rajput", image: "RishiSinghRajput.jpg" },
+    { 
+      name: "Rishi Singh Rajput (Head)", 
+      image: "RishiSinghRajput.jpg",
+      instagram: "https://www.instagram.com/shiri_singha/?igsh=MXNlZTY0d3JoNjA0Ng%3D%3D",
+      linkedin: "https://www.linkedin.com/in/rishi-singh-aa5387264?trk=contact-info"
+    },
+    { 
+      name: "Ritik Pathak (Head)", 
+      image: "RitikPathak.jpg",
+      instagram: "https://www.instagram.com/ritik_gear?igsh=bDYzbW5zaGpuaWds",
+      linkedin: "https://www.linkedin.com/in/ritik-pathak-31b865247?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    },
     { name: "Ashish Jangid", image: "AshishJangid.jpg" },
     { name: "Rishabh Bhati", image: "RishabhBhati.jpg" },
     { name: "Shikha Yadav", image: "ShikhaYadav.jpg" },
@@ -32,24 +44,42 @@ const teamMembers = {
     { name: "Kundan Rathi", image: "KundanRathi.jpg" }
   ],
   documentation: [
-    { name: "Rahul Kumar Singh (Head)", image: "RahulKumarSingh.jpg" },
-    { name: "Gaurab Kumar (Head)", image: "GaurabKumar.jpg" },
+    { 
+      name: "Rahul Kumar Singh (Head)", 
+      image: "RahulKumarSingh.jpeg",
+      linkedin: "https://www.linkedin.com/in/rahul-kumar-singh-b88636231?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    },
+    { 
+      name: "Gaurab Kumar (Head)", 
+      image: "GaurabKumar.jpeg",
+      linkedin: "https://linkedin.com/in/gaurav-kumar-b76122251/"
+    },
     { name: "Prakarsh Gupta", image: "PrakarshGupta.jpg" },
-    { name: "Vignesh Gupta", image: "VigneshGupta.jpg" }
+    { name: "Vighnesh Gupta", image: "VighneshGupta.jpg" }
   ],
   webDevelopment: [
-    { name: "Sparsh Jaggi (Head)", image: "SparshJaggi.jpg" },
+    { 
+      name: "Sparsh Jaggi (Head)", 
+      image: "SparshJaggi.jpeg",
+      instagram: "https://www.instagram.com/sparshjaggi?igsh=ZHVpeHNwN2txcnZm&utm_source=qr",
+      linkedin: "https://www.linkedin.com/in/sparsh-jaggi-1aa263257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+    },
     { name: "Aman Kumar", image: "AmanKumar.jpg" },
     { name: "Ayush Mishra", image: "AyushMishra.jpg" },
     { name: "Leora Saharia", image: "LeoraSaharia.jpg" },
-    { name: "Vivek Verma", image: "VivekVerma.jpg" }
+    { name: "Vivek Verma", image: "VivekVerma.jpeg" }
   ],
   design: [
-    { name: "Mridul Bansal (Head)", image: "MridulBansal.jpg" },
+    { 
+      name: "Mridul Bansal (Head)", 
+      image: "MridulBansal.jpeg",
+      instagram: "https://www.instagram.com/mridszx?igsh=MWE0MXUyc29iZnc2dQ==",
+      linkedin: "https://www.linkedin.com/in/mridul-bansal-915b00261?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    },
     { name: "Pratibha Sikheriya", image: "PratibhaSikheriya.jpg" },
     { name: "Megha Rathi", image: "MeghaRathi.jpg" },
     { name: "Anshul Wasnik", image: "AnshulWasnik.jpg" },
-    { name: "Aman Kumar Sharma", image: "AmanKumarSharma.jpg" }
+    { name: "Aman Kumar Sharma", image: "AmanSharma.jpg" }
   ]
 };
 
@@ -79,68 +109,85 @@ function About() {
           
           <section className="meet-the-team text-center mb-20">
             <h1 className="font-albulaHeavy text-5xl text-[#23120B] mt-10">MEET THE TEAM</h1>
+            
+            {/* Sponsorship Section */}
             <div className="team-section mb-10">
               <h2 className="font-albulaHeavy text-3xl text-[#23120B] mt-10">Sponsorship</h2>
               <div className="team-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mt-5">
                 {teamMembers.sponsorship.map((member, index) => (
-                  <div key={index} className="team-member bg-white p-4 rounded-lg shadow-lg">
+                  <div
+                    key={index}
+                    className={`team-member head-container ${member.name.includes('(Head)') ? 'head-hover-effect' : ''}`}
+                  >
                     <img src={`/src/components/assets/images/about/${member.image}`} alt={member.name} className="rounded-full w-32 h-32 mx-auto object-cover"/>
                     <h2 className="font-albulaHeavy text-xl mt-4 text-[#4a2c2a]">{member.name}</h2>
                     <p className="font-albula text-sm text-[#23120B]">Role in Sponsorship</p>
                     <div className="social-links mt-4">
-                      <a href="#" className="mr-2 text-[#5d3a33]"><i className="fab fa-instagram"></i></a>
-                      <a href="#" className="text-[#5d3a33]"><i className="fab fa-linkedin"></i></a>
+                      {member.instagram && <a href={member.instagram} className="mr-2 text-[#5d3a2a]"><i className="fab fa-instagram"></i></a>}
+                      {member.linkedin && <a href={member.linkedin} className="text-[#5d3a2a]"><i className="fab fa-linkedin"></i></a>}
                     </div>
                   </div>
                 ))}
               </div>
             </div>
 
+            {/* Documentation Section */}
             <div className="team-section mb-10">
               <h2 className="font-albulaHeavy text-3xl text-[#23120B] mt-10">Documentation</h2>
               <div className="team-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mt-5">
                 {teamMembers.documentation.map((member, index) => (
-                  <div key={index} className="team-member bg-white p-4 rounded-lg shadow-lg">
+                  <div
+                    key={index}
+                    className={`team-member head-container ${member.name.includes('(Head)') ? 'head-hover-effect' : ''}`}
+                  >
                     <img src={`/src/components/assets/images/about/${member.image}`} alt={member.name} className="rounded-full w-32 h-32 mx-auto object-cover"/>
                     <h2 className="font-albulaHeavy text-xl mt-4 text-[#4a2c2a]">{member.name}</h2>
                     <p className="font-albula text-sm text-[#23120B]">Role in Documentation</p>
                     <div className="social-links mt-4">
-                      <a href="#" className="mr-2 text-[#5d3a33]"><i className="fab fa-instagram"></i></a>
-                      <a href="#" className="text-[#5d3a33]"><i className="fab fa-linkedin"></i></a>
+                      {member.instagram && <a href={member.instagram} className="mr-2 text-[#5d3a2a]"><i className="fab fa-instagram"></i></a>}
+                      {member.linkedin && <a href={member.linkedin} className="text-[#5d3a2a]"><i className="fab fa-linkedin"></i></a>}
                     </div>
                   </div>
                 ))}
               </div>
             </div>
 
+            {/* Web Development Section */}
             <div className="team-section mb-10">
               <h2 className="font-albulaHeavy text-3xl text-[#23120B] mt-10">Web Development</h2>
               <div className="team-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mt-5">
                 {teamMembers.webDevelopment.map((member, index) => (
-                  <div key={index} className="team-member bg-white p-4 rounded-lg shadow-lg">
+                  <div
+                    key={index}
+                    className={`team-member head-container ${member.name.includes('(Head)') ? 'head-hover-effect' : ''}`}
+                  >
                     <img src={`/src/components/assets/images/about/${member.image}`} alt={member.name} className="rounded-full w-32 h-32 mx-auto object-cover"/>
                     <h2 className="font-albulaHeavy text-xl mt-4 text-[#4a2c2a]">{member.name}</h2>
                     <p className="font-albula text-sm text-[#23120B]">Role in Web Development</p>
                     <div className="social-links mt-4">
-                      <a href="#" className="mr-2 text-[#5d3a33]"><i className="fab fa-instagram"></i></a>
-                      <a href="#" className="text-[#5d3a33]"><i className="fab fa-linkedin"></i></a>
+                      {member.instagram && <a href={member.instagram} className="mr-2 text-[#5d3a2a]"><i className="fab fa-instagram"></i></a>}
+                      {member.linkedin && <a href={member.linkedin} className="text-[#5d3a2a]"><i className="fab fa-linkedin"></i></a>}
                     </div>
                   </div>
                 ))}
               </div>
             </div>
 
+            {/* Design Section */}
             <div className="team-section mb-10">
               <h2 className="font-albulaHeavy text-3xl text-[#23120B] mt-10">Design</h2>
               <div className="team-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mt-5">
                 {teamMembers.design.map((member, index) => (
-                  <div key={index} className="team-member bg-white p-4 rounded-lg shadow-lg">
+                  <div
+                    key={index}
+                    className={`team-member head-container ${member.name.includes('(Head)') ? 'head-hover-effect' : ''}`}
+                  >
                     <img src={`/src/components/assets/images/about/${member.image}`} alt={member.name} className="rounded-full w-32 h-32 mx-auto object-cover"/>
                     <h2 className="font-albulaHeavy text-xl mt-4 text-[#4a2c2a]">{member.name}</h2>
-                    <p className="font-albula text-sm text-[#23120B]">Role in Design</p>
+                    <p className="font-albula text-sm text-[#23120B]">Member</p>
                     <div className="social-links mt-4">
-                      <a href="#" className="mr-2 text-[#5d3a33]"><i className="fab fa-instagram"></i></a>
-                      <a href="#" className="text-[#5d3a33]"><i className="fab fa-linkedin"></i></a>
+                      {member.instagram && <a href={member.instagram} className="mr-2 text-[#5d3a2a]"><i className="fab fa-instagram"></i></a>}
+                      {member.linkedin && <a href={member.linkedin} className="text-[#5d3a2a]"><i className="fab fa-linkedin"></i></a>}
                     </div>
                   </div>
                 ))}

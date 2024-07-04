@@ -64,7 +64,7 @@ const teamMembers = {
       instagram: "https://www.instagram.com/sparshjaggi?igsh=ZHVpeHNwN2txcnZm&utm_source=qr",
       linkedin: "https://www.linkedin.com/in/sparsh-jaggi-1aa263257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
     },
-    { name: "Aman Kumar", image: "AmanKumar.jpg" },
+    { name: "Aman Kumar", image: "AmanKumar.JPG" },
     { name: "Ayush Mishra", image: "AyushMishra.jpg" },
     { name: "Leora Saharia", image: "LeoraSaharia.jpg" },
     { name: "Vivek Verma", image: "VivekVerma.jpeg" }

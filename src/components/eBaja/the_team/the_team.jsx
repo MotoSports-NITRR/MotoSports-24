@@ -8,12 +8,11 @@ import OtherMembers from './otherMembers/otherMembers';
 
 
 function The_Team(...data) {
-    let temp;
     useEffect(() => {
         document.querySelectorAll('.members').forEach(member => {
             member.addEventListener('mouseenter', async (e) => {
                 // console.log(e.target);
-                
+
             })
 
             member.addEventListener('mouseleave', async (e) => {
@@ -41,7 +40,7 @@ function The_Team(...data) {
                 </div>
                 {domainHeads &&
                     <div className="teamMembers">
-                        <MemberList domainHead={domainHeads} element={elementClass} />
+                        <MemberList {...domainHeads} />
                     </div>
                 }
             </div>

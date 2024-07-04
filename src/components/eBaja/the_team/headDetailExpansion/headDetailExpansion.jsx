@@ -8,7 +8,7 @@ function HeadDetailExpansion(...data) {
             <div id={data[0].index + "Detailed"} className={"headMemberExpansion flex "}>
                 <div className="expansionLeft">
                     <h1 className='text'><span className='text-2xl font-bold text-red-700 domainName'>{data[0].DomainName + " "}</span> {data[0].Role}</h1>
-                    <h1 className='text-7xl flex flex-wrap my-14 expandedName'>{data[0].name}</h1>
+                    <h1 className='text-4xl flex flex-wrap my-14 expandedName'>{data[0].name}</h1>
                     <div className="socialDetial">
                         <ul className=' aligncenter justify-center'>
                             {data[0].linkedin &&

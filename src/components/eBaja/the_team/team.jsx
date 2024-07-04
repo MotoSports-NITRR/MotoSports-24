@@ -5,7 +5,7 @@ import members from '../member-eb.json'
 function Team() {
     return (
         <>
-            <The_Team domainHead= {domainHeads} otherMembers = {members} element="eBajaCover"/>
+            <The_Team domainHead= {domainHeads} otherMembers = {members}/>
         </>
     )
 }

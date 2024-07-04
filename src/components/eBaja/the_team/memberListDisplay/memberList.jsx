@@ -1,49 +1,96 @@
-import { useState, useRef, useEffect, createElement } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import './memberList.css'
-import HeadDetailExpansion from '../headDetailExpansion/headDetailExpansion';
+import HeadDetailExpansion from '../headDetailExpansion/headDetailExpansion'
 
 function MemberList(...data) {
-    const memIcon = useRef(null)
-    const [count, setCount] = useState(0);
+    const [memberStates, setMemberStates] = useState({});
+    let headsObj = data[0];
 
-    // console.log(data);
-    const [showExpansion, setShowExpansion] = useState(false); 
     useEffect(() => {
-        document.querySelectorAll('.member').forEach((mem) => {
+        const members = document.querySelectorAll('.member');
+        members.forEach((mem) => {
             mem.addEventListener('mouseover', (e) => {
-                setShowExpansion(true)
-            })
-            mem.addEventListener('mouseout', () => {
-                setShowExpansion(false);
-            })
-        })
+                const memberId = e.target.parentNode.id;
+                setMemberStates((prevStates) => ({ ...prevStates, [memberId]: true }));
+                mem.classList.add('hoverDetailsAnimation');
+                const hvElement = mem.querySelector('.hoverExpand')
+                // hvElement.style.opacity = '0.95'
+                if (e.clientX > window.innerWidth / 2) {
+                    hvElement.style.right = window.innerWidth - e.clientX + 'px';
+                    hvElement.style.left = 'auto';
+                }
+                else {
+                    hvElement.style.right = 'auto';
+                    hvElement.style.left = e.clientX + 'px';
+                }
+                hvElement.style.bottom = window.innerHeight/2 + 50 - mem.clientHeight + "px";
+                e.stopPropagation();
+            });
+            mem.addEventListener('mouseout', (e) => {
+                const memberId = e.target.parentNode.id;
+                setMemberStates((prevStates) => ({ ...prevStates, [memberId]: false }));
+                mem.classList.remove('hoverDetailsAnimation');
+                e.stopPropagation();
+            });
+        });
 
-    })
-    let headsObj = data[0].domainHead;
+        // cleanup function to remove event listeners
+        return () => {
+            members.forEach((mem) => {
+                mem.removeEventListener('mouseover', () => { });
+                mem.removeEventListener('mouseout', () => { });
+            });
+        };
+    }, [headsObj]);
+    useEffect(() => {
+        const hoverExpand = document.querySelectorAll('.hoverExpand');
+        hoverExpand.forEach((mem) => {
+            mem.addEventListener('mouseover', (e) => {
+                const memberId = mem.parentNode.id;
+                setMemberStates((prevStates) => ({ ...prevStates, [memberId]: true }));
+                e.stopPropagation()
+
+            });
+            mem.addEventListener('mouseout', (e) => {
+                const memberId = mem.parentNode.id;
+                setMemberStates((prevStates) => ({ ...prevStates, [memberId]: false }));
+                e.stopPropagation()
+            });
+        });
+
+        // Add cleanup function to remove event listeners
+        return () => {
+            hoverExpand.forEach((mem) => {
+                mem.removeEventListener('mouseover', () => { });
+                mem.removeEventListener('mouseout', () => { });
+            });
+        };
+    }, [headsObj]);
+
     return (
         <>
             <div className="teamMemberList flex">
                 <div className="membersIcon">
                     <ul>
                         {Object.keys(headsObj).map((key) => (
-                            <li id={headsObj[key].index} ref={memIcon} className='members'>
-                                <div className='member'>
-                                    <div className="memberImageContainer" style={{ 'backgroundImage': "url('" + headsObj[key].img + "')" }}>
+                            <li className='members'>
+                                <div className='member' id={headsObj[key].index}>
+                                    <div className="memberImageContainer" style={{ backgroundImage: `url('${headsObj[key].img}')` }} />
+                                    <div className="hoverExpand">
+                                        {memberStates[headsObj[key].index] && (
+                                            <HeadDetailExpansion {...headsObj[key]} />
+                                        )}
                                     </div>
                                 </div>
-                                <div className="hoverExpand">
-                                    { showExpansion &&
-                                        <HeadDetailExpansion  {...headsObj[key]} />
-                                    }
-                                </div>
-                                <p>{headsObj[key].name}</p>
+                                <p className='text-2xl'>{headsObj[key].name}</p>
+                                <p className='text-2xl text-red-700'>{headsObj[key].DomainName}</p>
                             </li>
                         ))}
                     </ul>
                 </div>
             </div>
         </>
-    )
+    );
 }
 
 export default MemberList;

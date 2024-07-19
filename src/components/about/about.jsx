@@ -89,24 +89,30 @@ function About() {
       <div className="about-page" style={backgroundStyle}>
         <div style={overlayStyle}></div>
         <div className="container mx-auto px-4 relative">
-          <section className="who-are-we text-center mb-20">
-            <h1 className="font-albulaHeavy text-5xl text-[#23120B] mt-10">WHO ARE WE?</h1>
-            <p className="font-albula text-lg text-[#5d3a33] mt-5 mx-auto w-3/5">
-              Motorsports is a dynamic and innovative club dedicated to pushing the boundaries of automotive technology and competitive racing. Our club has a track record of excellence, actively participating in a range of competitions where we showcase our skills and passion for motorsports. Through our commitment to excellence and state-of-the-art technologies, we have established ourselves as leaders within the Indian automotive sector. NIT Raipur Motorsports provides a platform for students to pursue their passions and demonstrate their abilities on a broader stage. Join us and experience the thrill of Motorsports at NIT Raipur!
-            </p>
-          </section>
-          
-          <section className="what-do-we-do text-center mb-20">
-            <h1 className="font-albulaHeavy text-5xl text-[#23120B] mt-10">WHAT DO WE DO?</h1>
-            <p className="font-albula text-lg text-[#5d3a33] mt-5 mx-auto w-3/5">
-              We, at NIT Raipur Motorsports, are a dedicated team of over 85 members who devote our time and expertise to creating robust and durable cars that outperform the competition. Our club is actively involved in two prestigious races eBaja and Formula Bharat, where we showcase our innovation, engineering prowess, and teamwork. Through rigorous testing, meticulous design processes, and a relentless pursuit of excellence, we push the boundaries of what’s possible in the realm of Motorsports. Join us on this exciting journey of innovation and competition!
-            </p>
-            <div className="mt-10">
-              <Link to="/eBaja" className="btn bg-[#e07b39] text-white py-2 px-4 rounded-full mr-4 hover:bg-[#4a2c2a]">eBaja</Link>
-              <Link to="/formulaBharat" className="btn bg-[#e07b39] text-white py-2 px-4 rounded-full mr-4 hover:bg-[#4a2c2a]">f - Bharat</Link>
-            </div>
-          </section>
-          
+        <section className="who-are-we text-center mb-64 pb-64 flex flex-col items-center">
+  <h1 className="font-albulaHeavy text-5xl text-[#23120B] mt-10">WHO ARE WE?</h1>
+  <p className="font-albula text-lg text-[#5d3a33] mt-5 mx-auto w-3/5">
+    Motorsports is a dynamic and innovative club dedicated to pushing the boundaries of automotive technology and competitive racing. Our club has a track record of excellence, actively participating in a range of competitions where we showcase our skills and passion for motorsports. Through our commitment to excellence and state-of-the-art technologies, we have established ourselves as leaders within the Indian automotive sector. NIT Raipur Motorsports provides a platform for students to pursue their passions and demonstrate their abilities on a broader stage. Join us and experience the thrill of Motorsports at NIT Raipur!
+  </p>
+</section>
+
+<section className="what-do-we-do text-center mb-32 pb-32">
+  <h1 className="font-albulaHeavy text-5xl text-[#23120B] mt-10">WHAT DO WE DO?</h1>
+  <p className="font-albula text-lg text-[#5d3a33] mt-5 mx-auto w-3/5">
+    We, at NIT Raipur Motorsports, are a dedicated team of over 85 members who devote our time and expertise to creating robust and durable cars that outperform the competition. Our club is actively involved in two prestigious races eBaja and Formula Bharat, where we showcase our innovation, engineering prowess, and teamwork. Through rigorous testing, meticulous design processes, and a relentless pursuit of excellence, we push the boundaries of what’s possible in the realm of Motorsports. Join us on this exciting journey of innovation and competition!
+  </p>
+  <div className="mt-10">
+    <h2 className="font-albulaHeavy text-3xl text-[#23120B] mt-5 mb-5">
+      Know more about
+    </h2>
+    <div className="flex justify-center space-x-4">
+      <Link to="/eBaja" className="btn bg-[#e07b39] text-white py-2 px-4 rounded-full hover:bg-[#4a2c2a] transition-colors duration-300">eBaja</Link>
+      <Link to="/formulaBharat" className="btn bg-[#e07b39] text-white py-2 px-4 rounded-full hover:bg-[#4a2c2a] transition-colors duration-300">f - Bharat</Link>
+    </div>
+  </div>
+</section>
+
+
           <section className="meet-the-team text-center mb-20">
             <h1 className="font-albulaHeavy text-5xl text-[#23120B] mt-10">MEET THE TEAM</h1>
             

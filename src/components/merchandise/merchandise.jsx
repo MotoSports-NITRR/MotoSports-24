@@ -16,8 +16,6 @@ import {
 } from "@chakra-ui/react";
 
 import React, { useState } from "react";
-  
-  
 const theme = extendTheme({
     colors: {
         brand: {
@@ -31,7 +29,7 @@ const theme = extendTheme({
         },
     },
 });
-  
+
 const Merchandise = () => {
     const [selectedSize, setSelectedSize] = useState(null);
     const [selectedQuantity, setSelectedQuantity] = useState(1);
@@ -39,18 +37,17 @@ const Merchandise = () => {
     const [showQuantityOptions, setShowQuantityOptions] = useState(false);
     const sizeOptions = ["XS", "S", "M", "L", "XL", "XXL"];
     const quantityOptions = [...Array(6).keys()].map((i) => i + 1);
-    
+
     const handleSizeClick = () => {
         setShowSizeOptions(!showSizeOptions);
         setShowQuantityOptions(false);
     };
-    
+
     const handleQuantityClick = () => {
         setShowQuantityOptions(!showQuantityOptions);
         setShowSizeOptions(false);
     };
-    
-    
+
     const totalAmount = selectedQuantity * 399;
 
     return (
@@ -62,16 +59,16 @@ const Merchandise = () => {
                     flexDirection: "column",
                     alignItems: "center",
                 }}>
-                
-                    <ChakraCard maxW="800px" borderWidth="0px" borderRadius="20px" overflow="hidden" backgroundColor={"whitesmoke"} boxShadow="md">
+
+                    <ChakraCard maxW="800px" borderWidth="0px" borderRadius="20px" overflow="hidden" backgroundColor={"linear-gradient(to bottom, #fff1de, #2f1000ff)"} boxShadow="md">
                         <CardBody>
                             <Flex>
                                 <Box flex="1" pr="5">
-                                    <Image src="https://hourscollection.com/cdn/shop/files/Brown-Blank2_4_800x.png?v=1702845882" alt="Brown hoodie" borderRadius="lg" h="500px" maxH="400px" w="600px" maxW="300px" />
+                                    <Image src="https://hourscollection.com/cdn/shop/files/Brown-Blank2_4_800x.png?v=1702845882" alt="Brown hoodie" borderRadius="lg" h="900px" maxH="400px" w="900px" maxW="400px" />
                                 </Box>
 
                                 <Box flex="4">
-                                    <Stack spacing="5">
+                                    <Stack spacing="7">
                                         <Heading size="md" color="brand.darkCoffee"><span className="font-albulaHeavy text-2xl">MotoSports Merch</span></Heading>
 
                                         <Text color="brand.darkCoffee" className="font-albula -mt-2">
@@ -80,7 +77,7 @@ const Merchandise = () => {
                                             your ticket to being fantastic!
                                         </Text>
 
-                                        <Text color="brand.darkCoffee" fontSize="1xl" fontWeight={650}><span className="font-albulaMedium">399/-</span></Text>
+                                        <Text color="brand.darkCoffee" fontSize="3xl" fontWeight={650}><span className="font-albulaMedium">399/-</span></Text>
 
                                         <Button onClick={handleSizeClick} colorScheme="brand.darkCoffee" bg="brand.darkCoffee" _hover={{ bg: "brand.caramel" }} fontFamily="albula">
                                             {selectedSize ? `Size: ${selectedSize}` : "Select Size"}
@@ -89,7 +86,7 @@ const Merchandise = () => {
                                         {showSizeOptions && (
                                             <ButtonGroup spacing="1" mt="1">
                                                 {sizeOptions.map((size) => (
-                                                    <Button key={size} onClick={() => { setSelectedSize(size); setShowSizeOptions(false); }} color="whitesmoke" bg="brand.darkCoffee" _hover={{ bg: "brand.caramel" }} >
+                                                    <Button key={size} onClick={() => { setSelectedSize(size); setShowSizeOptions(false); }} color="whitesmoke" bg="brand.darkCoffee" _hover={{ bg: "brand.caramel" }}>
                                                         {size}
                                                     </Button>
                                                 ))}
@@ -98,12 +95,12 @@ const Merchandise = () => {
 
                                         <Button onClick={handleQuantityClick} variant="solid" colorScheme="brand.darkCoffee" bg="brand.darkCoffee" _hover={{ bg: "brand.caramel" }} fontFamily="albula">
                                             {selectedQuantity
-                                            ? `Quantity: ${selectedQuantity}`
-                                            : "Select Quantity"}
+                                                ? `Quantity: ${selectedQuantity}`
+                                                : "Select Quantity"}
                                         </Button>
 
                                         {showQuantityOptions && (
-                                            <ButtonGroup spacing="1" mt="1">
+                                            <ButtonGroup spacing="3" mt="3">
                                                 {quantityOptions.map((quantity) => (
                                                     <Button key={quantity} onClick={() => { setSelectedQuantity(quantity); setShowQuantityOptions(false); }} color="whitesmoke" bg="brand.darkCoffee" _hover={{ bg: "brand.caramel" }}>
                                                         {quantity}
@@ -116,11 +113,9 @@ const Merchandise = () => {
                                 </Box>
                             </Flex>
                         </CardBody>
-
                         <Divider />
-
                         <CardFooter justifyContent="center">
-                            <ButtonGroup spacing="2">
+                            <ButtonGroup spacing="5">
                                 <Button variant="solid" colorScheme="brand.darkCoffee" bg="brand.darkCoffee" _hover={{ bg: "brand.caramel" }} fontFamily="albula">
                                     Buy now
                                 </Button>
@@ -130,12 +125,11 @@ const Merchandise = () => {
                                 </Button>
                             </ButtonGroup>
                         </CardFooter>
-
                     </ChakraCard>
                 </Flex>
             </ChakraProvider>
         </div>
     );
 };
-  
+
 export default Merchandise;

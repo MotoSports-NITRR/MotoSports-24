@@ -61,7 +61,7 @@ const Timeline=({events})=>{
         <>
             <div className="flex ">
                     <div className="flex">
-                        <img src="./pics/atv.png" alt="" className='img'/>
+                        <img src=".\src\components\eBaja\pics\atv.png" alt="" className='img'/>
                     </div>
                     <div className="flex flex-col gap-y-3 w-full my-4">
 
@@ -151,7 +151,7 @@ function Ourcar({events}) {
                         <Circle />
                     </div>
 
-                    <div className="flex"><img src="./src/pics/ebajacar2.png" alt="" className='img2'/></div>
+                    <div className="flex"><img src=".\src\components\eBaja\pics\ebajacar2.png" alt="" className='img2'/></div>
                 </div>
         </div>
     )
@@ -721,7 +721,7 @@ const data=[
   {
       name:"K. S. S. Karthik",
       desig:"Domain Head",
-      img:"./src/pics/karthik.JPG",
+      img:"./src/components/eBaja/pics/karthik.JPG",
       insta:"https://www.instagram.com/karthik_sai712",
       linkedin:""
   },
@@ -732,21 +732,21 @@ const data3 = [
 
       name:"Sanchit Singh",
       desig:"Treasurer",
-      img:"./src/pics/treasurer.jpg",
+      img:"./src/components/eBaja/pics/treasurer.jpg",
       insta:"https://www.instagram.com/singhsanchit42?igsh=bDJ4YW1iNnFxY3Z0",
       linkedin:"https://www.linkedin.com/in/sanchit-singh-011924266?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
   },
   {
       name:"Gaurab Ray",
       desig:"Vice Captain / Co-driver",
-      img:"./src/pics/vice.JPEG",
+      img:"./src/components/eBaja/pics/vice.JPEG",
       insta:"https://www.instagram.com/24raygaurab?igsh=bmU0MnptdmwxdXFo",
       linkedin:"https://www.linkedin.com/in/gaurab-ray-504a8526b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
   },
   {
       name:"Mridul Bansal",
       desig:"Member",
-      img:"./src/pics/mridul.jpeg",
+      img:"./src/components/eBaja/pics/mridul.jpeg",
       insta:"",
       linkedin:""
   }
@@ -757,14 +757,14 @@ const datacv=[
   {
       name:"Ajay Kashyap",
       desig:"Vice Captain",
-      img:"./src/pics/vice3.jpg",
+      img:"./src/components/eBaja/pics/vice3.jpg",
       insta:"",
       linkedin:"https://www.linkedin.com/in/ajaykashyap92025?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
   },
   {
       name:"Vaishnavi Padole",
       desig:"Member",
-      img:"src/pics/vaishnavi.jpg",
+      img:"./src/components/eBaja/pics/vaishnavi.jpg",
       insta:"",
       linkedin:"https://www.linkedin.com/in/vaishnavi-padole-b41ab0250"
   }
@@ -776,7 +776,7 @@ const dataev=[
   {
       name:"Sarvagya Jain",
       desig:"Domain Head",
-      img:"./src/pics/sarvagya.jpg",
+      img:"./src/components/eBaja/pics/sarvagya.jpg",
       insta:"https://www.instagram.com/sarvagyajain2105?igsh=MWE1NmM0bnhoYTVqbw==",
       linkedin:"https://www.linkedin.com/in/sarvagya-jain-7159b2254/"
   }
@@ -787,14 +787,14 @@ const data2ev=[
   {
       name:"Balpreet",
       desig:"Member",
-      img:"./src/pics/balpreet.jpg",
+      img:"./src/components/eBaja/pics/balpreet.jpg",
       insta:"https://www.instagram.com/balpreet_singh_10?igsh=MTkyNTN3c3NtZmZpNA==",
       linkedin:"http://www.linkedin.com/in/balpreet-singh-gill-72374925b"
   },
   {
       name:"Shivansh",
       desig:"Member",
-      img:"./src/pics/shivansh.jpg",
+      img:"./src/components/eBaja/pics/shivansh.jpg",
       insta:"https://www.instagram.com/shivansh_chowhan?igsh=MWxteTRhaTdkNmlicA==",
       linkedin:"https://www.linkedin.com/in/shivansh-chowhan-b0b372239?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
   }
@@ -806,7 +806,7 @@ const datasteer=[
   {
       name:"Nimesh Kashyap",
       desig:"Domain Head",
-      img:"./src/pics/nimesh.jpeg",
+      img:"./src/components/eBaja/pics/nimesh.jpeg",
       insta:"",
       linkedin:"https://www.linkedin.com/in/nimesh-kumar-kashyap-1b0196261/"
   },
@@ -816,21 +816,21 @@ const data2steer=[
   {
       name:"Astha Soni",
       desig:"Member",
-      img:"./src/pics/astha.jpg",
+      img:"./src/components/eBaja/pics/astha.jpg",
       insta:"https://www.instagram.com/princyprincy_astha?utm_source=qr&igsh=MW5lZWtxemtvOXJ0aA==",
       linkedin:"https://www.linkedin.com/in/astha-soni-47a5682a6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
   },
   {
       name:"Chirantan",
       desig:"Member",
-      img:"./src/pics/chirantan.jpg",
+      img:"./src/components/eBaja/pics/chirantan.jpg",
       insta:"https://www.instagram.com/___dev__sharma__?igsh=MTlmdXA2NmFrdjQy",
       linkedin:"https://www.linkedin.com/in/chirantan-dev-sharma-42b6252ab"
   },
   {
       name:"Utkarsh Nashine",
       desig:"Member",
-      img:"./src/pics/utkarsh.jpeg",
+      img:"./src/components/eBaja/pics/chirantan.jpg",
       insta:"",
       linkedin:""
   }
@@ -843,7 +843,7 @@ const datafr=[
   {
       name:"Pratyush Shastri",
       desig:"Domain Head",
-      img:"./src/pics/pratyush.jpg",
+      img:"./src/components/eBaja/pics/pratyush.jpg",
       insta:"https://www.instagram.com/prat_1220?igsh=MTJ5OXNlc21vMWsxMA==",
       linkedin:"https://www.linkedin.com/in/pratyush-shastri"
   }
@@ -853,7 +853,7 @@ const data2fr=[
   {
       name:"Dhruv Dutta",
       desig:"Member",
-      img:"./src/pics/dhruv.jpg",
+      img:"./src/components/eBaja/pics/dhruv.jpg",
       insta:"https://www.instagram.com/dhruv_d64?igsh=bmVzNjEwNGJkYzFy",
       linkedin:"https://www.linkedin.com/in/dhruv-kumar-dutta-914019293?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
   },
@@ -861,14 +861,14 @@ const data2fr=[
   
       name:"Pratik Vats",
       desig:"Member",
-      img:"./src/pics/pratik.jpeg",
+      img:"./src/components/eBaja/pics/pratik.jpeg",
       insta:"https://www.linkedin.com/in/pratik-vats-a354ab294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       linkedin:"https://www.linkedin.com/in/pratik-vats-a354ab294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
   },
   {
       name:"Shantanu N K",
       desig:"Member",
-      img:"./src/pics/shantanu.png",
+      img:"./src/components/eBaja/pics/shantanu.png",
       insta:"https://www.instagram.com/skc40/",
       linkedin:"https://www.linkedin.com/in/shantanu-n-k-choudhury/"
   }
@@ -880,7 +880,7 @@ const datasus=[
   {
       name:"Ritik Pathak",
       desig:"Domain Head",
-      img:"./src/pics/ritik.jpg",
+      img:"./src/components/eBaja/pics/ritik.jpg",
       insta:"https://www.instagram.com/ritik_gear?igsh=bDYzbW5zaGpuaWds",
       linkedin:"https://www.linkedin.com/in/ritik-pathak-31b865247?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
   }
@@ -889,14 +889,14 @@ const data2sus=[
   {
       name:"Yatharth",
       desig:"Member",
-      img:"./src/pics/yatharth.jpeg",
+      img:"./src/components/eBaja/pics/yatharth.png",
       insta:"https://www.instagram.com/yatharth__verma?igsh=dnJ6emRzbzNjNng3",
       linkedin:"https://www.linkedin.com/in/yatharth-verma-b75a58201/"
   },
   {
       name:"Argha",
       desig:"Member",
-      img:"./src/pics/argha.JPG",
+      img:"./src/components/eBaja/pics/argha.JPG",
       insta:"https://www.instagram.com/argha_choudhary?igsh=MWU0N3N6NmExazFpbw==",
       linkedin:"https://www.linkedin.com/in/argha-choudhary-b36191258?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
   }
@@ -908,21 +908,21 @@ const datamen=[
   {
       name:"Shaili Mishra",
       desig:"Mentor",
-      img:"./src/pics/shaili.JPG",
+      img:"./src/components/eBaja/pics/shaili.JPG",
       insta:"https://www.instagram.com/shailimishra22?utm_source=qr&igsh=cXBjOHg2eG94c2Vp",
       linkedin:"https://www.linkedin.com/in/shaili-mishra-358b2322b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
   },
   {
       name:"Bhupendra Singh",
       desig:"Mentor",
-      img:"./src/pics/bhupendra.JPG",
+      img:"./src/components/eBaja/pics/bhupendra.JPG",
       insta:"https://www.instagram.com/bhupendra.s.p?igsh=MTA1ZnV1b2ZvYmpmdg==",
       linkedin:"https://www.linkedin.com/in/bhupendra-singh-patel-666212233"
   },
   {
       name:"Ekant Sahu",
       desig:"Mentor",
-      img:"./src/pics/ekant.jpeg",
+      img:"./src/components/eBaja/pics/ekant.jpeg",
       insta:"https://www.instagram.com/_.lonely_coder._?igsh=aDNpYXY5ZGM3ZDhv",
       linkedin:"https://www.linkedin.com/in/ekant-sahu/"
   }
@@ -931,21 +931,21 @@ const data2men=[
   {
       name:"Harsh",
       desig:"Mentor",
-      img:"./src/pics/harsh.JPG",
+      img:"./src/components/eBaja/pics/harsh.JPG",
       insta:"https://www.instagram.com/",
       linkedin:"https://www.linkedin.com/feed/"
   },
   {
       name:"Piyush Kumar",
       desig:"Mentor",
-      img:"./src/pics/piyush.JPEG",
+      img:"./src/components/eBaja/pics/piyush.JPEG",
       insta:"https://www.instagram.com/p.i.y.y.u.s.h_kmr?igsh=MWF4ZHl6eGp0ZTkyeQ==",
       linkedin:"https://www.linkedin.com/in/piyush-kumar-796513297?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
   },
   {
       name:"Bhavnesh Rai",
       desig:"Mentor",
-      img:"./src/pics/bhavnesh.JPG",
+      img:"./src/components/eBaja/pics/bhavnesh.JPG",
       insta:"https://www.instagram.com/bhavnesh.rai?igsh=bXJpaWc3cXU2c3h4",
       linkedin:"http://linkedin.com/in/bhavnesh-rai-4b4712273"
   }
@@ -957,7 +957,7 @@ const dataimg = [
   {
       name:"Yatharth Verma",
       desig:"Captain",
-      img:"./src/pics/yatharth.jpeg",
+      img:"./src/components/eBaja/pics/yatharth.jpeg",
       insta:"https://www.instagram.com/yatharth__verma?igsh=dnJ6emRzbzNjNng3",
       linkedin:"https://www.linkedin.com/in/yatharth-verma-b75a58201/"
   },
@@ -965,7 +965,7 @@ const dataimg = [
       key: '2',
       name: 'Gaurab Ray',
       desig: 'Vice-Captain / Co-driver',
-      img: "./src/pics/vice.jpeg",
+      img: "./src/components/eBaja/pics/vice.jpeg",
       insta: 'https://www.instagram.com/24raygaurab?igsh=bmU0MnptdmwxdXFo',
       linkedin: 'https://www.linkedin.com/in/gaurab-ray-504a8526b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
 
@@ -974,9 +974,9 @@ const dataimg = [
       key: '3',
       name: 'Sanchit Singh',
       desig: 'Treasurer',
-      img: "./src/pics/treasurer.jpg",
+      img: "./src/components/eBaja/pics/treasurer.jpg",
       insta: 'https://www.instagram.com/singhsanchit42?igsh=bDJ4YW1iNnFxY3Z0',
-      linkedin: "./src/pics/treasurer.jpg"
+      linkedin: ".\src\components\eBaja\pics\treasurer.jpg"
 
   }
 ]

@@ -7,7 +7,7 @@ const backgroundStyle = {
   position: 'relative',
   overflow: 'hidden',
   zIndex: 0,
-  padding: '50px 0'
+  padding: '50px 0',
 };
 
 const overlayStyle = {
@@ -19,7 +19,7 @@ const overlayStyle = {
   zIndex: -1,
   backgroundImage: 'url("Motosports.png")',
   backgroundRepeat: 'repeat',
-  opacity: 0.2
+  opacity: 0.2,
 };
 
 const teamMembers = {
@@ -83,126 +83,169 @@ const teamMembers = {
   ]
 };
 
-function About() {
-  return (
-    <>
-      <div className="about-page" style={backgroundStyle}>
-        <div style={overlayStyle}></div>
-        <div className="container mx-auto px-4 relative">
-        <section className="who-are-we text-center mb-64 pb-64 flex flex-col items-center">
-  <h1 className="font-albulaHeavy text-5xl text-[#23120B] mt-10">WHO ARE WE?</h1>
-  <p className="font-albula text-lg text-[#5d3a33] mt-5 mx-auto w-3/5">
-    Motorsports is a dynamic and innovative club dedicated to pushing the boundaries of automotive technology and competitive racing. Our club has a track record of excellence, actively participating in a range of competitions where we showcase our skills and passion for motorsports. Through our commitment to excellence and state-of-the-art technologies, we have established ourselves as leaders within the Indian automotive sector. NIT Raipur Motorsports provides a platform for students to pursue their passions and demonstrate their abilities on a broader stage. Join us and experience the thrill of Motorsports at NIT Raipur!
-  </p>
-</section>
-
-<section className="what-do-we-do text-center mb-32 pb-32">
-  <h1 className="font-albulaHeavy text-5xl text-[#23120B] mt-10">WHAT DO WE DO?</h1>
-  <p className="font-albula text-lg text-[#5d3a33] mt-5 mx-auto w-3/5">
-    We, at NIT Raipur Motorsports, are a dedicated team of over 85 members who devote our time and expertise to creating robust and durable cars that outperform the competition. Our club is actively involved in two prestigious races eBaja and Formula Bharat, where we showcase our innovation, engineering prowess, and teamwork. Through rigorous testing, meticulous design processes, and a relentless pursuit of excellence, we push the boundaries of what’s possible in the realm of Motorsports. Join us on this exciting journey of innovation and competition!
-  </p>
-  <div className="mt-10">
-    <h2 className="font-albulaHeavy text-3xl text-[#23120B] mt-5 mb-5">
-      Know more about
-    </h2>
-    <div className="flex justify-center space-x-4">
-      <Link to="/eBaja" className="btn bg-[#e07b39] text-white py-2 px-4 rounded-full hover:bg-[#4a2c2a] transition-colors duration-300">eBaja</Link>
-      <Link to="/formulaBharat" className="btn bg-[#e07b39] text-white py-2 px-4 rounded-full hover:bg-[#4a2c2a] transition-colors duration-300">f - Bharat</Link>
-    </div>
-  </div>
-</section>
-
-
-          <section className="meet-the-team text-center mb-20">
-            <h1 className="font-albulaHeavy text-5xl text-[#23120B] mt-10">MEET THE TEAM</h1>
-            
-            {/* Sponsorship Section */}
-            <div className="team-section mb-10">
-              <h2 className="font-albulaHeavy text-3xl text-[#23120B] mt-10">Sponsorship</h2>
-              <div className="team-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mt-5">
-                {teamMembers.sponsorship.map((member, index) => (
-                  <div
-                    key={index}
-                    className={`team-member head-container ${member.name.includes('(Head)') ? 'head-hover-effect' : ''}`}
-                  >
-                    <img src={`/src/components/assets/images/about/${member.image}`} alt={member.name} className="rounded-full w-32 h-32 mx-auto object-cover"/>
-                    <h2 className="font-albulaHeavy text-xl mt-4 text-[#4a2c2a]">{member.name}</h2>
-                    <p className="font-albula text-sm text-[#23120B]">Role in Sponsorship</p>
-                    <div className="social-links mt-4">
-                      {member.instagram && <a href={member.instagram} className="mr-2 text-[#5d3a2a]"><i className="fab fa-instagram"></i></a>}
-                      {member.linkedin && <a href={member.linkedin} className="text-[#5d3a2a]"><i className="fab fa-linkedin"></i></a>}
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Documentation Section */}
-            <div className="team-section mb-10">
-              <h2 className="font-albulaHeavy text-3xl text-[#23120B] mt-10">Documentation</h2>
-              <div className="team-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mt-5">
-                {teamMembers.documentation.map((member, index) => (
-                  <div
-                    key={index}
-                    className={`team-member head-container ${member.name.includes('(Head)') ? 'head-hover-effect' : ''}`}
-                  >
-                    <img src={`/src/components/assets/images/about/${member.image}`} alt={member.name} className="rounded-full w-32 h-32 mx-auto object-cover"/>
-                    <h2 className="font-albulaHeavy text-xl mt-4 text-[#4a2c2a]">{member.name}</h2>
-                    <p className="font-albula text-sm text-[#23120B]">Role in Documentation</p>
-                    <div className="social-links mt-4">
-                      {member.instagram && <a href={member.instagram} className="mr-2 text-[#5d3a2a]"><i className="fab fa-instagram"></i></a>}
-                      {member.linkedin && <a href={member.linkedin} className="text-[#5d3a2a]"><i className="fab fa-linkedin"></i></a>}
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Web Development Section */}
-            <div className="team-section mb-10">
-              <h2 className="font-albulaHeavy text-3xl text-[#23120B] mt-10">Web Development</h2>
-              <div className="team-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mt-5">
-                {teamMembers.webDevelopment.map((member, index) => (
-                  <div
-                    key={index}
-                    className={`team-member head-container ${member.name.includes('(Head)') ? 'head-hover-effect' : ''}`}
-                  >
-                    <img src={`/src/components/assets/images/about/${member.image}`} alt={member.name} className="rounded-full w-32 h-32 mx-auto object-cover"/>
-                    <h2 className="font-albulaHeavy text-xl mt-4 text-[#4a2c2a]">{member.name}</h2>
-                    <p className="font-albula text-sm text-[#23120B]">Role in Web Development</p>
-                    <div className="social-links mt-4">
-                      {member.instagram && <a href={member.instagram} className="mr-2 text-[#5d3a2a]"><i className="fab fa-instagram"></i></a>}
-                      {member.linkedin && <a href={member.linkedin} className="text-[#5d3a2a]"><i className="fab fa-linkedin"></i></a>}
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Design Section */}
-            <div className="team-section mb-10">
-              <h2 className="font-albulaHeavy text-3xl text-[#23120B] mt-10">Design</h2>
-              <div className="team-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mt-5">
-                {teamMembers.design.map((member, index) => (
-                  <div
-                    key={index}
-                    className={`team-member head-container ${member.name.includes('(Head)') ? 'head-hover-effect' : ''}`}
-                  >
-                    <img src={`/src/components/assets/images/about/${member.image}`} alt={member.name} className="rounded-full w-32 h-32 mx-auto object-cover"/>
-                    <h2 className="font-albulaHeavy text-xl mt-4 text-[#4a2c2a]">{member.name}</h2>
-                    <p className="font-albula text-sm text-[#23120B]">Member</p>
-                    <div className="social-links mt-4">
-                      {member.instagram && <a href={member.instagram} className="mr-2 text-[#5d3a2a]"><i className="fab fa-instagram"></i></a>}
-                      {member.linkedin && <a href={member.linkedin} className="text-[#5d3a2a]"><i className="fab fa-linkedin"></i></a>}
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </section>
+const TeamMemberCard = ({ name, image, instagram, linkedin }) => (
+  <div className="team-member-card">
+    <div className="image-container">
+      <img src={`/src/components/assets/images/about/${image}`} alt={name} className="profile-image" />
+      <div className="overlay">
+        <h2 className="name">{name}</h2>
+        <div className="social-links">
+          {instagram && <a href={instagram} className="social-link"><i className="fab fa-instagram"></i></a>}
+          {linkedin && <a href={linkedin} className="social-link"><i className="fab fa-linkedin"></i></a>}
         </div>
       </div>
-    </>
+    </div>
+  </div>
+);
+
+const events = [
+  {
+    step: "1",
+    description: "NIT RAIPUR has a vast alumni network and conducts alumni meet every year in which more than 300+ alumni having senior positions in various company visits our campus. We conduct a car showcasing event during the meet and also have an interactive session with them.",
+    image: "event1.jpg",
+  },
+  {
+    step: "2",
+    description: "We conduct workshops and mini events related to automobile in AAVARTAN (tech fest).",
+    image: "event2.jpg",
+  },
+  {
+    step: "3",
+    description: "Showcasing of our VEHICLE and giving the experience of driving in ECLECTIKA, central Indian’s largest fest having a footfall of more than 30k+.",
+    image: "event3.jpg",
+  },
+  {
+    step: "4",
+    description: "Various road shows in front of our college main building are conducted by showcasing our vehicle which attracting total of more than 1.5k+ local crowd and students along with the faculties.",
+    image: "event4.jpg",
+  },
+  {
+    step: "5",
+    description: "Our club regularly conducts the workshop throughout the year in NIT Raipur and near by colleges.",
+    image: "event5.jpg",
+  },
+];
+
+const EventCard = ({ step, description, image }) => (
+  <div className="event-card flex flex-col items-center mb-10">
+    <div className="step-circle bg-gradient-to-r from-pink-500 to-yellow-500 text-white w-12 h-12 rounded-full flex items-center justify-center mb-4 text-2xl font-bold">
+      {step}
+    </div>
+    <img src={`/src/components/assets/images/about/${image}`} alt={`Event ${step}`} className="event-image w-64 h-64 object-cover mb-4" />
+    <p className="font-albula text-lg text-[#5d3a33] mt-5 mx-auto w-3/5">{description}</p>
+  </div>
+);
+
+function About() {
+  return (
+    <div className="about-page" style={backgroundStyle}>
+      <div style={overlayStyle}></div>
+      <div className="container mx-auto px-4 relative">
+        <section className="who-are-we text-center mb-64 pb-64 flex flex-col items-center">
+          <h1 className="font-albulaHeavy text-5xl text-[#23120B] mt-10">WHO ARE WE?</h1>
+          <p className="font-albula text-lg text-[#5d3a33] mt-5 mx-auto w-3/5">
+            Motorsports is a dynamic and innovative club dedicated to pushing the boundaries of automotive technology and competitive racing. Our club has a track record of excellence, actively participating in a range of competitions where we showcase our skills and passion for motorsports. Through our commitment to excellence and state-of-the-art technologies, we have established ourselves as leaders within the Indian automotive sector. NIT Raipur Motorsports provides a platform for students to pursue their passions and demonstrate their abilities on a broader stage. Join us and experience the thrill of Motorsports at NIT Raipur!
+          </p>
+        </section>
+
+        <section className="what-do-we-do text-center mb-32 pb-32">
+          <h1 className="font-albulaHeavy text-5xl text-[#23120B] mt-10">WHAT DO WE DO?</h1>
+          <p className="font-albula text-lg text-[#5d3a33] mt-5 mx-auto w-3/5">
+            We, at NIT Raipur Motorsports, are a dedicated team of over 85 members who devote our time and expertise to creating robust and durable cars that outperform the competition. Our club is actively involved in two prestigious races eBaja and Formula Bharat, where we showcase our innovation, engineering prowess, and teamwork. Through rigorous testing, meticulous design processes, and a relentless pursuit of excellence, we push the boundaries of what’s possible in the realm of Motorsports. Join us on this exciting journey of innovation and competition!
+          </p>
+          <div className="mt-10">
+            <h2 className="font-albulaHeavy text-3xl text-[#23120B] mt-5 mb-5">Know more about</h2>
+            <div className="flex justify-center space-x-4">
+              <Link to="/eBaja" className="btn bg-[#e07b39] text-white py-2 px-4 rounded-full hover:bg-[#4a2c2a] transition-colors duration-300">eBaja</Link>
+              <Link to="/formulaBharat" className="btn bg-[#e07b39] text-white py-2 px-4 rounded-full hover:bg-[#4a2c2a] transition-colors duration-300">Formula Bharat</Link>
+            </div>
+          </div>
+        </section>
+
+        <section className="events text-center mb-32 pb-32">
+          <h1 className="font-albulaHeavy text-5xl text-[#23120B] mt-10">EVENTS</h1>
+          <div className="timeline-container relative">
+            {events.map((event, index) => (
+              <div key={index} className={`timeline-item ${index % 2 === 0 ? 'left' : 'right'}`}>
+                <EventCard
+                  step={event.step}
+                  description={event.description}
+                  image={event.image}
+                />
+              </div>
+            ))}
+            <div className="timeline-line absolute left-1/2 transform -translate-x-1/2 h-full bg-[#e07b39] w-1"></div>
+          </div>
+        </section>
+
+        <section className="team-members">
+          {/* Sponsorship Section */}
+          <div className="team-section mb-10">
+            <h2 className="font-albulaHeavy text-3xl text-[#23120B] mt-10">Sponsorship</h2>
+            <div className="team-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mt-5">
+              {teamMembers.sponsorship.map((member, index) => (
+                <TeamMemberCard
+                  key={index}
+                  name={member.name}
+                  image={member.image}
+                  instagram={member.instagram}
+                  linkedin={member.linkedin}
+                />
+              ))}
+            </div>
+          </div>
+
+          {/* Documentation Section */}
+          <div className="team-section mb-10">
+            <h2 className="font-albulaHeavy text-3xl text-[#23120B] mt-10">Documentation</h2>
+            <div className="team-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mt-5">
+              {teamMembers.documentation.map((member, index) => (
+                <TeamMemberCard
+                  key={index}
+                  name={member.name}
+                  image={member.image}
+                  instagram={member.instagram}
+                  linkedin={member.linkedin}
+                />
+              ))}
+            </div>
+          </div>
+
+          {/* Web Development Section */}
+          <div className="team-section mb-10">
+            <h2 className="font-albulaHeavy text-3xl text-[#23120B] mt-10">Web Development</h2>
+            <div className="team-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mt-5">
+              {teamMembers.webDevelopment.map((member, index) => (
+                <TeamMemberCard
+                  key={index}
+                  name={member.name}
+                  image={member.image}
+                  instagram={member.instagram}
+                  linkedin={member.linkedin}
+                />
+              ))}
+            </div>
+          </div>
+
+          {/* Design Section */}
+          <div className="team-section mb-10">
+            <h2 className="font-albulaHeavy text-3xl text-[#23120B] mt-10">Design</h2>
+            <div className="team-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mt-5">
+              {teamMembers.design.map((member, index) => (
+                <TeamMemberCard
+                  key={index}
+                  name={member.name}
+                  image={member.image}
+                  instagram={member.instagram}
+                  linkedin={member.linkedin}
+                />
+              ))}
+            </div>
+          </div>
+          
+        </section>
+      </div>
+    </div>
   );
 }
 

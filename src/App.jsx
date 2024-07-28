@@ -3,16 +3,12 @@ import './App.css';
 
 import Header from './components/header/header';
 import Home from './components/home/home';
-import EBaja from './components/eBaja/eBaja';
+import Ebaja from './components/eBaja/eBaja';
 import FormulaBharat from './components/formulaBharat/formulaBharat';
 import Merchandise from './components/merchandise/merchandise';
 import About from './components/about/about';
 import Contact from './components/contact/contact';
 import Footer from './components/footer/footer';
-
-
-
-
 
 function App() {
 	return (
@@ -21,7 +17,7 @@ function App() {
 			<Router>
 				<Routes>
 					<Route path="/" element={<Home />} />
-					<Route path="/eBaja" element={<EBaja />} />
+					<Route path="/Ebaja" element={<Ebaja />} />
 					<Route path="/formulaBharat" element={<FormulaBharat />} />
 					<Route path="/merchandise" element={<Merchandise />} />
 					<Route path="/about" element={<About />} />

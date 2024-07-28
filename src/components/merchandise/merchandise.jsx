@@ -32,6 +32,7 @@ const theme = extendTheme({
     },
 });
 
+
 const Merchandise = () => {
     const [selectedSize, setSelectedSize] = useState(null);
     const [selectedQuantity, setSelectedQuantity] = useState(1);
@@ -40,10 +41,12 @@ const Merchandise = () => {
     const sizeOptions = ["XS", "S", "M", "L", "XL", "XXL"];
     const quantityOptions = [...Array(6).keys()].map((i) => i + 1);
 
+
     const handleSizeClick = () => {
         setShowSizeOptions(!showSizeOptions);
         setShowQuantityOptions(false);
     };
+
 
     const handleQuantityClick = () => {
         setShowQuantityOptions(!showQuantityOptions);
@@ -92,7 +95,7 @@ const Merchandise = () => {
                                         {showSizeOptions && (
                                             <ButtonGroup spacing="1" mt="1">
                                                 {sizeOptions.map((size) => (
-                                                    <Button key={size} onClick={() => { setSelectedSize(size); setShowSizeOptions(false); }} color="whitesmoke" bg="brand.darkCoffee" _hover={{ bg: "brand.caramel" }} >
+                                                    <Button key={size} onClick={() => { setSelectedSize(size); setShowSizeOptions(false); }} color="whitesmoke" bg="brand.darkCoffee" _hover={{ bg: "brand.caramel" }}>
                                                         {size}
                                                     </Button>
                                                 ))}
@@ -103,10 +106,12 @@ const Merchandise = () => {
                                             {selectedQuantity
                                                 ? `Quantity: ${selectedQuantity}`
                                                 : "Select Quantity"}
+                                                ? `Quantity: ${selectedQuantity}`
+                                                : "Select Quantity"}
                                         </Button>
 
                                         {showQuantityOptions && (
-                                            <ButtonGroup spacing="1" mt="1">
+                                            <ButtonGroup spacing="3" mt="3">
                                                 {quantityOptions.map((quantity) => (
                                                     <Button key={quantity} onClick={() => { setSelectedQuantity(quantity); setShowQuantityOptions(false); }} color="whitesmoke" bg="brand.darkCoffee" _hover={{ bg: "brand.caramel" }}>
                                                         {quantity}
@@ -119,9 +124,7 @@ const Merchandise = () => {
                                 </Box>
                             </Flex>
                         </CardBody>
-
                         <Divider />
-
                         <CardFooter justifyContent="center">
                             <ButtonGroup spacing="2">
 
@@ -135,12 +138,12 @@ const Merchandise = () => {
                                 </Button>
                             </ButtonGroup>
                         </CardFooter>
-
                     </ChakraCard>
                 </Flex>
             </ChakraProvider>
         </div>
     );
 };
+
 
 export default Merchandise;

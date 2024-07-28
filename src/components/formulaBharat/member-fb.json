@@ -1,238 +1,218 @@
 {
-    "Abhiroop":{
-        "index":"Abhiroop",
-        "name":"Abhiroop Sharma",
-        "DomainName":"Frames",
-        "Role":"Captain",
-        "img":"https://drive.google.com/open?id=1DWQPaXjqhrTG6_ZrLZLpEltjWKeFUqC8",
-        "linkedin":"https://www.linkedin.com/in/abhiroop-sharma-75a46926b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-        "insta":"https://www.instagram.com/iam_sharmaji7?igsh=MTdpem9uZWpveXZ3cQ=="
+    "Anisha": {
+        "index": "Anisha",
+        "name": "Anisha Sharma",
+        "DomainName": "Frames",
+        "Role": "Member",
+        "img": "https://drive.google.com/open?id=1Ds_TvDsaI-FnRCtPcCUmFXPbHWK7Ve7o",
+        "linkedin": "https://www.linkedin.com/in/anisha-sharma29?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        "insta": ""
     },
-    "Ajay":{
-        "index":"Ajay",
-        "name":"Ajay Kashyap",
-        "DomainName":"Powertrain",
-        "Role":"Vice Captain",
-        "img":"https://drive.google.com/open?id=1pijC7pVjE0wH1mOZ2wIoBXsi2EaM30_N",
-        "linkedin":"https://www.linkedin.com/in/ajaykashyap92025?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-        "insta":""
+    "Devanshu": {
+        "index": "Devanshu",
+        "name": "Devanshu Satapathy",
+        "DomainName": "Steering",
+        "Role": "Member",
+        "img": "https://drive.google.com/open?id=1dXlo3ZTpJxAvThM68yk8KQtYuVPM1Zch",
+        "linkedin": "https://www.linkedin.com/in/devanshu-satapathy-72323a28a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        "insta": "https://www.instagram.com/dicctator.rr?igsh=MTlja2R5dW02eHJmYg=="
     },
-    "Sachin":{
-        "index":"Sachin",
-        "name":"Sachin Kumar",
-        "DomainName":"Frames",
-        "Role":"Team Manager",
-        "img":"https://drive.google.com/open?id=1YnfU7yuIlqllqXZfEFJ8mx63JbLNS2Tp",
-        "linkedin":"",
-        "insta":"https://www.instagram.com/itssachin_19?igsh=c2d5ZG9pdTl6NjZp&utm_source=qr"
-    },"Om":{
-        "index":"Om",
-        "name":"Om Prakash Sahoo",
-        "DomainName":"Frames",
-        "Role":"Team Manager",
-        "img":"https://drive.google.com/open?id=1xKwmGGkzqbYKMYVxt8yTLz-h3p3ONa31",
-        "linkedin":"https://www.linkedin.com/in/om-prakash-sahoo-60bb46257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-        "insta":"https://www.instagram.com/_.axelx_?igsh=eHo5M3J3YXdrNXJw"
+    "Harsh": {
+        "index": "Harsh",
+        "name": "Harsh Shrivastava",
+        "DomainName": "Frames",
+        "Role": "Member",
+        "img": "https://drive.google.com/open?id=1IjOX2vITzdeCTQWZXE7HN-rxMayDo8nZ",
+        "linkedin": "",
+        "insta": "https://www.instagram.com/harsh10.6?igsh=YnkwZ3N3Y2VicW5x"
     },
-    "Prakarsh":{
-        "index":"Prakarsh",
-        "name":"Prakarsh Gupta",
-        "DomainName":"Formula Bharat",
-        "Role":"Documentation",
-        "img":"https://drive.google.com/open?id=1uDYpYjtkDtkUEla8R8vpcKtbk3PVCxXX",
-        "linkedin":"https://www.linkedin.com/in/prakarsh-gupta-a75b67279?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-        "insta":"https://www.instagram.com/prakarshgupta_21?igsh=NHE5MjVxajhob3Jp"
+    "Honumant": {
+        "index": "Honumant",
+        "name": "Honumant Nethanj",
+        "DomainName": "Steering",
+        "Role": "Member",
+        "img": "https://drive.google.com/open?id=1HM0zqmyJ85uM5MsBSRq3dJePTHwONtEC",
+        "linkedin": "https://www.linkedin.com/me?trk=p_mwlite_me_notifications-secondary_nav",
+        "insta": "https://www.instagram.com/honumant_25?igsh=OGF5M3Zvemc3cmt5"
     },
-    "Shambhavi":{
-        "index":"Shambhavi",
-        "name":"Shambhavi",
-        "DomainName":"Brakes",
-        "Role":"Member",
-        "img":"https://drive.google.com/open?id=1x8KIAaDS3XsxDwR1h0DxD1EdBFhFPtVN",
-        "linkedin":"https://www.linkedin.com/in/shambhavi-sam-67574624b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-        "insta":"https://www.instagram.com/heyy__shambhavi__?igsh=ZHV1YjRha2dybDVm"
+    "Krishna": {
+        "index": "Krishna",
+        "name": "Krishna Agrawal",
+        "DomainName": "Brakes",
+        "Role": "Member",
+        "img": "",
+        "linkedin": "",
+        "insta": ""
     },
-    "Saral":{
-        "index":"Saral",
-        "name":"Saral Pandey",
-        "DomainName":"Suspension",
-        "Role":"Member",
-        "img":"https://drive.google.com/open?id=1SQnhHOCyjOM9kmu9Iayeb2r4WK5MflEO",
-        "linkedin":"",
-        "insta":"https://www.instagram.com/pandey.saral?igsh=cWwzemdoa3BldnN5"
+    "Kolagani": {
+        "index": "Kolagani",
+        "name": "Kolagani Sathvik",
+        "DomainName": "Brakes",
+        "Role": "Member",
+        "img": "https://drive.google.com/open?id=125orq7iH6-Il3LZ21HE4u-HO2D_QmWuT",
+        "linkedin": "https://www.linkedin.com/in/kolagani-sathvik-355717259?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        "insta": "https://www.instagram.com/s_a_t_h_v_i_k____v?igsh=MW1sZThjdDNweWc5bA=="
     },
-    "Tanmay":{
-        "index":"Tanmay",
-        "name":"Tanmay Gupta",
-        "DomainName":"Brakes",
-        "Role":"Member",
-        "img":"https://drive.google.com/open?id=1w6k8fnsmmhVOEJrW4g2IIxZRee0hIf_s",
-        "linkedin":"",
-        "insta":"https://www.instagram.com/carter_zhoul?igsh=M3NkNGo4bHdzb2kx"
+    "Malvika": {
+        "index": "Malvika ",
+        "name": "Malvika Krishna Singh ",
+        "DomainName": "Frames",
+        "Role": "Member",
+        "img": "https://drive.google.com/open?id=1-j93hMJsVSPJIEiB4nbgVchHHI4PuEJ0",
+        "linkedin": "",
+        "insta": "https://www.instagram.com/ivisha_krishna"
     },
-    "Krishna":{
-        "index":"Krishna",
-        "name":"Krishna Agrawal",
-        "DomainName":"Brakes",
-        "Role":"Member",
-        "img":"",
-        "linkedin":"",
-        "insta":""
+    "Milind": {
+        "index": "Milind",
+        "name": "Milind Kumawat",
+        "DomainName": "Brakes",
+        "Role": "Member",
+        "img": "https://drive.google.com/open?id=1uZ91hZuwiH_BHOEHbV3sr02uZcs5Lmhv",
+        "linkedin": "https://www.linkedin.com/in/milind-kumawat-2015a4235",
+        "insta": "https://www.instagram.com/milind00476?igsh=bXQ5Z25zbWV3M3A5"
     },
-    "Rishi":{
-        "index":"Rishi",
-        "name":"Rishi Singh",
-        "DomainName":"Suspension",
-        "Role":"Member",
-        "img":"https://drive.google.com/open?id=1P5whGEGcC52gRydCgNLcRpjCzK4KPUDN",
-        "linkedin":"https://www.linkedin.com/in/rishi-singh-aa5387264?trk=contact-info",
-        "insta":"https://www.instagram.com/shiri_singha?igsh=MXNlZTY0d3JoNjA0Ng=="
+    "Navneet": {
+        "index": "Navneet",
+        "name": "Navneet Kumar Pandey",
+        "DomainName": "Frames",
+        "Role": "Member",
+        "img": "https://drive.google.com/open?id=1dNc8rUdLmQ0otwXGNpelsl1hDj42XyuJ",
+        "linkedin": "https://www.linkedin.com/in/navneet-kumar-pandey-b8036828a",
+        "insta": "https://www.instagram.com/navneet_one8/"
     },
-    "Milind":{
-        "index":"Milind",
-        "name":"Milind Kumawat",
-        "DomainName":"Brakes",
-        "Role":"Member",
-        "img":"https://drive.google.com/open?id=1uZ91hZuwiH_BHOEHbV3sr02uZcs5Lmhv",
-        "linkedin":"https://www.linkedin.com/in/milind-kumawat-2015a4235",
-        "insta":"https://www.instagram.com/milind00476?igsh=bXQ5Z25zbWV3M3A5"
+    "Nityanand": {
+        "index": "Nityanand",
+        "name": "Nityanand Shukla",
+        "DomainName": "Powertrain",
+        "Role": "Member",
+        "img": "https://drive.google.com/open?id=19JIWc8YFxflz_amyQeqi4DQ35FxRQLG4",
+        "linkedin": "https://www.linkedin.com/in/nityanand-shukla-079051243?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bty5lXo0rRe2SmednTv8PAQ%3D%3D",
+        "insta": "https://www.instagram.com/nityanand.shukla?igsh=NW96aHd5bTZ1YjI2"
     },
-    
-    "Shraddha":{
-        "index":"Shraddha",
-        "name":"Shraddha Agrawal",
-        "DomainName":"Steering",
-        "Role":"Member",
-        "img":"https://drive.google.com/open?id=12MH8OSNVe1x8lPbSCeywHfNDd2K42ZIr",
-        "linkedin":"",
-        "insta":"https://www.instagram.com/shra.ddhaa_._?igsh=MXJwYWlxYTQyenE0OQ=="
+    "Om": {
+        "index": "Om",
+        "name": "Om Prakash Sahoo",
+        "DomainName": "Frames",
+        "Role": "Team Manager",
+        "img": "https://drive.google.com/open?id=1xKwmGGkzqbYKMYVxt8yTLz-h3p3ONa31",
+        "linkedin": "https://www.linkedin.com/in/om-prakash-sahoo-60bb46257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        "insta": "https://www.instagram.com/_.axelx_?igsh=eHo5M3J3YXdrNXJw"
     },
-    
-    
-    "Sankalp":{
-        "index":"Sankalp",
-        "name":"Sankalp Gupta",
-        "DomainName":"Steering",
-        "Role":"Member",
-        "img":"https://drive.google.com/open?id=1EHw-UFF5DiB4JcJRXAR8lmvr1YN0JKjM",
-        "linkedin":"",
-        "insta":"https://www.instagram.com/sankalp2802?igsh=MWl0ZTR4dWllaHh2dw=="
+    "Pranay": {
+        "index": "Pranay",
+        "name": "Pranay Shrivastava",
+        "DomainName": "Powertrain",
+        "Role": "Member",
+        "img": "https://drive.google.com/open?id=1yYIHmQ1SIF75sSIghwQUJX_4NXamrB80",
+        "linkedin": "http://www.linkedin.com/in/pranay-shrivastava-5b2636299",
+        "insta": "https://www.instagram.com/shrivastava_pranay?igsh=a3F5bTQ2MWE4YnAz"
     },
-    "Devanshu":{
-        "index":"Devanshu",
-        "name":"Devanshu Satapathy",
-        "DomainName":"Steering",
-        "Role":"Member",
-        "img":"https://drive.google.com/open?id=1dXlo3ZTpJxAvThM68yk8KQtYuVPM1Zch",
-        "linkedin":"https://www.linkedin.com/in/devanshu-satapathy-72323a28a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-        "insta":"https://www.instagram.com/dicctator.rr?igsh=MTlja2R5dW02eHJmYg=="
+    "Prakarsh": {
+        "index": "Prakarsh",
+        "name": "Prakarsh Gupta",
+        "DomainName": "Formula Bharat",
+        "Role": "Documentation",
+        "img": "https://drive.google.com/open?id=1uDYpYjtkDtkUEla8R8vpcKtbk3PVCxXX",
+        "linkedin": "https://www.linkedin.com/in/prakarsh-gupta-a75b67279?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        "insta": "https://www.instagram.com/prakarshgupta_21?igsh=NHE5MjVxajhob3Jp"
     },
-    "Honumant":{
-        "index":"Honumant",
-        "name":"Honumant Nethanj",
-        "DomainName":"Steering",
-        "Role":"Member",
-        "img":"https://drive.google.com/open?id=1HM0zqmyJ85uM5MsBSRq3dJePTHwONtEC",
-        "linkedin":"https://www.linkedin.com/me?trk=p_mwlite_me_notifications-secondary_nav",
-        "insta":"https://www.instagram.com/honumant_25?igsh=OGF5M3Zvemc3cmt5"
+    "Rishi": {
+        "index": "Rishi",
+        "name": "Rishi Singh",
+        "DomainName": "Suspension",
+        "Role": "Member",
+        "img": "https://drive.google.com/open?id=1P5whGEGcC52gRydCgNLcRpjCzK4KPUDN",
+        "linkedin": "https://www.linkedin.com/in/rishi-singh-aa5387264?trk=contact-info",
+        "insta": "https://www.instagram.com/shiri_singha?igsh=MXNlZTY0d3JoNjA0Ng=="
     },
-    "Vaishnavi":{
-        "index":"Vaishnavi",
-        "name":"Vaishnavi Dhruvdas Padole",
-        "DomainName":"Powertrain",
-        "Role":"Member",
-        "img":"https://drive.google.com/open?id=1oHsw1HYK-oBs-LGjdzanwqWBImSvPtlc",
-        "linkedin":"https://www.linkedin.com/in/vaishnavi-padole-b41ab0250",
-        "insta":""
+    "Shambhavi": {
+        "index": "Shambhavi",
+        "name": "Shambhavi",
+        "DomainName": "Brakes",
+        "Role": "Member",
+        "img": "https://drive.google.com/open?id=1x8KIAaDS3XsxDwR1h0DxD1EdBFhFPtVN",
+        "linkedin": "https://www.linkedin.com/in/shambhavi-sam-67574624b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        "insta": "https://www.instagram.com/heyy__shambhavi__?igsh=ZHV1YjRha2dybDVm"
     },
-    "Anisha":{
-        "index":"Anisha",
-        "name":"Anisha Sharma",
-        "DomainName":"Frames",
-        "Role":"Member",
-        "img":"https://drive.google.com/open?id=1Ds_TvDsaI-FnRCtPcCUmFXPbHWK7Ve7o",
-        "linkedin":"https://www.linkedin.com/in/anisha-sharma29?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-        "insta":""
+    "Saral": {
+        "index": "Saral",
+        "name": "Saral Pandey",
+        "DomainName": "Suspension",
+        "Role": "Member",
+        "img": "https://drive.google.com/open?id=1SQnhHOCyjOM9kmu9Iayeb2r4WK5MflEO",
+        "linkedin": "",
+        "insta": "https://www.instagram.com/pandey.saral?igsh=cWwzemdoa3BldnN5"
     },
-    "Shruti":{
-        "index":"Shruti",
-        "name":"S Shruti",
-        "DomainName":"Powertrain",
-        "Role":"Member",
-        "img":"https://drive.google.com/open?id=1D1nK2HRmjXjdtB2ytta5V6L6zJwQFJoX",
-        "linkedin":"",
-        "insta":""
+    "Sachin": {
+        "index": "Sachin",
+        "name": "Sachin Choubey",
+        "DomainName": "Powertrain",
+        "Role": "Member",
+        "img": "",
+        "linkedin": "",
+        "insta": "https://www.instagram.com/sachin_choubey11"
     },
-    "Malvika":{
-        "index":"Malvika ",
-        "name":"Malvika Krishna Singh ",
-        "DomainName":"Frames",
-        "Role":"Member",
-        "img":"https://drive.google.com/open?id=1-j93hMJsVSPJIEiB4nbgVchHHI4PuEJ0",
-        "linkedin":"",
-        "insta":"https://www.instagram.com/ivisha_krishna"
+    "SachinK": {
+        "index": "Sachin",
+        "name": "Sachin Kumar",
+        "DomainName": "Frames",
+        "Role": "Team Manager",
+        "img": "https://drive.google.com/open?id=1YnfU7yuIlqllqXZfEFJ8mx63JbLNS2Tp",
+        "linkedin": "",
+        "insta": "https://www.instagram.com/itssachin_19?igsh=c2d5ZG9pdTl6NjZp&utm_source=qr"
     },
-    "Navneet":{
-        "index":"Navneet",
-        "name":"Navneet Kumar Pandey",
-        "DomainName":"Frames",
-        "Role":"Member",
-        "img":"https://drive.google.com/open?id=1dNc8rUdLmQ0otwXGNpelsl1hDj42XyuJ",
-        "linkedin":"https://www.linkedin.com/in/navneet-kumar-pandey-b8036828a",
-        "insta":"https://www.instagram.com/navneet_one8/"
+    "Shraddha": {
+        "index": "Shraddha",
+        "name": "Shraddha Agrawal",
+        "DomainName": "Steering",
+        "Role": "Member",
+        "img": "https://drive.google.com/open?id=12MH8OSNVe1x8lPbSCeywHfNDd2K42ZIr",
+        "linkedin": "",
+        "insta": "https://www.instagram.com/shra.ddhaa_._?igsh=MXJwYWlxYTQyenE0OQ=="
     },
-    "Kolagani":{
-        "index":"Kolagani",
-        "name":"Kolagani Sathvik",
-        "DomainName":"Brakes",
-        "Role":"Member",
-        "img":"https://drive.google.com/open?id=125orq7iH6-Il3LZ21HE4u-HO2D_QmWuT",
-        "linkedin":"https://www.linkedin.com/in/kolagani-sathvik-355717259?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-        "insta":"https://www.instagram.com/s_a_t_h_v_i_k____v?igsh=MW1sZThjdDNweWc5bA=="
+    "Sankalp": {
+        "index": "Sankalp",
+        "name": "Sankalp Gupta",
+        "DomainName": "Steering",
+        "Role": "Member",
+        "img": "https://drive.google.com/open?id=1EHw-UFF5DiB4JcJRXAR8lmvr1YN0JKjM",
+        "linkedin": "",
+        "insta": "https://www.instagram.com/sankalp2802?igsh=MWl0ZTR4dWllaHh2dw=="
     },
-    "Nityanand":{
-        "index":"Nityanand",
-        "name":"Nityanand Shukla",
-        "DomainName":"Powertrain",
-        "Role":"Member",
-        "img":"https://drive.google.com/open?id=19JIWc8YFxflz_amyQeqi4DQ35FxRQLG4",
-        "linkedin":"https://www.linkedin.com/in/nityanand-shukla-079051243?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bty5lXo0rRe2SmednTv8PAQ%3D%3D",
-        "insta":"https://www.instagram.com/nityanand.shukla?igsh=NW96aHd5bTZ1YjI2"
+    "Shruti": {
+        "index": "Shruti",
+        "name": "S Shruti",
+        "DomainName": "Powertrain",
+        "Role": "Member",
+        "img": "https://drive.google.com/open?id=1D1nK2HRmjXjdtB2ytta5V6L6zJwQFJoX",
+        "linkedin": "",
+        "insta": ""
     },
-    "Sachin":{
-        "index":"Sachin",
-        "name":"Sachin Choubey",
-        "DomainName":"Powertrain",
-        "Role":"Member",
-        "img":"",
-        "linkedin":"",
-        "insta":"https://www.instagram.com/sachin_choubey11"
+    "Tanmay": {
+        "index": "Tanmay",
+        "name": "Tanmay Gupta",
+        "DomainName": "Brakes",
+        "Role": "Member",
+        "img": "https://drive.google.com/open?id=1w6k8fnsmmhVOEJrW4g2IIxZRee0hIf_s",
+        "linkedin": "",
+        "insta": "https://www.instagram.com/carter_zhoul?igsh=M3NkNGo4bHdzb2kx"
     },
-    "Vanshika":{
-        "index":"Vanshika",
-        "name":"Vanshika Jaiswal",
-        "DomainName":"Suspension",
-        "Role":"Member",
-        "img":"https://drive.google.com/open?id=1bNS-N7duG_tVg3efSzZ0C8Ts6i2iJf84",
-        "linkedin":"http://linkedin.com/in/vanshika-jaiswal-3b17b527a",
-        "insta":"https://www.instagram.com/its.vanshika.here?igsh=MTRwN3NwcjZiY2psNA%3D%3D&utm_source=qr"
+    "Vaishnavi": {
+        "index": "Vaishnavi",
+        "name": "Vaishnavi Dhruvdas Padole",
+        "DomainName": "Powertrain",
+        "Role": "Member",
+        "img": "https://drive.google.com/open?id=1oHsw1HYK-oBs-LGjdzanwqWBImSvPtlc",
+        "linkedin": "https://www.linkedin.com/in/vaishnavi-padole-b41ab0250",
+        "insta": ""
     },
-    "Harsh":{
-        "index":"Harsh",
-        "name":"Harsh Shrivastava",
-        "DomainName":"Frames",
-        "Role":"Member",
-        "img":"https://drive.google.com/open?id=1IjOX2vITzdeCTQWZXE7HN-rxMayDo8nZ",
-        "linkedin":"",
-        "insta":"https://www.instagram.com/harsh10.6?igsh=YnkwZ3N3Y2VicW5x"
-    },
-    "Pranay":{
-        "index":"Pranay",
-        "name":"Pranay Shrivastava",
-        "DomainName":"Powertrain",
-        "Role":"Member",
-        "img":"https://drive.google.com/open?id=1yYIHmQ1SIF75sSIghwQUJX_4NXamrB80",
-        "linkedin":"http://www.linkedin.com/in/pranay-shrivastava-5b2636299",
-        "insta":"https://www.instagram.com/shrivastava_pranay?igsh=a3F5bTQ2MWE4YnAz"
-    }    
+    "Vanshika": {
+        "index": "Vanshika",
+        "name": "Vanshika Jaiswal",
+        "DomainName": "Suspension",
+        "Role": "Member",
+        "img": "https://drive.google.com/open?id=1bNS-N7duG_tVg3efSzZ0C8Ts6i2iJf84",
+        "linkedin": "http://linkedin.com/in/vanshika-jaiswal-3b17b527a",
+        "insta": "https://www.instagram.com/its.vanshika.here?igsh=MTRwN3NwcjZiY2psNA%3D%3D&utm_source=qr"
+    }
 }

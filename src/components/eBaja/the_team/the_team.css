@@ -1,5 +1,5 @@
 .theTeamPage {
-    display: flex;
+    /* display: flex; */
     padding: 20px 0;
     margin-top: 100px;
 }
@@ -10,6 +10,16 @@
 
 .titleHeader {
     margin: 20px;
+}
+
+.teamMem .teamMembers {
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid #000; */
+}
+
+.FrontTeam .span2, .Mentors .span2 {
+    display: none;
 }
 
 @media (max-width: 800px) {
@@ -56,5 +66,14 @@
 
     .titleHeader .headerText {
         min-width: auto;
+    }
+
+    .initialHeader, .teamInitialHeader {
+        padding: 0;
+        margin: 0;
+    }
+
+    .teamMembers {
+        margin-top: 0 !important;
     }
 }

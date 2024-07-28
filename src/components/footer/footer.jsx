@@ -67,7 +67,7 @@ function Footer() {
                                     <li className='font-poppins font-light text-barelyBrown py-0.5'>Address: <br/> <span className='text-barestBrown hover:text-dustyWhite transition-colors duration-300 hover:cursor-pointer'> National Institute of Technology, Raipur</span></li>
 
                                     <a href="mailto:motosports.nitrr@gmail.com" className='cursor-pointer'>
-                                        <li className='font-poppins font-light text-barelyBrown py-0.5'>Email: <span className='text-barestBrown hover:text-dustyWhite transition-colors duration-300'>motosports.nitrr@gmail.com</span></li>
+                                        <li className='font-poppins font-light text-barelyBrown py-0.5'>Email: <span className='text-barestBrown hover:text-dustyWhite transition-colors text-sm duration-300'>motosports.nitrr@gmail.com</span></li>
                                     </a>
 
                                     <a href="tel:9893539767" className='cursor-pointer'>

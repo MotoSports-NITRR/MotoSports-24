@@ -53,27 +53,27 @@ function Navbar() {
                         </div>
 
                         <ul className="hidden xl:flex justify-end items-center text-black px-10 py-10 space-x-1">
-                            <a href="/" className="flex justify-center items-center h-10 px-2 py-2 border-3 rounded-md border-transparent hover:border-tawny hover:text-tawny transition-all duration-450">
+                            <a href="/" className="flex justify-center items-center h-10 px-2 py-2 border-3 rounded-md border-transparent hover:border-tawny  hover:bg-tawny hover:text-white hover:text-tawny transition-all duration-450">
                                 <li className="cursor-pointer font-poppins font-medium font-2 text-lg">Home</li>
                             </a>
 
-                            <a href="/eBaja" className="flex justify-center items-center h-10 px-2 py-2 border-3 border-transparent rounded-md hover:text-tawny hover:border-tawny transition-all duration-450">
+                            <a href="/eBaja" className="flex justify-center items-center h-10 px-2 py-2 border-3 border-transparent rounded-md hover:bg-tawny hover:text-white hover:text-tawny hover:border-tawny transition-all duration-450">
                                 <li className="cursor-pointer font-poppins font-medium font-2 text-lg">eBaja</li>
                             </a>
 
-                            <a href="/formulaBharat" className="flex justify-center items-center h-10 px-2 py-2 border-3 border-transparent rounded-md hover:text-tawny hover:border-tawny transition-all duration-450">
+                            <a href="/formulaBharat" className="flex justify-center items-center h-10 px-2 py-2 border-3 border-transparent rounded-md hover:bg-tawny hover:text-white hover:text-tawny hover:border-tawny transition-all duration-450">
                                 <li className="cursor-pointer font-poppins font-medium font-2 text-lg">f - Bharat</li>
                             </a>
 
-                            <a href="/merchandise" className="flex justify-center items-center h-10 px-2 py-2 border-3 rounded-md hover:text-tawny border-tawny hover:scale-105 hover:bg-tawny hover:text-white  transition-all duration-450">
+                            <a href="/merchandise" className="flex justify-center items-center h-10 px-2 py-2 border-3  border-transparent rounded-md hover:text-tawny hover:border-tawny hover:scale-105 hover:bg-tawny hover:text-white  transition-all duration-450">
                                 <li className="cursor-pointer font-poppins font-medium font-2 text-lg">Merchandise</li>
                             </a>
 
-                            <a href="/about" className="flex justify-center items-center h-10 px-2 py-2 border-3 border-transparent rounded-md hover:text-tawny hover:border-tawny transition-all duration-450">
+                            <a href="/about" className="flex justify-center items-center h-10 px-2 py-2 border-3 border-transparent rounded-md hover:bg-tawny hover:text-white hover:text-tawny hover:border-tawny transition-all duration-450">
                                 <li className="cursor-pointer font-poppins font-medium font-2 text-lg">About</li>
                             </a>
 
-                            <a href="/contact" className="flex justify-center items-center h-10 px-2 py-2 border-3 border-transparent rounded-md hover:text-tawny hover:border-tawny transition-all duration-450">
+                            <a href="/contact" className="flex justify-center items-center h-10 px-2 py-2 border-3 border-transparent rounded-md hover:bg-tawny hover:text-white hover:text-tawny hover:border-tawny transition-all duration-450">
                                 <li className="cursor-pointer font-poppins font-medium font-2 text-lg">Contact</li>
                             </a>
                         </ul>

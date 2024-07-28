@@ -9,23 +9,13 @@
         "insta":"https://www.instagram.com/karthik_sai712"
     },
     
-    "Harsh":{
-        "index":"Harsh",
-        "name":"Harsh",
-        "DomainName":"Electrical Powertrain",
-        "Role":"Domain Head",
-        "img":"/team/Harsh Sahu.jpg",
-        "linkedin":"",
-        "insta":""
-    },
-    
     "Nimesh":{
         "index":"Nimesh",
         "name":"Nimesh Kumar Kashyap",
         "DomainName":"Steering",
-        "Role":"Domain Head",
+        "Role":"Member",
         "img":"/team/Nimesh Kashyap.jpg",
-        "linkedin":"",
+        "linkedin":"https://www.linkedin.com/in/nimesh-kumar-kashyap-1b0196261?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAEBG3pQBrqcdOKR-VMyyHwlmL1wPtyIzWCE&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BBok20%2FnFSj27hEvUFg9p8w%3D%3D",
         "insta":""
     },
 
@@ -33,8 +23,8 @@
         "index":"Pratyush",
         "name":"Pratyush Shastri",
         "DomainName":"Frames",
-        "Role":"Domain Head",
-        "img":"/team/Pratyush Shastri.JPG",
+        "Role":"Member",
+        "img":"/team/Pratyush Shastri.jpg",
         "linkedin":"https://www.linkedin.com/in/pratyush-shastri",
         "insta":"https://www.instagram.com/prat_1220?igsh=MTJ5OXNlc21vMWsxMA=="
     },
@@ -43,7 +33,7 @@
         "index":"Sarvagya",
         "name":"Sarvagya Jain",
         "DomainName":"Electrical Powertrain",
-        "Role":"Domain Head",
+        "Role":"Member",
         "img":"/team/Sarvagya Jain.jpg",
         "linkedin":"https://www.linkedin.com/in/sarvagya-jain-7159b2254/",
         "insta":"https://www.instagram.com/sarvagyajain2105?igsh=MWE1NmM0bnhoYTVqbw=="
@@ -53,18 +43,9 @@
         "index":"Ritik",
         "name":"Ritik Pathak",
         "DomainName":"Suspension",
-        "Role":"Domain Head",
+        "Role":"Member",
         "img":"/team/Ritik Pathak.jpg",
         "linkedin":"https://www.linkedin.com/in/ritik-pathak-31b865247?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
         "insta":"https://www.instagram.com/ritik_gear?igsh=bDYzbW5zaGpuaWds"
-    },
-    "Yatharth": {
-        "index": "Yatharth",
-        "name": "Yatharth Verma",
-        "DomainName": "Suspension",
-        "Role": "Captain",
-        "img": "/team/Yatharth Verma.png",
-        "linkedin": "https://www.linkedin.com/in/yatharth-verma-b75a58201/",
-        "insta": "https://www.instagram.com/yatharth__verma?igsh=dnJ6emRzbzNjNng3"
     }
 }

@@ -10,21 +10,17 @@
 
 .teamMemberList ul {
     display: flex;
-    /* overflow: hidden; */
+    flex-wrap: wrap;
+    justify-content: center;
+    /* gap: 100px; */
+    gap: 50px;
+    padding:  50px 0;
 }
 
 .membersIcon {
-    border: 1px solid #00000015;
+    /* border: 1px solid #00000015; */
     border-top: none;
     border-bottom: none;
-    /* width: 58vw; */
-    overflow-x: scroll;
-    scrollbar-width: none;
-    scrollbar-color: #ac4f4f4f !important;
-}
-
-.teamMemberList ul li {
-    padding: 0 20px;
 }
 
 .members {
@@ -35,23 +31,43 @@
 
 .members p {
     text-align: center;
-    width: 100px;
+    /* width: 100px; */
+    /* font-size: 1.5rem; */
 }
 
 .member {
-    border: 2px solid #6565658e;
-    border-radius: 50%;
+    /* border: 2px solid #6565658e; */
+    border-radius: 50px;
     margin: 0 auto;
-    padding: 8px;
+    /* padding: 8px; */
     overflow: hidden;
+}
+
+.hoverExpand{
+    border: 1px solid #000;
+    background: #fff;
+    /* display: none; */
+    opacity: 0;
+    position: fixed;
+    left: auto;
+    /* top: 20; */
+    z-index: 100;
+    border-radius: 30px;
+    /* scale: 0.8; */
+}
+
+.members:hover .hoverExpand {
+    /* display: block; */
+    opacity: 1;
+    /* z-index: 1; */
 }
 
 .memberImageContainer {
     z-index: 10;
-    width: 100px;
-    height: 100px;
-    border: 1px solid #565656;
-    border-radius: 50%;
+    width: 300px;
+    height: 400px;
+    /* border: 1px solid #565656; */
+    /* border-radius: 50%; */
     transition: all 1s;
     cursor: pointer;
     background-repeat: no-repeat;
@@ -64,7 +80,7 @@
 
 .memberImageContainer:hover {
     scale: 1.2;
-    border: 1px solid #ffffff46;
+    /* border: 1px solid #ffffff46; */
 }
 
 .teamMemberList .iconScrollIndicator {
@@ -101,34 +117,38 @@
     bottom: 15px;
 }
 
+.hoverDetailsAnimation{
+    animation:  all hoverDetailsAnimation 2s;
+}
 
 
-@keyframes indicatorAnimation {
+.mobile_social {
+    /* border: 1px solid #000; */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    opacity: 0;
+    width: 100%;
+}
+
+.mobile_social img {
+    width: 50px;
+}
+
+@keyframes hoverDetailsAnimation {
     0% {
         opacity: 0;
     }
 
-    50% {
-        opacity: 0.7;
-    }
-
     100% {
-        opacity: 0;
+        opacity: 0.5tab;
     }
 }
 
 
-
-@media (min-width: 1370px) {
-    .membersIcon {
-        width: 100%;
-    }
-}
 
 @media (max-width: 1370px) {
-    .membersIcon {
-        width: 65vw;
-    }
+   
 
     .iconScrollIndicator span {
         animation: indicatorAnimation 2s infinite;
@@ -136,21 +156,7 @@
     }
 }
 
-@media (max-width: 1200px) {
-    .membersIcon {
-        width: 57vw;
-    }
-}
-@media (max-width: 1000px) {
-    .membersIcon {
-        width: 50vw;
-    }
-}
-
 @media (max-width: 800px) {
-    .membersIcon {
-        width: 100vw;
-    }
     
     .theTeamPage {
         flex-direction: column;
@@ -165,6 +171,11 @@
 
     .teamMemberList{
         margin-left: 0;
+    }
+
+    .hoverExpand {
+        left: 10px !important;
+        right: 10px !important;
     }
 
 }
@@ -188,8 +199,17 @@
     }
     
     .members p {
-        font-size: 0.9rem;
-        width: 70px;
+        /* font-size: 0.9rem; */
+        text-align: center;
+    }
+
+    .hoverExpand {
+        display: none;
+    }
+
+    .mobile_social {
+        margin: 10px 0;
+        opacity: 1;
     }
 }
 
@@ -198,5 +218,11 @@
         min-width: 65px;
         min-height: 65px;
     }
+
+    .memberImageContainer {
+        width: 90vw;
+        padding: 0;
+    }
+    
 
 }

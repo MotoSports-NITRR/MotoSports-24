@@ -10,7 +10,8 @@ import FormulaBharat from './components/formulaBharat/formulaBharat';
 import Contact from './components/contact/contact';
 import Footer from './components/footer/footer';
 import Merchandise from './components/merchandise/merchandise';
-import The_Team from './components/eBaja/the_team/the_team';
+// import The_Team from './components/eBaja/the_team/the_team';
+import Team from './components/eBaja/the_team/team';
 import Gallery from './components/eBaja/gallery/gallery';
 
 function App() {
@@ -23,7 +24,7 @@ function App() {
 					<Route path="/eBaja" element={<EBaja />}>
 						<Route index element={<EBajaFront/>}/>
 						<Route path="phases" element={<Phases/>} />
-						<Route path="team" element={<The_Team/>} />
+						<Route path="team" element={<Team/>} />
 						<Route path="gallery" element={<Gallery/>} />
 					</Route>
 					<Route path="/formulaBharat" element={<FormulaBharat />} />

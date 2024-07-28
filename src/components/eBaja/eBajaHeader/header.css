@@ -50,8 +50,8 @@
 
 @media (max-width: 400px) {
     .indicator span {
-        animation: indicatorAnimation 2s infinite;
-        -webkit-animation: indicatorAnimation 2s infinite;
+        animation: slideIndicator 1.2s infinite;
+        -webkit-animation: slideIndicator 1.2s infinite;
     }
 }
 
@@ -77,10 +77,6 @@
         height: 50px !important;
     }
 
-    .header li {
-        /* padding: 0 !important; */
-    }
-
     .header a {
         padding: 20px 0 !important;
         font-size: 0.8rem;
@@ -90,4 +86,19 @@
     .header>div ul li a:hover, .active {
         border-bottom: 2px solid red !important;
     }
+}
+
+@keyframes slideIndicator {
+    0%{
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 0.5;
+    }
+
+    100%{
+        opacity: 0;
+    }
+    
 }

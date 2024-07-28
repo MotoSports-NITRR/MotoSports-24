@@ -1,0 +1,43 @@
+.preorderBtn {
+    width: 200px;
+}
+
+.merchBoxImg {
+    align-items: center;
+}
+
+.merchOptions {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width : 900px) {
+    .chakra-heading:nth-child(1) span {
+        font-size: 1.3rem;
+    }
+    .chakra-heading:nth-child(2) span {
+        /* font-size: 1.9rem; */
+    }
+    .merchImg {
+        height: 450px !important;
+        width: 350px !important;
+    }
+}
+
+@media (max-width : 700px) {
+    .chakraCardBody >div {
+        flex-direction: column !important;
+        padding: 0 !important;
+    }
+    .merchOptions>div h2 {
+        text-align: center;
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; */
+    }
+/* 
+    .merchOptions>div bottom {
+        min-width: 250px !important;
+    } */
+}

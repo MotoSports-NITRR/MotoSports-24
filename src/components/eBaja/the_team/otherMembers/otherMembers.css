@@ -127,7 +127,7 @@
         position: absolute;
         border-top-right-radius: 20px;
         border-top-left-radius: 20px;
-        top: 85%;
+        top: 90%;
         left: 0;
         right: 0;
         bottom: 0;
@@ -158,8 +158,8 @@
         gap: 0;
         opacity: 1;
         margin: 0;
-        position: relative;
-        margin-top: -100px ;
+        position: absolute;
+        margin-top: -60px ;
         padding: 10px 0;
         /* border: 1px solid #ff0000; */
         /* bottom: -200px; */
@@ -175,7 +175,7 @@
 @media (max-width: 567px) {
     .individualImage {
         height: 700px !important;
-        width: 400px !important;
+        width: 100vw !important;
     }
 }
 
@@ -183,10 +183,15 @@
     .individual {
         height: 90vh;
         justify-content: center;
+        padding-bottom: 0px;
     }
 
     .individualImage {
-        height: 500px !important;
+        height: 75vh !important;
+    }
+
+    .accounts{
+        margin-top: -50px;
     }
 }
 
@@ -198,5 +203,9 @@
         border-top: none;
         border-right: none;
         /* width: 100%; */
+    }
+
+    .accounts{
+        margin-top: -40px;
     }
 }

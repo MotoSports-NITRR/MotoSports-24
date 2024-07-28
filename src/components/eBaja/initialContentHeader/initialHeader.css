@@ -17,10 +17,30 @@
     min-width: 150px;
 }
 
-.initialHeader span {
-    height: 1px;
+.span {
+    display: flex;
     margin-left: 50px;
     min-width: 100px;
     max-width: 150px;
+}
+
+.initialHeader span {
+    height: 1px;
+    width: 0;
     z-index: 9;
+    /* animation: underlineMotion; */
+}
+
+@keyframes underlineMotion {
+    0% {
+        .postHeadingUnderline {
+            width: 0;
+        }
+    }
+
+    100% {
+        .postHeadingUnderline {
+            width: 100%;
+        }
+    }
 }

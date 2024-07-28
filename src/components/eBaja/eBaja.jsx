@@ -1,7 +1,7 @@
 import { Outlet } from 'react-router-dom'
 import Header from './eBajaHeader/header'
 import { React, useRef, useState, useEffect } from 'react'
-
+import './eBaja.css'
 
 function EBaja() {
     const eleRef = useRef(null);

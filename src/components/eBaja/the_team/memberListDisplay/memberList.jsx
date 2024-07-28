@@ -23,7 +23,7 @@ function MemberList(...data) {
                     hvElement.style.right = 'auto';
                     hvElement.style.left = e.clientX + 'px';
                 }
-                hvElement.style.bottom = window.innerHeight/2 + 50 - mem.clientHeight + "px";
+                hvElement.style.bottom = window.innerHeight / 2 + 50 - mem.clientHeight + "px";
                 e.stopPropagation();
             });
             mem.addEventListener('mouseout', (e) => {
@@ -66,6 +66,7 @@ function MemberList(...data) {
             });
         };
     }, [headsObj]);
+    // console.log(headsObj);
 
     return (
         <>
@@ -83,7 +84,22 @@ function MemberList(...data) {
                                     </div>
                                 </div>
                                 <p className='text-2xl'>{headsObj[key].name}</p>
-                                <p className='text-2xl text-red-700'>{headsObj[key].DomainName}</p>
+                                <p className='text-2xl text-red-700'>{headsObj[key].Role}</p>
+                                <div className="mobile_social">
+                                    {headsObj[key].linkedin &&
+                                        <li className=''>
+                                            <a href={headsObj[key].linkedin}>
+                                                <img src="/linkedIn.png" alt="" />
+                                            </a>
+                                        </li>
+                                    }
+                                    <li>
+                                        <a href={headsObj[key].insta}>
+                                            <img src="/instagram.png" alt="" />
+                                        </a>
+                                    </li>
+
+                                </div>
                             </li>
                         ))}
                     </ul>

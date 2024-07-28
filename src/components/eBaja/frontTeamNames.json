@@ -1,0 +1,38 @@
+{
+    "Yatharth": {
+        "index": "Yatharth",
+        "name": "Yatharth Verma",
+        "Role": "Captain",
+        "DomainName": "Captain",
+        "img": "/team/Yatharth Verma.jpg",
+        "linkedin": "https://www.linkedin.com/in/yatharth-verma-b75a58201/",
+        "insta": "https://www.instagram.com/yatharth__verma?igsh=dnJ6emRzbzNjNng3"
+    },
+    "Gaurab": {
+        "index": "Gaurab",
+        "name": "Gaurab Ray",
+        "Role": "Vice Captain / Co-Driver",
+        "DomainName": "Vice Captain / Co-Driver",
+        "img": "/team/Gaurab Ray.jpg",
+        "linkedin": "https://www.linkedin.com/in/gaurab-ray-504a8526b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        "insta": "https://www.instagram.com/24raygaurab?igsh=bmU0MnptdmwxdXFo"
+    },
+    "Bhavnesh": {
+        "index": "Bhavnesh",
+        "name": "Bhavnesh Rai",
+        "Role": "Driver",
+        "DomainName": "Driver",
+        "img": "/team/Bhavnesh Rai.jpg",
+        "linkedin": "http://linkedin.com/in/bhavnesh-rai-4b4712273",
+        "insta": "https://www.instagram.com/bhavnesh.rai?igsh=bXJpaWc3cXU2c3h4"
+    },
+    "Sanchit": {
+        "index": "Sanchit",
+        "name": "Sanchit Singh",
+        "Role": "Treasurer",
+        "DomainName": "Treasurer",
+        "img": "/team/Sanchit Singh.jpg",
+        "linkedin": "https://www.linkedin.com/in/sanchit-singh-011924266?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        "insta": "https://www.instagram.com/singhsanchit42?igsh=bDJ4YW1iNnFxY3Z0"
+    }
+}

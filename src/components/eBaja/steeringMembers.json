@@ -1,0 +1,39 @@
+{
+     
+    "Nimesh":{
+        "index":"Nimesh",
+        "name":"Nimesh Kumar Kashyap",
+        "DomainName":"Steering",
+        "Role":"Domain Head",
+        "img":"/team/Nimesh Kashyap.jpg",
+        "linkedin":"https://www.linkedin.com/in/nimesh-kumar-kashyap-1b0196261?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAEBG3pQBrqcdOKR-VMyyHwlmL1wPtyIzWCE&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BBok20%2FnFSj27hEvUFg9p8w%3D%3D",
+        "insta":""
+    },
+    "Astha": {
+        "index": "Astha",
+        "name": "Astha Soni",
+        "DomainName": "Steering",
+        "Role": "Member",
+        "img": "/team/Astha Soni.jpg",
+        "linkedin": "https://www.linkedin.com/in/astha-soni-47a5682a6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        "insta": "https://drive.google.com/open?id=1WkRtqIJbnmfc2exJWk3Wt1FwRhbiFJCu"
+    },
+    "Chirantan": {
+        "index": "Chirantan",
+        "name": "Chirantan Dev Sharma",
+        "DomainName": "Steering",
+        "Role": "Member",
+        "img": "/team/Chirantan Dev Sharma.jpg",
+        "linkedin": "https://www.linkedin.com/in/chirantan-dev-sharma-42b6252ab",
+        "insta": "https://www.instagram.com/___dev__sharma__?igsh=MTlmdXA2NmFrdjQy"
+    },
+    "Utkarsh": {
+        "index": "Utkarsh",
+        "name": " Utkarsh Nashine",
+        "DomainName": "Steering",
+        "Role": "Member",
+        "img": "",
+        "linkedin": "",
+        "insta": ""
+    }
+}

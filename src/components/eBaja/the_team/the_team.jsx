@@ -3,56 +3,99 @@ import { React, useRef, useState, useEffect } from 'react'
 import './the_team.css'
 import InitializeHeader from '../initialContentHeader/initialHeader'
 import MemberList from './memberListDisplay/memberList';
-import HeadDetailExpansion from './headDetailExpansion/headDetailExpansion';
-import OtherMembers from './otherMembers/otherMembers';
 
 
 function The_Team(...data) {
-    useEffect(() => {
-        document.querySelectorAll('.members').forEach(member => {
-            member.addEventListener('mouseenter', async (e) => {
-                // console.log(e.target);
-
-            })
-
-            member.addEventListener('mouseleave', async (e) => {
-                // let memberActive = document.querySelector('.memberActive');
-                // if (memberActive) {
-                //     memberActive.classList.remove('memberActive');
-                //     temp = document.querySelector('#' + memberActive.id + 'Detailed');
-                //     temp.style.opacity = "0";
-                //     temp.style.zIndex = "1";
-                // }
-            })
-        })
-        // console.log(document.querySelectorAll('.memberIcon'));
-    })
-    // console.log(data);
 
     const domainHeads = data[0].domainHead;
-    const Members = data[0].otherMembers
-    const elementClass = data[0].element
+    const Mentors = data[0].Mentors;
+    const BrakesMem = data[0].BrakesMem;
+    const SteeringMem = data[0].SteeringMem;
+    const FramesMem = data[0].FramesMem;
+    const FrontMem = data[0].FrontMem;
+    const SuspensionMem = data[0].SuspensionMem;
+    const PowerTrain = data[0].PowerTrain;
     return (
         <>
             <div className="theTeamPage">
-                <div className="teamInitialHeader titleHeader">
-                    <InitializeHeader header='Domain Heads' />
+                <div className="FrontTeam teamMem">
+                    {FrontMem &&
+                        <div className="teamMembers">
+                            <MemberList {...FrontMem} />
+                        </div>
+                    }
                 </div>
-                {domainHeads &&
-                    <div className="teamMembers">
-                        <MemberList {...domainHeads} />
+                <div className="Mentors teamMem">
+                    <div className="teamInitialHeader titleHeader">
+                        <InitializeHeader header='Our Mentors' />
                     </div>
-                }
-            </div>
-            {/* {domainHeads &&
-                <HeadDetailExpansion {...domainHeads} />
-            } */}
-            {/* <div className="otherMembers">
-                <div className="othersInitialHeader titleHeader">
-                    <InitializeHeader header='Extra Ordinary Members' />
+                    {Mentors &&
+                        <div className="teamMembers">
+                            <MemberList {...Mentors} />
+                        </div>
+                    }
                 </div>
-                <OtherMembers {...Members}/>
-            </div> */}
+                <div className="DomainHeads teamMem">
+                    <div className="teamInitialHeader titleHeader">
+                        <InitializeHeader header='Domain Heads' />
+                    </div>
+                    {domainHeads &&
+                        <div className="teamMembers">
+                            <MemberList {...domainHeads} />
+                        </div>
+                    }
+                </div>
+                <div className="Brakes teamMem">
+                    <div className="teamInitialHeader titleHeader">
+                        <InitializeHeader header='Brakes Domain' />
+                    </div>
+                    {domainHeads &&
+                        <div className="teamMembers">
+                            <MemberList {...BrakesMem} />
+                        </div>
+                    }
+                </div>
+                <div className="Frames teamMem">
+                    <div className="teamInitialHeader titleHeader">
+                        <InitializeHeader header='Frames Domain' />
+                    </div>
+                    {domainHeads &&
+                        <div className="teamMembers">
+                            <MemberList {...FramesMem} />
+                        </div>
+                    }
+                </div>
+                <div className="PowerTrain teamMem">
+                    <div className="teamInitialHeader titleHeader">
+                        <InitializeHeader header='Electric PowerTrain' />
+                    </div>
+                    {domainHeads &&
+                        <div className="teamMembers">
+                            <MemberList {...PowerTrain} />
+                        </div>
+                    }
+                </div>
+                <div className="Steering teamMem">
+                    <div className="teamInitialHeader titleHeader">
+                        <InitializeHeader header='Steering Domain' />
+                    </div>
+                    {domainHeads &&
+                        <div className="teamMembers">
+                            <MemberList {...SteeringMem} />
+                        </div>
+                    }
+                </div>
+                <div className="Suspension teamMem">
+                    <div className="teamInitialHeader titleHeader">
+                        <InitializeHeader header='Suspension Domain' />
+                    </div>
+                    {domainHeads &&
+                        <div className="teamMembers">
+                            <MemberList {...SuspensionMem} />
+                        </div>
+                    }
+                </div>
+            </div>
         </>
     )
 }

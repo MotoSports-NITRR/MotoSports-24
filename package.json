@@ -19,7 +19,9 @@
     "react-countup": "^6.5.3",
     "react-dom": "^18.2.0",
     "react-responsive-carousel": "^3.2.23",
-    "react-scroll-trigger": "^0.6.14"
+    "react-scroll-trigger": "^0.6.14",
+    "framer-motion": "^11.3.8",
+    "TagCloud": "^2.5.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",

@@ -21,7 +21,14 @@
     "react-responsive-carousel": "^3.2.23",
     "react-scroll-trigger": "^0.6.14",
     "framer-motion": "^11.3.8",
-    "TagCloud": "^2.5.0"
+    "TagCloud": "^2.5.0",
+    "@fontsource/inter": "^5.0.19",
+    "@fortawesome/fontawesome-svg-core": "^6.6.0",
+    "@fortawesome/free-brands-svg-icons": "^6.6.0",
+    "@fortawesome/free-regular-svg-icons": "^6.6.0",
+    "@fortawesome/free-solid-svg-icons": "^6.6.0",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "@mui/joy": "^5.0.0-beta.48"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",

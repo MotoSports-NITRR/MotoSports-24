@@ -62,6 +62,7 @@ function Contact() {
         <p style={{ color: "White" }} className=" py-4 text-3xl font-semibold ">Download our Brochure</p>
         <a href="https://drive.google.com/file/d/1O17bcGZmEcvGEGEfKBwF5a0UOLpJmiGm/view?pli=1"><button className=" py-3 px-5 text-lg font-bold bg-tawny hover:bg-gray-500" style={{backgroundColor: "var(--tawny)"}}>Download</button></a>
       </div>
+      
       <ContactUs />
     </div>
     </>

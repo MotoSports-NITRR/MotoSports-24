@@ -1,33 +1,48 @@
 import "../globalStyles.css";
 import { useState } from "react";
+import { db } from "../../config/firebase.js"
+import {getDocs, collection , addDoc} from "firebase/firestore";
 
 
 function ContactUs() {
-    const [details, setDetails]=useState({
-        name: "",
-        phone:"",
-        email:"",
-        message:""
-    })
-    function handleChange(event){
-        const {name, value}=event.target;
-        setDetails(pre=>{
-            return{
-                ...pre,
-                [name]:value
-            }
-        })
-    }
-    function handleSubmit(e){
-        e.preventDefault()
-        console.log(details);
-    }
+
+    const [newName, setName]=useState("");
+    const [newPhone , setPhone] = useState(0);
+    const [newEmail , setEmail] = useState("");
+    const [newMessage , setMessage] = useState("");
+
+    const contact_collection_ref = collection(db , "contact");
+    
+    const handleSubmit = async (e) => {
+        e.preventDefault(); 
+        try {
+            console.log("reached");
+    
+            await addDoc(contact_collection_ref, {
+                Name: newName,
+                Phone: newPhone,
+                Email: newEmail,
+                Message: newMessage,
+            });
+    
+            alert("Message sent successfully!");
+            
+            setName("");
+            setPhone("");
+            setEmail("");
+            setMessage("");
+    
+        } catch (e) {
+            console.error(e);
+            alert("Message not sent! server side error");
+        }
+    };
 
     return <>
         <div className="contact-us w-100vw flex flex-col justify-evenly lg:px-40 px-0">
             <p className="text-center font-albulaHeavy sm:text-5xl text-3xl text-white mb-15">Contact us</p>
 
-            <form style = {{color:"var(--dustyWhite)"}} onSubmit={handleSubmit} className="flex justify-evenly lg:flex-row flex-col items-center pb-52">
+            <form style = {{color:"var(--dustyWhite)"}}  className="flex justify-evenly lg:flex-row flex-col items-center pb-52">
                 <div className="flex flex-col justify-start">
                     <div className=" flex items-start flex-col  my-4">
                         <label htmlFor="Name" className="pb-2">Name</label>
@@ -40,9 +55,8 @@ function ContactUs() {
                                 minWidth:"300px",
                                 maxWidth:"400px"
                             }}
-                            onChange={handleChange}
-                            name="name"
-                            value={details.name} />
+                            onChange={(e) => setName(e.target.value)}
+                             />
                     </div>
 
                     <div className=" flex items-start flex-col my-4">
@@ -56,9 +70,8 @@ function ContactUs() {
                                 minWidth:"300px",
                                 maxWidth:"400px"
                             }}
-                            onChange={handleChange}
-                            name="phone"
-                            value={details.phone}/>
+                            onChange={(e) => setPhone(e.target.value)}
+                            />
                     </div>
                     <div className=" flex items-start flex-col my-4">
                         <label htmlFor="Email" className="pb-2">Email</label>
@@ -71,9 +84,8 @@ function ContactUs() {
                                 minWidth:"300px",
                                 maxWidth:"400px"
                             }}
-                            onChange={handleChange}
-                            name="email"
-                            value={details.email}/>
+                            onChange={(e) => setEmail(e.target.value)}
+                            />
                     </div>
                 </div>
                 <div className="flex flex-col justify-start">
@@ -88,16 +100,15 @@ function ContactUs() {
                                 minWidth:"300px",
                                 maxWidth:"400px"
                             }}
-                            onChange={handleChange}
-                            name="message"
-                            value={details.message} />
+                            onChange={(e) => setMessage(e.target.value)}
+                            />
                     </div>
                     <div className="flex justify-center">
                         <button style={
                             {backgroundColor: "var(--tawny)",
                                 color:"var(--black-bean)",
-                            }
-                        } type="submit" className=" font-albulaBold text-xl h-12 pl-10 pr-10 rounded-md">Submit</button>
+                            }}
+                         type="button"  onClick={handleSubmit} className=" font-albulaBold text-xl h-12 pl-10 pr-10 rounded-md">Submit</button>
                     </div>
                 </div>
             </form>

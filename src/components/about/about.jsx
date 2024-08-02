@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './about.css';
 
 const backgroundStyle = {
-  background: 'linear-gradient(to bottom, #fff1de, #2f1000)',
+  background: '#ffffff',
   position: 'relative',
   overflow: 'hidden',
   zIndex: 0,
@@ -84,9 +84,9 @@ const teamMembers = {
 };
 
 const TeamMemberCard = ({ name, image, instagram, linkedin }) => (
-  <div className="team-member-card">
+  <div className="team-member-card text-center">
     <div className="image-container">
-      <img src={`/src/components/assets/images/about/${image}`} alt={name} className="profile-image" />
+      <img src={`/src/components/assets/images/about/${image}`} alt={name} className="profile-image mx-auto" />
       <div className="overlay">
         <h2 className="name">{name}</h2>
         <div className="social-links">
@@ -132,7 +132,7 @@ const EventCard = ({ step, description, image }) => (
       {step}
     </div>
     <img src={`/src/components/assets/images/about/${image}`} alt={`Event ${step}`} className="event-image w-64 h-64 object-cover mb-4" />
-    <p className="font-albula text-lg text-[#5d3a33] mt-5 mx-auto w-3/5">{description}</p>
+    <p className="font-albula text-lg text-[#5d3a33] mt-5 mx-auto w-3/5 text-center">{description}</p>
   </div>
 );
 
@@ -178,11 +178,27 @@ function About() {
           </div>
         </section>
 
-        <section className="team-members">
+        <section className="team-members text-center">
+          {/* Web Development Section */}
+          <div className="team-section mb-10">
+            <h2 className="font-albulaHeavy text-3xl text-[#23120B] mt-10">Web Development</h2>
+            <div className="team-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mt-5 justify-center">
+              {teamMembers.webDevelopment.map((member, index) => (
+                <TeamMemberCard
+                  key={index}
+                  name={member.name}
+                  image={member.image}
+                  instagram={member.instagram}
+                  linkedin={member.linkedin}
+                />
+              ))}
+            </div>
+          </div>
+
           {/* Sponsorship Section */}
           <div className="team-section mb-10">
             <h2 className="font-albulaHeavy text-3xl text-[#23120B] mt-10">Sponsorship</h2>
-            <div className="team-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mt-5">
+            <div className="team-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mt-5 justify-center">
               {teamMembers.sponsorship.map((member, index) => (
                 <TeamMemberCard
                   key={index}
@@ -198,24 +214,8 @@ function About() {
           {/* Documentation Section */}
           <div className="team-section mb-10">
             <h2 className="font-albulaHeavy text-3xl text-[#23120B] mt-10">Documentation</h2>
-            <div className="team-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mt-5">
+            <div className="team-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mt-5 justify-center">
               {teamMembers.documentation.map((member, index) => (
-                <TeamMemberCard
-                  key={index}
-                  name={member.name}
-                  image={member.image}
-                  instagram={member.instagram}
-                  linkedin={member.linkedin}
-                />
-              ))}
-            </div>
-          </div>
-
-          {/* Web Development Section */}
-          <div className="team-section mb-10">
-            <h2 className="font-albulaHeavy text-3xl text-[#23120B] mt-10">Web Development</h2>
-            <div className="team-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mt-5">
-              {teamMembers.webDevelopment.map((member, index) => (
                 <TeamMemberCard
                   key={index}
                   name={member.name}
@@ -230,7 +230,7 @@ function About() {
           {/* Design Section */}
           <div className="team-section mb-10">
             <h2 className="font-albulaHeavy text-3xl text-[#23120B] mt-10">Design</h2>
-            <div className="team-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mt-5">
+            <div className="team-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mt-5 justify-center">
               {teamMembers.design.map((member, index) => (
                 <TeamMemberCard
                   key={index}

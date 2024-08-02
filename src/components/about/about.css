@@ -144,10 +144,10 @@
   .timeline-item::before {
     content: '';
     position: absolute;
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
     background: #fff;
-    border: 4px solid #e07b39;
+    border: 7px solid #e07b39;
     top: 50%;
     transform: translateY(-50%);
     border-radius: 50%;
@@ -155,14 +155,13 @@
   }
   
   .timeline-item.left::before {
-    right: -10px;
+    right: -20px;
   }
   
   .timeline-item.right::before {
-    left: -10px;
+    left: -20px;
   }
   
-  /* Event Card Styles */
   .event-card {
     position: relative;
     overflow: hidden;
@@ -173,7 +172,7 @@
   }
   
   .event-card:hover .event-image {
-    transform: scale(1.1);
+    transform: scale(1.5);
   }
   
 
@@ -191,7 +190,7 @@
   .team h1 {
     font-family: 'AlbulaHeavy';
     font-size: 5rem;
-    color: #23120B;
+    color: #432417;
     margin-top: 10px;
   }
   
@@ -199,7 +198,7 @@
   .what-do-we-do p {
     font-family: 'Albula';
     font-size: 1.125rem;
-    color: #5d3a33;
+    color: #61423b;
     margin-top: 5px;
     margin-left: auto;
     margin-right: auto;
@@ -211,7 +210,7 @@
   }
   
   .know-more-about .btn {
-    background-color: #e07b39;
+    background-color: #ec965c;
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
@@ -225,11 +224,12 @@
   }
   .social-link i {
     font-size: 1.5rem;
-    color: rgb(193, 172, 136);
+    color: rgb(156, 139, 109);
     transition: color 0.3s ease;
   }
   
   .social-link i:hover {
     color: #e07b39;
   }
+
   

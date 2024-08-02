@@ -114,7 +114,7 @@ const teamMembers = {
     },
     { 
       name: "Anshdeep Shrivastava", 
-      image: "Anshshrivastava.jpg",
+      image: "Anshdeepshrivastava.jpg.jpg",
       instagram: "#",
       linkedin: "#" 
     },

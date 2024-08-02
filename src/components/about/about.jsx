@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './about.css';
 
 const backgroundStyle = {
-  background: '#ffffff',
+  background: '#fffff2',
   position: 'relative',
   overflow: 'hidden',
   zIndex: 0,
@@ -229,8 +229,8 @@ function About() {
     <div className="about-page" style={backgroundStyle}>
       <div className="overlay" style={overlayStyle}></div>
       <div className="container mx-auto px-4">
-        <section className="text-center mb-32">
-          <h1 className="font-albulaHeavy text-5xl text-[#23120B] mt-10">ABOUT US</h1>
+      <section className="what-do-we-do text-center mb-32 pb-32">
+          <h1 className="font-albulaHeavy text-3xl text-[#23120B] mt-10">WHO ARE WE?</h1>
           <p className="font-albula text-lg text-[#5d3a33] mt-5 mx-auto w-3/5">
             Motorsports is a dynamic and innovative club dedicated to pushing the boundaries of automotive technology and competitive racing. Our club has a track record of excellence, actively participating in a range of competitions where we showcase our skills and passion for motorsports. Through our commitment to excellence and state-of-the-art technologies, we have established ourselves as leaders within the Indian automotive sector. NIT Raipur Motorsports provides a platform for students to pursue their passions and demonstrate their abilities on a broader stage. Join us and experience the thrill of Motorsports at NIT Raipur!
           </p>

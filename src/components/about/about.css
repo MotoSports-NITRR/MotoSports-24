@@ -1,30 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Brush+Script+MT&display=swap');
 
-.brush-font {
-  font-family: 'Brush Script MT', cursive;
-}
-
-@font-face {
-    font-family: 'albula';
-    src: url('../assets/fonts/albula/Albula-Bold.ttf');
-}
-
-@font-face {
-    font-family: 'lemon';
-    src: url('../assets/fonts/lemonMilk/LEMONMILK-Medium.otf');
-}
-
-@font-face {
-    font-family: 'brush';
-    src: url('../assets/fonts/brushKing.otf');
-}
-
-@font-face {
-    font-family: 'gate';
-    src: url('../assets/fonts/newgGate.ttf');
-    color: var(--tawny);
-}
 
 .about-page {
     position: relative;
@@ -110,7 +86,7 @@
   /* Timeline Styles */
   .timeline-container {
     position: relative;
-    padding: 50px 0;
+    padding: 20px 0;
   }
   
   .timeline-line {
@@ -125,29 +101,29 @@
   
   .timeline-item {
     width: 50%;
-    padding: 20px;
+    padding: 10px;
     position: relative;
   }
   
   .timeline-item.left {
     left: 0;
     text-align: right;
-    padding-right: 50px;
+    padding-right: 30px;
   }
   
   .timeline-item.right {
     left: 50%;
     text-align: left;
-    padding-left: 50px;
+    padding-left: 40px;
   }
   
   .timeline-item::before {
     content: '';
     position: absolute;
-    width: 40px;
-    height: 40px;
-    background: #fff;
-    border: 7px solid #e07b39;
+    width: 20px;
+    height: 20px;
+    background: #fffff2;
+    border: 4px solid #e07b39;
     top: 50%;
     transform: translateY(-50%);
     border-radius: 50%;
@@ -155,13 +131,14 @@
   }
   
   .timeline-item.left::before {
-    right: -20px;
+    right: -10px;
   }
   
   .timeline-item.right::before {
-    left: -20px;
+    left: -10px;
   }
   
+  /* Event Card Styles */
   .event-card {
     position: relative;
     overflow: hidden;
@@ -172,7 +149,7 @@
   }
   
   .event-card:hover .event-image {
-    transform: scale(1.5);
+    transform: scale(1.1);
   }
   
 
@@ -190,7 +167,7 @@
   .team h1 {
     font-family: 'AlbulaHeavy';
     font-size: 5rem;
-    color: #432417;
+    color: #23120B;
     margin-top: 10px;
   }
   
@@ -198,7 +175,7 @@
   .what-do-we-do p {
     font-family: 'Albula';
     font-size: 1.125rem;
-    color: #61423b;
+    color: #5d3a33;
     margin-top: 5px;
     margin-left: auto;
     margin-right: auto;
@@ -210,7 +187,7 @@
   }
   
   .know-more-about .btn {
-    background-color: #ec965c;
+    background-color: #e07b39;
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
@@ -224,12 +201,11 @@
   }
   .social-link i {
     font-size: 1.5rem;
-    color: rgb(156, 139, 109);
+    color: rgb(193, 172, 136);
     transition: color 0.3s ease;
   }
   
   .social-link i:hover {
     color: #e07b39;
   }
-
   

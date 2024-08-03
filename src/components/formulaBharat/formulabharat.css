@@ -21,7 +21,7 @@
 
 .ebaja{
     font-family: brush;
-    font-size: 80px;
+    font-size: 50px;
 }
 
 .desc{
@@ -31,7 +31,7 @@
 
 .icon{
     height: 30px;
-    margin-left: 4px;
+    margin-left: 2px;
     color: white;
 }
 
@@ -160,7 +160,7 @@
     font-family: lemon;
     display: flex;
     justify-content: center;
-    font-size: 40px;
+    font-size: 30px;
     color: var(--brown);
 }
 

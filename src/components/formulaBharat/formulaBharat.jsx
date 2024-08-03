@@ -1,4 +1,4 @@
-import './eBajaStyles.css'
+import './formulabharat.css'
 import React, { Fragment } from 'react'
 import TagCloud from "TagCloud";
 import { useEffect } from "react";
@@ -7,48 +7,77 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 
 function Imagecard() {
-  return (
-    <div className='w-11/12 m-auto'>
-        <div className='resp mt-20 flex justify-around'>
-            {dataimg.map((d) => (
-                <div style={{backgroundImage: `url(${d.img})`}} className={`hover:shadow-2xl card bg-no-repeat bg-cover bg-center h-[380px] text-black rounded-xl flex flex-wrap justify-center items-end`}>
-                    <div className="lol h-fit w-80 rounded-xl flex flex-col justify-center items-center">
-                        <div className='diss lol text-amber-400 text-3xl font-bold gap-4 py-1 '>
-                            {d.name}
-                        </div>
-
-                        <div className='diss lol text-white text-xl font-bold flex justify-center items-center gap-4  '>
-                            {d.desig}
-                        </div>
-
-                        <div className='diss2 lol flex justify-center items-center gap-4 p-4 '>
-                            <a href={d.insta} className='lol py-1'>
-                                <FontAwesomeIcon className='lol icon' icon={faInstagram}></FontAwesomeIcon>
-                            </a>
-                            
-                            <a href={d.linkedin} className='lol py04'>
-                                <FontAwesomeIcon className='lol icon' icon={faLinkedin} />
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            ))}
+    return (
+        <div className='w-11/12 m-auto'>
+  <div className='resp mt-20 flex justify-center items-center flex-wrap'>
+    {dataimg.map((d) => (
+      <div 
+        key={d.name} 
+        style={{backgroundImage: `url(${d.img})`}} 
+        className='hover:shadow-2xl card bg-no-repeat bg-cover bg-center h-[380px] w-80 text-black rounded-xl flex flex-col justify-end items-center m-4 relative overflow-hidden group'>
+        <div className="lol h-[120px] w-full absolute bottom-0 bg-black bg-opacity-50 p-4 flex flex-col justify-center items-center transition-opacity duration-300 group-hover:bg-opacity-0">
+          <div className='diss text-3xl text-amber-400 font-bold flex justify-center items-center gap-4 py-1'>
+            {d.name}
+          </div>
+          <div className='diss text-white text-xl font-bold flex justify-center items-center gap-4'>
+            {d.desig}
+          </div>
+          <div className='diss2 flex justify-between items-center gap-4 pt-4'>
+            <a href={d.insta} className='py-1'>
+              <FontAwesomeIcon className='icon' icon={faInstagram} />
+            </a>
+            <a href={d.linkedin} className='py-1'>
+              <FontAwesomeIcon className='icon' icon={faLinkedin} />
+            </a>
+          </div>
         </div>
+      </div>
+    ))}
+  </div>
+  <div className='w-11/12 m-auto'>
+  <div className='resp mt-32 flex justify-center items-center flex-wrap'>
+    {data2img.map((d) => (
+      <div 
+        key={d.name} 
+        style={{backgroundImage: `url(${d.img})`}} 
+        className='hover:shadow-2xl card bg-no-repeat bg-cover bg-center h-[380px] w-80 text-black rounded-xl flex flex-col justify-end items-center m-4 relative overflow-hidden group'>
+        <div className="lol h-[120px] w-full absolute bottom-0 bg-black bg-opacity-50 p-4 flex flex-col justify-center items-center transition-opacity duration-300 group-hover:bg-opacity-0">
+          <div className='diss text-3xl text-amber-300 font-bold flex justify-center items-center gap-4 py-1'>
+            {d.name}
+          </div>
+          <div className='diss text-gray-50 text-xl font-bold flex justify-center items-center gap-4'>
+            {d.desig}
+          </div>
+          <div className='diss2 flex justify-between items-center gap-4 pt-4'>
+            <a href={d.insta} className='py-1'>
+              <FontAwesomeIcon className='icon' icon={faInstagram} />
+            </a>
+            <a href={d.linkedin} className='py-1'>
+              <FontAwesomeIcon className='icon' icon={faLinkedin} />
+            </a>
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
 
-    </div>
-  )
-}
+
+      </div>
+    )
+  }
 
 //Descrition
 function Description() {
   return (
     <div className='flex flex-col justify-center h-800'>
-        <h1 className='ebaja2 ebaja ml-10 text-amber-800 mb-20'>EBAJA</h1>
+        <h1 className='ebaja2 ebaja ml-10 text-amber-800 mb-20'>Formula Bharat</h1>
         <p className='w-4/5 ml-10 desc text-gray-600'>
-            <span className="text-red-700"> The primary objective of BAJA SAEINDIA </span>
-            has always been to develop an understanding in the fresh and curious minds about entering the industrial reign. The purpose is to help the 
-            <span className="text-red-700"> Undergraduates </span>
-            enlarge their spectrum in technical and practical approaches, to trigger the prefrontal cortex and increase problem-solving and planning skills, enhance the managing capability, along with core technical knowledge.
+            <span className="text-red-700"> Formula Bharat is an Indian Formula Student-style </span>
+            engineering design competition in which students from colleges and universities all over the country, compete with a life-size formula-style vehicle in areas of engineering design, overall cost, marketability and dynamic performance. The series replicates the global student Formula series hosted in around 
+            <span className="text-red-700"> 11 countries  </span> per year.
+            The purpose of this competition is to encourage students to gain hands-on practical experience, while applying engineering theories studied in the classroom. In addition, students learn the art of management and teamwork, which are essential skills required in the 
+            <span className="text-red-700"> real world. </span> These student teams are required to build a new vehicle from scratch year-after-year and seek sponsorship and donations by their own means to fund the project.
         </p>
     </div>
 
@@ -151,7 +180,7 @@ function Ourcar({events}) {
                         <Circle />
                     </div>
 
-                    <div className="flex"><img src=".\src\components\eBaja\pics\ebajacar2.png" alt="" className='img2'/></div>
+                    <div className="flex"><img src=".\src\components\formulabharat\pics\formulacar.PNG" alt="" className='img2'/></div>
                 </div>
         </div>
     )
@@ -165,20 +194,20 @@ const TextShpere = () => {
       const container = ".tagcloud";
       const texts = [
         "Power",
-        "50.25",
-        "7.4 KW",
-        "4200 RPM",
+        "KTM 390",
+        "43 bsp",
+        "9500 RPM",
         "Torque",
         "Acceleration",
-        "RPM",
-        "39 KM",
-        "Range",
+        "R13",
+        "140 km/h",
+        "AISI 1018",
         "Brakes",
         "Phase 1",
-        "E-Baja",
+        "FB",
         "Formula-1",
-        "t-bharat",
-        "ATV",
+        "f-bharat",
+        "Chassis",
       ];
 
       const options = {
@@ -231,7 +260,7 @@ function Brakes() {
                 </div>
             ))}
         </div>
-        <div className='resp mt-32 flex justify-around'>
+        <div className='resp mt-32 flex justify-between'>
             {data3.map((d) => (
                 <div style={{backgroundImage: `url(${d.img})`}} className='hover:shadow-2xl card h-[320px] bg-no-repeat bg-cover bg-center text-black rounded-xl flex flex-wrap justify-center items-end'>
                     <div className=" lol h-fit w-64 rounded-xl flex flex-col justify-center items-center">
@@ -239,7 +268,7 @@ function Brakes() {
                             {d.name}
                             
                         </div>
-                        <div className='diss lol text-gray-50 font-bold flex justify-center items-center gap-4  '>
+                        <div className='diss lol text-gray-50  font-bold flex justify-center items-center gap-4  '>
                             {d.desig}
                             
                         </div>
@@ -314,28 +343,28 @@ function Evpowertrain() {
               </div>
           ))}
       </div>
-      <div className='resp mt-32 flex justify-around'>
-          {data2ev.map((d) => (
-              <div style={{backgroundImage: `url(${d.img})`}} className='hover:shadow-2xl card h-[320px] bg-no-repeat bg-cover bg-center text-black rounded-xl flex flex-wrap justify-center items-end'>
-                  <div className=" lol h-fit w-64 rounded-xl flex flex-col justify-center items-center">
-                      <div className='diss text lol text-3xl text-amber-400 font-bold flex justify-center items-center gap-4 py-1 '>
-                          {d.name}
-                          
-                      </div>
-                      <div className='diss lol text-gray-50 text-xl font-bold flex justify-center items-center gap-4  '>
-                          {d.desig}
-                          
-                      </div>
-                      <div className='diss2 lol flex justify-between items-center gap-4 p-4 '>
-                          <a href={d.insta} className='lol py-1'><FontAwesomeIcon className='lol icon' icon={faInstagram}></FontAwesomeIcon></a><a href={d.linkedin} className='lol py04'><FontAwesomeIcon className='icon lol' icon={faLinkedin} />
-                          </a>
-                      </div>
-                  </div>
-          
+      <div className='resp mt-32 flex justify-between'>
+            {data2ev.map((d) => (
+                <div style={{backgroundImage: `url(${d.img})`}} className='hover:shadow-2xl card h-[320px] bg-no-repeat bg-cover bg-center text-black rounded-xl flex flex-wrap justify-center items-end'>
+                    <div className=" lol h-fit w-64 rounded-xl flex flex-col justify-center items-center">
+                        <div className='diss text lol text-xl text-amber-400 font-bold flex justify-center items-center gap-4 py-1 '>
+                            {d.name}
+                            
+                        </div>
+                        <div className='diss lol text-gray-50  font-bold flex justify-center items-center gap-4  '>
+                            {d.desig}
+                            
+                        </div>
+                        <div className='diss2 lol flex justify-between items-center gap-4 p-4 '>
+                            <a href={d.insta} className='lol py-1'><FontAwesomeIcon className='lol icon' icon={faInstagram}></FontAwesomeIcon></a><a href={d.linkedin} className='lol py04'><FontAwesomeIcon className='icon lol' icon={faLinkedin} />
+                            </a>
+                        </div>
+                    </div>
+            
 
-              </div>
-          ))}
-      </div>
+                </div>
+            ))}
+        </div>
   </div>
   )
 }
@@ -557,40 +586,41 @@ function Executives() {
         <div className="resp flex justify-around">
             <div><h1 className='text-4xl my-10 exe'>Brakes</h1>
                 <ul>
-                    <li>Luv Singh Saluja</li>
-                    <li>Shantanu Gouraha</li>
-                    <li>Siddharth Sharma</li>
+                    <li>Milind Kumawat</li>
+                    <li>Krishna Agarwal</li>
+                    <li>Tanmay Gupta</li>
                 </ul>
             </div>
-            <div><h1 className='hi text-4xl my-10 exe'>Electrical Powertrain</h1>
+            <div><h1 className='hi text-4xl my-10 exe'>Powertrain</h1>
                 <ul>
-                    <li>Amurtya Rai</li>
-                    <li>Prince Kumar Singh</li>
-                    <li>Aman Kumar Sharma</li>
-                    <li>Aarya Shastri</li>
+                    <li>Nityanand Shukla</li>
+                    <li>S Shruti</li>
+                    <li>Pranay Shrivastava</li>
+                    <li>M Sharath Kumar</li>
                 </ul>
             </div>
             <div><h1 className='text-4xl my-10 exe'>Frames</h1>
                 <ul>
-                    <li>Satwik Gupta</li>
-                    <li>Neeraj Kumar Verma</li>
-                    <li>Goli Sri Vardhan</li>
+                    <li>Sachin Kumar Sahu</li>
+                    <li>Harsh Shrivastava</li>
+                    <li>KV Rajiv Kumar</li>
+                    <li>Malvika Krishna</li>
                 </ul>
             </div>
         </div>
         <div className="resp flex justify-evenly my-10">
             <div><h1 className='text-4xl my-10 exe'>Steering</h1>
                 <ul>
-                    <li>Manish Agrawal</li>
-                    <li>A.sathvik</li>
-                    <li>Ritika jain</li>
+                    <li>Sankalp Gupta</li>
+                    <li>Priyansh Yadav</li>
+                    <li>Shraddha Agrawal</li>
                 </ul>
             </div>
             <div><h1 className='text-4xl my-10 exe'>Suspension</h1>
                 <ul>
-                    <li>T.Srihitha Hasini</li>
-                    <li>Abhishek Yadav</li>
-                    <li>Sakshi Roy</li>
+                    <li>Saral Pandey</li>
+                    <li>Vanshika Jaiswal</li>
+                    <li>Saksham Tikariha</li>
                 </ul>
             </div>
             
@@ -610,8 +640,8 @@ function App() {
         <main className='flex flex-col justify-between items-center bg-modestBrown'>
             <div id='introDiv' className="w-85vw">
                 <div className="ebaja2 flex justify-evenly">
-                    <Description />
                     <TextShpere />
+                    <Description />
                 </div>
 
                 <Timeline events={events} />
@@ -631,14 +661,11 @@ function App() {
                 <h1 className='head text-5xl flex justify-center items-center pb-28 pt-36'>Steering</h1>
                 <Steering />
 
-                <h1 className='head text-5xl flex justify-center items-center pb-28 pt-36'>EV PowerTrain</h1>
+                <h1 className='head text-5xl flex justify-center items-center pb-28 pt-36'>PowerTrain</h1>
                 <Evpowertrain />
 
                 <h1 className='head text-5xl flex justify-center items-center pb-28 pt-36'>Brakes</h1>
                 <Brakes />
-
-                <h1 className='head text-5xl flex justify-center items-center pb-28 pt-36'>OUR MENTORS</h1>
-                <Mentor />
                 
                 <h1 className='head text-5xl flex justify-center items-center pb-28 pt-36 my-10'>Executives</h1>
                 <Executives/>
@@ -648,28 +675,35 @@ function App() {
   )
 }
 
-export default App
+export default App;
 
 //Timeline-1 Data about Phases
 let events = [
   {
       heading : "PHASE 1",
-      subHeading: "Preliminary Round, BAJA SAEINDIA 2025",
-      description: "The first leg of the event is Phase 1 Preliminary round which is scheduled for July 2024; it focuses on the rudimentary virtual presentation of the teams All Terrain Vehicle (ATV)",
+      subHeading: "Quiz Session, Formula Bharat 2025",
+      description: "The first leg of the event is Phase 1-Quiz Session which examines participant teams on the basis of the Rule Book and assigns Car number based on ranking",
       direction: "left"
 
   },
   {
       heading : "PHASE 2",
-      subHeading: "Virtual BAJA SAEINDIA 2025",
-      description: "The second leg of the event i.e., Virtual round which has two division first incorporate Virtual dynamic event with the help of Simulation based model",
+      subHeading: "Static Events",
+      description: "The second leg is based on Static Events which involve presenting Vehicle Design Reports, a Business Presentation, and Cost and Manufacturing Reports.",
       direction: "right"
 
   },
   {
       heading : "PHASE 3",
       subHeading: "Physical Round, BAJA SAEINDIA 2025",
-      description: "The final leg of the event is Phase 3, the Physical round, which is conducted physically in Jan 2025 for mBaja and hBaja and in March 2025 for eBaja for 5 days",
+      description: "The final leg of the event is Phase 3, the Physical round, which include Technical Inspection, Skidpad, Acceleration, Autocross, and Endurance. ",
+
+
+
+
+
+
+
       direction: "left"
 
   },
@@ -680,37 +714,37 @@ let events = [
 
 let info = [
   {
-      subHeading : "7.4 KW",
-      heading: "Motor Nominal / Peak Power",
+      subHeading : "KTM 390 (2013)",
+      heading: "Engine",
       direction: "left"
 
   },
   {
-      subHeading : "59.13 Nm",
-      heading: "Nominal Torque / Peak Torque",
+      subHeading : "140 km/h",
+      heading: "Top Speed",
       direction: "right"
 
   },
   {
-      subHeading : "4200",
-      heading: "Moto Max RPM",
+      subHeading : "43 bsp at 9500 rpm",
+      heading: "Power",
       direction: "left"
 
   },
   {
-    subHeading : "50.25",
-    heading: "Max Speed",
+    subHeading : "AISI 1018",
+    heading: "Material of chassis",
     direction: "right"
 
   },
   {
-    subHeading : "3.02",
-    heading: "Max Acceleration",
+    subHeading : "250 kg",
+    heading: "Weight",
     direction: "left"
   },
   {
-    subHeading : "39 KM",
-    heading: "Vehicle Range",
+    subHeading : "R13",
+    heading: "Tyres",
     direction: "right"
 
 },
@@ -719,84 +753,59 @@ let info = [
 
 const data=[
   {
-      name:"K. S. S. Karthik",
+      name:"Arpit Yadav",
       desig:"Domain Head",
-      img:"./src/components/eBaja/pics/karthik.JPG",
-      insta:"https://www.instagram.com/karthik_sai712",
-      linkedin:""
+      img:"./src/components/formulabharat/pics/arpit.jpeg",
+      insta:"https://www.instagram.com/_._arpittttt._?igsh=MXZsN2Z1c2ZqMjdoZw%3D%3D&utm_source=qr",
+      linkedin:"https://www.linkedin.com/in/arpit-yadav-28946b26b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
   },
   
 ]
 const data3 = [
   {
 
-      name:"Sanchit Singh",
+      name:"Shambhavi",
       desig:"Member",
-      img:"./src/components/eBaja/pics/treasurer.jpg",
-      insta:"https://www.instagram.com/singhsanchit42?igsh=bDJ4YW1iNnFxY3Z0",
-      linkedin:"https://www.linkedin.com/in/sanchit-singh-011924266?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+      img:"./src/components/formulabharat/pics/shambhavi.jpg",
+      insta:"https://www.instagram.com/heyy__shambhavi__?igsh=ZHV1YjRha2dybDVmc:\Users\spars\Downloads\shambhavi.JPG",
+      linkedin:"https://www.linkedin.com/in/shambhavi-sam-67574624b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
   },
   {
-      name:"Gaurab Ray",
+      name:"Kolagani Sathvik",
       desig:"Member",
-      img:"./src/components/eBaja/pics/vice.JPEG",
-      insta:"https://www.instagram.com/24raygaurab?igsh=bmU0MnptdmwxdXFo",
-      linkedin:"https://www.linkedin.com/in/gaurab-ray-504a8526b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-  },
-  {
-      name:"Mridul Bansal",
-      desig:"Member",
-      img:"./src/components/eBaja/pics/mridul.jpeg",
-      insta:"",
-      linkedin:""
+      img:"./src/components/formulabharat/pics/kolagani.jpg",
+      insta:"https://www.instagram.com/s_a_t_h_v_i_k____v?igsh=MW1sZThjdDNweWc5bA==",
+      linkedin:"https://www.linkedin.com/in/kolagani-sathvik-355717259?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
   }
 
-]
-
-const datacv=[
-  {
-      name:"Ajay Kashyap",
-      desig:"Vice Captain",
-      img:"./src/components/eBaja/pics/vice3.jpg",
-      insta:"",
-      linkedin:"https://www.linkedin.com/in/ajaykashyap92025?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-  },
-  {
-      name:"Vaishnavi Padole",
-      desig:"Member",
-      img:"./src/components/eBaja/pics/vaishnavi.jpg",
-      insta:"",
-      linkedin:"https://www.linkedin.com/in/vaishnavi-padole-b41ab0250"
-  }
 ]
 
 //EVpowertrain
 
 const dataev=[
-  {
-      name:"Sarvagya Jain",
-      desig:"Domain Head",
-      img:"./src/components/eBaja/pics/sarvagya.jpg",
-      insta:"https://www.instagram.com/sarvagyajain2105?igsh=MWE1NmM0bnhoYTVqbw==",
-      linkedin:"https://www.linkedin.com/in/sarvagya-jain-7159b2254/"
-  }
-  
+    {
+        name:"Ajay Kashyap",
+        desig:"Vice Captain",
+        img:"./src/components/eBaja/pics/vice3.jpg",
+        insta:"",
+        linkedin:"https://www.linkedin.com/in/ajaykashyap92025?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    }
 ]
 
 const data2ev=[
+    {
+        name:"Vaishnavi Padole",
+        desig:"Member",
+        img:"./src/components/formulabharat/pics/vaishnavi.jpg",
+        insta:"",
+        linkedin:"https://www.linkedin.com/in/vaishnavi-padole-b41ab0250"
+    },
   {
-      name:"Balpreet",
+      name:"Sachin Choubey",
       desig:"Member",
-      img:"./src/components/eBaja/pics/balpreet.jpg",
-      insta:"https://www.instagram.com/balpreet_singh_10?igsh=MTkyNTN3c3NtZmZpNA==",
-      linkedin:"http://www.linkedin.com/in/balpreet-singh-gill-72374925b"
-  },
-  {
-      name:"Shivansh",
-      desig:"Member",
-      img:"./src/components/eBaja/pics/shivansh.jpg",
-      insta:"https://www.instagram.com/shivansh_chowhan?igsh=MWxteTRhaTdkNmlicA==",
-      linkedin:"https://www.linkedin.com/in/shivansh-chowhan-b0b372239?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+      img:"./src/components/formulabharat/pics/sachin.jpg",
+      insta:"",
+      linkedin:""
   }
 ]
 
@@ -804,73 +813,65 @@ const data2ev=[
 
 const datasteer=[
   {
-      name:"Nimesh Kashyap",
+      name:"Avish Srivastava",
       desig:"Domain Head",
-      img:"./src/components/eBaja/pics/nimesh.jpeg",
-      insta:"",
-      linkedin:"https://www.linkedin.com/in/nimesh-kumar-kashyap-1b0196261/"
+      img:"./src/components/formulabharat/pics/avish.jpg",
+      insta:"https://www.instagram.com/avish_jarvis_potter?igsh=a2F0dXplMG0wc3V4",
+      linkedin:"https://www.linkedin.com/in/avish-kumar-shrivastava-0702ajp"
   },
 ]
 
 const data2steer=[
   {
-      name:"Astha Soni",
+      name:"Devanshu Satapathy",
       desig:"Member",
-      img:"./src/components/eBaja/pics/astha.jpg",
-      insta:"https://www.instagram.com/princyprincy_astha?utm_source=qr&igsh=MW5lZWtxemtvOXJ0aA==",
-      linkedin:"https://www.linkedin.com/in/astha-soni-47a5682a6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+      img:"./src/components/formulabharat/pics/devanshu.jpg",
+      insta:"https://www.instagram.com/dicctator.rr?igsh=MTlja2R5dW02eHJmYg==",
+      linkedin:"https://www.linkedin.com/in/devanshu-satapathy-72323a28a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
   },
   {
-      name:"Chirantan",
+      name:"Honumant Nethanj",
       desig:"Member",
-      img:"./src/components/eBaja/pics/chirantan.jpg",
-      insta:"https://www.instagram.com/___dev__sharma__?igsh=MTlmdXA2NmFrdjQy",
-      linkedin:"https://www.linkedin.com/in/chirantan-dev-sharma-42b6252ab"
-  },
-  {
-      name:"Utkarsh Nashine",
-      desig:"Member",
-      img:"./src/components/eBaja/pics/chirantan.jpg",
-      insta:"",
-      linkedin:""
+      img:"./src/components/formulabharat/pics/honumant.jpeg",
+      insta:"https://www.instagram.com/honumant_25?igsh=OGF5M3Zvemc3cmt5",
+      linkedin:"https://www.linkedin.com/me?trk=p_mwlite_me_notifications-secondary_nav"
   }
-
 ]
 
 //Frames
 
 const datafr=[
   {
-      name:"Pratyush Shastri",
+      name:"Om Prakash",
       desig:"Domain Head",
-      img:"./src/components/eBaja/pics/pratyush.jpg",
-      insta:"https://www.instagram.com/prat_1220?igsh=MTJ5OXNlc21vMWsxMA==",
-      linkedin:"https://www.linkedin.com/in/pratyush-shastri"
+      img:"./src/components/formulabharat/pics/om.jpg",
+      insta: 'https://www.instagram.com/_.axelx_?igsh=eHo5M3J3YXdrNXJw',
+    linkedin: "https://www.linkedin.com/in/om-prakash-sahoo-60bb46257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
   }
 ]
 
 const data2fr=[
   {
-      name:"Dhruv Dutta",
+      name:"Abhiroop Sharma",
       desig:"Member",
-      img:"./src/components/eBaja/pics/dhruv.jpg",
-      insta:"https://www.instagram.com/dhruv_d64?igsh=bmVzNjEwNGJkYzFy",
-      linkedin:"https://www.linkedin.com/in/dhruv-kumar-dutta-914019293?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+      img:"./src/components/formulabharat/pics/abhiroop.jpg",
+      insta:"https://www.instagram.com/iam_sharmaji7?igsh=MTdpem9uZWpveXZ3cQ==",
+      linkedin:"https://www.linkedin.com/in/abhiroop-sharma-75a46926b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
   },
   {
   
-      name:"Pratik Vats",
+      name:"Anisha Sharma",
       desig:"Member",
-      img:"./src/components/eBaja/pics/pratik.jpeg",
-      insta:"https://www.linkedin.com/in/pratik-vats-a354ab294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      linkedin:"https://www.linkedin.com/in/pratik-vats-a354ab294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+      img:"./src/components/formulabharat/pics/anisha.jpg",
+      insta:"",
+      linkedin:"https://www.linkedin.com/in/anisha-sharma29?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
   },
   {
-      name:"Shantanu N K",
+      name:"Navneet Kumar",
       desig:"Member",
-      img:"./src/components/eBaja/pics/shantanu.png",
-      insta:"https://www.instagram.com/skc40/",
-      linkedin:"https://www.linkedin.com/in/shantanu-n-k-choudhury/"
+      img:"./src/components/formulabharat/pics/navneet.jpg",
+      insta:"https://www.instagram.com/navneet_one8/",
+      linkedin:"https://www.linkedin.com/in/navneet-kumar-pandey-b8036828a"
   }
 ]
 
@@ -878,76 +879,27 @@ const data2fr=[
 
 const datasus=[
   {
-      name:"Ritik Pathak",
+      name:"Divek Daheriya",
       desig:"Domain Head",
-      img:"./src/components/eBaja/pics/ritik.jpg",
-      insta:"https://www.instagram.com/ritik_gear?igsh=bDYzbW5zaGpuaWds",
-      linkedin:"https://www.linkedin.com/in/ritik-pathak-31b865247?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+      img:"./src/components/formulabharat/pics/divek.jpg",
+      insta:"",
+      linkedin:""
   }
 ]
 const data2sus=[
   {
-      name:"Yatharth",
+      name:"Rishi Singh",
       desig:"Member",
-      img:"./src/components/eBaja/pics/yatharth.png",
-      insta:"https://www.instagram.com/yatharth__verma?igsh=dnJ6emRzbzNjNng3",
-      linkedin:"https://www.linkedin.com/in/yatharth-verma-b75a58201/"
+      img:"./src/components/formulabharat/pics/rishi.jpg",
+      insta: 'https://www.instagram.com/shiri_singha?igsh=MXNlZTY0d3JoNjA0Ng==',
+      linkedin: "https://www.linkedin.com/in/rishi-singh-aa5387264?trk=contact-info"
   },
   {
-      name:"Argha",
+      name:"Deepak Shukla",
       desig:"Member",
-      img:"./src/components/eBaja/pics/argha.JPG",
-      insta:"https://www.instagram.com/argha_choudhary?igsh=MWU0N3N6NmExazFpbw==",
-      linkedin:"https://www.linkedin.com/in/argha-choudhary-b36191258?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-  }
-]
-
-//Mentor
-
-const datamen=[
-  {
-      name:"Shaili Mishra",
-      desig:"Mentor",
-      img:"./src/components/eBaja/pics/shaili.JPG",
-      insta:"https://www.instagram.com/shailimishra22?utm_source=qr&igsh=cXBjOHg2eG94c2Vp",
-      linkedin:"https://www.linkedin.com/in/shaili-mishra-358b2322b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-  },
-  {
-      name:"Bhupendra Singh",
-      desig:"Mentor",
-      img:"./src/components/eBaja/pics/bhupendra.JPG",
-      insta:"https://www.instagram.com/bhupendra.s.p?igsh=MTA1ZnV1b2ZvYmpmdg==",
-      linkedin:"https://www.linkedin.com/in/bhupendra-singh-patel-666212233"
-  },
-  {
-      name:"Ekant Sahu",
-      desig:"Mentor",
-      img:"./src/components/eBaja/pics/ekant.jpeg",
-      insta:"https://www.instagram.com/_.lonely_coder._?igsh=aDNpYXY5ZGM3ZDhv",
-      linkedin:"https://www.linkedin.com/in/ekant-sahu/"
-  }
-]
-const data2men=[
-  {
-      name:"Harsh",
-      desig:"Mentor",
-      img:"./src/components/eBaja/pics/harsh.JPG",
-      insta:"https://www.instagram.com/",
-      linkedin:"https://www.linkedin.com/feed/"
-  },
-  {
-      name:"Piyush Kumar",
-      desig:"Mentor",
-      img:"./src/components/eBaja/pics/piyush.JPEG",
-      insta:"https://www.instagram.com/p.i.y.y.u.s.h_kmr?igsh=MWF4ZHl6eGp0ZTkyeQ==",
-      linkedin:"https://www.linkedin.com/in/piyush-kumar-796513297?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-  },
-  {
-      name:"Bhavnesh Rai",
-      desig:"Mentor",
-      img:"./src/components/eBaja/pics/bhavnesh.JPG",
-      insta:"https://www.instagram.com/bhavnesh.rai?igsh=bXJpaWc3cXU2c3h4",
-      linkedin:"http://linkedin.com/in/bhavnesh-rai-4b4712273"
+      img:"./src/components/formulabharat/pics/deepak.JPG",
+      insta:"",
+      linkedin:""
   }
 ]
 
@@ -955,7 +907,7 @@ const data2men=[
 
 const dataimg = [
   {
-      name:"Abhiroop Sharma",
+      name:"Abhiroop",
       desig:"Captain",
       img:"./src/components/formulabharat/pics/abhiroop.jpg",
       insta:"https://www.instagram.com/iam_sharmaji7?igsh=MTdpem9uZWpveXZ3cQ==",
@@ -972,20 +924,23 @@ const dataimg = [
   },
   {
     key: '3',
-    name: 'Om Prakash Sahoo',
+    name: 'Om Prakash',
     desig: 'Team Manager',
     img: "./src/components/formulabharat/pics/om.jpg",
     insta: 'https://www.instagram.com/_.axelx_?igsh=eHo5M3J3YXdrNXJw',
     linkedin: "https://www.linkedin.com/in/om-prakash-sahoo-60bb46257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
 
-  },
-  {
-      key: '4',
-      name: 'Rishi Singh Rajput',
-      desig: 'Treasurer',
-      img: "./src/components/formulabharat/pics/rishi.jpg",
-      insta: 'https://www.instagram.com/shiri_singha?igsh=MXNlZTY0d3JoNjA0Ng==',
-      linkedin: "https://www.linkedin.com/in/rishi-singh-aa5387264?trk=contact-info"
-
   }
 ]
+const data2img = 
+[
+    {
+        key: '4',
+        name: 'Rishi Singh',
+        desig: 'Treasurer',
+        img: "./src/components/formulabharat/pics/rishi.jpg",
+        insta: 'https://www.instagram.com/shiri_singha?igsh=MXNlZTY0d3JoNjA0Ng==',
+        linkedin: "https://www.linkedin.com/in/rishi-singh-aa5387264?trk=contact-info"
+  
+    }
+  ]

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './about.css';
 
 const backgroundStyle = {
-  background: '#fffff2',
+  backgroundColor: 'rgb(255, 251, 245)',
   position: 'relative',
   overflow: 'hidden',
   zIndex: 0,
@@ -18,6 +18,7 @@ const overlayStyle = {
   height: '100%',
   zIndex: -1,
   backgroundImage: 'url("Motosports.png")',
+  backgroundColor:'var(--modestbrown)',
   backgroundRepeat: 'repeat',
   opacity: 0.2,
 };
@@ -39,26 +40,26 @@ const teamMembers = {
     { 
       name: "Ashish Jangid", 
       image: "AshishJangid.jpg",
-      instagram: "#",
-      linkedin: "#" 
+      instagram: "https://www.instagram.com/ashish_ramchandra1224",
+      linkedin: "https://www.linkedin.com/in/ashish-kumar-jangid-a39534293/" 
     },
     { 
       name: "Rishabh Bhati", 
       image: "RishabhBhati.jpg",
       instagram: "#",
-      linkedin: "#" 
+      linkedin: "https://www.linkedin.com/in/rishabh-bhati-16276a26b/" 
     },
     { 
       name: "Shikha Yadav", 
       image: "ShikhaYadav.jpg",
-      instagram: "#",
-      linkedin: "#" 
+      instagram: "https://www.instagram.com/ahkihs_19",
+      linkedin: "https://www.linkedin.com/in/shikha-yadav-3830902b1/" 
     },
     { 
       name: "Astha Jaiswal", 
       image: "AsthaJaiswal.jpg",
-      instagram: "#",
-      linkedin: "#" 
+      instagram: "https://www.instagram.com/_astha_jaiswal",
+      linkedin: "https://www.linkedin.com/in/astha-jaiswal-10b7b528a/" 
     },
     { 
       name: "Ritika Jain", 
@@ -69,8 +70,8 @@ const teamMembers = {
     { 
       name: "Kundan Rathi", 
       image: "KundanRathi.jpg",
-      instagram: "#",
-      linkedin: "#" 
+      instagram: "https://www.instagram.com/kundan_rathi.11",
+      linkedin: "https://www.linkedin.com/in/kundan-rathi-99a896287/" 
     }
   ],
   documentation: [
@@ -89,14 +90,14 @@ const teamMembers = {
     { 
       name: "Prakarsh Gupta", 
       image: "PrakarshGupta.jpg",
-      instagram: "#",
-      linkedin: "#" 
+      instagram: "https://www.instagram.com/prakarshgupta_21",
+      linkedin: "https://www.linkedin.com/in/prakarsh-gupta-a75b67279/" 
     },
     { 
       name: "Vighnesh Gupta", 
       image: "VighneshGupta.jpg",
-      instagram: "#",
-      linkedin: "#" 
+      instagram: "https://www.instagram.com/vigh.nesh_._",
+      linkedin: "https://www.linkedin.com/in/vighnesh-gupta-1329b92a5/" 
     }
   ],
   webDevelopment: [
@@ -121,20 +122,20 @@ const teamMembers = {
     { 
       name: "Leora Saharia", 
       image: "LeoraSaharia.jpg",
-      instagram: "#",
-      linkedin: "#" 
+      instagram: "https://www.instagram.com/leorasaharia/",
+      linkedin: "https://www.linkedin.com/in/leora-saharia-9403681a7/" 
     },
     { 
       name: "Vivek Verma", 
       image: "VivekVerma.jpeg",
-      instagram: "#",
-      linkedin: "#" 
+      instagram: "https://www.instagram.com/m_i_vivek/",
+      linkedin: "https://www.linkedin.com/in/vivek-verma-b7701929a/" 
     },
     { 
       name: "Ayush Mishra", 
       image: "AyushMishra.jpg",
       instagram: "#",
-      linkedin: "#" 
+      linkedin: "https://www.linkedin.com/in/ayushmishra-profile" 
     }
   ],
   design: [
@@ -147,8 +148,8 @@ const teamMembers = {
     { 
       name: "Pratibha Sikheriya", 
       image: "PratibhaSikheriya.jpg",
-      instagram: "#",
-      linkedin: "#" 
+      instagram: "https://www.instagram.com/chikki_.19/",
+      linkedin: "https://www.linkedin.com/in/pratibha-sikheriya-b8142a279/" 
     },
     { 
       name: "Megha Rathi", 
@@ -160,13 +161,13 @@ const teamMembers = {
       name: "Anshul Wasnik", 
       image: "AnshulWasnik.jpg",
       instagram: "#",
-      linkedin: "#" 
+      linkedin: "https://www.linkedin.com/in/anshul-wasnik-69455a25b/" 
     },
     { 
       name: "Aman Kumar Sharma", 
       image: "AmanSharma.jpg",
-      instagram: "#",
-      linkedin: "#" 
+      instagram: "https://www.instagram.com/ittz__aman_",
+      linkedin: "https://in.linkedin.com/in/aman-sharma-874a7b252" 
     }
   ]
 };
@@ -230,14 +231,14 @@ function About() {
       <div className="overlay" style={overlayStyle}></div>
       <div className="container mx-auto px-4">
       <section className="what-do-we-do text-center mb-32 pb-32">
-          <h1 className="font-albulaHeavy text-3xl text-[#23120B] mt-10">WHO ARE WE?</h1>
+          <h1 className="font-albulaHeavy text-[#23120B] mt-10">WHO ARE WE?</h1>
           <p className="font-albula text-lg text-[#5d3a33] mt-5 mx-auto w-3/5">
             Motorsports is a dynamic and innovative club dedicated to pushing the boundaries of automotive technology and competitive racing. Our club has a track record of excellence, actively participating in a range of competitions where we showcase our skills and passion for motorsports. Through our commitment to excellence and state-of-the-art technologies, we have established ourselves as leaders within the Indian automotive sector. NIT Raipur Motorsports provides a platform for students to pursue their passions and demonstrate their abilities on a broader stage. Join us and experience the thrill of Motorsports at NIT Raipur!
           </p>
         </section>
 
         <section className="what-do-we-do text-center mb-32 pb-32">
-          <h1 className="font-albulaHeavy text-5xl text-[#23120B] mt-10">WHAT DO WE DO?</h1>
+          <h1 className="font-albulaHeavy text-[#23120B] mt-10">WHAT DO WE DO?</h1>
           <p className="font-albula text-lg text-[#5d3a33] mt-5 mx-auto w-3/5">
             We, at NIT Raipur Motorsports, are a dedicated team of over 85 members who devote our time and expertise to creating robust and durable cars that outperform the competition. Our club is actively involved in two prestigious races eBaja and Formula Bharat, where we showcase our innovation, engineering prowess, and teamwork. Through rigorous testing, meticulous design processes, and a relentless pursuit of excellence, we push the boundaries of what’s possible in the realm of Motorsports. Join us on this exciting journey of innovation and competition!
           </p>
@@ -279,7 +280,7 @@ function About() {
                 className="big-card"
               />
             </div>
-            <div className="team-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mt-5 justify-center">
+            <div className="team-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mt-5 justify-center place-items-center">
               {teamMembers.webDevelopment.slice(1).map((member, index) => (
                 <TeamMemberCard
                   key={index}
@@ -295,25 +296,27 @@ function About() {
           {/* Sponsorship Section */}
           <div className="team-section mb-10">
             <h2 className="font-albulaHeavy text-3xl text-[#23120B] mt-10">Sponsorship</h2>
-            <div className="flex justify-center mb-8">
-              <TeamMemberCard
-                name="Rishi Singh Rajput (Head)"
-                image="RishiSinghRajput.jpg"
-                instagram="https://www.instagram.com/shiri_singha/?igsh=MXNlZTY0d3JoNjA0Ng%3D%3D"
-                linkedin="https://www.linkedin.com/in/rishi-singh-aa5387264?trk=contact-info"
-                className="big-card"
-              />
+            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 '>
+              <div className="flex justify-center mb-8 md:col-start-2">
+                <TeamMemberCard
+                  name="Rishi Singh Rajput (Head)"
+                  image="RishiSinghRajput.jpg"
+                  instagram="https://www.instagram.com/shiri_singha/?igsh=MXNlZTY0d3JoNjA0Ng%3D%3D"
+                  linkedin="https://www.linkedin.com/in/rishi-singh-aa5387264?trk=contact-info"
+                  className="big-card"
+                />
+              </div>
+              <div className="flex justify-center mb-8">
+                <TeamMemberCard
+                  name="Ritik Pathak (Head)"
+                  image="RitikPathak.jpg"
+                  instagram="https://www.instagram.com/ritik_gear?igsh=bDYzbW5zaGpuaWds"
+                  linkedin="https://www.linkedin.com/in/ritik-pathak-31b865247?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                  className="big-card"
+                />
+              </div>
             </div>
-            <div className="flex justify-center mb-8">
-              <TeamMemberCard
-                name="Ritik Pathak (Head)"
-                image="RitikPathak.jpg"
-                instagram="https://www.instagram.com/ritik_gear?igsh=bDYzbW5zaGpuaWds"
-                linkedin="https://www.linkedin.com/in/ritik-pathak-31b865247?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-                className="big-card"
-              />
-            </div>
-            <div className="team-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mt-5 justify-center">
+            <div className="team-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mt-5 justify-center place-items-center">
               {teamMembers.sponsorship.slice(2).map((member, index) => (
                 <TeamMemberCard
                   key={index}
@@ -329,34 +332,36 @@ function About() {
           {/* Documentation Section */}
           <div className="team-section mb-10">
             <h2 className="font-albulaHeavy text-3xl text-[#23120B] mt-10">Documentation</h2>
-            <div className="flex justify-center mb-8">
-              <TeamMemberCard
-                name="Rahul Kumar Singh (Head)"
-                image="RahulKumarSingh.jpeg"
-                instagram="#"
-                linkedin="https://www.linkedin.com/in/rahul-kumar-singh-b88636231?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-                className="big-card"
-              />
-            </div>
-            <div className="flex justify-center mb-8">
-              <TeamMemberCard
-                name="Gaurab Kumar (Head)"
-                image="GaurabKumar.jpeg"
-                instagram="#"
-                linkedin="https://linkedin.com/in/gaurav-kumar-b76122251/"
-                className="big-card"
-              />
-            </div>
-            <div className="team-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mt-5 justify-center">
-              {teamMembers.documentation.slice(2).map((member, index) => (
+            <div className=' grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 '>
+              <div className="flex justify-center mb-8 md:col-start-2">
                 <TeamMemberCard
-                  key={index}
-                  name={member.name}
-                  image={member.image}
-                  instagram={member.instagram}
-                  linkedin={member.linkedin}
+                  name="Rahul Kumar Singh (Head)"
+                  image="RahulKumarSingh.jpeg"
+                  instagram="#"
+                  linkedin="https://www.linkedin.com/in/rahul-kumar-singh-b88636231?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                  className="big-card"
                 />
-              ))}
+              </div>
+              <div className="flex justify-center mb-8">
+                <TeamMemberCard
+                  name="Gaurab Kumar (Head)"
+                  image="GaurabKumar.jpeg"
+                  instagram="#"
+                  linkedin="https://linkedin.com/in/gaurav-kumar-b76122251/"
+                  className="big-card"
+                />
+              </div>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mt-5 justify-center place-items-center doc ">
+                {teamMembers.documentation.slice(2).map((member, index) => (
+                  <TeamMemberCard
+                    key={index}
+                    name={member.name}
+                    image={member.image}
+                    instagram={member.instagram}
+                    linkedin={member.linkedin}
+                    />
+                  ))}
             </div>
           </div>
 
@@ -372,7 +377,7 @@ function About() {
                 className="big-card"
               />
             </div>
-            <div className="team-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mt-5 justify-center">
+            <div className="team-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mt-5 justify-center place-items-center">
               {teamMembers.design.slice(1).map((member, index) => (
                 <TeamMemberCard
                   key={index}

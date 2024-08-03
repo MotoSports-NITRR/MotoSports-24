@@ -1,22 +1,8 @@
-import {
-    Box,
-    Button,
-    ButtonGroup,
-    CardBody,
-    CardFooter,
-    Card as ChakraCard,
-    ChakraProvider,
-    Divider,
-    extendTheme,
-    Flex,
-    Heading,
-    Image,
-    Stack,
-    Text
-} from "@chakra-ui/react";
-
+import { Box, Button, ButtonGroup, CardBody, CardFooter, Card as ChakraCard, ChakraProvider, Divider, extendTheme, Flex, Heading, Image, Stack, Text } from "@chakra-ui/react";
 import React, { useState } from "react";
+import RazorpayButton from './razorPay/paymentButton';
 import './merchandise.css'
+import ebajaMerch from '../assets/images/ebajaMerch.png'
 
 const theme = extendTheme({
     colors: {
@@ -54,25 +40,17 @@ const Merchandise = () => {
     };
 
 
-    const totalAmount = selectedQuantity * 399;
+    const totalAmount = selectedQuantity * 799;
 
     return (
-        <div className="relative" >
+        <div className="relative" style={{ background: "#fffbf5" }} >
             <ChakraProvider theme={theme}>
-                <Flex justifyContent="center" className="" style={{
-                    // background: "linear-gradient(#fff1de,1%, #fce6c7, #2f1000ff)",
-                    display: "flex",
-                    // maxHeight: "1000px"
-                    // flexDirection: "column",
-                    // alignItems: "center",
-                }}>
-
-                    <ChakraCard className="" borderWidth="0px" overflow="hidden" backgroundColor={"#fffbf5"} color="gradients.coffeeGradient" boxShadow="md">
-                        <CardBody className="chakraCardBody">
-                            <Flex>
-                                <Box flex="1" pr="5" className="flex flex-col merchBoxImg">
-                                    {/* <Heading size="md" color="brand.darkCoffee" className=" text-center pb-5"><span className="font-albulaHeavy text-3xl">MotoSports Merch</span></Heading> */}
-                                    <Image src="https://hourscollection.com/cdn/shop/files/Brown-Blank2_4_800x.png?v=1702845882" alt="Brown hoodie" h="500px" maxH="700px" w="400px" maxW="500px" className="merchImg" />
+                <Flex justifyContent="center" alignItems="center" className="" style={{ display: "flex" }}>
+                    <ChakraCard className="" borderWidth="0px" overflow="hidden" backgroundColor={"#fffbf5"} color="gradients.coffeeGradient" boxShadow="md" minHeight="85vh">
+                        <CardBody className="chakraCardBody" minHeight="85vh">
+                            <Flex minHeight="85vh" className="justify-center align-middle">
+                                <Box flex="1" pr="5" className="flex flex-col merchBoxImg justify-center">
+                                    <Image src={ebajaMerch} h="460px" maxH="700px" w="425px" maxW="500px" className="merchImg" />
                                 </Box>
 
                                 <Box flex="1" className="merchOptions">
@@ -86,12 +64,7 @@ const Merchandise = () => {
                                             your ticket to being fantastic!
                                         </Text>
 
-                                        <Text color="brand.darkCoffee" fontSize="1xl" fontWeight={650}><span className="font-albulaMedium">399/- Per</span></Text>
-
-                                        <Button onClick={handleSizeClick} className="max-w-80" colorScheme="brand.darkCoffee" bg="brand.darkCoffee" _hover={{ bg: "brand.caramel" }} fontFamily="albula">
-                                            {selectedSize ? `Size: ${selectedSize}` : "Select Size"}
-                                        </Button>
-
+                                        <Text color="brand.darkCoffee" fontSize="1xl" fontWeight={650}><span className="font-albulaMedium"><span className="font-inter font-black">Price:-</span> 799/-</span></Text>
                                         {showSizeOptions && (
                                             <ButtonGroup spacing="1" mt="1">
                                                 {sizeOptions.map((size) => (
@@ -105,9 +78,10 @@ const Merchandise = () => {
                                         <Button onClick={handleQuantityClick} className="max-w-80" variant="solid" colorScheme="brand.darkCoffee" bg="brand.darkCoffee" _hover={{ bg: "brand.caramel" }} fontFamily="albula">
                                             {selectedQuantity
                                                 ? `Quantity: ${selectedQuantity}`
-                                                : "Select Quantity"}
-                                                ? `Quantity: ${selectedQuantity}`
-                                                : "Select Quantity"}
+                                                : `Select: ${Quantity}`
+                                                    ? `Quantity: ${selectedQuantity}`
+                                                    : `Select: ${Quantity}`
+                                            }
                                         </Button>
 
                                         {showQuantityOptions && (
@@ -120,24 +94,16 @@ const Merchandise = () => {
                                             </ButtonGroup>
                                         )}
 
+                                        <ButtonGroup spacing="2">
+                                            <Button className="px-16 preorderBtn" variant="solid" colorScheme="brand.darkCoffee" bg="brand.darkCoffee" fontFamily="albula">
+                                                Order Amount - {totalAmount}/-
+                                            </Button>
+                                        </ButtonGroup>
+                                        <RazorpayButton />
                                     </Stack>
                                 </Box>
                             </Flex>
                         </CardBody>
-                        <Divider />
-                        <CardFooter justifyContent="center">
-                            <ButtonGroup spacing="2">
-
-                                <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_OPNF3Dif5T9gKq" async> </script>
-                                    <Button type="submit" variant="solid" colorScheme="brand.darkCoffee" bg="brand.darkCoffee" _hover={{ bg: "brand.caramel" }} fontFamily="albula">
-                                        Buy now
-                                    </Button>
-                                </form>
-                                <Button className="px-16 preorderBtn" variant="solid" colorScheme="brand.darkCoffee" bg="brand.darkCoffee" fontFamily="albula">
-                                    Preorder - {totalAmount}/-
-                                </Button>
-                            </ButtonGroup>
-                        </CardFooter>
                     </ChakraCard>
                 </Flex>
             </ChakraProvider>

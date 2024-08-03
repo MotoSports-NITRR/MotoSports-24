@@ -1,18 +1,13 @@
 import { Route, BrowserRouter as Router, Routes, Link } from 'react-router-dom';
 import './App.css';
-import Navbar from './components/navbar/navbar';
+import Navbar from './components/header/header';
 import Home from './components/home/home';
 import About from './components/about/about';
 import EBaja from './components/eBaja/eBaja';
-import EBajaFront from './components/eBaja/frontPage/eBajaFront';
-import Phases from './components/eBaja/phases/phases';
 import FormulaBharat from './components/formulaBharat/formulaBharat';
 import Contact from './components/contact/contact';
 import Footer from './components/footer/footer';
 import Merchandise from './components/merchandise/merchandise';
-// import The_Team from './components/eBaja/the_team/the_team';
-import Team from './components/eBaja/the_team/team';
-import Gallery from './components/eBaja/gallery/gallery';
 
 function App() {
 	return (
@@ -21,12 +16,7 @@ function App() {
 			<Router>
 				<Routes>
 					<Route path="/" element={<Home />} />
-					<Route path="/eBaja" element={<EBaja />}>
-						<Route index element={<EBajaFront/>}/>
-						<Route path="phases" element={<Phases/>} />
-						<Route path="team" element={<Team/>} />
-						<Route path="gallery" element={<Gallery/>} />
-					</Route>
+					<Route path="/eBaja" element={<EBaja />} />
 					<Route path="/formulaBharat" element={<FormulaBharat />} />
 					<Route path="/merchandise" element={<Merchandise />} />
 					<Route path="/about" element={<About />} />

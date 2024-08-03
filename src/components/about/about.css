@@ -1,0 +1,211 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Brush+Script+MT&display=swap');
+
+
+.about-page {
+    position: relative;
+    z-index: 0;
+    padding: 50px 0;
+    background-color: #FFFFFF;
+    overflow: hidden;
+  }
+  
+  .about-page .container {
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Team Member Card Styles */
+  .team-member-card {
+    position: relative;
+    width: 250px; 
+    height: 300px; 
+    overflow: hidden;
+    margin: 10px;
+  }
+  
+  .image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .profile-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .image-container:hover .profile-image {
+    transform: scale(1.1);
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: rgb(228, 210, 181);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .image-container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .social-links {
+    margin-top: 10px;
+  }
+  
+  .social-link {
+    margin: 0 10px;
+    color: rgb(193, 172, 136); 
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  .social-link:hover {
+    color: #e07b39;
+  }
+  
+  /* Timeline Styles */
+  .timeline-container {
+    position: relative;
+    padding: 20px 0;
+  }
+  
+  .timeline-line {
+    position: absolute;
+    left: 50%;
+    width: 2px;
+    background: #e07b39;
+    height: 100%;
+    top: 0;
+    transform: translateX(-50%);
+  }
+  
+  .timeline-item {
+    width: 50%;
+    padding: 10px;
+    position: relative;
+  }
+  
+  .timeline-item.left {
+    left: 0;
+    text-align: right;
+    padding-right: 30px;
+  }
+  
+  .timeline-item.right {
+    left: 50%;
+    text-align: left;
+    padding-left: 40px;
+  }
+  
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #fffff2;
+    border: 4px solid #e07b39;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  .timeline-item.left::before {
+    right: -10px;
+  }
+  
+  .timeline-item.right::before {
+    left: -10px;
+  }
+  
+  /* Event Card Styles */
+  .event-card {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .event-image {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .event-card:hover .event-image {
+    transform: scale(1.1);
+  }
+  
+
+  .who-are-we,
+  .what-do-we-do,
+  .events-section,
+  .team {
+    margin-bottom: 34px;
+    padding-bottom: 34px;
+  }
+  
+  .who-are-we h1,
+  .what-do-we-do h1,
+  .events-section h1,
+  .team h1 {
+    font-family: 'AlbulaHeavy';
+    font-size: 5rem;
+    color: #23120B;
+    margin-top: 10px;
+  }
+  
+  .who-are-we p,
+  .what-do-we-do p {
+    font-family: 'Albula';
+    font-size: 1.125rem;
+    color: #5d3a33;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+  }
+  
+  .know-more-about {
+    margin-top: 40px;
+  }
+  
+  .know-more-about .btn {
+    background-color: #e07b39;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  
+  .know-more-about .btn:hover {
+    background-color: #c66931;
+  }
+  .social-link i {
+    font-size: 1.5rem;
+    color: rgb(193, 172, 136);
+    transition: color 0.3s ease;
+  }
+  
+  .social-link i:hover {
+    color: #e07b39;
+  }
+  

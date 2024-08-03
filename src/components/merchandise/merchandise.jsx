@@ -1,21 +1,6 @@
-import {
-    Box,
-    Button,
-    ButtonGroup,
-    CardBody,
-    CardFooter,
-    Card as ChakraCard,
-    ChakraProvider,
-    Divider,
-    extendTheme,
-    Flex,
-    Heading,
-    Image,
-    Stack,
-    Text
-} from "@chakra-ui/react";
-
+import { Box, Button, ButtonGroup, CardBody, CardFooter, Card as ChakraCard, ChakraProvider, Divider, extendTheme, Flex, Heading, Image, Stack, Text } from "@chakra-ui/react";
 import React, { useState } from "react";
+import RazorpayButton from './razorPay/paymentButton';
 import './merchandise.css'
 
 const theme = extendTheme({
@@ -34,113 +19,37 @@ const theme = extendTheme({
 
 
 const Merchandise = () => {
-    const [selectedSize, setSelectedSize] = useState(null);
-    const [selectedQuantity, setSelectedQuantity] = useState(1);
-    const [showSizeOptions, setShowSizeOptions] = useState(false);
-    const [showQuantityOptions, setShowQuantityOptions] = useState(false);
-    const sizeOptions = ["XS", "S", "M", "L", "XL", "XXL"];
-    const quantityOptions = [...Array(6).keys()].map((i) => i + 1);
-
-
-    const handleSizeClick = () => {
-        setShowSizeOptions(!showSizeOptions);
-        setShowQuantityOptions(false);
-    };
-
-
-    const handleQuantityClick = () => {
-        setShowQuantityOptions(!showQuantityOptions);
-        setShowSizeOptions(false);
-    };
-
-
-    const totalAmount = selectedQuantity * 399;
-
     return (
-        <div className="relative" >
-            <ChakraProvider theme={theme}>
-                <Flex justifyContent="center" className="" style={{
-                    // background: "linear-gradient(#fff1de,1%, #fce6c7, #2f1000ff)",
-                    display: "flex",
-                    // maxHeight: "1000px"
-                    // flexDirection: "column",
-                    // alignItems: "center",
-                }}>
+        <div className="relative flex justify-center items-center bg-modestBrown" >
+            <div className="w-85vw">
+                <ChakraProvider theme={theme}>
+                    <Flex justifyContent="center" alignItems="center" className="" style={{ display: "flex", }}>
+                        <ChakraCard className="" borderWidth="0px" overflow="hidden" backgroundColor={"#fffbf5"} color="gradients.coffeeGradient" boxShadow="md" height="80vh">
+                            <CardBody className="chakraCardBody" height="80vh">
+                                <Flex height="80vh">
+                                    <Box flex="1" pr="5" className="flex flex-col merchBoxImg">
+                                        <Image src="https://hourscollection.com/cdn/shop/files/Brown-Blank2_4_800x.png?v=1702845882" alt="Brown hoodie" h="500px" maxH="700px" w="400px" maxW="500px" className="merchImg"/>
+                                    </Box>
 
-                    <ChakraCard className="" borderWidth="0px" overflow="hidden" backgroundColor={"#fffbf5"} color="gradients.coffeeGradient" boxShadow="md">
-                        <CardBody className="chakraCardBody">
-                            <Flex>
-                                <Box flex="1" pr="5" className="flex flex-col merchBoxImg">
-                                    {/* <Heading size="md" color="brand.darkCoffee" className=" text-center pb-5"><span className="font-albulaHeavy text-3xl">MotoSports Merch</span></Heading> */}
-                                    <Image src="https://hourscollection.com/cdn/shop/files/Brown-Blank2_4_800x.png?v=1702845882" alt="Brown hoodie" h="500px" maxH="700px" w="400px" maxW="500px" className="merchImg" />
-                                </Box>
+                                    <Box flex="1" className="merchOptions">
+                                        <Stack spacing="5">
+                                            <Heading size="md" color="brand.darkCoffee" className=""><span className="font-albulaHeavy text-3xl">MotoSports Merch</span></Heading>
+                                            <Heading color="brand.caramel"><span className="font-albulaHeavy text-5xl">Discover the Passion </span></Heading>
 
-                                <Box flex="1" className="merchOptions">
-                                    <Stack spacing="5">
-                                        <Heading size="md" color="brand.darkCoffee" className=""><span className="font-albulaHeavy text-3xl">MotoSports Merch</span></Heading>
-                                        <Heading color="brand.caramel"><span className="font-albulaHeavy text-5xl">Discover the Passion </span></Heading>
+                                            <Text color="brand.darkCoffee" className="font-albula mt-2">
+                                            Are you ready to fully immerse yourself in the thrilling and colorful world of vibrant motorsports? Dive in headfirst and explore the high-octane excitement that awaits you. Grab our mesmerizing merchandise, designed to capture the essence of speed and style, and unlock your ticket to an exhilarating experience. Feel the rush of the racetrack and the roar of the engines as you join a community of passionate fans.
+                                            </Text>
 
-                                        <Text color="brand.darkCoffee" className="font-albula mt-2">
-                                            Ready to immerse yourself in the world of vibrant
-                                            motorsports? Dive in, grab our mesmerizing merch, and unlock
-                                            your ticket to being fantastic!
-                                        </Text>
-
-                                        <Text color="brand.darkCoffee" fontSize="1xl" fontWeight={650}><span className="font-albulaMedium">399/- Per</span></Text>
-
-                                        <Button onClick={handleSizeClick} className="max-w-80" colorScheme="brand.darkCoffee" bg="brand.darkCoffee" _hover={{ bg: "brand.caramel" }} fontFamily="albula">
-                                            {selectedSize ? `Size: ${selectedSize}` : "Select Size"}
-                                        </Button>
-
-                                        {showSizeOptions && (
-                                            <ButtonGroup spacing="1" mt="1">
-                                                {sizeOptions.map((size) => (
-                                                    <Button key={size} onClick={() => { setSelectedSize(size); setShowSizeOptions(false); }} color="whitesmoke" bg="brand.darkCoffee" _hover={{ bg: "brand.caramel" }}>
-                                                        {size}
-                                                    </Button>
-                                                ))}
-                                            </ButtonGroup>
-                                        )}
-
-                                        <Button onClick={handleQuantityClick} className="max-w-80" variant="solid" colorScheme="brand.darkCoffee" bg="brand.darkCoffee" _hover={{ bg: "brand.caramel" }} fontFamily="albula">
-                                            {selectedQuantity
-                                                ? `Quantity: ${selectedQuantity}`
-                                                : "Select Quantity"}
-                                                ? `Quantity: ${selectedQuantity}`
-                                                : "Select Quantity"}
-                                        </Button>
-
-                                        {showQuantityOptions && (
-                                            <ButtonGroup spacing="3" mt="3">
-                                                {quantityOptions.map((quantity) => (
-                                                    <Button key={quantity} onClick={() => { setSelectedQuantity(quantity); setShowQuantityOptions(false); }} color="whitesmoke" bg="brand.darkCoffee" _hover={{ bg: "brand.caramel" }}>
-                                                        {quantity}
-                                                    </Button>
-                                                ))}
-                                            </ButtonGroup>
-                                        )}
-
-                                    </Stack>
-                                </Box>
-                            </Flex>
-                        </CardBody>
-                        <Divider />
-                        <CardFooter justifyContent="center">
-                            <ButtonGroup spacing="2">
-
-                                <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_OPNF3Dif5T9gKq" async> </script>
-                                    <Button type="submit" variant="solid" colorScheme="brand.darkCoffee" bg="brand.darkCoffee" _hover={{ bg: "brand.caramel" }} fontFamily="albula">
-                                        Buy now
-                                    </Button>
-                                </form>
-                                <Button className="px-16 preorderBtn" variant="solid" colorScheme="brand.darkCoffee" bg="brand.darkCoffee" fontFamily="albula">
-                                    Preorder - {totalAmount}/-
-                                </Button>
-                            </ButtonGroup>
-                        </CardFooter>
-                    </ChakraCard>
-                </Flex>
-            </ChakraProvider>
+                                            <Text color="brand.darkCoffee" fontSize="1xl" fontWeight={650}><span className="font-albulaMedium">399/- Per</span></Text>
+                                            <RazorpayButton />
+                                        </Stack>
+                                    </Box>
+                                </Flex>
+                            </CardBody>
+                        </ChakraCard>
+                    </Flex>
+                </ChakraProvider>
+            </div>
         </div>
     );
 };

@@ -15,9 +15,6 @@
     .chakra-heading:nth-child(1) span {
         font-size: 1.3rem;
     }
-    .chakra-heading:nth-child(2) span {
-        /* font-size: 1.9rem; */
-    }
     .merchImg {
         height: 450px !important;
         width: 350px !important;

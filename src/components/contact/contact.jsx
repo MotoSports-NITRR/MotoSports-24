@@ -10,7 +10,7 @@ import ContactUs from './contact-us';
 function Contact() {
   return (
     <>
-    <div style={{width: "100vw",
+    <div style={{width: "100%",
   backgroundImage:"linear-gradient(var(--dustyWhite),var(--black-bean))"}} className=''>
       <div className=" flex flex-col items-center md:py-28 md:px-40  py-28">
         <div className=" ">
@@ -62,6 +62,7 @@ function Contact() {
         <p style={{ color: "White" }} className=" py-4 text-3xl font-semibold ">Download our Brochure</p>
         <a href="https://drive.google.com/file/d/1O17bcGZmEcvGEGEfKBwF5a0UOLpJmiGm/view?pli=1"><button className=" py-3 px-5 text-lg font-bold bg-tawny hover:bg-gray-500" style={{backgroundColor: "var(--tawny)"}}>Download</button></a>
       </div>
+      
       <ContactUs />
     </div>
     </>

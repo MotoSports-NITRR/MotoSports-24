@@ -7,7 +7,7 @@ import gravity from '../assets/logos/sponsors/gravityWorkshopSVG.svg';
 import solidworks from '../assets/logos/sponsors/solidworksSVG.svg';
 import ansys from '../assets/logos/sponsors/ansys.png';
 import lotus from '../assets/logos/sponsors/lotus.png';
-import ContactUs from './contact-us';
+import ContactForm from './contactForm';
 
 function Contact() {
   return (
@@ -69,7 +69,7 @@ function Contact() {
         <a href="https://drive.google.com/file/d/1O17bcGZmEcvGEGEfKBwF5a0UOLpJmiGm/view?pli=1"><button className=" py-3 px-5 text-lg font-bold bg-tawny hover:bg-orange-600">Download</button></a>
       </div>
       
-      <ContactUs />
+      <ContactForm />
     </div>
     </>
   )

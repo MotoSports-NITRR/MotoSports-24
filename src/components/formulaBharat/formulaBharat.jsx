@@ -9,50 +9,52 @@ import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 function Imagecard() {
     return (
         <div className='w-11/12 m-auto'>
-  <div className='resp mt-20 flex justify-center items-center flex-wrap'>
-    {dataimg.map((d) => (
-      <div 
-        key={d.name} 
-        style={{backgroundImage: `url(${d.img})`}} 
-        className='hover:shadow-2xl card bg-no-repeat bg-cover bg-center h-[380px] w-80 text-black rounded-xl flex flex-col justify-end items-center m-4 relative overflow-hidden group'>
-        <div className="lol h-[120px] w-full absolute bottom-0 bg-black bg-opacity-50 p-4 flex flex-col justify-center items-center transition-opacity duration-300 group-hover:bg-opacity-0">
-          <div className='diss text-3xl text-amber-400 font-bold flex justify-center items-center gap-4 py-1'>
-            {d.name}
-          </div>
-          <div className='diss text-white text-xl font-bold flex justify-center items-center gap-4'>
-            {d.desig}
-          </div>
-          <div className='diss2 flex justify-between items-center gap-4 pt-4'>
-            <a href={d.insta} className='py-1'>
+            <div className='resp mt-20 flex justify-center items-center flex-wrap'>
+                {dataimg.map((d) => (
+                    <div key={d.name} style={{ backgroundImage: `url(${d.img})` }}
+                        className='hover:shadow-2xl card bg-no-repeat bg-cover bg-center h-[380px] w-80 text-black rounded-xl flex flex-col justify-end items-center m-4 relative overflow-hidden group'>
+                        <div className="lol h-[110px] w-full bg-black bg-opacity-50 p-4 flex flex-col justify-center items-center transition-opacity duration-300 group-hover:bg-opacity-0">
+                            <div className=''>
+                                <div className='diss text-3xl text-amber-400 font-bold flex justify-center items-center gap-4 py-1'>
+                                    {d.name}
+                                </div>
+                                <div className='diss text-white text-xl font-bold flex justify-center items-center gap-4'>
+                                    {d.desig}
+                                </div>
+                            </div>
+
+                            <div className='diss2 flex justify-between items-center gap-4'>
+                                <a href={d.insta} className='py-1 -mt-14'>
+                                    <FontAwesomeIcon className='icon' icon={faInstagram} />
+                                </a>
+
+                                <a href={d.linkedin} className='py-1 -mt-14'>
+                                    <FontAwesomeIcon className='icon' icon={faLinkedin} />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                ))}
+            </div>
+            <div className='w-11/12 m-auto'>
+            <div className='resp mt-32 flex justify-center items-center flex-wrap'>
+            {data2img.map((d) => (
+            <div key={d.name} style={{backgroundImage: `url(${d.img})`}} 
+            className='hover:shadow-2xl card bg-no-repeat bg-cover bg-center h-[380px] w-80 text-black rounded-xl flex flex-col justify-end items-center m-4 relative overflow-hidden group'>
+            <div className="lol h-[110px] w-full absolute bottom-0 bg-black bg-opacity-50 p-4 flex flex-col justify-center items-center transition-opacity duration-300 group-hover:bg-opacity-0">
+            <div className=''>
+                <div className='diss text-3xl text-amber-400 font-bold flex justify-center items-center gap-4 py-1'>
+                    {d.name}
+                </div>
+                <div className='diss text-white text-xl font-bold flex justify-center items-center gap-4'>
+                    {d.desig}
+                </div>
+            </div>
+          <div className='diss2 flex justify-between items-center gap-4'>
+            <a href={d.insta} className='py-1 -mt-14'>
               <FontAwesomeIcon className='icon' icon={faInstagram} />
             </a>
-            <a href={d.linkedin} className='py-1'>
-              <FontAwesomeIcon className='icon' icon={faLinkedin} />
-            </a>
-          </div>
-        </div>
-      </div>
-    ))}
-  </div>
-  <div className='w-11/12 m-auto'>
-  <div className='resp mt-32 flex justify-center items-center flex-wrap'>
-    {data2img.map((d) => (
-      <div 
-        key={d.name} 
-        style={{backgroundImage: `url(${d.img})`}} 
-        className='hover:shadow-2xl card bg-no-repeat bg-cover bg-center h-[380px] w-80 text-black rounded-xl flex flex-col justify-end items-center m-4 relative overflow-hidden group'>
-        <div className="lol h-[120px] w-full absolute bottom-0 bg-black bg-opacity-50 p-4 flex flex-col justify-center items-center transition-opacity duration-300 group-hover:bg-opacity-0">
-          <div className='diss text-3xl text-amber-300 font-bold flex justify-center items-center gap-4 py-1'>
-            {d.name}
-          </div>
-          <div className='diss text-gray-50 text-xl font-bold flex justify-center items-center gap-4'>
-            {d.desig}
-          </div>
-          <div className='diss2 flex justify-between items-center gap-4 pt-4'>
-            <a href={d.insta} className='py-1'>
-              <FontAwesomeIcon className='icon' icon={faInstagram} />
-            </a>
-            <a href={d.linkedin} className='py-1'>
+            <a href={d.linkedin} className='py-1 -mt-14'>
               <FontAwesomeIcon className='icon' icon={faLinkedin} />
             </a>
           </div>
@@ -61,9 +63,7 @@ function Imagecard() {
     ))}
   </div>
 </div>
-
-
-      </div>
+</div>
     )
   }
 
@@ -90,7 +90,7 @@ const Timeline=({events})=>{
         <>
             <div className="flex ">
                     <div className="flex">
-                        <img src=".\src\components\eBaja\pics\atv.png" alt="" className='img'/>
+                        <img src=".\src\components\formulabharat\pics\fbcar.png" alt="" className='img'/>
                     </div>
                     <div className="flex flex-col gap-y-3 w-full my-4">
 
@@ -239,50 +239,61 @@ const TextShpere = () => {
 function Brakes() {
   return (
     <div className='w-11/12 m-auto'>
-        <div className='resp mt-20 flex justify-around'>
-            {data.map((d) => (
-                <div style={{backgroundImage: `url(${d.img})`}} className={`hover:shadow-2xl card bg-no-repeat bg-cover bg-center h-[380px] text-black rounded-xl flex flex-wrap justify-center items-end`}>
-                    <div className="lol h-fit w-80 rounded-xl flex flex-col justify-center items-center">
-                        <div className='diss lol text-amber-400 text-3xl font-bold gap-4 py-1 '>
-                            {d.name}
-                            
-                        </div>
-                        <div className='diss lol text-white text-xl font-bold flex justify-center items-center gap-4  '>
-                            {d.desig}
-                            
-                        </div>
-                        <div className='diss2 lol flex justify-center items-center gap-4 p-4 '>
-                            <a href={d.insta} className='lol py-1'><FontAwesomeIcon className='lol icon' icon={faInstagram}></FontAwesomeIcon></a><a href={d.linkedin} className='lol py04'><FontAwesomeIcon className='lol icon' icon={faLinkedin} /></a>
-                        </div>
-                    </div>
-            
-
+        <div className='resp mt-20 flex justify-center items-center flex-wrap'>
+        {data.map((d) => (
+        <div  key={d.name}  style={{backgroundImage: `url(${d.img})`}} 
+        className='hover:shadow-2xl card bg-no-repeat bg-cover bg-center h-[380px] w-80 text-black rounded-xl flex flex-col justify-end items-center m-4 relative overflow-hidden group'>
+        <div className="lol h-[110px] w-full bg-black bg-opacity-50 p-4 flex flex-col justify-center items-center transition-opacity duration-300 group-hover:bg-opacity-0">
+            <div className=''>
+                <div className='diss text-3xl text-amber-400 font-bold flex justify-center items-center gap-4 py-1'>
+                    {d.name}
                 </div>
-            ))}
-        </div>
-        <div className='resp mt-32 flex justify-between'>
-            {data3.map((d) => (
-                <div style={{backgroundImage: `url(${d.img})`}} className='hover:shadow-2xl card h-[320px] bg-no-repeat bg-cover bg-center text-black rounded-xl flex flex-wrap justify-center items-end'>
-                    <div className=" lol h-fit w-64 rounded-xl flex flex-col justify-center items-center">
-                        <div className='diss text lol text-xl text-amber-400 font-bold flex justify-center items-center gap-4 py-1 '>
-                            {d.name}
-                            
-                        </div>
-                        <div className='diss lol text-gray-50  font-bold flex justify-center items-center gap-4  '>
-                            {d.desig}
-                            
-                        </div>
-                        <div className='diss2 lol flex justify-between items-center gap-4 p-4 '>
-                            <a href={d.insta} className='lol py-1'><FontAwesomeIcon className='lol icon' icon={faInstagram}></FontAwesomeIcon></a><a href={d.linkedin} className='lol py04'><FontAwesomeIcon className='icon lol' icon={faLinkedin} />
-                            </a>
-                        </div>
-                    </div>
-            
-
+                <div className='diss text-white text-xl font-bold flex justify-center items-center gap-4'>
+                    {d.desig}
                 </div>
-            ))}
+            </div>
+
+            <div className='diss2 flex justify-between items-center gap-4'>
+                <a href={d.insta} className='py-1 -mt-14'>
+                    <FontAwesomeIcon className='icon' icon={faInstagram} />
+                </a>
+
+                <a href={d.linkedin} className='py-1 -mt-14'>
+                    <FontAwesomeIcon className='icon' icon={faLinkedin} />
+                </a>
+            </div>
         </div>
-    </div>
+      </div>
+    ))}
+  </div>
+  <div className='w-11/12 m-auto'>
+  <div className='resp mt-32 flex justify-between flex-wrap'>
+    {data3.map((d) => (
+    <div key={d.name} style={{backgroundImage: `url(${d.img})`}} 
+    className='hover:shadow-2xl card h-[320px] w-[238px] bg-no-repeat bg-cover bg-center text-black rounded-xl flex flex-col justify-end items-center m-4 relative overflow-hidden group'>
+    <div className="lol h-[80px] w-full bg-black bg-opacity-50 p-4 flex flex-col justify-end items-center transition-opacity duration-300 group-hover:bg-opacity-0">
+          <div className='flex flex-col justify-center items-center'>
+            <div className='diss text-xl text-amber-400 font-bold flex justify-center items-center gap-4 py-1'>
+              {d.name}
+            </div>
+            <div className='diss text-gray-50 font-bold flex justify-center items-center gap-4'>
+              {d.desig}
+            </div>
+          </div>
+          <div className='diss2 flex justify-between items-center gap-4'>
+            <a href={d.insta} className='py-1 -mt-14'>
+              <FontAwesomeIcon className='icon' icon={faInstagram} />
+            </a>
+            <a href={d.linkedin} className='py-1 -mt-14'>
+              <FontAwesomeIcon className='icon' icon={faLinkedin} />
+            </a>
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
+</div>
   )
 }
 
@@ -322,102 +333,126 @@ function Cvpowertrain() {
 function Evpowertrain() {
   return (
     <div className='w-11/12 m-auto'>
-      <div className='resp mt-20 flex justify-around'>
-          {dataev.map((d) => (
-              <div style={{backgroundImage: `url(${d.img})`}} className={`hover:shadow-2xl card bg-no-repeat bg-cover bg-center h-[380px] text-black rounded-xl flex flex-wrap justify-center items-end`}>
-                  <div className="lol h-fit w-80 rounded-xl flex flex-col justify-center items-center">
-                      <div className='diss lol text-amber-400 text-3xl font-bold gap-4 py-1 '>
-                          {d.name}
-                          
-                      </div>
-                      <div className='diss lol text-white text-xl font-bold flex justify-center items-center gap-4  '>
-                          {d.desig}
-                          
-                      </div>
-                      <div className='diss2 lol flex justify-center items-center gap-4 p-4 '>
-                          <a href={d.insta} className='lol py-1'><FontAwesomeIcon className='lol icon' icon={faInstagram}></FontAwesomeIcon></a><a href={d.linkedin} className='lol py04'><FontAwesomeIcon className='lol icon' icon={faLinkedin} /></a>
-                      </div>
-                  </div>
-          
-
-              </div>
-          ))}
-      </div>
-      <div className='resp mt-32 flex justify-between'>
-            {data2ev.map((d) => (
-                <div style={{backgroundImage: `url(${d.img})`}} className='hover:shadow-2xl card h-[320px] bg-no-repeat bg-cover bg-center text-black rounded-xl flex flex-wrap justify-center items-end'>
-                    <div className=" lol h-fit w-64 rounded-xl flex flex-col justify-center items-center">
-                        <div className='diss text lol text-xl text-amber-400 font-bold flex justify-center items-center gap-4 py-1 '>
-                            {d.name}
-                            
-                        </div>
-                        <div className='diss lol text-gray-50  font-bold flex justify-center items-center gap-4  '>
-                            {d.desig}
-                            
-                        </div>
-                        <div className='diss2 lol flex justify-between items-center gap-4 p-4 '>
-                            <a href={d.insta} className='lol py-1'><FontAwesomeIcon className='lol icon' icon={faInstagram}></FontAwesomeIcon></a><a href={d.linkedin} className='lol py04'><FontAwesomeIcon className='icon lol' icon={faLinkedin} />
-                            </a>
-                        </div>
-                    </div>
-            
-
-                </div>
-            ))}
+    <div className='resp mt-20 flex justify-center items-center flex-wrap'>
+    {dataev.map((d) => (
+    <div  key={d.name}  style={{backgroundImage: `url(${d.img})`}} 
+    className='hover:shadow-2xl card bg-no-repeat bg-cover bg-center h-[380px] w-80 text-black rounded-xl flex flex-col justify-end items-center m-4 relative overflow-hidden group'>
+    <div className="lol h-[110px] w-full bg-black bg-opacity-50 p-4 flex flex-col justify-center items-center transition-opacity duration-300 group-hover:bg-opacity-0">
+        <div className=''>
+            <div className='diss text-3xl text-amber-400 font-bold flex justify-center items-center gap-4 py-1'>
+                {d.name}
+            </div>
+            <div className='diss text-white text-xl font-bold flex justify-center items-center gap-4'>
+                {d.desig}
+            </div>
         </div>
+
+        <div className='diss2 flex justify-between items-center gap-4'>
+            <a href={d.insta} className='py-1 -mt-14'>
+                <FontAwesomeIcon className='icon' icon={faInstagram} />
+            </a>
+
+            <a href={d.linkedin} className='py-1 -mt-14'>
+                <FontAwesomeIcon className='icon' icon={faLinkedin} />
+            </a>
+        </div>
+    </div>
   </div>
+))}
+</div>
+<div className='w-11/12 m-auto'>
+  <div className='resp mt-32 flex justify-between flex-wrap'>
+    {data2ev.map((d) => (
+    <div key={d.name} style={{backgroundImage: `url(${d.img})`}} 
+    className='hover:shadow-2xl card h-[320px] w-[238px] bg-no-repeat bg-cover bg-center text-black rounded-xl flex flex-col justify-end items-center m-4 relative overflow-hidden group'>
+    <div className="lol h-[80px] w-full bg-black bg-opacity-50 p-4 flex flex-col justify-end items-center transition-opacity duration-300 group-hover:bg-opacity-0">
+          <div className='flex flex-col justify-center items-center'>
+            <div className='diss text-xl text-amber-400 font-bold flex justify-center items-center gap-4 py-1'>
+              {d.name}
+            </div>
+            <div className='diss text-gray-50 font-bold flex justify-center items-center gap-4'>
+              {d.desig}
+            </div>
+          </div>
+          <div className='diss2 flex justify-between items-center gap-4'>
+            <a href={d.insta} className='py-1 -mt-14'>
+              <FontAwesomeIcon className='icon' icon={faInstagram} />
+            </a>
+            <a href={d.linkedin} className='py-1 -mt-14'>
+              <FontAwesomeIcon className='icon' icon={faLinkedin} />
+            </a>
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
+</div>
   )
 }
+
+
 
 //Steering
 
 function Steering() {
   return (
     <div className='w-11/12 m-auto'>
-        <div className='resp mt-18 flex justify-around'>
-            {datasteer.map((d) => (
-                <div style={{backgroundImage: `url(${d.img})`}} className={`hover:shadow-2xl card bg-no-repeat bg-cover bg-center h-[380px] text-black rounded-xl flex flex-wrap justify-center items-end`}>
-                    <div className="lol h-fit w-80 rounded-xl flex flex-col justify-center items-center">
-                        <div className='diss lol text-amber-400 text-3xl font-bold gap-4 py-1 '>
-                            {d.name}
-                            
-                        </div>
-                        <div className='diss lol text-white text-xl font-bold flex justify-center items-center gap-4  '>
-                            {d.desig}
-                            
-                        </div>
-                        <div className='diss2 lol flex justify-center items-center gap-4 p-4 '>
-                            <a href={d.insta} className='lol py-1'><FontAwesomeIcon className='lol icon' icon={faInstagram}></FontAwesomeIcon></a><a href={d.linkedin} className='lol py04'><FontAwesomeIcon className='lol icon' icon={faLinkedin} /></a>
-                        </div>
-                    </div>
-            
-
+        <div className='resp mt-20 flex justify-center items-center flex-wrap'>
+        {datasteer.map((d) => (
+        <div  key={d.name}  style={{backgroundImage: `url(${d.img})`}} 
+        className='hover:shadow-2xl card bg-no-repeat bg-cover bg-center h-[380px] w-80 text-black rounded-xl flex flex-col justify-end items-center m-4 relative overflow-hidden group'>
+        <div className="lol h-[110px] w-full bg-black bg-opacity-50 p-4 flex flex-col justify-center items-center transition-opacity duration-300 group-hover:bg-opacity-0">
+            <div className=''>
+                <div className='diss text-3xl text-amber-400 font-bold flex justify-center items-center gap-4 py-1'>
+                    {d.name}
                 </div>
-            ))}
-        </div>
-        <div className='resp mt-32 flex justify-between'>
-            {data2steer.map((d) => (
-                <div style={{backgroundImage: `url(${d.img})`}} className='hover:shadow-2xl card h-[320px] bg-no-repeat bg-cover bg-center text-black rounded-xl flex flex-wrap justify-center items-end'>
-                    <div className=" lol h-fit w-64 rounded-xl flex flex-col justify-center items-center">
-                        <div className='diss text lol text-xl text-amber-400 font-bold flex justify-center items-center gap-4 py-1 '>
-                            {d.name}
-                            
-                        </div>
-                        <div className='diss lol text-gray-50  font-bold flex justify-center items-center gap-4  '>
-                            {d.desig}
-                            
-                        </div>
-                        <div className='diss2 lol flex justify-between items-center gap-4 p-4 '>
-                            <a href={d.insta} className='lol py-1'><FontAwesomeIcon className='lol icon' icon={faInstagram}></FontAwesomeIcon></a><a href={d.linkedin} className='lol py04'><FontAwesomeIcon className='icon lol' icon={faLinkedin} />
-                            </a>
-                        </div>
-                    </div>
-            
-
+                <div className='diss text-white text-xl font-bold flex justify-center items-center gap-4'>
+                    {d.desig}
                 </div>
-            ))}
+            </div>
+
+            <div className='diss2 flex justify-between items-center gap-4'>
+                <a href={d.insta} className='py-1 -mt-14'>
+                    <FontAwesomeIcon className='icon' icon={faInstagram} />
+                </a>
+
+                <a href={d.linkedin} className='py-1 -mt-14'>
+                    <FontAwesomeIcon className='icon' icon={faLinkedin} />
+                </a>
+            </div>
         </div>
-    </div>
+      </div>
+    ))}
+  </div>
+  <div className='w-11/12 m-auto'>
+  <div className='resp mt-32 flex justify-between flex-wrap'>
+    {data2steer.map((d) => (
+    <div key={d.name} style={{backgroundImage: `url(${d.img})`}} 
+    className='hover:shadow-2xl card h-[320px] bg-no-repeat bg-cover bg-center text-black rounded-xl flex flex-col justify-end items-center m-4 relative overflow-hidden group'>
+    <div className="lol h-[80px] w-full bg-black bg-opacity-50 p-4 flex flex-col justify-end items-center transition-opacity duration-300 group-hover:bg-opacity-0">
+          <div className='flex flex-col justify-center items-center'>
+            <div className='diss text-xl text-amber-400 font-bold flex justify-center items-center gap-4 py-1'>
+              {d.name}
+            </div>
+            <div className='diss text-gray-50 font-bold flex justify-center items-center gap-4'>
+              {d.desig}
+            </div>
+          </div>
+          <div className='diss2 flex justify-between items-center gap-4'>
+            <a href={d.insta} className='py-1 -mt-14'>
+              <FontAwesomeIcon className='icon' icon={faInstagram} />
+            </a>
+            <a href={d.linkedin} className='py-1 -mt-14'>
+              <FontAwesomeIcon className='icon' icon={faLinkedin} />
+            </a>
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
+</div>
   )
 }
 
@@ -426,49 +461,60 @@ function Steering() {
 function Frames() {
   return (
     <div className='w-11/12 m-auto'>
-        <div className='resp mt-20 flex justify-around'>
-            {datafr.map((d) => (
-                <div style={{backgroundImage: `url(${d.img})`}} className={`hover:shadow-2xl card bg-no-repeat bg-cover bg-center h-[380px] text-black rounded-xl flex flex-wrap justify-center items-end`}>
-                    <div className="lol h-fit w-80 rounded-xl flex flex-col justify-center items-center">
-                        <div className='diss lol text-amber-400 text-3xl font-bold gap-4 py-1 '>
-                            {d.name}
-                            
-                        </div>
-                        <div className='diss lol text-white text-xl font-bold flex justify-center items-center gap-4  '>
-                            {d.desig}
-                            
-                        </div>
-                        <div className='diss2 lol flex justify-center items-center gap-4 p-4 '>
-                            <a href={d.insta} className='lol py-1'><FontAwesomeIcon className='lol icon' icon={faInstagram}></FontAwesomeIcon></a><a href={d.linkedin} className='lol py04'><FontAwesomeIcon className='lol icon' icon={faLinkedin} /></a>
-                        </div>
-                    </div>
-            
-
-                </div>
-            ))}
+    <div className='resp mt-20 flex justify-center items-center flex-wrap'>
+    {datafr.map((d) => (
+    <div  key={d.name}  style={{backgroundImage: `url(${d.img})`}} 
+    className='hover:shadow-2xl card bg-no-repeat bg-cover bg-center h-[380px] w-80 text-black rounded-xl flex flex-col justify-end items-center m-4 relative overflow-hidden group'>
+    <div className="lol h-[110px] w-full bg-black bg-opacity-50 p-4 flex flex-col justify-center items-center transition-opacity duration-300 group-hover:bg-opacity-0 ">
+        <div className=''>
+            <div className='diss text-3xl text-amber-400 font-bold flex justify-center items-center gap-4 py-1'>
+                {d.name}
+            </div>
+            <div className='diss text-white text-xl font-bold flex justify-center items-center gap-4'>
+                {d.desig}
+            </div>
         </div>
-        <div className='resp mt-32 flex justify-between'>
-            {data2fr.map((d) => (
-                <div style={{backgroundImage: `url(${d.img})`}} className='hover:shadow-2xl card h-[320px] bg-no-repeat bg-cover bg-center text-black rounded-xl flex flex-wrap justify-center items-end'>
-                    <div className=" lol h-fit w-64 rounded-xl flex flex-col justify-center items-center">
-                        <div className='diss text lol text-xl text-amber-400 font-bold flex justify-center items-center gap-4 py-1 '>
-                            {d.name}
-                            
-                        </div>
-                        <div className='diss lol text-gray-50  font-bold flex justify-center items-center gap-4  '>
-                            {d.desig}
-                            
-                        </div>
-                        <div className='diss2 lol flex justify-between items-center gap-4 p-4 '>
-                            <a href={d.insta} className='lol py-1'><FontAwesomeIcon className='lol icon' icon={faInstagram}></FontAwesomeIcon></a><a href={d.linkedin} className='lol py04'><FontAwesomeIcon className='icon lol' icon={faLinkedin} />
-                            </a>
-                        </div>
-                    </div>
-            
 
-                </div>
-            ))}
+        <div className='diss2 flex justify-between items-center gap-4'>
+            <a href={d.insta} className='py-1 -mt-14'>
+                <FontAwesomeIcon className='icon' icon={faInstagram} />
+            </a>
+
+            <a href={d.linkedin} className='py-1 -mt-14'>
+                <FontAwesomeIcon className='icon' icon={faLinkedin} />
+            </a>
         </div>
+    </div>
+  </div>
+))}
+</div>
+<div className='w-11/12 m-auto'>
+  <div className='resp mt-32 flex justify-between flex-wrap'>
+    {data2fr.map((d) => (
+    <div key={d.name} style={{backgroundImage: `url(${d.img})`}} 
+    className='hover:shadow-2xl card h-[320px] w-[238px] bg-no-repeat bg-cover bg-center text-black rounded-xl flex flex-col justify-end items-center m-4 relative overflow-hidden group'>
+    <div className="lol h-[80px] w-full bg-black bg-opacity-50 p-4 flex flex-col justify-end items-center transition-opacity duration-300 group-hover:bg-opacity-0">
+          <div className='flex flex-col justify-center items-center'>
+            <div className='diss text-xl text-amber-400 font-bold flex justify-center items-center gap-4 py-1'>
+              {d.name}
+            </div>
+            <div className='diss text-gray-50 font-bold flex justify-center items-center gap-4'>
+              {d.desig}
+            </div>
+          </div>
+          <div className='diss2 flex justify-between items-center gap-4'>
+            <a href={d.insta} className='py-1 -mt-14'>
+              <FontAwesomeIcon className='icon' icon={faInstagram} />
+            </a>
+            <a href={d.linkedin} className='py-1 -mt-14'>
+              <FontAwesomeIcon className='icon' icon={faLinkedin} />
+            </a>
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
     </div>
   )
 }
@@ -499,29 +545,34 @@ function Suspension() {
                 </div>
             ))}
         </div>
-        <div className='resp mt-32 flex justify-evenly'>
-            {data2sus.map((d) => (
-                <div style={{backgroundImage: `url(${d.img})`}} className='hover:shadow-2xl card h-[320px] bg-no-repeat bg-cover bg-center text-black rounded-xl flex flex-wrap justify-center items-end'>
-                    <div className=" lol h-fit w-64 rounded-xl flex flex-col justify-center items-center">
-                        <div className='diss text lol text-3xl text-amber-400 font-bold flex justify-center items-center gap-4 py-1 '>
-                            {d.name}
-                            
-                        </div>
-                        <div className='diss lol text-gray-50 text-xl font-bold flex justify-center items-center gap-4  '>
-                            {d.desig}
-                            
-                        </div>
-                        <div className='diss2 lol flex justify-between items-center gap-4 p-4 '>
-                            <a href={d.insta} className='lol py-1'><FontAwesomeIcon className='lol icon' icon={faInstagram}></FontAwesomeIcon></a><a href={d.linkedin} className='lol py04'><FontAwesomeIcon className='icon lol' icon={faLinkedin} />
-                            </a>
-                        </div>
-                    </div>
-            
-
-                </div>
-            ))}
+        <div className='w-11/12 m-auto'>
+  <div className='resp mt-32 flex justify-between flex-wrap'>
+    {data2sus.map((d) => (
+    <div key={d.name} style={{backgroundImage: `url(${d.img})`}} 
+    className='hover:shadow-2xl card h-[320px] w-[238px] bg-no-repeat bg-cover bg-center text-black rounded-xl flex flex-col justify-end items-center m-4 relative overflow-hidden group'>
+    <div className="lol h-[80px] w-full bg-black bg-opacity-50 p-4 flex flex-col justify-end items-center transition-opacity duration-300 group-hover:bg-opacity-0">
+          <div className='flex flex-col justify-center items-center'>
+            <div className='diss text-xl text-amber-400 font-bold flex justify-center items-center gap-4 py-1'>
+              {d.name}
+            </div>
+            <div className='diss text-gray-50 font-bold flex justify-center items-center gap-4'>
+              {d.desig}
+            </div>
+          </div>
+          <div className='diss2 flex justify-between items-center gap-4'>
+            <a href={d.insta} className='py-1 -mt-14'>
+              <FontAwesomeIcon className='icon' icon={faInstagram} />
+            </a>
+            <a href={d.linkedin} className='py-1 -mt-14'>
+              <FontAwesomeIcon className='icon' icon={faLinkedin} />
+            </a>
+          </div>
         </div>
-    </div>
+      </div>
+  ))}
+</div>
+</div>
+</div>
   )
 }
 
@@ -763,10 +814,9 @@ const data=[
 ]
 const data3 = [
   {
-
       name:"Shambhavi",
       desig:"Member",
-      img:"./src/components/formulabharat/pics/shambhavi.jpg",
+      img:"./src/components/formulabharat/pics/shambhavi.JPG",
       insta:"https://www.instagram.com/heyy__shambhavi__?igsh=ZHV1YjRha2dybDVmc:\Users\spars\Downloads\shambhavi.JPG",
       linkedin:"https://www.linkedin.com/in/shambhavi-sam-67574624b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
   },
@@ -785,7 +835,7 @@ const data3 = [
 const dataev=[
     {
         name:"Ajay Kashyap",
-        desig:"Vice Captain",
+        desig:"Domain Head",
         img:"./src/components/eBaja/pics/vice3.jpg",
         insta:"",
         linkedin:"https://www.linkedin.com/in/ajaykashyap92025?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
@@ -852,7 +902,7 @@ const datafr=[
 
 const data2fr=[
   {
-      name:"Abhiroop Sharma",
+      name:"Abhiroop",
       desig:"Member",
       img:"./src/components/formulabharat/pics/abhiroop.jpg",
       insta:"https://www.instagram.com/iam_sharmaji7?igsh=MTdpem9uZWpveXZ3cQ==",
@@ -882,8 +932,8 @@ const datasus=[
       name:"Divek Daheriya",
       desig:"Domain Head",
       img:"./src/components/formulabharat/pics/divek.jpg",
-      insta:"",
-      linkedin:""
+      insta:"https://www.instagram.com/diveksinghdahariya?igsh=MTRlNWUwdjdyajAydw==",
+      linkedin:"https://www.linkedin.com/in/divek-dahariya-886371180?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
   }
 ]
 const data2sus=[
@@ -897,9 +947,9 @@ const data2sus=[
   {
       name:"Deepak Shukla",
       desig:"Member",
-      img:"./src/components/formulabharat/pics/deepak.JPG",
-      insta:"",
-      linkedin:""
+      img:"./src/components/formulabharat/pics/deepak.jpg",
+      insta:"https://www.instagram.com/_deepakshukla_04?igsh=NDk1eHYyYmN3ZzIw",
+      linkedin:"https://www.linkedin.com/in/deepak-shukla-1b1b4425b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
   }
 ]
 

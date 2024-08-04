@@ -37,7 +37,7 @@ function ContactUs() {
 
   return (
     <div className="contact-us w-100vw flex flex-col justify-evenly lg:px-40 px-0">
-      <p className="text-center font-albulaHeavy sm:text-5xl text-3xl text-white mb-15">Contact us</p>
+      <p className="text-center font-albulaHeavy sm:text-5xl text-3xl text-deepTawny mb-15">Contact us</p>
       <form
         style={{ color: "var(--dustyWhite)" }}
         className="flex justify-evenly lg:flex-row flex-col items-center pb-52"
@@ -53,7 +53,7 @@ function ContactUs() {
               type="text"
               className="h-12 w-11/12 md:w-96 rounded-md pl-2 pb-1 text-deepTawny placeholder:text-sm placeholder:text-black border-none flex-grow"
               style={{
-                backgroundColor: "var(--dustyWhite)",
+                backgroundColor: "White",
                 boxShadow: "inset 0 0 5px black",
                 minWidth: "300px",
                 maxWidth: "400px",
@@ -71,7 +71,7 @@ function ContactUs() {
               type="tel"
               className="h-12 w-11/12 md:w-96 rounded-md pl-2 pb-1 text-deepTawny placeholder:text-sm placeholder:text-black border-none flex-grow"
               style={{
-                backgroundColor: "var(--dustyWhite)",
+                backgroundColor: "White",
                 boxShadow: "inset 0 0 5px black",
                 minWidth: "300px",
                 maxWidth: "400px",
@@ -89,7 +89,7 @@ function ContactUs() {
               type="email"
               className="h-12 w-11/12 md:w-96 rounded-md pl-2 pb-1 text-deepTawny placeholder:text-sm placeholder:text-black border-none flex-grow"
               style={{
-                backgroundColor: "var(--dustyWhite)",
+                backgroundColor: "White",
                 boxShadow: "inset 0 0 5px black",
                 minWidth: "300px",
                 maxWidth: "400px",
@@ -107,7 +107,7 @@ function ContactUs() {
               placeholder="Message"
               className=" w-11/12 md:w-96 border-white rounded-md border-none pl-2 pt-2 text-deepTawny h-40 resize-none placeholder:text-sm placeholder:text-black placeholder:pt-2"
               style={{
-                backgroundColor: "var(--dustyWhite)",
+                backgroundColor: "White",
                 boxShadow: "inset 0 0 5px black",
                 minWidth: "300px",
                 maxWidth: "400px",
@@ -119,11 +119,10 @@ function ContactUs() {
           <div className="flex justify-center">
             <button
               style={{
-                backgroundColor: "var(--tawny)",
                 color: "var(--black-bean)",
               }}
               type="submit"
-              className="font-albulaBold text-xl h-12 pl-10 pr-10 rounded-md"
+              className="font-albulaBold text-xl h-12 px-8 bg-tawny hover:bg-orange-600"
             >
               Submit
             </button>

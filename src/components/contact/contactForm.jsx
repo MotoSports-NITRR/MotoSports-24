@@ -48,39 +48,49 @@ function ContactUs() {
 	};
 
 	return (
-		<div className="contact-us w-100vw flex flex-col justify-evenly lg:px-40 px-0">
-			<AlertScreen message={alertMessage} onClose={handleCloseAlert} showAlert={showAlert} type={alertType}/>
-			<p className="text-center font-albulaHeavy sm:text-5xl text-3xl text-deepTawny mb-15">Contact us</p>
-			<form style={{ color: "var(--dustyWhite)" }} className="flex justify-evenly lg:flex-row flex-col items-center pb-52" onSubmit={handleSubmit} >
-				<div className="flex flex-col justify-start">
-					<div className=" flex items-start flex-col  my-4">
-						<label htmlFor="Name" className="pb-2">Name</label>
-						<input required id="Name" placeholder="Enter your name" type="text" className="h-12 w-11/12 md:w-96 rounded-md pl-2 pb-1 text-deepTawny placeholder:text-sm placeholder:text-black border-none flex-grow" style={{ backgroundColor: "White", boxShadow: "inset 0 0 5px black", minWidth: "300px", maxWidth: "400px", }} value={newName} onChange={(e) => setName(e.target.value)} />
-					</div>
+		<div className="contact-us w-100vw flex flex-col justify-center px-40 py-10">
+    <form style={{ color: "var(--dustyWhite)" }} className="flex justify-evenly lg:flex-row flex-col items-center bg-white px-20 py-20" onSubmit={handleSubmit} >
+        <p className="text-center font-albulaHeavy sm:text-5xl text-3xl text-deepTawny mb-15">Contact us</p>
+        <div className="flex flex-col justify-start">
+            <div className="flex items-start flex-col my-4">
+                <label htmlFor="Name" className="pb-2 text-gray-700">Name</label>
+                <div className="relative">
+                    <input required id="Name" placeholder="Enter your name" type="text" className="px-3 py-3 border border-gray-300 h-12 w-11/12 md:w-96 rounded-md pl-10 pr-2 pb-1 text-deepTawny placeholder:text-sm placeholder:text-gray-400 flex-grow shadow-sm focus:shadow-md transition-shadow duration-300" style={{ backgroundColor: "White", minWidth: "300px", maxWidth: "400px" }} value={newName} onChange={(e) => setName(e.target.value)} />
+                    <span className="absolute left-2 top-1/2 transform -translate-y-1/2 text-gray-400"><i className="fas fa-user"></i></span>
+                </div>
+            </div>
 
-					<div className=" flex items-start flex-col my-4">
-						<label htmlFor="Phone" className="pb-2">Phone</label>
-						<input required id="Phone" placeholder="Enter your phone" type="tel" className="h-12 w-11/12 md:w-96 rounded-md pl-2 pb-1 text-deepTawny placeholder:text-sm placeholder:text-black border-none flex-grow" style={{ backgroundColor: "White", boxShadow: "inset 0 0 5px black", minWidth: "300px", maxWidth: "400px", }} value={newPhone} onChange={(e) => setPhone(e.target.value)} />
-					</div>
+            <div className="flex items-start flex-col my-4">
+                <label htmlFor="Phone" className="pb-2 text-gray-700">Phone</label>
+                <div className="relative">
+                    <input required id="Phone" placeholder="Enter your phone" type="tel" className="px-3 py-3 border border-gray-300 h-12 w-11/12 md:w-96 rounded-md pl-10 pr-2 pb-1 text-deepTawny placeholder:text-sm placeholder:text-gray-400 flex-grow shadow-sm focus:shadow-md transition-shadow duration-300" style={{ backgroundColor: "White", minWidth: "300px", maxWidth: "400px" }} value={newPhone} onChange={(e) => setPhone(e.target.value)} />
+                    <span className="absolute left-2 top-1/2 transform -translate-y-1/2 text-gray-400"><i className="fas fa-phone"></i></span>
+                </div>
+            </div>
 
-					<div className=" flex items-start flex-col my-4">
-						<label htmlFor="Email" className="pb-2">Email</label>
-						<input required id="Email" placeholder="Enter your email" type="email" className="h-12 w-11/12 md:w-96 rounded-md pl-2 pb-1 text-deepTawny placeholder:text-sm placeholder:text-black border-none flex-grow" style={{ backgroundColor: "White", boxShadow: "inset 0 0 5px black", minWidth: "300px", maxWidth: "400px", }} value={newEmail} onChange={(e) => setEmail(e.target.value)} />
-					</div>
-				</div>
+            <div className="flex items-start flex-col my-4">
+                <label htmlFor="Email" className="pb-2 text-gray-700">Email</label>
+                <div className="relative">
+                    <input required id="Email" placeholder="Enter your email" type="email" className="px-3 py-3 border border-gray-300 h-12 w-11/12 md:w-96 rounded-md pl-10 pr-2 pb-1 text-deepTawny placeholder:text-sm placeholder:text-gray-400 flex-grow shadow-sm focus:shadow-md transition-shadow duration-300" style={{ backgroundColor: "White", minWidth: "300px", maxWidth: "400px" }} value={newEmail} onChange={(e) => setEmail(e.target.value)} />
+                    <span className="absolute left-2 top-1/2 transform -translate-y-1/2 text-gray-400"><i className="fas fa-envelope"></i></span>
+                </div>
+            </div>
+        </div>
 
-				<div className="flex flex-col justify-start">
-					<div className="flex flex-col my-4">
-						<label htmlFor="message" className="pb-2">Message</label>
-						<textarea id="message" placeholder="Message" className=" w-11/12 md:w-96 border-white rounded-md border-none pl-2 pt-2 text-deepTawny h-40 resize-none placeholder:text-sm placeholder:text-black placeholder:pt-2" style={{ backgroundColor: "White", boxShadow: "inset 0 0 5px black", minWidth: "300px", maxWidth: "400px", }} value={newMessage} onChange={(e) => setMessage(e.target.value)} />
-					</div>
-					
-					<div className="flex justify-center">
-						<button style={{ color: "var(--black-bean)", }} type="submit" className="font-albulaBold text-xl h-12 px-8 bg-tawny hover:bg-orange-600" > Submit </button>
-					</div>
-				</div>
-			</form>
-		</div>
+        <div className="flex flex-col justify-start">
+            <div className="flex flex-col my-4">
+                <label htmlFor="message" className="pb-2 text-gray-700">Message</label>
+                <textarea id="message" placeholder="Message" className="px-3 py-3 border border-gray-300 w-11/12 md:w-96 rounded-md pl-2 pt-2 text-deepTawny h-40 resize-none placeholder:text-sm placeholder:text-gray-400 placeholder:pt-2 shadow-sm focus:shadow-md transition-shadow duration-300" style={{ backgroundColor: "White", minWidth: "300px", maxWidth: "400px" }} value={newMessage} onChange={(e) => setMessage(e.target.value)} />
+            </div>
+            
+            <div className="flex justify-center">
+                <button type="submit" className="py-3 px-5 text-lg font-bold bg-tawny hover:bg-orange-600 rounded-md text-white font-albula transition-all mt-10 shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-tawny focus:ring-opacity-50">Submit</button>
+            </div>
+        </div>
+        <AlertScreen message={alertMessage} onClose={handleCloseAlert} showAlert={showAlert} type={alertType}/>
+    </form>
+</div> 
+
 	);
 }
 

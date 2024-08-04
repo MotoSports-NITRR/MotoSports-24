@@ -110,8 +110,8 @@ const teamMembers = {
     { 
       name: "Aman Kumar", 
       image: "AmanKumar.JPG",
-      instagram: "#",
-      linkedin: "#" 
+      instagram: "https://www.instagram.com/amanwhoooo",
+      linkedin: "https://www.linkedin.com/in/amankumar25" 
     },
     { 
       name: "Anshdeep Shrivastava", 

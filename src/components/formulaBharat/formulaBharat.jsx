@@ -1,15 +1,14 @@
-import './fbStyles.css'
-import React, { Fragment } from 'react'
+import { faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React, { Fragment, useEffect } from 'react';
 import TagCloud from "TagCloud";
-import { useEffect } from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin'
-import { faInstagram } from '@fortawesome/free-brands-svg-icons'
+import './fbStyles.css';
 
 function Imagecard() {
     return (
         <div className='w-11/12 m-auto'>
-            <div className='resp mt-20 flex justify-center items-center flex-wrap'>
+            <div className='resp -mt-10 flex justify-evenly'>
                 {dataimg.map((d) => (
                     <div key={d.name} style={{ backgroundImage: `url(${d.img})` }}
                         className='hover:shadow-2xl card bg-no-repeat bg-cover bg-center h-[380px] w-80 text-black rounded-xl flex flex-col justify-end items-center m-4 relative overflow-hidden group'>
@@ -37,7 +36,7 @@ function Imagecard() {
                 ))}
             </div>
             <div className='w-11/12 m-auto'>
-            <div className='resp mt-32 flex justify-center items-center flex-wrap'>
+            <div className='resp mt-10 flex justify-evenly'>
             {data2img.map((d) => (
             <div key={d.name} style={{backgroundImage: `url(${d.img})`}} 
             className='hover:shadow-2xl card bg-no-repeat bg-cover bg-center h-[380px] w-80 text-black rounded-xl flex flex-col justify-end items-center m-4 relative overflow-hidden group'>
@@ -45,27 +44,28 @@ function Imagecard() {
             <div className=''>
                 <div className='diss text-3xl text-amber-400 font-bold flex justify-center items-center gap-4 py-1'>
                     {d.name}
-                </div>
-                <div className='diss text-white text-xl font-bold flex justify-center items-center gap-4'>
+                  </div>
+                  <div className='diss text-white text-xl font-bold flex justify-center items-center gap-4'>
                     {d.desig}
+                  </div>
                 </div>
+                <div className='diss2 flex justify-between items-center gap-4'>
+                  <a href={d.insta} className='py-1 -mt-14'>
+                    <FontAwesomeIcon className='icon' icon={faInstagram} />
+                  </a>
+                  <a href={d.linkedin} className='py-1 -mt-14'>
+                    <FontAwesomeIcon className='icon' icon={faLinkedin} />
+                  </a>
+                </div>
+              </div>
             </div>
-          <div className='diss2 flex justify-between items-center gap-4'>
-            <a href={d.insta} className='py-1 -mt-14'>
-              <FontAwesomeIcon className='icon' icon={faInstagram} />
-            </a>
-            <a href={d.linkedin} className='py-1 -mt-14'>
-              <FontAwesomeIcon className='icon' icon={faLinkedin} />
-            </a>
-          </div>
+          ))}
         </div>
       </div>
-    ))}
-  </div>
-</div>
-</div>
-    )
-  }
+    </div>
+  );
+}
+
 
 //Descrition
 function Description() {
@@ -239,7 +239,7 @@ const TextShpere = () => {
 function Brakes() {
   return (
     <div className='w-11/12 m-auto'>
-        <div className='resp mt-20 flex justify-center items-center flex-wrap'>
+        <div className='resp -mt-10 flex justify-center items-center flex-wrap'>
         {data.map((d) => (
         <div  key={d.name}  style={{backgroundImage: `url(${d.img})`}} 
         className='hover:shadow-2xl card bg-no-repeat bg-cover bg-center h-[380px] w-80 text-black rounded-xl flex flex-col justify-end items-center m-4 relative overflow-hidden group'>
@@ -267,7 +267,7 @@ function Brakes() {
     ))}
   </div>
   <div className='w-11/12 m-auto'>
-  <div className='resp mt-32 flex justify-between flex-wrap'>
+  <div className='resp mt-10 flex justify-evenly'>
     {data3.map((d) => (
     <div key={d.name} style={{backgroundImage: `url(${d.img})`}} 
     className='hover:shadow-2xl card h-[320px] w-[238px] bg-no-repeat bg-cover bg-center text-black rounded-xl flex flex-col justify-end items-center m-4 relative overflow-hidden group'>
@@ -302,7 +302,7 @@ function Brakes() {
 function Cvpowertrain() {
   return (
     <div className='w-3/4 m-auto'>
-        <div className='resp mt-32 flex justify-evenly'>
+        <div className='resp -mt-10 flex justify-evenly'>
             {datacv.map((d) => (
                 <div style={{backgroundImage: `url(${d.img})`}} className='hover:shadow-2xl card h-[320px] bg-no-repeat bg-cover bg-center text-black rounded-xl flex flex-wrap justify-center items-end'>
                     <div className=" lol h-fit w-64 rounded-xl flex flex-col justify-center items-center">
@@ -333,7 +333,7 @@ function Cvpowertrain() {
 function Evpowertrain() {
   return (
     <div className='w-11/12 m-auto'>
-    <div className='resp mt-20 flex justify-center items-center flex-wrap'>
+    <div className='resp -mt-10 flex justify-evenly'>
     {dataev.map((d) => (
     <div  key={d.name}  style={{backgroundImage: `url(${d.img})`}} 
     className='hover:shadow-2xl card bg-no-repeat bg-cover bg-center h-[380px] w-80 text-black rounded-xl flex flex-col justify-end items-center m-4 relative overflow-hidden group'>
@@ -361,7 +361,7 @@ function Evpowertrain() {
 ))}
 </div>
 <div className='w-11/12 m-auto'>
-  <div className='resp mt-32 flex justify-between flex-wrap'>
+  <div className='resp mt-10 flex justify-evenly'>
     {data2ev.map((d) => (
     <div key={d.name} style={{backgroundImage: `url(${d.img})`}} 
     className='hover:shadow-2xl card h-[320px] w-[238px] bg-no-repeat bg-cover bg-center text-black rounded-xl flex flex-col justify-end items-center m-4 relative overflow-hidden group'>
@@ -398,7 +398,7 @@ function Evpowertrain() {
 function Steering() {
   return (
     <div className='w-11/12 m-auto'>
-        <div className='resp mt-20 flex justify-center items-center flex-wrap'>
+        <div className='resp -mt-10 flex justify-center items-center flex-wrap'>
         {datasteer.map((d) => (
         <div  key={d.name}  style={{backgroundImage: `url(${d.img})`}} 
         className='hover:shadow-2xl card bg-no-repeat bg-cover bg-center h-[380px] w-80 text-black rounded-xl flex flex-col justify-end items-center m-4 relative overflow-hidden group'>
@@ -426,7 +426,7 @@ function Steering() {
     ))}
   </div>
   <div className='w-11/12 m-auto'>
-  <div className='resp mt-32 flex justify-between flex-wrap'>
+  <div className='resp mt-10 flex justify-evenly'>
     {data2steer.map((d) => (
     <div key={d.name} style={{backgroundImage: `url(${d.img})`}} 
     className='hover:shadow-2xl card h-[320px] bg-no-repeat bg-cover bg-center text-black rounded-xl flex flex-col justify-end items-center m-4 relative overflow-hidden group'>
@@ -461,7 +461,7 @@ function Steering() {
 function Frames() {
   return (
     <div className='w-11/12 m-auto'>
-    <div className='resp mt-20 flex justify-center items-center flex-wrap'>
+    <div className='resp -mt-10 flex justify-center items-center flex-wrap'>
     {datafr.map((d) => (
     <div  key={d.name}  style={{backgroundImage: `url(${d.img})`}} 
     className='hover:shadow-2xl card bg-no-repeat bg-cover bg-center h-[380px] w-80 text-black rounded-xl flex flex-col justify-end items-center m-4 relative overflow-hidden group'>
@@ -489,7 +489,7 @@ function Frames() {
 ))}
 </div>
 <div className='w-11/12 m-auto'>
-  <div className='resp mt-32 flex justify-between flex-wrap'>
+  <div className='resp mt-10 flex justify-evenly'>
     {data2fr.map((d) => (
     <div key={d.name} style={{backgroundImage: `url(${d.img})`}} 
     className='hover:shadow-2xl card h-[320px] w-[238px] bg-no-repeat bg-cover bg-center text-black rounded-xl flex flex-col justify-end items-center m-4 relative overflow-hidden group'>
@@ -524,29 +524,35 @@ function Frames() {
 function Suspension() {
   return (
     <div className='w-11/12 m-auto'>
-        <div className='resp mt-20 flex justify-around'>
-            {datasus.map((d) => (
-                <div style={{backgroundImage: `url(${d.img})`}} className={`hover:shadow-2xl card bg-no-repeat bg-cover bg-center h-[380px] text-black rounded-xl flex flex-wrap justify-center items-end`}>
-                    <div className="lol h-fit w-80 rounded-xl flex flex-col justify-center items-center">
-                        <div className='diss lol text-amber-400 text-3xl font-bold gap-4 py-1 '>
+    <div className='resp -mt-10 flex justify-center items-center flex-wrap'>
+        {datasus.map((d) => (
+            <div key={d.name} style={{ backgroundImage: `url(${d.img})` }}
+                className='hover:shadow-2xl card bg-no-repeat bg-cover bg-center h-[380px] w-80 text-black rounded-xl flex flex-col justify-end items-center m-4 relative overflow-hidden group'>
+                <div className="lol h-[110px] w-full bg-black bg-opacity-50 p-4 flex flex-col justify-center items-center transition-opacity duration-300 group-hover:bg-opacity-0">
+                    <div className=''>
+                        <div className='diss text-3xl text-amber-400 font-bold flex justify-center items-center gap-4 py-1'>
                             {d.name}
-                            
                         </div>
-                        <div className='diss lol text-white text-xl font-bold flex justify-center items-center gap-4  '>
+                        <div className='diss text-white text-xl font-bold flex justify-center items-center gap-4'>
                             {d.desig}
-                            
-                        </div>
-                        <div className='diss2 lol flex justify-center items-center gap-4 p-4 '>
-                            <a href={d.insta} className='lol py-1'><FontAwesomeIcon className='lol icon' icon={faInstagram}></FontAwesomeIcon></a><a href={d.linkedin} className='lol py04'><FontAwesomeIcon className='lol icon' icon={faLinkedin} /></a>
                         </div>
                     </div>
-            
 
+                    <div className='diss2 flex justify-between items-center gap-4'>
+                        <a href={d.insta} className='py-1 -mt-14'>
+                            <FontAwesomeIcon className='icon' icon={faInstagram} />
+                        </a>
+
+                        <a href={d.linkedin} className='py-1 -mt-14'>
+                            <FontAwesomeIcon className='icon' icon={faLinkedin} />
+                        </a>
+                    </div>
                 </div>
+            </div>
             ))}
         </div>
         <div className='w-11/12 m-auto'>
-  <div className='resp mt-32 flex justify-between flex-wrap'>
+  <div className='resp mt-10 flex justify-evenly'>
     {data2sus.map((d) => (
     <div key={d.name} style={{backgroundImage: `url(${d.img})`}} 
     className='hover:shadow-2xl card h-[320px] w-[238px] bg-no-repeat bg-cover bg-center text-black rounded-xl flex flex-col justify-end items-center m-4 relative overflow-hidden group'>
@@ -581,7 +587,7 @@ function Suspension() {
 function Mentor() {
   return (
     <div className='w-11/12 m-auto'>
-        <div className='resp mt-20 flex justify-between'>
+        <div className='resp mt-10 flex justify-between'>
             {datamen.map((d) => (
                 <div style={{backgroundImage: `url(${d.img})`}} className={`hover:shadow-2xl card  bg-no-repeat bg-cover bg-center h-[380px] text-black rounded-xl flex flex-wrap justify-center items-end`}>
                     <div className="lol h-fit w-80 rounded-xl flex flex-col justify-center items-center">
@@ -602,7 +608,7 @@ function Mentor() {
                 </div>
             ))}
         </div>
-        <div className='resp mt-32 flex justify-between'>
+        <div className='resp mt-32 flex justify-evenly'>
             {data2men.map((d) => (
                 <div style={{backgroundImage: `url(${d.img})`}} className='hover:shadow-2xl card h-[380px] text-black rounded-xl flex flex-wrap justify-center items-end'>
                     <div className=" lol h-fit w-80 rounded-xl flex flex-col justify-center items-center">
@@ -634,7 +640,7 @@ function Mentor() {
 function Executives() {
   return (
     <>
-        <div className="resp flex justify-around">
+        <div className="resp -mt-20 flex justify-around">
             <div><h1 className='text-4xl my-10 exe'>Brakes</h1>
                 <ul>
                     <li>Milind Kumawat</li>
@@ -854,8 +860,8 @@ const data2ev=[
       name:"Sachin Choubey",
       desig:"Member",
       img:"./src/components/formulabharat/pics/sachin.jpg",
-      insta:"",
-      linkedin:""
+      insta:"https://www.instagram.com/sachin_choubey11?igsh=MTFtNGkycGM0NmVlYg==",
+      linkedin:"https://www.linkedin.com/in/sachin-choubey-bb7558256?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
   }
 ]
 

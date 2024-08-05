@@ -1,8 +1,9 @@
-import { Box, Button, ButtonGroup, CardBody, CardFooter, Card as ChakraCard, ChakraProvider, Divider, extendTheme, Flex, Heading, Image, Stack, Text } from "@chakra-ui/react";
+import { Box, Button, CardBody, Card as ChakraCard, ChakraProvider, Flex, Heading, IconButton, Image, Stack, Text, extendTheme } from "@chakra-ui/react";
+import { AddIcon, MinusIcon } from "@chakra-ui/icons";
 import React, { useState } from "react";
 import RazorpayButton from './razorPay/paymentButton';
-import './merchandise.css'
-import ebajaMerch from '../assets/images/ebajaMerch.png'
+import './merchandise.css';
+import ebajaMerch from '../assets/images/ebajaMerch.png';
 
 const theme = extendTheme({
     colors: {
@@ -17,7 +18,6 @@ const theme = extendTheme({
         },
     },
 });
-
 
 const Merchandise = () => {
     const [selectedSize, setSelectedSize] = useState("");
@@ -38,21 +38,27 @@ const Merchandise = () => {
         setShowColorOptions(!showColorOptions);
     };
 
-
     const handleQuantityClick = () => {
         setShowSizeOptions(false);
     };
 
+    const handleIncreaseQuantity = () => {
+        setSelectedQuantity(prevQuantity => prevQuantity + 1);
+    };
+
+    const handleDecreaseQuantity = () => {
+        setSelectedQuantity(prevQuantity => prevQuantity > 1 ? prevQuantity - 1 : 1);
+    };
 
     const totalAmount = selectedQuantity * 799;
 
     return (
-        <div className="relative" style={{ background: "#fffbf5" }} >
+        <div className="relative" style={{ background: "#fffbf5" }}>
             <ChakraProvider theme={theme}>
-                <Flex justifyContent="center" alignItems="center" className="" style={{ display: "flex" }}>
-                    <ChakraCard className="" borderWidth="0px" overflow="hidden" backgroundColor={"#fffbf5"} color="gradients.coffeeGradient" boxShadow="md" minHeight="85vh">
-                        <CardBody className="chakraCardBody" minHeight="85vh">
-                            <Flex minHeight="85vh" className="justify-center align-middle">
+                <Flex justifyContent="center" alignItems="center" style={{ display: "flex" }}>
+                    <ChakraCard borderWidth="0px" overflow="hidden" backgroundColor={"#fffbf5"} color="gradients.coffeeGradient" boxShadow="md" minHeight="85vh">
+                        <CardBody minHeight="85vh">
+                            <Flex minHeight="85vh" justifyContent="center" alignItems="center">
                                 <Box flex="1" pr="5" className="flex flex-col merchBoxImg justify-center">
                                     <Image src={ebajaMerch} h="460px" maxH="700px" w="425px" maxW="500px" className="merchImg" />
                                 </Box>
@@ -63,9 +69,7 @@ const Merchandise = () => {
                                         <Heading color="brand.caramel"><span className="font-albulaHeavy text-5xl">Discover the Passion </span></Heading>
 
                                         <Text color="brand.darkCoffee" className="font-albula mt-2">
-                                            Ready to immerse yourself in the world of vibrant
-                                            motorsports? Dive in, grab our mesmerizing merch, and unlock
-                                            your ticket to being fantastic!
+                                            Ready to immerse yourself in the world of vibrant motorsports? Dive in, grab our mesmerizing merch, and unlock your ticket to being fantastic!
                                         </Text>
 
                                         <Box flex="1" pr="5" className="flex flex-col merchBoxImg justify-center mobileMerchImg my-8">
@@ -148,6 +152,5 @@ const Merchandise = () => {
         </div>
     );
 };
-
 
 export default Merchandise;

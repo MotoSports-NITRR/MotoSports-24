@@ -6,49 +6,43 @@ import TagCloud from "TagCloud";
 import './fbStyles.css';
 
 function Imagecard() {
-  return (
-    <div className='w-11/12 m-auto'>
-      <div className='resp -mt-10 flex justify-evenly'>
-        <div className='resp mt-20 flex justify-center items-center flex-wrap'>
-          {dataimg.map((d) => (
-            <div
-              key={d.name}
-              style={{ backgroundImage: `url(${d.img})` }}
-              className='hover:shadow-2xl card bg-no-repeat bg-cover bg-center h-[380px] w-80 text-black rounded-xl flex flex-col justify-end items-center m-4 relative overflow-hidden group'
-            >
-              <div className="lol h-[110px] w-full bg-black bg-opacity-50 p-4 flex flex-col justify-center items-center transition-opacity duration-300 group-hover:bg-opacity-0">
-                <div>
-                  <div className='diss text-3xl text-amber-400 font-bold flex justify-center items-center gap-4 py-1'>
-                    {d.name}
-                  </div>
-                  <div className='diss text-white text-xl font-bold flex justify-center items-center gap-4'>
-                    {d.desig}
-                  </div>
-                </div>
-                <div className='diss2 flex justify-between items-center gap-4'>
-                  <a href={d.insta} className='py-1 -mt-14'>
-                    <FontAwesomeIcon className='icon' icon={faInstagram} />
-                  </a>
-                  <a href={d.linkedin} className='py-1 -mt-14'>
-                    <FontAwesomeIcon className='icon' icon={faLinkedin} />
-                  </a>
-                </div>
-              </div>
+    return (
+        <div className='w-11/12 m-auto'>
+            <div className='resp -mt-10 flex justify-evenly'>
+                {dataimg.map((d) => (
+                    <div key={d.name} style={{ backgroundImage: `url(${d.img})` }}
+                        className='hover:shadow-2xl card bg-no-repeat bg-cover bg-center h-[380px] w-80 text-black rounded-xl flex flex-col justify-end items-center m-4 relative overflow-hidden group'>
+                        <div className="lol h-[110px] w-full bg-black bg-opacity-50 p-4 flex flex-col justify-center items-center transition-opacity duration-300 group-hover:bg-opacity-0">
+                            <div className=''>
+                                <div className='diss text-3xl text-amber-400 font-bold flex justify-center items-center gap-4 py-1'>
+                                    {d.name}
+                                </div>
+                                <div className='diss text-white text-xl font-bold flex justify-center items-center gap-4'>
+                                    {d.desig}
+                                </div>
+                            </div>
+
+                            <div className='diss2 flex justify-between items-center gap-4'>
+                                <a href={d.insta} className='py-1 -mt-14'>
+                                    <FontAwesomeIcon className='icon' icon={faInstagram} />
+                                </a>
+
+                                <a href={d.linkedin} className='py-1 -mt-14'>
+                                    <FontAwesomeIcon className='icon' icon={faLinkedin} />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                ))}
             </div>
-          ))}
-        </div>
-      </div>
-      <div className='w-11/12 m-auto'>
-        <div className='resp mt-10 flex justify-evenly'>
-          {data2img.map((d) => (
-            <div
-              key={d.name}
-              style={{ backgroundImage: `url(${d.img})` }}
-              className='hover:shadow-2xl card bg-no-repeat bg-cover bg-center h-[380px] w-80 text-black rounded-xl flex flex-col justify-end items-center m-4 relative overflow-hidden group'
-            >
-              <div className="lol h-[110px] w-full absolute bottom-0 bg-black bg-opacity-50 p-4 flex flex-col justify-center items-center transition-opacity duration-300 group-hover:bg-opacity-0">
-                <div>
-                  <div className='diss text-3xl text-amber-400 font-bold flex justify-center items-center gap-4 py-1'>
+            <div className='w-11/12 m-auto'>
+            <div className='resp mt-10 flex justify-evenly'>
+            {data2img.map((d) => (
+            <div key={d.name} style={{backgroundImage: `url(${d.img})`}} 
+            className='hover:shadow-2xl card bg-no-repeat bg-cover bg-center h-[380px] w-80 text-black rounded-xl flex flex-col justify-end items-center m-4 relative overflow-hidden group'>
+            <div className="lol h-[110px] w-full absolute bottom-0 bg-black bg-opacity-50 p-4 flex flex-col justify-center items-center transition-opacity duration-300 group-hover:bg-opacity-0">
+            <div className=''>
+                <div className='diss text-3xl text-amber-400 font-bold flex justify-center items-center gap-4 py-1'>
                     {d.name}
                   </div>
                   <div className='diss text-white text-xl font-bold flex justify-center items-center gap-4'>

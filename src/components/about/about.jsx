@@ -5,6 +5,7 @@ import React, { Fragment, useEffect } from 'react';
 import TagCloud from "TagCloud";
 import './about.css';
 
+
 function Imagecard() {
   return (
     <div className='w-11/12 m-auto'>
@@ -71,37 +72,39 @@ function Imagecard() {
     </div>
   );
 }
-
-
-//Descrition
 function Description() {
   return (
     <div className='flex flex-col items-center justify-center min-h-screen px-10 py-6'>
       <h1 className='ebaja2 ebaja text-5xl font-semibold text-amber-900 mb-8'>Who Are We</h1>
       <p className='w-4/5 text-gray-600 mb-12'>
-        <span className="text-red-700"> 
-          Motorsports is a dynamic and innovative club dedicated to pushing the boundaries of automotive technology and competitive racing. Our club has a track record of excellence, actively participating in a range of competitions where we showcase our skills and passion for motorsports. Through our commitment to excellence and state-of-the-art technologies, we have established ourselves as leaders within the Indian automotive sector. NIT Raipur Motorsports provides a platform for students to pursue their passions and demonstrate their abilities on a broader stage. Join us and experience the thrill of Motorsports at NIT Raipur!
+        <span className="text-red-700 block mb-48"> 
+          Motorsports is a dynamic and innovative club dedicated to pushing the boundaries of automotive technology and competitive racing. Our club has a track record of excellence, actively participating in a range of competitions where we showcase our skills and passion for motorsports.
+          Through our commitment to excellence and state-of-the-art technologies, we have established ourselves as leaders within the Indian automotive sector. NIT Raipur Motorsports provides a platform for students to pursue their passions and demonstrate their abilities on a broader stage. Join us and experience the thrill of Motorsports at NIT Raipur!
         </span>
       </p>
 
-      <h1 className='ebaja2 ebaja text-5xl font-semibold text-amber-900 mb-8 mt-12'>What Do We Do</h1>
+      <h1 className='ebaja2 ebaja text-5xl font-semibold text-amber-900 mb-16'>What Do We Do</h1>
       <p className='w-4/5 text-gray-600'>
-        <span className="text-red-700"> 
-          We, at NIT Raipur Motorsports, are a dedicated team of over 85 members who devote our time and expertise to creating robust and durable cars that outperform the competition. Our club is actively involved in two prestigious races eBaja and Formula Bharat, where we showcase our innovation, engineering prowess, and teamwork. Through rigorous testing, meticulous design processes, and a relentless pursuit of excellence, we push the boundaries of what’s possible in the realm of Motorsports. Join us on this exciting journey of innovation and competition!
+        <span className="text-red-700 block mb-40"> 
+          We, at NIT Raipur Motorsports, are a dedicated team of over 85 members who devote our time and expertise to creating robust and durable cars that outperform the competition. Our club is actively involved in two prestigious races eBaja and Formula Bharat, where we showcase our innovation, engineering prowess, and teamwork.
+          Through rigorous testing, meticulous design processes, and a relentless pursuit of excellence, we push the boundaries of what’s possible in the realm of Motorsports. Join us on this exciting journey of innovation and competition!
         </span>
       </p>
     </div>
   )
 }
 
+
+
+
 //Timeline
 const Timeline=({events})=>{
     return (
         <>
             <div className="flex ">
-                    <div className="flex">
+                    {/* <div className="flex">
                         <img src=".\src\components\formulabharat\pics\fbcar.png" alt="" className='img'/>
-                    </div>
+                    </div> */}
                     <div className="flex flex-col gap-y-3 w-full my-4">
 
                     <Circle />
@@ -729,7 +732,7 @@ function App() {
                 <h1 className='head text-6xl flex justify-center items-center pb-28 pt-36'>OUR CAR</h1>
                 <Ourcar events={info}/> */}
 
-                <h1 className='head text-5xl flex justify-center items-center pb-28 pt-36'>MEET OUR TEAM</h1>
+                {/* <h1 className='head text-5xl flex justify-center items-center pb-28 pt-36'>MEET OUR TEAM</h1> */}
                 {/* <Imagecard /> */}
 
                 <h1 className='head text-5xl flex justify-center items-center pb-28 pt-36'>Web Development</h1>
@@ -869,7 +872,7 @@ const data3 = [
 
 const dataev=[
   {
-    name: "Mridul Bansal (Head)",
+    name: "Mridul Bansal",
     desig: "Head",
     img: "./src/components/about/about/MridulBansal.jpeg",
     insta: "https://www.instagram.com/mridszx?igsh=MWE0MXUyc29iZnc2dQ==",
@@ -879,7 +882,7 @@ const dataev=[
 
 const data2ev=[
   {
-    name: "Pratibha Sikheriya",
+    name: "Pratibha ",
     desig: "Member",
     img: "./src/components/about/about/PratibhaSikheriya.jpg",
     insta: "https://www.instagram.com/chikki_.19/",
@@ -900,7 +903,7 @@ const data2ev=[
     linkedin: "https://www.linkedin.com/in/anshul-wasnik-69455a25b/"
   },
   {
-    name: "Aman Kumar Sharma",
+    name: "Aman Sharma",
     desig: "Member",
     img: "./src/components/about/about/AmanSharma.jpg",
     insta: "https://www.instagram.com/ittz__aman_",
@@ -912,19 +915,12 @@ const data2ev=[
 
 const datasteer=[
   {
-    name: "Rahul Kumar Singh (Head)",
+    name: "Rahul Singh",
     desig: "Head",
     img: "./src/components/about/about/RahulKumarSingh.jpeg",
     insta: "#",
     linkedin: "https://www.linkedin.com/in/rahul-kumar-singh-b88636231?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-  },
-  {
-    name: "Gaurab Kumar (Head)",
-    desig: "Head",
-    img: "./src/components/about/about/GaurabKumar.jpeg",
-    insta: "#",
-    linkedin: "https://linkedin.com/in/gaurav-kumar-b76122251/"
-  },
+  }
 ]
 
 const data2steer=[
@@ -934,6 +930,13 @@ const data2steer=[
     img: "./src/components/about/about/PrakarshGupta.jpg",
     insta: "https://www.instagram.com/prakarshgupta_21",
     linkedin: "https://www.linkedin.com/in/prakarsh-gupta-a75b67279/"
+  },
+  {
+    name: "Gaurab Kumar",
+    desig: "Head",
+    img: "./src/components/about/about/GaurabKumar.jpeg",
+    insta: "#",
+    linkedin: "https://linkedin.com/in/gaurav-kumar-b76122251/"
   },
   {
     name: "Vighnesh Gupta",
@@ -948,7 +951,7 @@ const data2steer=[
 
 const datafr=[
   {
-    name: "Sparsh Jaggi (Head)",
+    name: "Sparsh Jaggi",
     desig: "Head",
     img: "./src/components/about/about/SparshJaggi.jpeg",
     insta: "https://www.instagram.com/sparshjaggi?igsh=ZHVpeHNwN2txcnZm&utm_source=qr",
@@ -964,14 +967,14 @@ const data2fr=[
     linkedin: "https://www.linkedin.com/in/amankumar25"
   },
   {
-    name: "Anshdeep Shrivastava",
+    name: "Anshdeep",
     desig: "Member",
     img: "./src/components/about/about/Anshdeepshrivastava.jpg.jpg",
     insta: "#",
     linkedin: "#"
   },
   {
-    name: "Leora Saharia",
+    name: "Leora",
     desig: "Member",
     img: "./src/components/about/about/LeoraSaharia.jpg",
     insta: "https://www.instagram.com/leorasaharia/",
@@ -997,14 +1000,14 @@ const data2fr=[
 
 const datasus=[
   {
-    name: "Rishi Singh Rajput (Head)",
+    name: "Rishi Singh",
     desig: "Head",
     img: "./src/components/about/about/RishiSinghRajput.jpg",
     insta: "https://www.instagram.com/shiri_singha/?igsh=MXNlZTY0d3JoNjA0Ng%3D%3D",
     linkedin: "https://www.linkedin.com/in/rishi-singh-aa5387264?trk=contact-info"
   },
   {
-    name: "Ritik Pathak (Head)",
+    name: "Ritik Pathak",
     desig: "Head",
     img: "./src/components/about/about/RitikPathak.jpg",
     insta: "https://www.instagram.com/ritik_gear?igsh=bDYzbW5zaGpuaWds",
@@ -1025,8 +1028,7 @@ const data2sus=[
     img: "./src/components/about/about/RishabhBhati.jpg",
     insta: "#",
     linkedin: "https://www.linkedin.com/in/rishabh-bhati-16276a26b/"
-  },
-  {
+  },{
     name: "Shikha Yadav",
     desig: "Member",
     img: "./src/components/about/about/ShikhaYadav.jpg",

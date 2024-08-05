@@ -1,5 +1,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Brush+Script+MT&display=swap');
+@font-face {
+  font-family: 'brush';
+  src: url('../assets/fonts/brushKing.otf');
+}
 
 
 .about-page {

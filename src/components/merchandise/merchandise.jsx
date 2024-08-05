@@ -20,22 +20,26 @@ const theme = extendTheme({
 
 
 const Merchandise = () => {
-    const [selectedSize, setSelectedSize] = useState(null);
+    const [selectedSize, setSelectedSize] = useState("");
+    const [selectedColor, setSelectedColor] = useState("");
     const [selectedQuantity, setSelectedQuantity] = useState(1);
-    const [showSizeOptions, setShowSizeOptions] = useState(false);
-    const [showQuantityOptions, setShowQuantityOptions] = useState(false);
+    const [showSizeOptions, setShowSizeOptions] = useState(true);
+    const [showColorOptions, setShowColorOptions] = useState(true);
     const sizeOptions = ["XS", "S", "M", "L", "XL", "XXL"];
-    const quantityOptions = [...Array(6).keys()].map((i) => i + 1);
+    const ColorOptions = ["Black", "Gray", "Blue"];
 
 
     const handleSizeClick = () => {
-        setShowSizeOptions(!showSizeOptions);
-        setShowQuantityOptions(false);
+        if (selectedSize != "") {
+            setShowSizeOptions(!showSizeOptions);
+        }
+    };
+    const handleColorClick = () => {
+        setShowColorOptions(!showColorOptions);
     };
 
 
     const handleQuantityClick = () => {
-        setShowQuantityOptions(!showQuantityOptions);
         setShowSizeOptions(false);
     };
 
@@ -54,7 +58,7 @@ const Merchandise = () => {
                                 </Box>
 
                                 <Box flex="1" className="merchOptions">
-                                    <Stack spacing="5">
+                                    <Stack spacing="5" className="">
                                         <Heading size="md" color="brand.darkCoffee" className=""><span className="font-albulaHeavy text-3xl">MotoSports Merch</span></Heading>
                                         <Heading color="brand.caramel"><span className="font-albulaHeavy text-5xl">Discover the Passion </span></Heading>
 
@@ -64,42 +68,76 @@ const Merchandise = () => {
                                             your ticket to being fantastic!
                                         </Text>
 
+                                        <Box flex="1" pr="5" className="flex flex-col merchBoxImg justify-center mobileMerchImg my-8">
+                                            <Image src={ebajaMerch} h="460px" maxH="700px" w="425px" maxW="500px" className="merchImg" />
+                                        </Box>
+
                                         <Text color="brand.darkCoffee" fontSize="1xl" fontWeight={650}><span className="font-albulaMedium"><span className="font-inter font-black">Price:-</span> 799/-</span></Text>
-                                        {showSizeOptions && (
-                                            <ButtonGroup spacing="1" mt="1">
-                                                {sizeOptions.map((size) => (
-                                                    <Button key={size} onClick={() => { setSelectedSize(size); setShowSizeOptions(false); }} color="whitesmoke" bg="brand.darkCoffee" _hover={{ bg: "brand.caramel" }}>
-                                                        {size}
-                                                    </Button>
-                                                ))}
-                                            </ButtonGroup>
-                                        )}
 
-                                        <Button onClick={handleQuantityClick} className="max-w-80" variant="solid" colorScheme="brand.darkCoffee" bg="brand.darkCoffee" _hover={{ bg: "brand.caramel" }} fontFamily="albula">
-                                            {selectedQuantity
-                                                ? `Quantity: ${selectedQuantity}`
-                                                : `Select: ${Quantity}`
-                                                    ? `Quantity: ${selectedQuantity}`
-                                                    : `Select: ${Quantity}`
-                                            }
-                                        </Button>
+                                        <Box className="MerchProp flex flex-col gap-2">
+                                            <div className="size flex  gap-2">
+                                                <Button onClick={handleSizeClick} minWidth={160} className="max-w-40" variant="solid" colorScheme="brand.darkCoffee" bg="brand.darkCoffee" _hover={{ bg: "brand.caramel" }} fontFamily="albula">
+                                                    {
+                                                        `Size : ${selectedSize}`
+                                                    }
+                                                </Button>
 
-                                        {showQuantityOptions && (
-                                            <ButtonGroup spacing="3" mt="3">
-                                                {quantityOptions.map((quantity) => (
-                                                    <Button key={quantity} onClick={() => { setSelectedQuantity(quantity); setShowQuantityOptions(false); }} color="whitesmoke" bg="brand.darkCoffee" _hover={{ bg: "brand.caramel" }}>
-                                                        {quantity}
-                                                    </Button>
-                                                ))}
-                                            </ButtonGroup>
-                                        )}
+                                                {showSizeOptions && (
+                                                    <ButtonGroup spacing="1">
+                                                        {sizeOptions.map((size) => (
+                                                            <Button key={size} onClick={() => { setSelectedSize(size); setShowSizeOptions(false); }} color="whitesmoke" bg="brand.darkCoffee" _hover={{ bg: "brand.caramel" }}>
+                                                                {size}
+                                                            </Button>
+                                                        ))}
+                                                    </ButtonGroup>
+                                                )}
+                                            </div>
 
-                                        <ButtonGroup spacing="2">
-                                            <Button className="px-16 preorderBtn" variant="solid" colorScheme="brand.darkCoffee" bg="brand.darkCoffee" fontFamily="albula">
-                                                Order Amount - {totalAmount}/-
-                                            </Button>
-                                        </ButtonGroup>
-                                        <RazorpayButton />
+                                            <div className="color flex gap-2">
+                                                <Button onClick={handleColorClick} width={160} className="max-w-40 min-w-40" variant="solid" colorScheme="brand.darkCoffee" bg="brand.darkCoffee" _hover={{ bg: "brand.caramel" }} fontFamily="albula">
+                                                    {
+                                                        `Color : ${selectedColor}`
+                                                    }
+                                                </Button>
+
+                                                {showColorOptions && (
+                                                    <ButtonGroup spacing="1">
+                                                        {ColorOptions.map((clr) => (
+                                                            <Button key={clr} onClick={() => { setSelectedColor(clr); setShowColorOptions(false); }} color="whitesmoke" bg="brand.darkCoffee" _hover={{ bg: `${clr}` }}>
+                                                                {clr}
+                                                            </Button>
+                                                        ))}
+                                                    </ButtonGroup>
+                                                )}
+                                            </div>
+                                        </Box>
+
+                                        <Flex alignItems="center" mt={0}>
+                                            <IconButton
+                                                icon={<MinusIcon />}
+                                                onClick={handleDecreaseQuantity}
+                                                size="sm"
+                                                aria-label="Decrease quantity"
+                                            />
+                                            <Text mx="4" fontSize="2xl">{selectedQuantity}</Text>
+                                            <IconButton
+                                                icon={<AddIcon />}
+                                                onClick={handleIncreaseQuantity}
+                                                size="sm"
+                                                aria-label="Increase quantity"
+                                            />
+                                        </Flex>
+
+                                        <div className="flex justify-start w-[450px]">
+                                            <Text color="brand.darkCoffee" fontSize="1xl" fontWeight={650} mt={2}>
+                                                <span className="font-albulaMedium mr-8">
+                                                    <span className="font-albula font-black">Total Amount :  </span>
+                                                    {totalAmount}/-
+                                                </span>
+                                            </Text>
+
+                                            <RazorpayButton />
+                                        </div>
                                     </Stack>
                                 </Box>
                             </Flex>

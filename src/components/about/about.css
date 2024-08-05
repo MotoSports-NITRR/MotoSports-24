@@ -1,223 +1,223 @@
+@font-face {
+  font-family: 'albula';
+  src: url('../assets/fonts/albula/Albula-Bold.ttf');
+}
 
-@import url('https://fonts.googleapis.com/css2?family=Brush+Script+MT&display=swap');
+@font-face {
+  font-family: 'lemon';
+  src: url('../assets/fonts/lemonMilk/LEMONMILK-Medium.otf');
+}
+
 @font-face {
   font-family: 'brush';
   src: url('../assets/fonts/brushKing.otf');
 }
 
+@font-face {
+  font-family: 'gate';
+  src: url('../assets/fonts/newgGate.ttf');
+  color: var(--tawny);
+}
 
-.about-page {
-    position: relative;
-    z-index: 0;
-    padding: 50px 0;
-    background-color: #FFFFF2;
-    overflow: hidden;
-  }
-  
-  .about-page .container {
-    position: relative;
-    z-index: 1;
-  }
-  
-  /* Team Member Card Styles */
-  .team-member-card {
-    position: relative;
-    width: 250px; 
-    height: 300px; 
-    overflow: hidden;
-    margin: 10px;
-  }
-  
-  .image-container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .profile-image {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-  }
-  
-  .image-container:hover .profile-image {
-    transform: scale(1.1);
-  }
-  
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    color: rgb(228, 210, 181);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
-  
-  .image-container:hover .overlay {
-    opacity: 1;
-  }
-  
-  .name {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .social-links {
-    margin-top: 10px;
-  }
-  
-  .social-link {
-    margin: 0 10px;
-    color: rgb(193, 172, 136); 
-    font-size: 1.5rem;
-    transition: color 0.3s ease;
-  }
-  
-  .social-link:hover {
-    color: #e07b39;
-  }
-  
-  /* Timeline Styles */
-  .timeline-container {
-    position: relative;
-    padding: 20px 0;
-  }
-  
-  .timeline-line {
-    position: absolute;
-    left: 50%;
-    width: 2px;
-    background: #e07b39;
-    height: 100%;
-    top: 0;
-    transform: translateX(-50%);
-  }
-  
-  .timeline-item {
-    width: 50%;
-    padding: 10px;
-    position: relative;
-  }
-  
-  .timeline-item.left {
-    left: 0;
-    text-align: right;
-    padding-right: 30px;
-  }
-  .timeline-item.left:nth-child(n+2){
-    margin-top: -150px;
-  }
-  
-  .timeline-item.right {
-    left: 50%;
-    text-align: left;
-    padding-left: 40px;
-    margin-top: -175px;
-  }
-  
-  .timeline-item::before {
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background: #fffff2;
-    border: 4px solid #e07b39;
-    top: 50%;
-    transform: translateY(-50%);
-    border-radius: 50%;
-    z-index: 1;
-  }
-  
-  .timeline-item.left::before {
-    right: -10px;
-  }
-  
-  .timeline-item.right::before {
-    left: -10px;
-  }
-  
-  /* Event Card Styles */
-  .event-card {
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .event-image {
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .event-card:hover .event-image {
-    transform: scale(1.1);
-  }
-  
+.ebaja{
+  font-family: brush;
+  font-size: 50px;
+}
 
-  .who-are-we,
-  .what-do-we-do,
-  .events-section,
-  .team {
-    margin-bottom: 34px;
-    padding-bottom: 34px;
+.desc{
+  font-family: albula;
+  font-size: 17px;
+}
+
+.icon{
+  height: 30px;
+  margin-left: 2px;
+  color: white;
+}
+
+.head{
+  font-family: brush;
+  color: var(--seal-brown);
+}
+
+.car{
+  z-index: 1;
+}
+
+.lol{
+  background-color:  var(--modestbrown);
+  background: rgba(204, 204, 204, 0);
+}
+
+.lo2{
+  color:  rgba(101, 47, 11);
+}
+
+.team{
+  margin-top: 50px;
+}
+
+.card{
+  transition: all 0.3s;
+  font-family: albula;
+  background-size: cover;
+  filter: grayscale(40%);
+
+
+}
+
+
+
+.card:hover{
+  transform: scale(1.15);
+  color: var(--brown);
+  filter: grayscale(0%);
+}
+
+.card:hover .diss{
+  opacity: 0;
+  transform: translateY(-50px);
+
+}
+
+.card:hover .diss2{
+  opacity: 1;
+  transform: translateY(-20px);
+}
+
+.icon:hover{
+  transform: scale(1.5);
+
+}
+
+.diss{
+  opacity: 1;
+  transition: all 0.5s;
+  font-family: lemon;
+}
+
+.diss2{
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.img{
+  height: 600px;
+  width: 1100px;
+  margin-left: 18px;
+  margin-top: 75px;
+  animation: rotate 1s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+.img2{
+  height: 500px;
+  width: 1200px;
+  margin-left: 14px;
+  margin-top: 81px;
+  animation: rotate 1s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+.big{
+  background-color: var(--brown);
+}
+
+.text-shpere {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.tagcloud {
+  display: inline-block;
+  top: 0;
+  left: 0;
+  font-family: lemon;
+  font-weight: 600;
+  letter-spacing: 0.0625em;
+  font-size: 1.3em;
+}
+
+.tagcloud--item {
+  color: #8D493A;
+  text-transform: uppercase;
+}
+
+.tagcloud--item:hover {
+  color: #FFB22C;
+}
+
+.exe{
+  font-family: lemon;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  color: var(--brown);
+}
+
+li{
+  font-family: albula;
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+}
+
+@media (width <= 600px) {
+  .resp{
+      flex-direction: column;
+  }
+  .hi{
+      text-align: center;
+  }
+}
+
+@media (width <= 450px) {
+  .text-shpere{
+      display: none;
+  }
+}
+
+@keyframes rotate {
+  to{
+      transform: rotate(-80deg);
   }
   
-  .who-are-we h1,
-  .what-do-we-do h1,
-  .events-section h1,
-  .team h1 {
-    font-family: 'AlbulaHeavy';
-    font-size: 3rem;
-    color: #23120B;
-    margin-top: 10px;
+}
+
+@media (width <= 600px) {
+  .img{
+      display: none;
   }
-  
-  .who-are-we p,
-  .what-do-we-do p {
-    font-family: 'Albula';
-    font-size: 1.125rem;
-    color: #5d3a33;
-    margin-top: 5px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
+  .resp{
+      display: flex;
+      flex-direction: column;
   }
-  
-  .know-more-about {
-    margin-top: 40px;
+  .head{
+      display: flex;
+      text-align: center;
+      font-family: albula;
+      font-size: 2px;
   }
-  
-  .know-more-about .btn {
-    background-color: #e07b39;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-decoration: none;
+  .ebaja2{
+      font-family: albula;
+      text-align: center;
+      margin-right: 30px;
+
   }
-  
-  .know-more-about .btn:hover {
-    background-color: #c66931;
+  .card{
+      margin-top: 40px;
+      margin-bottom: 40px;
+
   }
-  .social-link i {
-    font-size: 1.5rem;
-    color: rgb(193, 172, 136);
-    transition: color 0.3s ease;
-  }
-  
-  .social-link i:hover {
-    color: #e07b39;
-  }
-  @media screen and (min-width:768px) {
-    .doc div:nth-child(1){
-      grid-column-start: 2;
-    } 
-  }
+}

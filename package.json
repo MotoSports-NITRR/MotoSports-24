@@ -21,7 +21,7 @@
     "@fortawesome/free-solid-svg-icons": "^6.6.0",
     "@fortawesome/react-fontawesome": "^0.2.2",
     "@mui/joy": "^5.0.0-beta.48",
-    "firebase": "^10.12.4",
+    "firebase": "^10.12.5",
     "framer-motion": "^11.3.8",
     "lord-icon-element": "^4.1.2",
     "react": "^18.2.0",

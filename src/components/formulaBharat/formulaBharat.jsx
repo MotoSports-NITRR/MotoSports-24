@@ -9,7 +9,7 @@ import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 function Imagecard() {
     return (
         <div className='w-11/12 m-auto'>
-            <div className='resp mt-20 flex justify-center items-center flex-wrap'>
+            <div className='resp mt-20 flex justify-center items-center flex-wrap'>  
                 {dataimg.map((d) => (
                     <div key={d.name} style={{ backgroundImage: `url(${d.img})` }}
                         className='hover:shadow-2xl card bg-no-repeat bg-cover bg-center h-[380px] w-80 text-black rounded-xl flex flex-col justify-end items-center m-4 relative overflow-hidden group'>

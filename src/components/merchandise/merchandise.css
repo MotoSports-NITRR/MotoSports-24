@@ -11,10 +11,18 @@
     align-items: center;
 }
 
+@media (min-width : 700px) {
+
+    .mobileMerchImg {
+        display: none !important;
+    }
+}
+
 @media (max-width : 900px) {
     .chakra-heading:nth-child(1) span {
         font-size: 1.3rem;
     }
+
     .merchImg {
         height: 450px !important;
         width: 400px !important;
@@ -22,10 +30,15 @@
 }
 
 @media (max-width : 700px) {
-    .chakraCardBody >div {
+    .chakraCardBody>div {
         flex-direction: column !important;
         padding: 0 !important;
     }
+
+    .merchBoxImg:first-child {
+        display: none !important;
+    }
+
     .merchOptions>div h2 {
         text-align: center;
         /* display: flex;
@@ -33,8 +46,24 @@
         justify-content: center;
         align-items: center; */
     }
-/* 
+
+    /* 
     .merchOptions>div bottom {
         min-width: 250px !important;
     } */
+}
+
+@media (max-width: 500px) {
+    .merchOptions h2:nth-child(2) span{
+        font-size: 2rem;
+    }
+
+    .merchOptions p:nth-child(1){
+        border: 1px solid #000;
+        font-size: 0.8rem !important;
+    }
+
+    .chakra-card_body{
+        padding: 0;
+    }
 }

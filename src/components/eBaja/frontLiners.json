@@ -1,0 +1,25 @@
+[
+    {
+        "name": "Yatharth Verma",
+        "desig": "Captain",
+        "img": "./src/components/eBaja/pics/yatharth.jpeg",
+        "insta": "https://www.instagram.com/yatharth__verma?igsh=dnJ6emRzbzNjNng3",
+        "linkedin": "https://www.linkedin.com/in/yatharth-verma-b75a58201/"
+    },
+    {
+        "key": "2",
+        "name": "Gaurab Ray",
+        "desig": "Vice-Captain / Co-driver",
+        "img": "./src/components/eBaja/pics/vice.jpeg",
+        "insta": "https://www.instagram.com/24raygaurab?igsh=bmU0MnptdmwxdXFo",
+        "linkedin": "https://www.linkedin.com/in/gaurab-ray-504a8526b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    },
+    {
+        "key": "3",
+        "name": "Sanchit Singh",
+        "desig": "Treasurer",
+        "img": "./src/components/eBaja/pics/treasurer.jpg",
+        "insta": "https: //www.instagram.com/singhsanchit42?igsh=bDJ4YW1iNnFxY3Z0",
+        "linkedin": "../eBaja/pics/treasurer.jpg"
+    }
+]

@@ -1,6 +1,6 @@
-import { text } from '@fortawesome/fontawesome-svg-core';
 import React, { Fragment, useEffect } from 'react';
 import TagCloud from 'TagCloud';
+import './textSphere.css'
 //Textsphere
 const TextShpere = (data) => {
     // Animation settings for Text Cloud

@@ -1,0 +1,9 @@
+.domain {
+    width: 100% !important;
+}
+
+@media (max-width: 500px) {
+    .domain > div:nth-child(2) {
+        margin: 0;
+    }
+}

@@ -3,6 +3,7 @@ import EventCard from '../eventCard/eventCard';
 
 //Timeline
 const Timeline = ({ events }) => {
+
     return (
         <>
             <div className="flex" style={{width: '50%'}}>
@@ -11,7 +12,7 @@ const Timeline = ({ events }) => {
 
                     {events.map((event, key) => {
                         return <Fragment key={key}>
-                            <div className="grid grid-cols-[1fr_auto_1fr] gap-x-2 items-center mx-auto">
+                            <div className="fragment grid grid-cols-[1fr_auto_1fr] gap-x-2 items-center mx-auto">
                                 {event.direction === 'left' ? (
                                     <EventCard heading={event.heading} subHeading={event.subHeading} description={event.description} />
                                 ) : (

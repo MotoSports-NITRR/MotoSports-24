@@ -1,6 +1,7 @@
 @font-face {
     font-family: 'albula';
     src: url('../assets/fonts/albula/Albula-Bold.ttf');
+    letter-spacing: 10px;
 }
 
 @font-face {
@@ -167,11 +168,6 @@ li {
         flex-direction: column;
     }
 
-    .text-shpere {
-        justify-content: center;
-        margin-top: -30px;
-    }
-
     .phases {
         flex-direction: column;
         width: auto;
@@ -206,19 +202,16 @@ li {
     #introDiv p {
         margin: 0;
     }
+
+    .desc {
+        margin-top: 50px;
+    }
+
 }
 
 @media (max-width: 600px) {
     .head {
         font-size: 2.3rem !important;
-    }
-
-    .tagcloud {
-        scale: 0.8;
-    }
-
-    .tagcloud--item {
-        font-size: 1.8rem;
     }
 }
 
@@ -280,10 +273,16 @@ li {
         font-size: 0.8rem;
     }
 
-    #introDiv {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    .fragment .lol {
+        font-size: 0.7rem;
+    }
+    .fragment .lo2 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .desc p {
+        font-size: 0.5rem;
     }
 }

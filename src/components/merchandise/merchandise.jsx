@@ -65,14 +65,16 @@ const Merchandise = () => {
 
                                 <Box flex="1" className="merchOptions">
                                     <Stack spacing="5" className="">
-                                        <Heading size="md" color="brand.darkCoffee" className=""><span className="font-albulaHeavy text-3xl">MotoSports Merch</span></Heading>
-                                        <Heading color="brand.caramel"><span className="font-albulaHeavy text-5xl">Discover the Passion </span></Heading>
+                                        <div className="top px-5 sm:px-0">
+                                            <Heading size="md" color="brand.darkCoffee" className=""><span className="font-albulaHeavy text-3xl">MotoSports Merch</span></Heading>
+                                            <Heading color="brand.caramel"><span className="font-albulaHeavy text-5xl">Discover the Passion </span></Heading>
 
-                                        <Text color="brand.darkCoffee" className="font-albula mt-2">
-                                            Ready to immerse yourself in the world of vibrant motorsports? Dive in, grab our mesmerizing merch, and unlock your ticket to being fantastic!
-                                        </Text>
+                                            <Text color="brand.darkCoffee" className="merchText font-albula mt-2">
+                                                Ready to immerse yourself in the world of vibrant motorsports? Dive in, grab our mesmerizing merch, and unlock your ticket to being fantastic!
+                                            </Text>
+                                        </div>
 
-                                        <Box flex="1" pr="5" className="flex flex-col merchBoxImg justify-center mobileMerchImg my-8">
+                                        <Box flex="1" pr="0" className=" flex flex-col merchBoxImg justify-center mobileMerchImg my-8">
                                             <Image src={ebajaMerch} h="460px" maxH="700px" w="425px" maxW="500px" className="merchImg" />
                                         </Box>
 
@@ -88,11 +90,11 @@ const Merchandise = () => {
 
                                                 {showSizeOptions && (
                                                     <ButtonGroup spacing="1">
-                                                        {sizeOptions.map((size) => (
-                                                            <Button key={size} onClick={() => { setSelectedSize(size); setShowSizeOptions(false); }} color="whitesmoke" bg="brand.darkCoffee" _hover={{ bg: "brand.caramel" }}>
-                                                                {size}
-                                                            </Button>
-                                                        ))}
+                                                            {sizeOptions.map((size) => (
+                                                                <Button key={size} onClick={() => { setSelectedSize(size); setShowSizeOptions(false); }} color="whitesmoke" bg="brand.darkCoffee" _hover={{ bg: "brand.caramel" }}>
+                                                                    {size}
+                                                                </Button>
+                                                            ))}
                                                     </ButtonGroup>
                                                 )}
                                             </div>

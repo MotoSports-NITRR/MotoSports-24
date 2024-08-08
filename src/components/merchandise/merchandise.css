@@ -19,10 +19,9 @@
 }
 
 @media (max-width : 900px) {
-    .chakra-heading:nth-child(1) span {
+    /* .chakra-heading:nth-child(1) span {
         font-size: 1.3rem;
-    }
-
+    } */
     .merchImg {
         height: 450px !important;
         width: 400px !important;
@@ -37,6 +36,16 @@
 
     .merchBoxImg:first-child {
         display: none !important;
+    }
+    .chakra-heading:nth-child(1) span {
+        font-size: 1.6rem;
+    }
+    .chakra-heading:nth-child(2) span {
+        font-size: 2.2rem;
+    }
+
+    .merchText{
+        text-align: center;
     }
 
     .merchOptions>div h2 {
@@ -54,16 +63,56 @@
 }
 
 @media (max-width: 500px) {
+    .top{
+        /* top text section */
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
     .merchOptions h2:nth-child(2) span{
         font-size: 2rem;
     }
 
     .merchOptions p:nth-child(1){
+        /* totalammount */
         border: 1px solid #000;
         font-size: 0.8rem !important;
     }
 
+
+    .merchImg{
+        width:  350px !important;
+        height:  350px !important;
+    }
+    
     .chakra-card_body{
         padding: 0;
     }
+}
+
+@media (max-width:380px) {
+    
+    .merchOptions h2:nth-child(2) span{
+        /* discover */
+        font-size: 1.8rem;
+    }
+    .merchText{
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 0.8rem;
+    }
+    .merchImg{
+        width:  320px !important;
+        height:  320px !important;
+    }
+    .merchOptions p:nth-child(1){
+        border: 1px solid #000;
+        font-size: 0.5rem !important;
+    }
+
+    
+    
+    
+
+    
 }

@@ -1,0 +1,24 @@
+[
+    {
+      "heading": "PHASE 1",
+      "subHeading": "Preliminary Round, BAJA SAEINDIA 2025",
+      "description": "The first leg of the event is Phase 1 Preliminary round which is scheduled for July 2024; it focuses on the rudimentary virtual presentation of the teams All Terrain Vehicle (ATV)",
+      "direction": "left"
+  
+    },
+    {
+      "heading": "PHASE 2",
+      "subHeading": "Virtual BAJA SAEINDIA 2025",
+      "description": "The second leg of the event i.e., Virtual round which has two division first incorporate Virtual dynamic event with the help of Simulation based model",
+      "direction": "right"
+  
+    },
+    {
+      "heading": "PHASE 3",
+      "subHeading": "Physical Round, BAJA SAEINDIA 2025",
+      "description": "The final leg of the event is Phase 3, the Physical round, which is conducted physically in Jan 2025 for mBaja and hBaja and in March 2025 for eBaja for 5 days",
+      "direction": "left"
+  
+    }
+  
+  ]

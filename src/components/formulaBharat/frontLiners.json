@@ -1,0 +1,36 @@
+[
+    {
+      "name": "Abhiroop",
+      "desig": "Captain",
+      "img": "./src/components/formulabharat/pics/abhiroop.jpg",
+      "insta": "https://www.instagram.com/iam_sharmaji7?igsh=MTdpem9uZWpveXZ3cQ==",
+      "linkedin": "https://www.linkedin.com/in/abhiroop-sharma-75a46926b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    },
+    {
+      "key": "2",
+      "name": "Ajay Kashyap",
+      "desig": "Vice-Captain",
+      "img": "./src/components/formulabharat/pics/ajay.jpg",
+      "insta": "",
+      "linkedin": "https://www.linkedin.com/in/ajaykashyap92025?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+  
+    },
+    {
+      "key": "3",
+      "name": "Om Prakash",
+      "desig": "Team Manager",
+      "img": "./src/components/formulabharat/pics/om.jpg",
+      "insta": "https://www.instagram.com/_.axelx_?igsh=eHo5M3J3YXdrNXJw",
+      "linkedin": "https://www.linkedin.com/in/om-prakash-sahoo-60bb46257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+  
+    },
+    {
+      "key": "4",
+      "name": "Rishi Singh",
+      "desig": "Treasurer",
+      "img": "./src/components/formulabharat/pics/rishi.jpg",
+      "insta": "https://www.instagram.com/shiri_singha?igsh=MXNlZTY0d3JoNjA0Ng==",
+      "linkedin": "https://www.linkedin.com/in/rishi-singh-aa5387264?trk=contact-info"
+  
+    }
+  ]

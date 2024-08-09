@@ -1,0 +1,8 @@
+@media (max-width: 800px ) {
+    .resp h1 {
+        font-size: 1.6rem;
+    }
+     .resp li {
+        font-size: 1rem;
+     }
+}

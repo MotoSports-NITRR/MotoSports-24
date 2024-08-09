@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import logo from '../assets/logos/logoTransparent.png';
 import navbarMenu from '../assets/icons/navbarMenu.png';
 
-function Header() {
+function Navbar() {
     const [showPopup, setShowPopup] = useState(false);
     const [isScrollingUp, setIsScrollingUp] = useState(true);
     const [lastScrollPosition, setLastScrollPosition] = useState(0);
@@ -42,10 +42,10 @@ function Header() {
         <>
             <header className={`bg-dustyWhite flex justify-center items-center sticky top-0 h-28 sm:min-h-32 z-50 transition-transform duration-300 ${isScrollingUp ? 'transform-none' : '-translate-y-full'} ${hasScrolled ? 'shadow-lg' : ''}`}>
                 <div className="w-85vw box-border">
-                    <nav className='flex justify-between items-center min-h-32'> 
+                    <nav className='flex justify-between items-center min-h-32'>
                         <div className='px-2 py-6 xl:px-10 xl:py-10 flex justify-center items-center transition-all'>
                             <a href="/">
-                                <img src={logo} alt="MotoSports Logo" className='w-24 mr-5'/>
+                                <img src={logo} alt="MotoSports Logo" className='w-24 mr-5' />
                             </a>
                             <a href="/">
                                 <h1 className='hidden md:block font-brushKing text-2xl font-black text-blackbean'>MOTOSPORTS</h1>
@@ -57,24 +57,23 @@ function Header() {
                                 <li className="cursor-pointer font-poppins font-medium font-2 text-lg">Home</li>
                             </a>
 
-                            <a href="/about" className="flex justify-center items-center h-10 px-2 py-2 border-3 border-transparent rounded-md hover:text-tawny hover:border-tawny transition-all duration-450">
-                                <li className="cursor-pointer font-poppins font-medium font-2 text-lg">About</li>
-                            </a>
-                            
-                            <a href="/eBaja" className="flex justify-center items-center h-10 px-2 py-2 border-3 border-transparent rounded-md hover:text-tawny hover:border-tawny transition-all duration-450">
+                            <a href="/eBaja" className="flex justify-center items-center h-10 px-2 py-2 border-3 border-transparent rounded-md hover:border-tawny hover:text-tawny transition-all duration-450">
                                 <li className="cursor-pointer font-poppins font-medium font-2 text-lg">eBaja</li>
                             </a>
 
-                            <a href="/formulaBharat" className="flex justify-center items-center h-10 px-2 py-2 border-3 border-transparent rounded-md hover:text-tawny hover:border-tawny transition-all duration-450">
+                            <a href="/formulaBharat" className="flex justify-center items-center h-10 px-2 py-2 border-3 border-transparent rounded-md hover:border-tawny hover:text-tawny transition-all duration-450">
                                 <li className="cursor-pointer font-poppins font-medium font-2 text-lg">f - Bharat</li>
                             </a>
 
-                            <a href="/merchandise" className="flex justify-center items-center h-10 px-2 py-2 border-3 rounded-md hover:text-tawny border-tawny hover:scale-105 hover:bg-tawny hover:text-white  transition-all duration-450">
+                            <a href="/merchandise" className="flex justify-center items-center h-10 px-2 py-2 border-3 text-tawny border-tawny rounded-md hover:border-tawny hover:scale-105 hover:bg-tawny hover:text-white  transition-all duration-450">
                                 <li className="cursor-pointer font-poppins font-medium font-2 text-lg">Merchandise</li>
                             </a>
 
+                            <a href="/about" className="flex justify-center items-center h-10 px-2 py-2 border-3 border-transparent rounded-md hover:border-tawny hover:text-tawny transition-all duration-450">
+                                <li className="cursor-pointer font-poppins font-medium font-2 text-lg">About</li>
+                            </a>
 
-                            <a href="/contact" className="flex justify-center items-center h-10 px-2 py-2 border-3 border-transparent rounded-md hover:text-tawny hover:border-tawny transition-all duration-450">
+                            <a href="/contact" className="flex justify-center items-center h-10 px-2 py-2 border-3 border-transparent rounded-md hover:border-tawny hover:text-tawny transition-all duration-450">
                                 <li className="cursor-pointer font-poppins font-medium font-2 text-lg">Contact</li>
                             </a>
                         </ul>
@@ -89,6 +88,10 @@ function Header() {
                                             <li className="cursor-pointer font-poppins font-medium font-2 text-lg">Home</li>
                                         </a>
 
+                                        <a href="/about" className="flex justify-center items-center h-10 px-2 py-2 border-3 border-transparent rounded-md hover:text-tawny hover:border-tawny transition-colors duration-450">
+                                            <li className="cursor-pointer font-poppins font-medium font-2 text-lg">About</li>
+                                        </a>
+
                                         <a href="/eBaja" className="flex justify-center items-center h-10 px-2 py-2 border-3 border-transparent rounded-md hover:text-tawny hover:border-tawny transition-colors duration-450">
                                             <li className="cursor-pointer font-poppins font-medium font-2 text-lg">eBaja</li>
                                         </a>
@@ -101,14 +104,10 @@ function Header() {
                                             <li className="cursor-pointer font-poppins font-medium font-2 text-lg">Merchandise</li>
                                         </a>
 
-                                        <a href="/about" className="flex justify-center items-center h-10 px-2 py-2 border-3 border-transparent rounded-md hover:text-tawny hover:border-tawny transition-colors duration-450">
-                                            <li className="cursor-pointer font-poppins font-medium font-2 text-lg">About</li>
-                                        </a>
-
                                         <a href="/contact" className="flex justify-center items-center h-10 px-2 py-2 border-3 border-transparent rounded-md hover:text-tawny hover:border-tawny transition-colors duration-450">
                                             <li className="cursor-pointer font-poppins font-medium font-2 text-lg">Contact</li>
                                         </a>
-                                        
+
                                         <button className="popup-close mt-4 px-4 py-2 bg-gray-800 text-white rounded-md" onClick={togglePopup}>Close</button>
                                     </ul>
                                 </div>
@@ -121,4 +120,4 @@ function Header() {
     );
 }
 
-export default Header;
+export default Navbar;

@@ -1,0 +1,53 @@
+.text-shpere {
+    position: relative;
+    top: 0;
+    height: 90vh;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    /* overflow: hidden; */
+}   
+
+.tagcloud {
+    display: inline-block;
+    top: 0;
+    left: 0;
+    font-family: lemon;
+    font-weight: 600;
+    letter-spacing: 0.0625em;
+    font-size: 1.3em;
+    overflow: hidden;
+}
+
+.tagcloud--item {
+    color: #8D493A;
+    text-transform: uppercase;
+}
+
+.tagcloud--item:hover {
+    color: #FFB22C;
+}
+
+@media (max-width:1200px) {
+    .text-shpere {
+        height: auto;
+        margin-top: 30px;
+        justify-content: center;
+    }
+}
+@media (max-width:600px) {
+    .tagcloud {
+        scale: 0.85;
+    }
+
+    .tagcloud--item {
+        font-size: 1.8rem;
+    }
+
+}
+
+@media (max-width:450px) {
+    .text-shpere {
+        display: none;
+    }
+}

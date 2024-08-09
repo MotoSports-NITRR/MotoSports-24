@@ -164,7 +164,7 @@ const Pillar = ()=>{
 
 const EventCard = ({ heading, subHeading, description, imgSrc }) => {
   return (
-    <div className='lol transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-2xl flex flex-col gap-y-2 border shadow-md rounded-xl p-4'>
+    <div className='lol transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-2xl flex flex-col gap-y-2 border shadow-md rounded-xl p-4 w-96'>
       <img
         src={imgSrc}
         alt={heading}
@@ -187,7 +187,7 @@ const EventCard = ({ heading, subHeading, description, imgSrc }) => {
       />
       <div className='lo2 lol font-bold text-lg border-b'> {heading} </div>
       <div className='lol text-sm font-black w-52'> {subHeading} </div>
-      <div className='lol text-sm text-gray-700 w-52'> {description} </div>
+      <div className='lol text-sm text-gray-700 w-100%'> {description} </div>
     </div>
   );
 };
@@ -204,7 +204,7 @@ function Ourcar({events}) {
                         return <Fragment key={key}>
                             <div className="grid grid-cols-[1fr_auto_1fr] gap-x-2 items-center mx-auto">
                                 {event.direction === 'left' ? (
-                                    <EventCard heading={event.heading} subHeading={event.subHeading} description={event.description} />
+                                    <EventCard heading={event.heading} subHeading={event.subHeading} description={event.description} imgSrc={event.imgSrc} />
                                 ) : (
                                     <div></div>
                                 )}
@@ -784,35 +784,35 @@ let events = [
     heading: "STEP 1",
     subHeading: "Alumni Meet",
     description: "NIT RAIPUR has a vast alumni network and conducts an alumni meet every year in which more than 300+ alumni holding senior positions in various companies visit our campus. We conduct a car showcasing event during the meet and also have an interactive session with them.",
-    image: "./src/components/about/about/event1.jpg",
+    imgSrc: "./src/components/about/about/event1.jpg",
     direction: "left",
   },
   {
     heading: "STEP 2",
     subHeading: "Workshops at AAVARTAN",
     description: "We conduct workshops and mini-events related to automobiles in AAVARTAN (tech fest).",
-    image: "./src/components/about/about/event2.jpg",
+    imgSrc: "./src/components/about/about/event2.jpg",
     direction: "right",
   },
   {
     heading: "STEP 3",
     subHeading: "Vehicle Showcasing at ECLECTIKA",
     description: "Showcasing our VEHICLE and giving the experience of driving in ECLECTIKA, Central India’s largest fest having a footfall of more than 30k+.",
-    image: "./src/components/about/about/event3.jpg",
+    imgSrc: "./src/components/about/about/event3.jpg",
     direction: "left",
   },
   {
     heading: "STEP 4",
     subHeading: "Road Shows",
     description: "Various road shows in front of our college main building are conducted by showcasing our vehicle, attracting a total of more than 1.5k+ local crowd and students along with the faculties.",
-    image: "./src/components/about/about/event4.jpg",
+    imgSrc: "./src/components/about/about/event4.jpg",
     direction: "right",
   },
   {
     heading: "STEP 5",
     subHeading: "Workshops Throughout the Year",
     description: "Our club regularly conducts workshops throughout the year in NIT Raipur and nearby colleges.",
-    image: "./src/components/about/about/event5.jpg",
+    imgSrc: "./src/components/about/about/event5.jpg",
     direction: "left",
   },
 ];
@@ -1001,7 +1001,7 @@ const data2fr=[
   {
     name: "Vivek Verma",
     desig: "Member",
-    img: "./src/components/about/about/VivekVerma.jpeg",
+    img: "./src/components/about/about/VivekVerma.jpg",
     insta: "https://www.instagram.com/m_i_vivek/",
     linkedin: "https://www.linkedin.com/in/vivek-verma-b7701929a/"
   },

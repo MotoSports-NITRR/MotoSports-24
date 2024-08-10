@@ -10,6 +10,9 @@
     display: flex;
     align-items: center;
 }
+.quantityBtn{
+    margin-top: 8px !important;
+}
 
 @media (min-width : 700px) {
 
@@ -25,6 +28,17 @@
     .merchImg {
         height: 450px !important;
         width: 400px !important;
+    }
+}
+
+@media (max-width:900px)and (min-width:700px) {
+    .size div{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 8px;
+    }
+    .size div button:nth-child(1){
+        margin-left:4px ;
     }
 }
 
@@ -75,8 +89,8 @@
 
     .merchOptions p:nth-child(1){
         /* totalammount */
-        border: 1px solid #000;
-        font-size: 0.8rem !important;
+        /* border: 1px solid #000; */
+        /* font-size: 0.8rem !important; */
     }
 
 
@@ -87,6 +101,27 @@
     
     .chakra-card_body{
         padding: 0;
+    }
+    .size,.color{
+        width: 100%;
+        flex-direction: column;
+        padding-left: 15px;
+        padding-right: 15px;
+        align-items: center;
+    }
+    .btnSize{
+        width: 80% ;
+    }
+    .quantityBtn{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 10px !important;
+    }
+    
+    .amountRazor{
+        justify-items: center;
+        align-items: center;
     }
 }
 
@@ -105,10 +140,10 @@
         width:  320px !important;
         height:  320px !important;
     }
-    .merchOptions p:nth-child(1){
+    /* .merchOptions p:nth-child(1){
         border: 1px solid #000;
         font-size: 0.5rem !important;
-    }
+    } */
 
     
     

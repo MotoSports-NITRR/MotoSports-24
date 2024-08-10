@@ -1,0 +1,182 @@
+{
+    "webTeam": {
+        "domainHead": {
+            "name": "Sparsh Jaggi",
+            "desig": "Head",
+            "img": "./src/components/about/about/SparshJaggi.jpeg",
+            "insta": "https://www.instagram.com/sparshjaggi?igsh=ZHVpeHNwN2txcnZm&utm_source=qr",
+            "linkedin": "https://www.linkedin.com/in/sparsh-jaggi-1aa263257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+        },
+        "member": [
+            {
+                "name": "Aman Kumar",
+                "desig": "Member",
+                "img": "./src/components/about/about/AmanKumar.JPG",
+                "insta": "https://www.instagram.com/amanwhoooo",
+                "linkedin": "https://www.linkedin.com/in/amankumar25"
+            },
+            {
+                "name": "Anshdeep",
+                "desig": "Member",
+                "img": "./src/components/about/about/Anshdeepshrivastava.jpg.jpg",
+                "insta": "#",
+                "linkedin": "#"
+            },
+            {
+                "name": "Ayush Mishra",
+                "desig": "Member",
+                "img": "./src/components/about/about/AyushMishra.png",
+                "insta": "#",
+                "linkedin": "https://www.linkedin.com/in/ayushmishra-profile"
+            },
+            {
+                "name": "Leora",
+                "desig": "Member",
+                "img": "./src/components/about/about/LeoraSaharia.jpg",
+                "insta": "https://www.instagram.com/leorasaharia/",
+                "linkedin": "https://www.linkedin.com/in/leora-saharia-9403681a7/"
+            },
+            {
+                "name": "Vivek Verma",
+                "desig": "Member",
+                "img": "./src/components/about/about/VivekVerma.jpeg",
+                "insta": "https://www.instagram.com/m_i_vivek/",
+                "linkedin": "https://www.linkedin.com/in/vivek-verma-b7701929a/"
+            }
+        ]
+    },
+    "sponsTeam": {
+        "domainHead": [
+            {
+                "name": "Rishi Singh",
+                "desig": "Head",
+                "img": "./src/components/about/about/RishiSinghRajput.jpg",
+                "insta": "https://www.instagram.com/shiri_singha/?igsh=MXNlZTY0d3JoNjA0Ng%3D%3D",
+                "linkedin": "https://www.linkedin.com/in/rishi-singh-aa5387264?trk=contact-info"
+            },
+            {
+                "name": "Ritik Pathak",
+                "desig": "Head",
+                "img": "./src/components/about/about/RitikPathak.jpg",
+                "insta": "https://www.instagram.com/ritik_gear?igsh=bDYzbW5zaGpuaWds",
+                "linkedin": "https://www.linkedin.com/in/ritik-pathak-31b865247?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            }
+        ],
+        "member": [
+            {
+                "name": "Ashish Jangid",
+                "desig": "Member",
+                "img": "./src/components/about/about/AshishJangid.jpg",
+                "insta": "https://www.instagram.com/ashish_ramchandra1224",
+                "linkedin": "https://www.linkedin.com/in/ashish-kumar-jangid-a39534293/"
+            },
+            {
+                "name": "Rishabh Bhati",
+                "desig": "Member",
+                "img": "./src/components/about/about/RishabhBhati.jpg",
+                "insta": "#",
+                "linkedin": "https://www.linkedin.com/in/rishabh-bhati-16276a26b/"
+            },
+            {
+                "name": "Shikha Yadav",
+                "desig": "Member",
+                "img": "./src/components/about/about/ShikhaYadav.jpg",
+                "insta": "https://www.instagram.com/ahkihs_19",
+                "linkedin": "https://www.linkedin.com/in/shikha-yadav-3830902b1/"
+            },
+            {
+                "name": "Astha Jaiswal",
+                "desig": "Member",
+                "img": "./src/components/about/about/AsthaJaiswal.jpg",
+                "insta": "https://www.instagram.com/_astha_jaiswal",
+                "linkedin": "https://www.linkedin.com/in/astha-jaiswal-10b7b528a/"
+            },
+            {
+                "name": "Ritika Jain",
+                "desig": "Member",
+                "img": "./src/components/about/about/RitikaJain.jpg",
+                "insta": "#",
+                "linkedin": "#"
+            },
+            {
+                "name": "Kundan Rathi",
+                "desig": "Member",
+                "img": "./src/components/about/about/KundanRathi.jpg",
+                "insta": "https://www.instagram.com/kundan_rathi.11",
+                "linkedin": "https://www.linkedin.com/in/kundan-rathi-99a896287/"
+            }
+        ]
+    },
+    "docTeam": {
+        "domainHead": {
+            "name": "Rahul Singh",
+            "desig": "Head",
+            "img": "./src/components/about/about/RahulKumarSingh.jpeg",
+            "insta": "#",
+            "linkedin": "https://www.linkedin.com/in/rahul-kumar-singh-b88636231?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+        },
+        "member": [
+            {
+                "name": "Prakarsh Gupta",
+                "desig": "Member",
+                "img": "./src/components/about/about/PrakarshGupta.jpg",
+                "insta": "https://www.instagram.com/prakarshgupta_21",
+                "linkedin": "https://www.linkedin.com/in/prakarsh-gupta-a75b67279/"
+            },
+            {
+                "name": "Gaurab Kumar",
+                "desig": "Head",
+                "img": "./src/components/about/about/GaurabKumar.jpeg",
+                "insta": "#",
+                "linkedin": "https://linkedin.com/in/gaurav-kumar-b76122251/"
+            },
+            {
+                "name": "Vighnesh Gupta",
+                "desig": "Member",
+                "img": "./src/components/about/about/VighneshGupta.jpg",
+                "insta": "https://www.instagram.com/vigh.nesh_._",
+                "linkedin": "https://www.linkedin.com/in/vighnesh-gupta-1329b92a5/"
+            }
+        ]
+    },
+    "designTeam": {
+        "domainHead": {
+            "name": "Mridul Bansal",
+            "desig": "Head",
+            "img": "./src/components/about/about/MridulBansal.jpeg",
+            "insta": "https://www.instagram.com/mridszx?igsh=MWE0MXUyc29iZnc2dQ==",
+            "linkedin": "https://www.linkedin.com/in/mridul-bansal-915b00261?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+        },
+        "member": [
+            {
+                "name": "Pratibha ",
+                "desig": "Member",
+                "img": "./src/components/about/about/PratibhaSikheriya.jpg",
+                "insta": "https://www.instagram.com/chikki_.19/",
+                "linkedin": "https://www.linkedin.com/in/pratibha-sikheriya-b8142a279/"
+            },
+            {
+                "name": "Megha Rathi",
+                "desig": "Member",
+                "img": "./src/components/about/about/MeghaRathi.jpg",
+                "insta": "#",
+                "linkedin": "#"
+            },
+            {
+                "name": "Anshul Wasnik",
+                "desig": "Member",
+                "img": "./src/components/about/about/AnshulWasnik.jpg",
+                "insta": "#",
+                "linkedin": "https://www.linkedin.com/in/anshul-wasnik-69455a25b/"
+            },
+            {
+                "name": "Aman Sharma",
+                "desig": "Member",
+                "img": "./src/components/about/about/AmanSharma.jpg",
+                "insta": "https://www.instagram.com/ittz__aman_",
+                "linkedin": "https://in.linkedin.com/in/aman-sharma-874a7b252"
+            }
+        ]
+    }
+    
+}

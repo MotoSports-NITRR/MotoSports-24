@@ -1,0 +1,46 @@
+{
+    "members": [
+        {
+          "name": "Ashish Jangid",
+          "desig": "Member",
+          "img": "./src/components/about/about/AshishJangid.jpg",
+          "insta": "https://www.instagram.com/ashish_ramchandra1224",
+          "linkedin": "https://www.linkedin.com/in/ashish-kumar-jangid-a39534293/"
+        },
+        {
+          "name": "Rishabh Bhati",
+          "desig": "Member",
+          "img": "./src/components/about/about/RishabhBhati.jpg",
+          "insta": "#",
+          "linkedin": "https://www.linkedin.com/in/rishabh-bhati-16276a26b/"
+        },
+        {
+          "name": "Shikha Yadav",
+          "desig": "Member",
+          "img": "./src/components/about/about/ShikhaYadav.jpg",
+          "insta": "https://www.instagram.com/ahkihs_19",
+          "linkedin": "https://www.linkedin.com/in/shikha-yadav-3830902b1/"
+        },
+        {
+          "name": "Astha Jaiswal",
+          "desig": "Member",
+          "img": "./src/components/about/about/AsthaJaiswal.jpg",
+          "insta": "https://www.instagram.com/_astha_jaiswal",
+          "linkedin": "https://www.linkedin.com/in/astha-jaiswal-10b7b528a/"
+        },
+        {
+          "name": "Ritika Jain",
+          "desig": "Member",
+          "img": "./src/components/about/about/RitikaJain.jpg",
+          "insta": "#",
+          "linkedin": "#"
+        },
+        {
+          "name": "Kundan Rathi",
+          "desig": "Member",
+          "img": "./src/components/about/about/KundanRathi.jpg",
+          "insta": "https://www.instagram.com/kundan_rathi.11",
+          "linkedin": "https://www.linkedin.com/in/kundan-rathi-99a896287/"
+        }
+    ]
+}

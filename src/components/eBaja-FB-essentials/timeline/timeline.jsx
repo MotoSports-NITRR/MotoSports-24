@@ -14,7 +14,7 @@ const Timeline = ({ events }) => {
                         return <Fragment key={key}>
                             <div className="fragment grid grid-cols-[1fr_auto_1fr] gap-x-2 items-center mx-auto">
                                 {event.direction === 'left' ? (
-                                    <EventCard heading={event.heading} subHeading={event.subHeading} description={event.description} />
+                                    <EventCard heading={event.heading} subHeading={event.subHeading} description={event.description} imgSrc={event.imgSrc} />
                                 ) : (
                                     <div></div>
                                 )}

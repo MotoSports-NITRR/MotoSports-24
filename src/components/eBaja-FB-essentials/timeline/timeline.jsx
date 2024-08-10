@@ -6,7 +6,7 @@ const Timeline = ({ events }) => {
 
     return (
         <>
-            <div className="flex" style={{width: '50%'}}>
+            <div className="flex timeline" style={{width: '50%'}}>
                 <div className="flex flex-col gap-y-3 w-full my-4">
                     <Circle />
 

@@ -25,7 +25,7 @@ function Description() {
         </span>
       </p>
 
-      <h1 className='ebaja2 ebaja text-5xl font-semibold text-amber-900 mb-16'>What Do We Do</h1>
+      <h1 className='ebaja2 ebaja text-5xl font-semibold text-amber-900 mb-8'>What Do We Do</h1>
       <p className='w-4/5 text-gray-600'>
         <span className="text-red-700 block mb-40">
           We, at NIT Raipur Motorsports, are a dedicated team of over 85 members who devote our time and expertise to creating robust and durable cars that outperform the competition. Our club is actively involved in two prestigious races eBaja and Formula Bharat, where we showcase our innovation, engineering prowess, and teamwork.
@@ -98,35 +98,35 @@ const events = [
     heading: "STEP 1",
     subHeading: "Alumni Meet",
     description: "NIT RAIPUR has a vast alumni network and conducts an alumni meet every year in which more than 300+ alumni holding senior positions in various companies visit our campus. We conduct a car showcasing event during the meet and also have an interactive session with them.",
-    image: "event1.jpg",
+    imgSrc: "./src/components/about/about/event1.jpg",
     direction: "left",
   },
   {
     heading: "STEP 2",
     subHeading: "Workshops at AAVARTAN",
     description: "We conduct workshops and mini-events related to automobiles in AAVARTAN (tech fest).",
-    image: "event2.jpg",
+    imgSrc: "./src/components/about/about/event2.jpg",
     direction: "right",
   },
   {
     heading: "STEP 3",
     subHeading: "Vehicle Showcasing at ECLECTIKA",
     description: "Showcasing our VEHICLE and giving the experience of driving in ECLECTIKA, Central India’s largest fest having a footfall of more than 30k+.",
-    image: "event3.jpg",
+    imgSrc: "./src/components/about/about/event3.jpg",
     direction: "left",
   },
   {
     heading: "STEP 4",
     subHeading: "Road Shows",
     description: "Various road shows in front of our college main building are conducted by showcasing our vehicle, attracting a total of more than 1.5k+ local crowd and students along with the faculties.",
-    image: "event4.jpg",
+    imgSrc: "./src/components/about/about/event4.jpg",
     direction: "right",
   },
   {
     heading: "STEP 5",
     subHeading: "Workshops Throughout the Year",
     description: "Our club regularly conducts workshops throughout the year in NIT Raipur and nearby colleges.",
-    image: "event5.jpg",
+    imgSrc: "./src/components/about/about/event5.jpg",
     direction: "left",
   },
 ];

@@ -1,0 +1,11 @@
+@media (max-width:1000px){
+    .subDiv2{
+        flex-direction: column-reverse;
+    }
+}
+@media (max-width:500px) {
+    .subDiv1{
+        padding-left:15px !important;
+        padding-right: 15px !important;
+    }
+}

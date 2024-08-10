@@ -1,5 +1,5 @@
 import "../globalStyles.css";
-import car from '../assets/logos/sponsors/carShringar.jpg';
+import car from '../assets/logos/sponsors/carShringar.png';
 import gulf from '../assets/logos/sponsors/gulf.png';
 import gravity from '../assets/logos/sponsors/gravityWorkshopSVG.svg';
 import solidworks from '../assets/logos/sponsors/solidworksSVG.svg';
@@ -74,8 +74,8 @@ function Contact() {
 				</div>
 
 			
-				<div className="mt-40">
-					<ContactForm />
+				<div className="flex justify-center mt-20 px-20">
+					<ContactForm/>
 				</div>
 			</div>
 		</>

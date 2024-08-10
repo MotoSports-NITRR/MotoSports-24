@@ -22,7 +22,7 @@ const Timeline = ({ events }) => {
                                 <Pillar />
 
                                 {event.direction === 'right' ? (
-                                    <EventCard heading={event.heading} subHeading={event.subHeading} description={event.description} />
+                                    <EventCard heading={event.heading} subHeading={event.subHeading} description={event.description} imgSrc={event.imgSrc} />
                                 ) : (
                                     <div></div>
                                 )}

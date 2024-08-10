@@ -1,3 +1,4 @@
+import "./eventCard.css"
 
 const EventCard = ({ heading, subHeading, description, imgSrc }) => {
     return (

@@ -247,6 +247,9 @@ li {
         display: flex;
         text-align: center;
         font-size: 1.5rem !important;
+        padding: 0 !important;
+        margin-top: 1.5rem;
+        line-height: 5 !important;
     }
 
     .fbFront {
@@ -283,6 +286,6 @@ li {
 
 @media (max-width: 450px) {
     .desc p {
-        font-size: 0.5rem;
+        font-size: 0.6rem;
     }
 }

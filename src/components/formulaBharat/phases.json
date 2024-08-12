@@ -3,21 +3,21 @@
         "heading": "PHASE 1",
         "subHeading": "Quiz Session, Formula Bharat 2025",
         "description": "The first leg of the event is Phase 1-Quiz Session which examines participant teams on the basis of the Rule Book and assigns Car number based on ranking",
-        "direction": "left"
-
+        "direction": "left",
+        "imgSrc": ""
     },
     {
         "heading": "PHASE 2",
         "subHeading": "Static Events",
         "description": "The second leg is based on Static Events which involve presenting Vehicle Design Reports, a Business Presentation, and Cost and Manufacturing Reports.",
-        "direction": "right"
-
+        "direction": "right",
+        "imgSrc": ""
     },
     {
         "heading": "PHASE 3",
         "subHeading": "Physical Round, BAJA SAEINDIA 2025",
         "description": "The final leg of the event is Phase 3, the Physical round, which include Technical Inspection, Skidpad, Acceleration, Autocross, and Endurance. ",
-        "direction": "left"
-
+        "direction": "left",
+        "imgSrc": ""
     }
 ]

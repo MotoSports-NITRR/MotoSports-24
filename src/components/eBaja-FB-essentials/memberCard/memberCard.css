@@ -21,4 +21,8 @@
         margin: 1rem 0 !important;
         min-width: none;
     }
+
+    .memberCard .diss{
+        font-size: 1rem;
+    }
 }

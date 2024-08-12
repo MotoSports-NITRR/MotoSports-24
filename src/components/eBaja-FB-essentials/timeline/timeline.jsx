@@ -6,7 +6,7 @@ const Timeline = ({ events }) => {
 
     return (
         <>
-            <div className="flex" style={{width: '50%'}}>
+            <div className="flex timeline" style={{width: '50%'}}>
                 <div className="flex flex-col gap-y-3 w-full my-4">
                     <Circle />
 
@@ -14,7 +14,7 @@ const Timeline = ({ events }) => {
                         return <Fragment key={key}>
                             <div className="fragment grid grid-cols-[1fr_auto_1fr] gap-x-2 items-center mx-auto">
                                 {event.direction === 'left' ? (
-                                    <EventCard heading={event.heading} subHeading={event.subHeading} description={event.description} />
+                                    <EventCard heading={event.heading} subHeading={event.subHeading} description={event.description} imgSrc={event.imgSrc} />
                                 ) : (
                                     <div></div>
                                 )}
@@ -22,7 +22,7 @@ const Timeline = ({ events }) => {
                                 <Pillar />
 
                                 {event.direction === 'right' ? (
-                                    <EventCard heading={event.heading} subHeading={event.subHeading} description={event.description} />
+                                    <EventCard heading={event.heading} subHeading={event.subHeading} description={event.description} imgSrc={event.imgSrc} />
                                 ) : (
                                     <div></div>
                                 )}

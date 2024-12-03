@@ -12,7 +12,7 @@ function Footer() {
 
                     <div className='flex flex-col lg:flex-row justify-between items-start mt-10 mb-10 sm:mb-5 xsm:mb-2'>
                         <div className='lg:w-1/2 flex flex-col mb-10'>
-                            <h1 className='font-poppins text-dustyWhite mt-7 mb-9 cursor-text'>The official motorsports club of National Institute of Technology, Raipur</h1>
+                            <h1 className='font-poppins text-dustyWhite mt-7 mb-9 cursor-text'>The official motosports club of National Institute of Technology, Raipur</h1>
                             <h1 className='font-poppins font-medium text-dustyWhite mb-3 cursor-text'>Social Handles</h1>
 
                             <div className='flex justify-between items-center w-125'>
@@ -77,7 +77,7 @@ function Footer() {
                         </div>
                     </div>
 
-                    <div className='font-poppins font-light text-dustyWhite text-sm text-center mt-2'>Copyright &copy; 2024 All rights reserved by MOTOSPORT, NITRR | Designed by Dev Team MotoSport</div>
+                    <div className='font-poppins font-light text-dustyWhite text-sm text-center mt-2'>Copyright &copy; 2024 All rights reserved by MOTOSPORTS, NITRR | Designed by Dev Team MotoSports</div>
                 </div>
             </footer>
         </>

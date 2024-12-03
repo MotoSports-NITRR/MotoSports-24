@@ -82,7 +82,7 @@ function Home() {
                     <div id='about_textSection' className='text-center xl:w-650'>
                         <h1 className='font-albulaHeavy text-5xl text-blackbean mt-10'>Who Are We?</h1>
                         <div class="fade_rule mt-4 mb-4 w-2/5"></div>
-                        <p className='font-albula text-lg text-sealbrown mt-5'>Motorsports at NIT Raipur is a dynamic club dedicated to advancing automotive technology and racing. With a strong record of participation and success in competitions, we showcase our skills and passion, establishing ourselves as leaders in India's automotive sector. Join us to pursue your passions and demonstrate your abilities on a larger stage. Experience the thrill with NIT Raipur Motorsports!</p>
+                        <p className='font-albula text-lg text-sealbrown mt-5'>Motosports at NIT Raipur is a dynamic club dedicated to advancing automotive technology and racing. With a strong record of participation and success in competitions, we showcase our skills and passion, establishing ourselves as leaders in India's automotive sector. Join us to pursue your passions and demonstrate your abilities on a larger stage. Experience the thrill with NIT Raipur Motosports!</p>
                     </div>
                 </div>
 
@@ -90,7 +90,7 @@ function Home() {
                     <h1 className='flex flex-col justify-center items-center'>
                         <h1 className='text-center font-albulaHeavy text-3xl sm:text-4xl lg:text-5xl text-blackbean'>Achievement's</h1>
                         <div className="fade_rule mt-4 mb-4 w-2/5"></div>
-                        <p className='font-albula text-lg text-center w-full xl:w-3/4 mt-2'>The NIT Raipur Motorsports Club has a distinguished record of accomplishments in the field of collegiate motorsports. Our team has consistently excelled in prestigious competitions such as Formula Bharat, where we showcase our engineering innovation and skill.</p>
+                        <p className='font-albula text-lg text-center w-full xl:w-3/4 mt-2'>The NIT Raipur Motosports Club has a distinguished record of accomplishments in the field of collegiate motosports. Our team has consistently excelled in prestigious competitions such as Formula Bharat, where we showcase our engineering innovation and skill.</p>
                     </h1>
                     <div className='h-auto px-5 py-5 flex justify-center items-center flex-wrap gap-7 box-border mt-7'>
                         <div id='achievementCardOne' className='w-[325px] h-[400px] rounded-2xl flex flex-col justify-evenly items-center px-5 py-5 bg-dustyWhite shadow-md hover:shadow-xl hover:scale-105 transition-all'>

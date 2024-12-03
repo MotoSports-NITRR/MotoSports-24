@@ -42,7 +42,7 @@ function Home() {
                         <div id='introHeading' className='w-full text-4xl sm:text-5xl xl:text-6xl font-albulaHeavy text-blackbean'>Official <br />
                             <span className="text-tawny">Motosports Club</span> of <br />
                             <span className="text-tawny">NIT, Raipur</span>
-                            <p className='text-base sm:text-xl font-poppins font-medium mt-4 text-mutedBlack'>Unleashing Adrenaline: The Heart-Pounding World of Motorsport!</p>
+                            <p className='text-base sm:text-xl font-poppins font-medium mt-4 text-mutedBlack'>Unleashing Adrenaline: The Heart-Pounding World of Motosports!</p>
                         </div>
 
                         <div id='introStatDiv' className='flex justify-between items-start w-full lg:mr-7 xl:mr-16'>

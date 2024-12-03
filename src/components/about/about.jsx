@@ -20,16 +20,16 @@ function Description() {
       <h1 className='ebaja2 ebaja text-5xl font-semibold text-amber-900 mb-8'>Who Are We</h1>
       <p className='w-4/5 text-gray-600 mb-12'>
         <span className="text-red-700 block mb-48">
-          Motorsports is a dynamic and innovative club dedicated to pushing the boundaries of automotive technology and competitive racing. Our club has a track record of excellence, actively participating in a range of competitions where we showcase our skills and passion for motorsports.
-          Through our commitment to excellence and state-of-the-art technologies, we have established ourselves as leaders within the Indian automotive sector. NIT Raipur Motorsports provides a platform for students to pursue their passions and demonstrate their abilities on a broader stage. Join us and experience the thrill of Motorsports at NIT Raipur!
+          Motosports is a dynamic and innovative club dedicated to pushing the boundaries of automotive technology and competitive racing. Our club has a track record of excellence, actively participating in a range of competitions where we showcase our skills and passion for motosports.
+          Through our commitment to excellence and state-of-the-art technologies, we have established ourselves as leaders within the Indian automotive sector. NIT Raipur Motosports provides a platform for students to pursue their passions and demonstrate their abilities on a broader stage. Join us and experience the thrill of Motosports at NIT Raipur!
         </span>
       </p>
 
       <h1 className='ebaja2 ebaja text-5xl font-semibold text-amber-900 mb-8'>What Do We Do</h1>
       <p className='w-4/5 text-gray-600'>
         <span className="text-red-700 block mb-40">
-          We, at NIT Raipur Motorsports, are a dedicated team of over 85 members who devote our time and expertise to creating robust and durable cars that outperform the competition. Our club is actively involved in two prestigious races eBaja and Formula Bharat, where we showcase our innovation, engineering prowess, and teamwork.
-          Through rigorous testing, meticulous design processes, and a relentless pursuit of excellence, we push the boundaries of what’s possible in the realm of Motorsports. Join us on this exciting journey of innovation and competition!
+          We, at NIT Raipur Motosports, are a dedicated team of over 85 members who devote our time and expertise to creating robust and durable cars that outperform the competition. Our club is actively involved in two prestigious races eBaja and Formula Bharat, where we showcase our innovation, engineering prowess, and teamwork.
+          Through rigorous testing, meticulous design processes, and a relentless pursuit of excellence, we push the boundaries of what’s possible in the realm of Motosports. Join us on this exciting journey of innovation and competition!
         </span>
       </p>
     </div>

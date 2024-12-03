@@ -70,7 +70,7 @@ const Merchandise = () => {
                                             <Heading color="brand.caramel"><span className="font-albulaHeavy text-5xl">Discover the Passion </span></Heading>
 
                                             <Text color="brand.darkCoffee" className="merchText font-albula mt-2">
-                                                Ready to immerse yourself in the world of vibrant motorsports? Dive in, grab our mesmerizing merch, and unlock your ticket to being fantastic!
+                                                Ready to immerse yourself in the world of vibrant motosports? Dive in, grab our mesmerizing merch, and unlock your ticket to being fantastic!
                                             </Text>
                                         </div>
 

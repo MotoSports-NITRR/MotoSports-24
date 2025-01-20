@@ -96,10 +96,10 @@ function App() {
             <Description />
           </div>
 
-          <Phases events={phases} img=".\src\components\formulabharat\pics\fbcar.png" />
+          <Phases events={phases} img="\picsfb\fbcar.png" />
 
           <h1 className='head text-6xl flex justify-center items-center pb-28 pt-36'>OUR CAR</h1>
-          <Ourcar events={events} img=".\src\components\formulabharat\pics\formulacar.PNG" />
+          <Ourcar events={events} img="\picsfb\formulacar.PNG" />
 
           <h1 className='head text-5xl flex justify-center items-center pb-28 pt-36'>MEET OUR TEAM</h1>
           <FrontLiner caps={frontLinersData} />

@@ -2,7 +2,7 @@
     "domainHead" : {
         "name": "Mridul Bansal",
         "desig": "Head",
-        "img": "./src/components/about/about/MridulBansal.jpeg",
+        "img": "/about/MridulBansal.jpeg",
         "insta": "https://www.instagram.com/mridszx?igsh=MWE0MXUyc29iZnc2dQ==",
         "linkedin": "https://www.linkedin.com/in/mridul-bansal-915b00261?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
       },
@@ -10,28 +10,28 @@
         {
           "name": "Pratibha ",
           "desig": "Member",
-          "img": "./src/components/about/about/PratibhaSikheriya.jpg",
+          "img": "/about/PratibhaSikheriya.jpg",
           "insta": "https://www.instagram.com/chikki_.19/",
           "linkedin": "https://www.linkedin.com/in/pratibha-sikheriya-b8142a279/"
         },
         {
           "name": "Megha Rathi",
           "desig": "Member",
-          "img": "./src/components/about/about/MeghaRathi.jpg",
+          "img": "/about/MeghaRathi.jpg",
           "insta": "#",
           "linkedin": "#"
         },
         {
           "name": "Anshul Wasnik",
           "desig": "Member",
-          "img": "./src/components/about/about/AnshulWasnik.jpg",
+          "img": "/about/AnshulWasnik.jpg",
           "insta": "#",
           "linkedin": "https://www.linkedin.com/in/anshul-wasnik-69455a25b/"
         },
         {
           "name": "Aman Sharma",
           "desig": "Member",
-          "img": "./src/components/about/about/AmanSharma.jpg",
+          "img": "/about/AmanSharma.jpg",
           "insta": "https://www.instagram.com/ittz__aman_",
           "linkedin": "https://in.linkedin.com/in/aman-sharma-874a7b252"
         }

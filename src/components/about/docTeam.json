@@ -2,7 +2,7 @@
     "domainHead": {
         "name": "Rahul Singh",
         "desig": "Head",
-        "img": "./src/components/about/about/RahulKumarSingh.jpeg",
+        "img": "/about/RahulKumarSingh.jpeg",
         "insta": "#",
         "linkedin": "https://www.linkedin.com/in/rahul-kumar-singh-b88636231?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
     },
@@ -10,21 +10,21 @@
         {
             "name": "Prakarsh Gupta",
             "desig": "Member",
-            "img": "./src/components/about/about/PrakarshGupta.jpg",
+            "img": "/about/PrakarshGupta.jpg",
             "insta": "https://www.instagram.com/prakarshgupta_21",
             "linkedin": "https://www.linkedin.com/in/prakarsh-gupta-a75b67279/"
         },
         {
             "name": "Gaurab Kumar",
             "desig": "Head",
-            "img": "./src/components/about/about/GaurabKumar.jpeg",
+            "img": "/about/GaurabKumar.jpeg",
             "insta": "#",
             "linkedin": "https://linkedin.com/in/gaurav-kumar-b76122251/"
         },
         {
             "name": "Vighnesh Gupta",
             "desig": "Member",
-            "img": "./src/components/about/about/VighneshGupta.jpg",
+            "img": "/about/VighneshGupta.jpg",
             "insta": "https://www.instagram.com/vigh.nesh_._",
             "linkedin": "https://www.linkedin.com/in/vighnesh-gupta-1329b92a5/"
         }

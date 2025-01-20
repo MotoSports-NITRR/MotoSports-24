@@ -3,7 +3,7 @@ import { AddIcon, MinusIcon } from "@chakra-ui/icons";
 import React, { useState } from "react";
 import RazorpayButton from './razorPay/paymentButton';
 import './merchandise.css';
-import ebajaMerch from '../assets/images/ebajaMerch.png';
+import ebajaMerch from '/assets/images/ebajaMerch.png';
 
 const theme = extendTheme({
     colors: {

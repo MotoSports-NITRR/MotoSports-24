@@ -1,10 +1,10 @@
 import "../globalStyles.css";
-import car from '../assets/logos/sponsors/carShringar.png';
-import gulf from '../assets/logos/sponsors/gulf.png';
-import gravity from '../assets/logos/sponsors/gravityWorkshopSVG.svg';
-import solidworks from '../assets/logos/sponsors/solidworksSVG.svg';
-import ansys from '../assets/logos/sponsors/ansys.png';
-import lotus from '../assets/logos/sponsors/lotus.png';
+import car from '/assets/logos/sponsors/carShringar.png';
+import gulf from '/assets/logos/sponsors/gulf.png';
+import gravity from '/assets/logos/sponsors/gravityWorkshopSVG.svg';
+import solidworks from '/assets/logos/sponsors/solidworksSVG.svg';
+import ansys from '/assets/logos/sponsors/ansys.png';
+import lotus from '/assets/logos/sponsors/lotus.png';
 import ContactForm from './contactForm';
 
 function Contact() {

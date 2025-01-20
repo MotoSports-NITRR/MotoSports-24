@@ -103,10 +103,10 @@ function App() {
             <TextShpere texts={texts} />
           </div>
 
-          <Phases events={phases} img=".\src\components\eBaja\pics\atv.png" alt="" className='img2' />
+          <Phases events={phases} img="\pics\atv.png" alt="" className='img2' />
 
           <h1 className='head text-6xl flex justify-center items-center pb-28 pt-36'>OUR CAR</h1>
-          <Ourcar events={info} img=".\src\components\eBaja\pics\ebajacar2.png" />
+          <Ourcar events={info} img="\pics\ebajacar2.png" />
 
           <h1 className='head text-5xl flex justify-center items-center pb-28 pt-36'>MEET OUR TEAM</h1>
           <FrontLiner caps={frontLinersData} />

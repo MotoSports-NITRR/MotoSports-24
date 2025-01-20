@@ -2,7 +2,7 @@
     "domainHead": {
         "name": "Sparsh Jaggi",
         "desig": "Head",
-        "img": "./src/components/about/about/SparshJaggi.jpeg",
+        "img": "/about/SparshJaggi.jpeg",
         "insta": "https://www.instagram.com/sparshjaggi?igsh=ZHVpeHNwN2txcnZm&utm_source=qr",
         "linkedin": "https://www.linkedin.com/in/sparsh-jaggi-1aa263257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
     },
@@ -10,35 +10,35 @@
         {
       "name": "Aman Kumar",
       "desig": "Member",
-      "img": "./src/components/about/about/AmanKumar.JPG",
+      "img": "/about/AmanKumar.JPG",
       "insta": "https://www.instagram.com/amanwhoooo",
       "linkedin": "https://www.linkedin.com/in/amankumar25"
         },
         {
       "name": "Anshdeep",
       "desig": "Member",
-      "img": "./src/components/about/about/Anshdeepshrivastava.jpg.jpg",
+      "img": "/about/Anshdeepshrivastava.jpg.jpg",
       "insta": "#",
       "linkedin": "#"
         },
         {
       "name": "Ayush Mishra",
       "desig": "Member",
-      "img": "./src/components/about/about/AyushMishra.png",
+      "img": "/about/AyushMishra.png",
       "insta": "#",
       "linkedin": "https://www.linkedin.com/in/ayushmishra-profile"
         },
         {
       "name": "Leora",
       "desig": "Member",
-      "img": "./src/components/about/about/LeoraSaharia.jpg",
+      "img": "/about/LeoraSaharia.jpg",
       "insta": "https://www.instagram.com/leorasaharia/",
       "linkedin": "https://www.linkedin.com/in/leora-saharia-9403681a7/"
         },
         {
       "name": "Vivek Verma",
       "desig": "Member",
-      "img": "./src/components/about/about/VivekVerma.jpeg",
+      "img": "/about/Vivekverma.jpg",
       "insta": "https://www.instagram.com/m_i_vivek/",
       "linkedin": "https://www.linkedin.com/in/vivek-verma-b7701929a/"
         }

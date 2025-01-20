@@ -3,7 +3,7 @@
         "domainHead": {
             "name": "Arpit Yadav",
             "desig": "Domain Head",
-            "img": "./src/components/formulabharat/pics/arpit.jpeg",
+            "img": "/picsfb/arpit.jpeg",
             "insta": "https://www.instagram.com/_._arpittttt._?igsh=MXZsN2Z1c2ZqMjdoZw%3D%3D&utm_source=qr",
             "linkedin": "https://www.linkedin.com/in/arpit-yadav-28946b26b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
         },
@@ -11,14 +11,14 @@
             {
                 "name": "Shambhavi",
                 "desig": "Member",
-                "img": "./src/components/formulabharat/pics/shambhavi.JPG",
+                "img": "/picsfb/shambhavi.JPG",
                 "insta": "https://www.instagram.com/heyy__shambhavi__?igsh=ZHV1YjRha2dybDVmc",
                 "linkedin": "https://www.linkedin.com/in/shambhavi-sam-67574624b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             },
             {
                 "name": "Kolagani Sathvik",
                 "desig": "Member",
-                "img": "./src/components/formulabharat/pics/kolagani.jpg",
+                "img": "/picsfb/kolagani.jpg",
                 "insta": "https://www.instagram.com/s_a_t_h_v_i_k____v?igsh=MW1sZThjdDNweWc5bA==",
                 "linkedin": "https://www.linkedin.com/in/kolagani-sathvik-355717259?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             }
@@ -28,7 +28,7 @@
         "domainHead": {
             "name": "Ajay Kashyap",
             "desig": "Domain Head",
-            "img": "./src/components/eBaja/pics/vice3.jpg",
+            "img": "/picsfb/ajay.jpg",
             "insta": "",
             "linkedin": "https://www.linkedin.com/in/ajaykashyap92025?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
         },
@@ -36,14 +36,14 @@
             {
                 "name": "Vaishnavi Padole",
                 "desig": "Member",
-                "img": "./src/components/formulabharat/pics/vaishnavi.jpg",
+                "img": "/picsfb/vaishnavi.jpg",
                 "insta": "",
                 "linkedin": "https://www.linkedin.com/in/vaishnavi-padole-b41ab0250"
             },
             {
                 "name": "Sachin Choubey",
                 "desig": "Member",
-                "img": "./src/components/formulabharat/pics/sachin.jpg",
+                "img": "/picsfb/sachin.jpg",
                 "insta": "https://www.instagram.com/sachin_choubey11?igsh=MTFtNGkycGM0NmVlYg==",
                 "linkedin": "https://www.linkedin.com/in/sachin-choubey-bb7558256?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             }
@@ -53,7 +53,7 @@
         "domainHead": {
             "name": "Avish Srivastava",
             "desig": "Domain Head",
-            "img": "./src/components/formulabharat/pics/avish.jpg",
+            "img": "/picsfb/avish.jpg",
             "insta": "https://www.instagram.com/avish_jarvis_potter?igsh=a2F0dXplMG0wc3V4",
             "linkedin": "https://www.linkedin.com/in/avish-kumar-shrivastava-0702ajp"
         },
@@ -61,14 +61,14 @@
             {
                 "name": "Devanshu Satapathy",
                 "desig": "Member",
-                "img": "./src/components/formulabharat/pics/devanshu.jpg",
+                "img": "/picsfb/devanshu.jpg",
                 "insta": "https://www.instagram.com/dicctator.rr?igsh=MTlja2R5dW02eHJmYg==",
                 "linkedin": "https://www.linkedin.com/in/devanshu-satapathy-72323a28a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             },
             {
                 "name": "Honumant Nethanj",
                 "desig": "Member",
-                "img": "./src/components/formulabharat/pics/honumant.jpeg",
+                "img": "/picsfb/honumant.jpeg",
                 "insta": "https://www.instagram.com/honumant_25?igsh=OGF5M3Zvemc3cmt5",
                 "linkedin": "https://www.linkedin.com/me?trk=p_mwlite_me_notifications-secondary_nav"
             }
@@ -78,7 +78,7 @@
         "domainHead": {
             "name": "Om Prakash",
             "desig": "Domain Head",
-            "img": "./src/components/formulabharat/pics/om.jpg",
+            "img": "/picsfb/om.jpg",
             "insta": "https: //www.instagram.com/_.axelx_?igsh=eHo5M3J3YXdrNXJw",
             "linkedin": "https://www.linkedin.com/in/om-prakash-sahoo-60bb46257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
         },
@@ -86,21 +86,21 @@
             {
                 "name": "Abhiroop",
                 "desig": "Member",
-                "img": "./src/components/formulabharat/pics/abhiroop.jpg",
+                "img": "/picsfb/abhiroop.jpg",
                 "insta": "https://www.instagram.com/iam_sharmaji7?igsh=MTdpem9uZWpveXZ3cQ==",
                 "linkedin": "https://www.linkedin.com/in/abhiroop-sharma-75a46926b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             },
             {
                 "name": "Anisha Sharma",
                 "desig": "Member",
-                "img": "./src/components/formulabharat/pics/anisha.jpg",
+                "img": "/picsfb/anisha.jpg",
                 "insta": "",
                 "linkedin": "https://www.linkedin.com/in/anisha-sharma29?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             },
             {
                 "name": "Navneet Kumar",
                 "desig": "Member",
-                "img": "./src/components/formulabharat/pics/navneet.jpg",
+                "img": "/picsfb/navneet.jpg",
                 "insta": "https://www.instagram.com/navneet_one8/",
                 "linkedin": "https://www.linkedin.com/in/navneet-kumar-pandey-b8036828a"
             }
@@ -110,7 +110,7 @@
         "domainHead": {
             "name": "Divek Daheriya",
             "desig": "Domain Head",
-            "img": "./src/components/formulabharat/pics/divek.jpg",
+            "img": "/picsfb/divek.jpg",
             "insta": "https://www.instagram.com/diveksinghdahariya?igsh=MTRlNWUwdjdyajAydw==",
             "linkedin": "https://www.linkedin.com/in/divek-dahariya-886371180?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
         },
@@ -118,14 +118,14 @@
             {
                 "name": "Rishi Singh",
                 "desig": "Member",
-                "img": "./src/components/formulabharat/pics/rishi.jpg",
+                "img": "/picsfb/rishi.jpg",
                 "insta": "https: //www.instagram.com/shiri_singha?igsh=MXNlZTY0d3JoNjA0Ng==",
                 "linkedin": "https://www.linkedin.com/in/rishi-singh-aa5387264?trk=contact-info"
             },
             {
                 "name": "Deepak Shukla",
                 "desig": "Member",
-                "img": "./src/components/formulabharat/pics/deepak.jpg",
+                "img": "/picsfb/deepak.jpg",
                 "insta": "https://www.instagram.com/_deepakshukla_04?igsh=NDk1eHYyYmN3ZzIw",
                 "linkedin": "https://www.linkedin.com/in/deepak-shukla-1b1b4425b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             }

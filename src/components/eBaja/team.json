@@ -3,7 +3,7 @@
         "domainHead": {
             "name": "K. S. S. Karthik",
             "desig": "Domain Head",
-            "img": "./src/components/eBaja/pics/karthik.JPG",
+            "img": "/pics/karthik.JPG",
             "insta": "https://www.instagram.com/karthik_sai712",
             "linkedin": ""
         },
@@ -11,21 +11,21 @@
             {
                 "name": "Sanchit Singh",
                 "desig": "Member",
-                "img": "./src/components/eBaja/pics/treasurer.jpg",
+                "img": "/pics/treasurer.jpg",
                 "insta": "https://www.instagram.com/singhsanchit42?igsh=bDJ4YW1iNnFxY3Z0",
                 "linkedin": "https://www.linkedin.com/in/sanchit-singh-011924266?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             },
             {
                 "name": "Gaurab Ray",
                 "desig": "Member",
-                "img": "./src/components/eBaja/pics/vice.JPEG",
+                "img": "/pics/vice.jpeg",
                 "insta": "https://www.instagram.com/24raygaurab?igsh=bmU0MnptdmwxdXFo",
                 "linkedin": "https://www.linkedin.com/in/gaurab-ray-504a8526b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             },
             {
                 "name": "Mridul Bansal",
                 "desig": "Member",
-                "img": "./src/components/eBaja/pics/mridul.jpeg",
+                "img": "/pics/mridul.jpeg",
                 "insta": "https://www.instagram.com/mridszx?igsh=MXV1c2xseDN4YmU0aw==",
                 "linkedin": "https://www.linkedin.com/in/mridul-bansal-915b00261?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
             }
@@ -35,7 +35,7 @@
         "domainHead": {
             "name": "Pratyush",
             "desig": "Domain Head",
-            "img": "./src/components/eBaja/pics/pratyush.jpg",
+            "img": "/pics/pratyush.JPG",
             "insta": "https://www.instagram.com/prat_1220?igsh=MTJ5OXNlc21vMWsxMA==",
             "linkedin": "https://www.linkedin.com/in/pratyush-shastri"
         },
@@ -43,21 +43,21 @@
             {
                 "name": "Dhruv Dutta",
                 "desig": "Member",
-                "img": "./src/components/eBaja/pics/dhruv.jpg",
+                "img": "/pics/dhruv.jpg",
                 "insta": "https://www.instagram.com/dhruv_d64?igsh=bmVzNjEwNGJkYzFy",
                 "linkedin": "https://www.linkedin.com/in/dhruv-kumar-dutta-914019293?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             },
             {
                 "name": "Pratik Vats",
                 "desig": "Member",
-                "img": "./src/components/eBaja/pics/pratik.jpeg",
+                "img": "/pics/pratik.jpeg",
                 "insta": "https://www.linkedin.com/in/pratik-vats-a354ab294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
                 "linkedin": "https://www.linkedin.com/in/pratik-vats-a354ab294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             },
             {
                 "name": "Shantanu N K",
                 "desig": "Member",
-                "img": "./src/components/eBaja/pics/shantanu.png",
+                "img": "/pics/shantanu.png",
                 "insta": "https://www.instagram.com/skc40/",
                 "linkedin": "https://www.linkedin.com/in/shantanu-n-k-choudhury/"
             }
@@ -67,7 +67,7 @@
         "domainHead": {
             "name": "Nimesh Kashyap",
             "desig": "Domain Head",
-            "img": "./src/components/eBaja/pics/nimesh.jpeg",
+            "img": "/pics/nimesh.jpeg",
             "insta": "",
             "linkedin": "https://www.linkedin.com/in/nimesh-kumar-kashyap-1b0196261/"
         },
@@ -75,21 +75,21 @@
             {
                 "name": "Astha Soni",
                 "desig": "Member",
-                "img": "./src/components/eBaja/pics/astha.jpg",
+                "img": "/pics/astha.jpg",
                 "insta": "https://www.instagram.com/princyprincy_astha?utm_source=qr&igsh=MW5lZWtxemtvOXJ0aA==",
                 "linkedin": "https://www.linkedin.com/in/astha-soni-47a5682a6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             },
             {
                 "name": "Chirantan Dev",
                 "desig": "Member",
-                "img": "./src/components/eBaja/pics/chirantan.jpg",
+                "img": "/pics/chirantan.jpg",
                 "insta": "https://www.instagram.com/___dev__sharma__?igsh=MTlmdXA2NmFrdjQy",
                 "linkedin": "https://www.linkedin.com/in/chirantan-dev-sharma-42b6252ab"
             },
             {
                 "name": "Utkarsh Nashine",
                 "desig": "Member",
-                "img": "./src/components/eBaja/pics/utkarsh.jpg",
+                "img": "/pics/utkarsh.jpg",
                 "insta": "",
                 "linkedin": ""
             }
@@ -99,7 +99,7 @@
         "domainHead": {
             "name": "Ritik Pathak",
             "desig": "Domain Head",
-            "img": "./src/components/eBaja/pics/ritik.jpg",
+            "img": "/pics/ritik.jpg",
             "insta": "https://www.instagram.com/ritik_gear?igsh=bDYzbW5zaGpuaWds",
             "linkedin": "https://www.linkedin.com/in/ritik-pathak-31b865247?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
         },
@@ -107,14 +107,14 @@
             {
                 "name": "Yatharth",
                 "desig": "Member",
-                "img": "./src/components/eBaja/pics/yatharth.jpeg",
+                "img": "/pics/yatharth.jpeg",
                 "insta": "https://www.instagram.com/yatharth__verma?igsh=dnJ6emRzbzNjNng3",
                 "linkedin": "https://www.linkedin.com/in/yatharth-verma-b75a58201/"
             },
             {
                 "name": "Argha",
                 "desig": "Member",
-                "img": "./src/components/eBaja/pics/argha.JPG",
+                "img": "/pics/argha.jpg",
                 "insta": "https://www.instagram.com/argha_choudhary?igsh=MWU0N3N6NmExazFpbw==",
                 "linkedin": "https://www.linkedin.com/in/argha-choudhary-b36191258?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             }
@@ -124,7 +124,7 @@
         "domainHead": {
             "name": "Sarvagya Jain",
             "desig": "Domain Head",
-            "img": "./src/components/eBaja/pics/sarvagya.jpg",
+            "img": "/pics/sarvagya.jpg",
             "insta": "https://www.instagram.com/sarvagyajain2105?igsh=MWE1NmM0bnhoYTVqbw==",
             "linkedin": "https://www.linkedin.com/in/sarvagya-jain-7159b2254/"
         },
@@ -132,14 +132,14 @@
             {
                 "name": "Balpreet Gill",
                 "desig": "Member",
-                "img": "./src/components/eBaja/pics/balpreet.jpg",
+                "img": "/pics/balpreet.jpg",
                 "insta": "https://www.instagram.com/balpreet_singh_10?igsh=MTkyNTN3c3NtZmZpNA==",
                 "linkedin": "http://www.linkedin.com/in/balpreet-singh-gill-72374925b"
             },
             {
                 "name": "Shivansh",
                 "desig": "Member",
-                "img": "./src/components/eBaja/pics/shivansh.jpg",
+                "img": "/pics/shivansh.jpg",
                 "insta": "https://www.instagram.com/shivansh_chowhan?igsh=MWxteTRhaTdkNmlicA==",
                 "linkedin": "https://www.linkedin.com/in/shivansh-chowhan-b0b372239?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             }
@@ -150,42 +150,42 @@
             {
                 "name": "Bhavnesh Rai",
                 "desig": "Driver / Mentor",
-                "img": "./src/components/eBaja/pics/bhavnesh.JPG",
+                "img": "/pics/bhavnesh.jpg",
                 "insta": "https://www.instagram.com/bhavnesh.rai?igsh=bXJpaWc3cXU2c3h4",
                 "linkedin": "http://linkedin.com/in/bhavnesh-rai-4b4712273"
             },
             {
                 "name": "Bhupendra",
                 "desig": "Mentor",
-                "img": "./src/components/eBaja/pics/bhupendra.JPG",
+                "img": "/pics/bhupendra.JPG",
                 "insta": "https://www.instagram.com/bhupendra.s.p?igsh=MTA1ZnV1b2ZvYmpmdg==",
                 "linkedin": "https://www.linkedin.com/in/bhupendra-singh-patel-666212233"
             },
             {
                 "name": "Ekant Sahu",
                 "desig": "Mentor",
-                "img": "./src/components/eBaja/pics/ekant.jpeg",
+                "img": "/pics/ekant.jpeg",
                 "insta": "https://www.instagram.com/_.lonely_coder._?igsh=aDNpYXY5ZGM3ZDhv",
                 "linkedin": "https://www.linkedin.com/in/ekant-sahu/"
             },
             {
                 "name": "Harsh",
                 "desig": "Mentor",
-                "img": "./src/components/eBaja/pics/harsh.JPG",
+                "img": "/pics/harsh.jpg",
                 "insta": "https://www.instagram.com/",
                 "linkedin": "https://www.linkedin.com/feed/"
             },
             {
                 "name": "Piyush Kumar",
                 "desig": "Mentor",
-                "img": "./src/components/eBaja/pics/piyush.JPEG",
+                "img": "/pics/piyush.jpeg",
                 "insta": "https://www.instagram.com/p.i.y.y.u.s.h_kmr?igsh=MWF4ZHl6eGp0ZTkyeQ==",
                 "linkedin": "https://www.linkedin.com/in/piyush-kumar-796513297?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             },
             {
                 "name": "Shaili Mishra",
                 "desig": "Mentor",
-                "img": "./src/components/eBaja/pics/shaili.JPG",
+                "img": "/pics/shaili.jpg",
                 "insta": "https://www.instagram.com/shailimishra22?utm_source=qr&igsh=cXBjOHg2eG94c2Vp",
                 "linkedin": "https://www.linkedin.com/in/shaili-mishra-358b2322b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             }

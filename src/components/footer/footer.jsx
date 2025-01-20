@@ -1,7 +1,7 @@
 import '../globalStyles.css';
-import linkedinIcon from '../assets/icons/linkedinLogoSVG.svg';
-import instagramIcon from '../assets/icons/instagramLogoSVG.svg';
-import facebookIcon from '../assets/icons/facebookLogoSVG.svg';
+import linkedinIcon from '/assets/icons/linkedinLogoSVG.svg';
+import instagramIcon from '/assets/icons/instagramLogoSVG.svg';
+import facebookIcon from '/assets/icons/facebookLogoSVG.svg';
 
 function Footer() {
     return (

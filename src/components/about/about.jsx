@@ -41,14 +41,14 @@ function App() {
     {
       "name": "Rishi Singh",
       "desig": "Head",
-      "img": "./src/components/about/about/RishiSinghRajput.jpg",
+      "img": "/about/RishiSinghRajput.jpg",
       "insta": "https://www.instagram.com/shiri_singha/?igsh=MXNlZTY0d3JoNjA0Ng%3D%3D",
       "linkedin": "https://www.linkedin.com/in/rishi-singh-aa5387264?trk=contact-info"
     },
     {
       "name": "Ritik Pathak",
       "desig": "Head",
-      "img": "./src/components/about/about/RitikPathak.jpg",
+      "img": "/about/RitikPathak.jpg",
       "insta": "https://www.instagram.com/ritik_gear?igsh=bDYzbW5zaGpuaWds",
       "linkedin": "https://www.linkedin.com/in/ritik-pathak-31b865247?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
     }
@@ -98,35 +98,35 @@ const events = [
     heading: "STEP 1",
     subHeading: "Alumni Meet",
     description: "NIT RAIPUR has a vast alumni network and conducts an alumni meet every year in which more than 300+ alumni holding senior positions in various companies visit our campus. We conduct a car showcasing event during the meet and also have an interactive session with them.",
-    imgSrc: "./src/components/about/about/event1.jpg",
+    imgSrc: "/about/event1.jpg",
     direction: "left",
   },
   {
     heading: "STEP 2",
     subHeading: "Workshops at AAVARTAN",
     description: "We conduct workshops and mini-events related to automobiles in AAVARTAN (tech fest).",
-    imgSrc: "./src/components/about/about/event2.jpg",
+    imgSrc: "/about/event2.jpg",
     direction: "right",
   },
   {
     heading: "STEP 3",
     subHeading: "Vehicle Showcasing at ECLECTIKA",
     description: "Showcasing our VEHICLE and giving the experience of driving in ECLECTIKA, Central India’s largest fest having a footfall of more than 30k+.",
-    imgSrc: "./src/components/about/about/event3.jpg",
+    imgSrc: "/about/event3.jpg",
     direction: "left",
   },
   {
     heading: "STEP 4",
     subHeading: "Road Shows",
     description: "Various road shows in front of our college main building are conducted by showcasing our vehicle, attracting a total of more than 1.5k+ local crowd and students along with the faculties.",
-    imgSrc: "./src/components/about/about/event4.jpg",
+    imgSrc: "/about/event5.jpg",
     direction: "right",
   },
   {
     heading: "STEP 5",
     subHeading: "Workshops Throughout the Year",
     description: "Our club regularly conducts workshops throughout the year in NIT Raipur and nearby colleges.",
-    imgSrc: "./src/components/about/about/event5.jpg",
+    imgSrc: "/about/event5.jpg",
     direction: "left",
   },
 ];

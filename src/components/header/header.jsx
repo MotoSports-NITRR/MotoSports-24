@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import logo from '../assets/logos/logoTransparent.png';
-import navbarMenu from '../assets/icons/navbarMenu.png';
+import logo from '/assets/logos/logoTransparent.png';
+import navbarMenu from '/assets/icons/navbarMenu.png';
 
 function Navbar() {
     const [showPopup, setShowPopup] = useState(false);
